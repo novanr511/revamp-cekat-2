@@ -20,6 +20,7 @@ Direction file for the cekat.ai homepage. Sources: the Cekat.AI Brand Guidelines
 - **Logo:** Logogram (speech bubble inside a connection signal) plus logotype "Cekat.AI". The SVGs are extracted directly from the brand PDF vectors (`assets/logo-full.svg`, `assets/logo-mark.svg`).
   - Use it on white or alice-blue backgrounds, or in white on Cekat Blue.
   - No effects, no outlines, no gradients on the logo.
+  - **Colour (2026-10-30, owner direction):** the logo is shown in Logo blue `#005FCA` (set in `logo-full.svg` and `logo-mark.svg`), not black, in the header, footer, favicon and the Cekat MCP hub.
   - Minimum height is 30px on web.
 - **Personality:** innovative, reliable, fast, solution-oriented, user-focused. Copy and UI should feel *precise* (Craftsmanship value) and *kind* (Courtesy value), and should not shout.
 
@@ -123,7 +124,7 @@ All gradients are built from the brand book's blue, cyan and orange gradients.
   - 12px for UI chips and small cards
   - 20px for content cards
   - 28px for the two big panels (customer story and final CTA)
-  - No pills, except chat bubbles, which are speech bubbles by nature, like the logogram.
+  - Buttons are pills (owner direction 2026-10-30, see Radius); other shapes stay rounded rectangles, and chat bubbles are speech bubbles, like the logogram.
 - **Shadow:** Used only on floating product windows, which sit above the page. Everything else is flat with 1px `#E5E9EF` borders.
 - **Spacing scale:** 4, 8, 12, 16, 24, 32, 48, 64, 96, 128.
   - Section padding varies on purpose: 128px for story sections, 96px for catalogue sections, and a shorter blue band for trust.
@@ -223,6 +224,7 @@ All gradients are built from the brand book's blue, cyan and orange gradients.
   - **Solutions:** the eight industries in two columns and an "Explore all industries" footer link. **Resources:** customer stories, what's new, integrations, Clara, the help center and the changelog (the last two open docs.cekat.ai in a new tab).
   - **Transition (x.ai):** one shared white box slides and resizes (.34s) to fit whichever menu is open, while the menus crossfade and slide 28px sideways in the direction the pointer moved; the chevron flips. Hover opens on desktop after 90ms (instantly when another menu is already open); moving to Pricing, the logo or the buttons, or leaving the header, closes it. Click, Enter, Arrow Down (opens and focuses the first link) and Escape work; focus leaving the header closes it. Reduced motion removes the slides.
   - **Under 1100px:** the hamburger panel lists the menus as accordions (no shared box, no previews).
+  - **Floating on scroll (2026-10-30, owner direction: like Calendly):** at the top of the page the bar is full width and flat. Once the page scrolls, it lifts off the edge into a floating white card with rounded corners (20px) and a soft shadow, 12px from the top, 64px tall, with the page visible around it (.3s transition). On phones it is 8px from the top and 8px from each side, 60px tall, with an 18px radius, and the hamburger panel opens as a rounded card below it. The sticky journey rail sits below the floating bar (72px from the top on phones). Reduced motion removes the transition.
 - **Hero:**
   - Primary: **Start free trial**.
   - Secondary: **See how it works**, a ghost button that scrolls to the revenue journey. It replaces "Explore Cekat" (R-15).

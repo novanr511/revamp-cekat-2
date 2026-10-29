@@ -178,9 +178,18 @@ button, input, select { font: inherit; color: inherit; }
 
 /* ---------- Nav: x.ai-style mega menu. One shared white box slides and resizes between menus;
    the menu content crossfades sideways in the direction you moved. ---------- */
-.nav { position: sticky; top: 0; z-index: 50; background: #fff; border-bottom: 1px solid transparent; transition: border-color .2s; }
-.nav.is-scrolled { border-bottom-color: var(--line); }
-.nav__row { position: relative; display: flex; align-items: center; gap: 24px; height: 72px; }
+.nav { position: sticky; top: 0; z-index: 50; background: #fff; transition: background-color .3s, padding .3s cubic-bezier(.2, .8, .2, 1); }
+.nav__row {
+  position: relative; display: flex; align-items: center; gap: 24px; height: 72px; border-radius: 0;
+  transition: height .3s cubic-bezier(.2, .8, .2, 1), width .3s cubic-bezier(.2, .8, .2, 1), border-radius .3s, box-shadow .3s, background-color .3s;
+}
+/* Once the page scrolls, the bar lifts off the edge into a floating white card (Calendly) */
+.nav.is-scrolled { padding-top: 12px; background: transparent; pointer-events: none; }
+.nav.is-scrolled .nav__row {
+  width: calc(100% - 24px); height: 64px; border-radius: 20px; background: #fff; pointer-events: auto;
+  box-shadow: 0 0 0 1px rgba(9, 33, 76, .06), 0 10px 30px -10px rgba(9, 33, 76, .28);
+}
+@media (prefers-reduced-motion: reduce) { .nav, .nav__row { transition: none; } }
 .nav__logo img { height: 30px; width: auto; }
 .nav__links { display: flex; margin-left: 8px; }
 .mnav { display: flex; align-items: center; gap: 2px; }
@@ -286,6 +295,7 @@ button, input, select { font: inherit; color: inherit; }
     background: #fff; border-bottom: 1px solid var(--line);
   }
   .nav__links.is-open { display: flex; }
+  .nav.is-scrolled .nav__links { top: calc(100% + 8px); border: 1px solid var(--line); border-radius: 20px; box-shadow: 0 16px 40px -12px rgba(9, 33, 76, .3); }
   /* Phones: each menu is an accordion; no shared box, no previews */
   .mnav { flex-direction: column; align-items: stretch; gap: 0; }
   .mnav__item { border-bottom: 1px solid var(--line); }
@@ -303,6 +313,8 @@ button, input, select { font: inherit; color: inherit; }
 }
 @media (max-width: 860px) {
   .nav__row { height: 64px; }
+  .nav.is-scrolled { padding-top: 8px; }
+  .nav.is-scrolled .nav__row { width: calc(100% - 16px); height: 60px; border-radius: 18px; }
 }
 @media (max-width: 420px) {
   .nav__logo img { height: 26px; }
@@ -762,7 +774,7 @@ button, input, select { font: inherit; color: inherit; }
   .journey__body { grid-template-columns: 1fr; gap: 24px; }
   .journey__body > .panel { grid-column: 1; grid-row: auto; }
   .rail {
-    top: 64px; z-index: 20; flex-direction: row; justify-content: space-between; gap: 4px;
+    top: 72px; z-index: 20; flex-direction: row; justify-content: space-between; gap: 4px;
     margin-inline: calc(-1 * var(--gutter)); padding: 10px var(--gutter) 8px; background: var(--blue-50); border-bottom: 1px solid var(--line);
   }
   .rail::before { left: calc(var(--gutter) + 11px); right: calc(var(--gutter) + 14px); top: 29px; bottom: auto; width: auto; height: 4px; background: linear-gradient(90deg, var(--orange), var(--cyan) 25%, var(--blue) 50%, var(--cyan) 75%, var(--blue)); }
