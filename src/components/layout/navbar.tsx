@@ -1,0 +1,140 @@
+"use client";
+
+import { useRef, useState } from "react";
+import { useLocale, useTranslations } from "next-intl";
+import { Link, usePathname } from "@/i18n/navigation";
+import { Icon } from "@iconify/react/offline";
+import { lucideMenu, mdiWhatsapp } from "@/lib/icons";
+import { LOGIN_URL, REGISTER_URL } from "@/lib/links";
+import { WhatsAppAnchor } from "@/components/shared/whatsapp-anchor";
+import { AppAnchor } from "@/components/shared/app-anchor";
+import { Container } from "./container";
+import { LanguageSwitcher } from "./language-switcher";
+import { MegaMenu } from "./mega-menu";
+import { MobileNav } from "./mobile-nav";
+import { Logo, LogoWhite } from "./logo";
+import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
+import {
+  Sheet,
+  SheetContent,
+  SheetTrigger,
+  SheetTitle,
+} from "@/components/ui/sheet";
+
+export function Navbar({}: { variant?: "default" | "transparent" }) {
+  const t = useTranslations("nav");
+  const locale = useLocale();
+  const pathname = usePathname();
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [lastPathname, setLastPathname] = useState(pathname);
+  const navRef = useRef<HTMLDivElement>(null);
+
+  // Pages whose first act is a void/keynote hero get a transparent header
+  // until scroll. Locale pathnames differ (e.g. /harga vs /pricing).
+  if (pathname !== lastPathname) {
+    setLastPathname(pathname);
+    setMenuOpen(false);
+  }
+
+  const isTransparent = false;
+  const linkClass = cn(
+    "rounded-full px-3 py-2 text-sm font-medium transition-colors",
+    isTransparent
+      ? "text-white hover:text-white/80"
+      : "text-foreground hover:text-black",
+  );
+
+  return (
+    <header
+      className={cn(
+        "sticky top-0 z-50 w-full border-b border-[#e5e9ef] bg-white transition-colors duration-300",
+        isTransparent
+          ? "bg-linear-to-b from-black/35 to-transparent"
+          : "",
+      )}
+    >
+      <Container
+        ref={navRef}
+        /* No lg:px-0 here. Every Container on the page carries lg:px-8, so
+           zeroing it only in the navbar set the logo 32px left of the h1 and
+           of every section heading below it. */
+        className="flex h-[72px] max-w-[1248px] px-0 sm:px-6 lg:px-6"
+      >
+        <div className="flex items-center gap-7">
+          <Link href="/" className="flex items-center">
+            {isTransparent ? (
+              <LogoWhite className="h-6 w-auto" />
+            ) : (
+              <Logo className="h-[30px] w-auto" />
+            )}
+          </Link>
+
+          <nav className="hidden items-center md:flex">
+            <MegaMenu isTransparent={false} anchor={navRef} />
+          </nav>
+        </div>
+
+        <div className="hidden items-center gap-2 md:flex">
+          <LanguageSwitcher currentLocale={locale} inverted={false} />
+          <AppAnchor href={LOGIN_URL} className={linkClass}>
+            {t("masuk")}
+          </AppAnchor>
+
+          <Button
+            size="lg"
+            className={cn(
+              "rounded-full px-5 text-sm font-medium",
+              isTransparent &&
+                "border-white/25 bg-white/10 text-white hover:bg-white/15 hover:border-white/40",
+            )}
+            nativeButton={false}
+            render={
+              <WhatsAppAnchor target="_blank" rel="noopener noreferrer" />
+            }
+          >
+            <Icon icon={mdiWhatsapp} className="size-4" />
+            {t("ctaWhatsapp")}
+          </Button>
+          <Button
+            variant="outline-primary"
+            size="lg"
+            className={cn(
+              "rounded-full px-5 text-sm font-medium",
+              isTransparent &&
+                "border-white/35 bg-transparent text-white hover:bg-white/10 hover:text-white",
+            )}
+            nativeButton={false}
+            render={<AppAnchor href={REGISTER_URL} />}
+          >
+            {t("ctaTrial")}
+          </Button>
+        </div>
+
+        <div className="md:hidden">
+          <Sheet open={menuOpen} onOpenChange={setMenuOpen}>
+            <SheetTrigger
+              aria-label={t("openMenu")}
+              render={
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className={cn(
+                    isTransparent &&
+                      "text-white hover:bg-white/10 hover:text-white",
+                  )}
+                />
+              }
+            >
+              <Icon icon={lucideMenu} className="size-6" />
+            </SheetTrigger>
+            <SheetContent side="right" className="w-80 p-0">
+              <SheetTitle className="sr-only">{t("openMenu")}</SheetTitle>
+              <MobileNav />
+            </SheetContent>
+          </Sheet>
+        </div>
+      </Container>
+    </header>
+  );
+}

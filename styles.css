@@ -277,6 +277,17 @@ button, input, select { font: inherit; color: inherit; }
 .nav__actions { margin-left: auto; display: flex; align-items: center; gap: 10px; }
 .nav__text { background: none; border: 0; padding: 8px 10px; cursor: pointer; color: var(--text); text-decoration: none; font-weight: 500; font-size: .9375rem; }
 .nav__text:hover { color: var(--blue); }
+.nav__languages { position: relative; display: block; flex: none; }
+.nav__languages summary { display: inline-flex; align-items: center; justify-content: center; gap: 6px; padding: 8px 10px; border-radius: 999px; color: var(--text); font-size: .875rem; font-weight: 600; cursor: pointer; list-style: none; }
+.nav__languages summary::-webkit-details-marker { display: none; }
+.nav__languages summary:hover, .nav__languages[open] summary, .nav__languages:focus-within summary { background: var(--blue-50); }
+.nav__language-chev { width: 12px; height: 12px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; transition: transform .25s; }
+.nav__languages[open] .nav__language-chev, .nav__languages:hover .nav__language-chev, .nav__languages:focus-within .nav__language-chev { transform: rotate(180deg); }
+.nav__language-menu { display: none; position: absolute; top: calc(100% + 6px); right: 0; z-index: 20; width: 170px; padding: 6px; border: 1px solid var(--line); border-radius: 14px; background: #fff; box-shadow: 0 16px 40px -14px rgba(9, 33, 76, .28); }
+.nav__languages[open] > .nav__language-menu, .nav__languages:hover > .nav__language-menu, .nav__languages:focus-within > .nav__language-menu { display: grid; }
+.nav__language-menu a { display: flex; justify-content: space-between; padding: 9px 10px; border-radius: 9px; color: var(--text); font-size: .875rem; text-decoration: none; }
+.nav__language-menu a:hover, .nav__language-menu a:focus-visible { background: var(--bg-2); }
+.nav__language-menu small { color: var(--muted); font-size: .7rem; font-weight: 700; }
 .btn--soft { background: var(--blue-50); color: var(--navy); }
 .btn--soft:hover { background: var(--blue-100); }
 .nav__mobile-actions, .nav__toggle { display: none; }
@@ -326,8 +337,25 @@ button, input, select { font: inherit; color: inherit; }
 @media (max-width: 420px) {
   .nav__logo img { height: 26px; }
   .nav__actions .btn { padding: 8px 14px; font-size: .875rem; }
+  .nav__actions { gap: 6px; }
+  .nav__languages summary { padding-inline: 7px; }
   .nav__row { gap: 8px; }
   .mlinks--2 { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+  .nav__actions .btn--primary {
+    flex: 0 0 auto;
+    min-height: 44px;
+    padding: 8px 12px;
+    white-space: nowrap;
+    font-size: .875rem;
+  }
+  .nav__cta-label { font-size: 0; line-height: 0; }
+  .nav__cta-label::after {
+    content: attr(data-mobile-label);
+    font-size: .875rem;
+    line-height: 1.2;
+  }
 }
 
 /* ---------- 1. Hero ---------- */

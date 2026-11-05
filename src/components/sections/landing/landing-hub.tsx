@@ -1,0 +1,294 @@
+import { existsSync } from "node:fs";
+import { join } from "node:path";
+import { getTranslations, setRequestLocale } from "next-intl/server";
+import type { Metadata } from "next";
+import { Link } from "@/i18n/navigation";
+import type { AppPathname, Locale } from "@/i18n/routing";
+import { alternates, localizedPath, metaSnippet, SITE_URL } from "@/lib/seo";
+import { REGISTRY, entryPath } from "@/lib/registry";
+import type { FeatureCategory, LandingKind } from "@/lib/registry/types";
+import { breadcrumbJsonLd, collectionPageJsonLd } from "@/lib/jsonld";
+import { JsonLd } from "@/components/seo/json-ld";
+import { Container } from "@/components/layout/container";
+import { Reveal } from "@/components/sections/new-home/reveal";
+import { PageHero } from "@/components/sections/shared/page-hero";
+import { VoidFinalCta } from "@/components/sections/shared/void-final-cta";
+import { Breadcrumbs } from "./breadcrumbs";
+import { DefinitionBlock } from "./definition-block";
+import { EntryGrid } from "./entry-card";
+import Image from "next/image";
+import { PRODUCT_ART } from "./product-stage";
+import { localeValue } from "@/lib/locale-value";
+
+const HUB_TEMPLATE = {
+  features: "/features",
+  industries: "/industries",
+  solutions: "/solutions",
+} as const satisfies Record<LandingKind, AppPathname>;
+
+/** Per-hub social preview (1200×630). */
+const HUB_OG: Record<LandingKind, string> = {
+  features: "/images/og/features.jpg",
+  industries: "/images/og/industries.jpg",
+  solutions: "/images/og/solutions.jpg",
+};
+
+/**
+ * Industry photography lives in the cards where it can support scanning, not
+ * behind the hub heading where it used to compromise readability.
+ */
+/**
+ * The registry grows independently of the photo folder, so a cover is only
+ * shipped when the file is really there — otherwise the card falls back to its
+ * icon plate rather than rendering a broken image.
+ */
+function industryPhoto(id: string): string | undefined {
+  const file = join(process.cwd(), "public/images/industries", `${id}.webp`);
+  return existsSync(file) ? `/images/industries/${id}.webp` : undefined;
+}
+
+const FEATURE_CATEGORY: Record<
+  FeatureCategory,
+  {
+    navKey: string;
+    /** AI has no product page, so its hub group header is label-only. */
+    href?: "/chat" | "/crm" | "/marketing" | "/order";
+    icon: string;
+  }
+> = {
+  chat: { navKey: "chat", href: "/chat", icon: "MessageCircle" },
+  ai: { navKey: "ai", icon: "Sparkles" },
+  crm: { navKey: "crm", href: "/crm", icon: "LayoutGrid" },
+  marketing: { navKey: "marketing", href: "/marketing", icon: "Megaphone" },
+  order: { navKey: "order", href: "/order", icon: "Workflow" },
+};
+
+export async function hubMetadata(
+  kind: LandingKind,
+  params: Promise<{ locale: string }>,
+): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: `${kind}Hub` });
+  const { canonical, languages } = alternates(locale, HUB_TEMPLATE[kind]);
+  const title = metaSnippet(t("metaTitle"), 70);
+  const description = metaSnippet(t("metaDescription"), 158);
+
+  return {
+    title,
+    description,
+    alternates: { canonical, languages },
+    openGraph: {
+      title,
+      description,
+      url: canonical,
+      siteName: "CekatAI",
+      locale: locale === "id" ? "id_ID" : "en_US",
+      type: "website",
+      images: [{ url: HUB_OG[kind], width: 1200, height: 630, alt: title }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [HUB_OG[kind]],
+    },
+  };
+}
+
+export async function LandingHub({
+  kind,
+  params,
+}: {
+  kind: LandingKind;
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale: rawLocale } = await params;
+  const locale = rawLocale as Locale;
+  setRequestLocale(locale);
+  const t = await getTranslations({ locale, namespace: `${kind}Hub` });
+  const tn = await getTranslations({ locale, namespace: "nav" });
+  const tl = await getTranslations({ locale, namespace: "landing" });
+  const tb = await getTranslations({ locale, namespace: "breadcrumb" });
+  const readMore = tl("readMore");
+
+  const entries = REGISTRY[kind].filter((entry) => entry.slugs[locale]);
+  const panorama =
+    kind === "industries"
+      ? entries
+          .flatMap((entry) => {
+            const image = industryPhoto(entry.id);
+            return image
+              ? [{ image, label: localeValue(entry.title, locale) ?? entry.id }]
+              : [];
+          })
+          .slice(0, 3)
+      : ["chat", "crm", "marketing"].map((product) => ({
+          image: PRODUCT_ART[product],
+          label: tn(product),
+        }));
+  const categories = [...new Set(entries.map((entry) => entry.category))];
+  const pathname = `${HUB_TEMPLATE[kind]}/[slug]` as "/features/[slug]";
+  const hubPath = HUB_TEMPLATE[kind];
+  const canonical = `${SITE_URL}${localizedPath(locale, hubPath)}`;
+  const title = t("metaTitle");
+  const definition = t("definition");
+  const hubLabel = tb(kind);
+
+  const collectionItems = entries.flatMap((entry) => {
+    const path = entryPath(kind, entry, locale);
+    const name = localeValue(entry.title, locale);
+    if (!path || !name) return [];
+    return [{ name, url: `${SITE_URL}${path}` }];
+  });
+
+  const jsonLd: object[] = [
+    breadcrumbJsonLd([
+      { name: tb("home"), url: `${SITE_URL}${localizedPath(locale, "/")}` },
+      // Last node: no item URL (current page).
+      { name: hubLabel },
+    ]),
+    collectionPageJsonLd({
+      url: canonical,
+      name: title,
+      description: definition,
+      items: collectionItems,
+    }),
+  ];
+
+  // Headline is often one long sentence — put the closing clause on the accent.
+  const heading = t("heading");
+  const splitAt = heading.lastIndexOf(", ");
+  const headingLead =
+    splitAt > 20 && splitAt < heading.length - 20
+      ? heading.slice(0, splitAt)
+      : heading;
+  const headingAccent =
+    splitAt > 20 && splitAt < heading.length - 20
+      ? heading.slice(splitAt + 1)
+      : undefined;
+
+  return (
+    <>
+      <JsonLd data={jsonLd} />
+      <PageHero
+        eyebrow={t("eyebrow")}
+        title={headingLead}
+        accent={headingAccent}
+        subtitle={t("body")}
+        chips={[t("trust")]}
+        tone={kind}
+        visual={
+          <div
+            className={`hub-panorama ${kind === "industries" ? "hub-panorama--photos" : ""}`}
+          >
+            {panorama.map((tile) => (
+              <div key={tile.label} className="hub-panorama__tile">
+                <Image
+                  src={tile.image}
+                  alt={tile.label}
+                  fill
+                  preload
+                  sizes="(max-width: 640px) 30vw, 380px"
+                />
+                <span className="hub-panorama__label">{tile.label}</span>
+              </div>
+            ))}
+          </div>
+        }
+      />
+      <Breadcrumbs
+        items={[{ label: tb("home"), href: "/" as const }, { label: hubLabel }]}
+      />
+
+      <div className="cv-auto">
+        <DefinitionBlock definition={definition} />
+      </div>
+
+      <section className="relative overflow-hidden bg-[#f9fafb] py-20 md:py-24 lg:py-28">
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 opacity-0"
+          style={{
+            backgroundImage:
+              "radial-gradient(circle at 1px 1px, rgba(19,82,191,0.1) 1px, transparent 0)",
+            backgroundSize: "26px 26px",
+          }}
+        />
+        <Container className="relative">
+          <div className="flex flex-col gap-16 md:gap-20">
+            {categories.map((category, categoryIndex) => {
+              const config =
+                kind === "features"
+                  ? FEATURE_CATEGORY[category as FeatureCategory]
+                  : undefined;
+              const items = entries.filter(
+                (entry) => entry.category === category,
+              );
+              const headingLabel = config
+                ? tn(config.navKey)
+                : t(`category.${category}`);
+
+              return (
+                <div
+                  key={category}
+                  className="hub-chapter"
+                  data-chapter={categoryIndex % 3}
+                >
+                  <Reveal>
+                    <div className="mb-8 flex flex-wrap items-end justify-between gap-4 border-b border-[#d5d9e2] pb-5">
+                      <div className="flex min-w-0 flex-wrap items-center gap-x-3 gap-y-2">
+                        {/* h2, not p: the hub h1 → category → card h3 chain was
+                            skipping h2 entirely (audit P1-8). Classes carry the
+                            eyebrow styling, so nothing changes visually. */}
+                        <h2 className="eyebrow-rule text-lg font-semibold tracking-[-0.02em] text-[#09214c] md:text-xl">
+                          {String(categoryIndex + 1).padStart(2, "0")} ·{" "}
+                          {headingLabel}
+                        </h2>
+                        <span className="rounded-full border border-foreground/10 bg-white px-2.5 py-1 font-numeric text-[0.68rem] font-semibold tabular-nums text-subtle-foreground">
+                          {items.length}
+                        </span>
+                      </div>
+                      {config?.href && (
+                        <Link
+                          href={config.href}
+                          className="inline-flex min-h-11 items-center gap-2 rounded-full border border-foreground/15 bg-white px-5 py-2.5 font-numeric text-sm font-semibold text-foreground transition-all duration-300 hover:-translate-y-0.5 hover:border-primary/50 hover:text-primary"
+                        >
+                          {tn(config.navKey)}
+                          <span aria-hidden>&rarr;</span>
+                        </Link>
+                      )}
+                    </div>
+                  </Reveal>
+                  <Reveal delay={60}>
+                    <EntryGrid
+                      readMore={readMore}
+                      items={items.map((entry) => ({
+                        href: {
+                          pathname,
+                          params: { slug: entry.slugs[locale]! },
+                        },
+                        icon: entry.icon,
+                        title: localeValue(entry.title, locale) ?? entry.id,
+                        tagline: entry.tagline
+                          ? localeValue(entry.tagline, locale)
+                          : undefined,
+                        image:
+                          kind === "industries"
+                            ? industryPhoto(entry.id)
+                            : undefined,
+                      }))}
+                    />
+                  </Reveal>
+                </div>
+              );
+            })}
+          </div>
+        </Container>
+      </section>
+
+      <div className="cv-auto">
+        <VoidFinalCta namespace="agentic.finalCta" />
+      </div>
+    </>
+  );
+}

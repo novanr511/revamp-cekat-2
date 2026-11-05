@@ -1,0 +1,48 @@
+import { describe, it, expect, vi } from "vitest";
+
+vi.mock("./wordpress", () => ({
+  getAllPostSlugs: vi.fn(async () => []),
+  getAuthors: vi.fn(async () => []),
+}));
+
+import { pageUrls } from "./sitemap-data";
+
+describe("pageUrls lastmod", () => {
+  it("emits lastmod for landing content URLs when content files exist", () => {
+    const urls = pageUrls();
+    const landing = urls.find((u) => u.url.includes("/fitur/wa-blast"));
+    expect(landing).toBeDefined();
+    expect(landing?.lastModified).toMatch(/^\d{4}-\d{2}-\d{2}T/);
+    // Static routes use the same rule: the page source file's own mtime.
+    const home = urls.find((u) => u.url === "https://cekat.ai/");
+    expect(home?.lastModified).toMatch(/^\d{4}-\d{2}-\d{2}T/);
+  });
+
+  it("lists every registry landing in both locales with hreflang", () => {
+    const urls = pageUrls();
+    const feature = urls.find(
+      (u) => u.url === "https://cekat.ai/fitur/wa-blast",
+    );
+    expect(feature?.languages).toEqual({
+      en: "https://cekat.ai/en/features/whatsapp-blast",
+      id: "https://cekat.ai/fitur/wa-blast",
+      "x-default": "https://cekat.ai/fitur/wa-blast",
+    });
+  });
+
+  it("lists case-study hubs and all detail pages under the public aliases", () => {
+    const urls = pageUrls();
+    const hub = urls.find((u) => u.url === "https://cekat.ai/en/studi-kasus");
+    expect(hub?.languages).toEqual({
+      en: "https://cekat.ai/en/studi-kasus",
+      id: "https://cekat.ai/studi-kasus",
+      "x-default": "https://cekat.ai/studi-kasus",
+    });
+    expect(
+      urls.find((u) => u.url === "https://cekat.ai/en/studi-kasus/euromedica"),
+    ).toBeDefined();
+    expect(
+      urls.find((u) => u.url === "https://cekat.ai/studi-kasus/euromedica"),
+    ).toBeDefined();
+  });
+});

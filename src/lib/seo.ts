@@ -1,0 +1,132 @@
+import { getPathname } from "@/i18n/navigation";
+import { routing, type AppPathname, type Locale } from "@/i18n/routing";
+
+export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://cekat.ai";
+
+export function htmlLang(locale: string): string {
+  return (
+    (
+      { id: "id-ID", cn: "zh-CN", jp: "ja-JP", kr: "ko-KR" } as Record<
+        string,
+        string
+      >
+    )[locale] ?? "en-US"
+  );
+}
+
+/**
+ * Localized absolute path for a STATIC route (a key of routing.pathnames
+ * without dynamic params). Landing pages with per-locale slugs must use
+ * `alternatesFor` with registry-resolved paths instead.
+ */
+export function localizedPath(locale: string, pathname: string): string {
+  return getPathname({
+    href: pathname as Exclude<AppPathname, `${string}[slug]${string}`>,
+    locale: locale as Locale,
+  });
+}
+
+export function alternates(locale: string, pathname: string) {
+  return {
+    // Self-referencing canonical per Google's hreflang guidance, each
+    // locale variant points to itself, not to a single "master" URL.
+    canonical: `${SITE_URL}${localizedPath(locale, pathname)}`,
+    languages: Object.fromEntries([
+      ...routing.locales.map((target) => [
+        target,
+        `${SITE_URL}${localizedPath(target, pathname)}`,
+      ]),
+      ["x-default", `${SITE_URL}${localizedPath("id", pathname)}`],
+    ]),
+  };
+}
+
+/** Absolute localized paths per locale the page exists in. */
+export type LocalePaths = Partial<Record<Locale, string>>;
+
+/**
+ * Canonical + hreflang for pages whose locale variants have different slugs,
+ * or that exist in only one locale. hreflang requires 1:1 reciprocity, so a
+ * single-locale page emits a canonical only, never an alternate pointing at
+ * a keyword-twin or fallback page.
+ */
+export function alternatesFor(locale: Locale, paths: LocalePaths) {
+  const own = paths[locale];
+  if (!own) throw new Error(`alternatesFor: no path for locale "${locale}"`);
+  const languages =
+    paths.en && paths.id
+      ? Object.fromEntries([
+          ...routing.locales
+            .filter((target) => paths[target])
+            .map((target) => [target, `${SITE_URL}${paths[target]}`]),
+          ["x-default", `${SITE_URL}${paths.id}`],
+        ])
+      : undefined;
+  return { canonical: `${SITE_URL}${own}`, languages };
+}
+
+/**
+ * Meta description / OG description snippet. WordPress and Yoast can return
+ * empty strings or multi-sentence dumps; search results need a single
+ * scannable line. Prefers the first sentence boundary when it still fits.
+ */
+export function metaSnippet(text: string | undefined, maxLength = 158): string {
+  const cleaned = (text ?? "").replace(/\s+/g, " ").trim();
+  if (!cleaned) return "";
+  if (cleaned.length <= maxLength) return cleaned;
+
+  const cut = cleaned.slice(0, maxLength);
+  const sentenceEnd = Math.max(
+    cut.lastIndexOf(". "),
+    cut.lastIndexOf("! "),
+    cut.lastIndexOf("? "),
+    cut.lastIndexOf("…"),
+  );
+  // Only trust a sentence break once we have a reasonably full line; a break
+  // at word 3 would throw away most of the snippet budget.
+  if (sentenceEnd >= Math.floor(maxLength * 0.55)) {
+    return cut.slice(0, sentenceEnd + 1).trim();
+  }
+  const wordEnd = cut.lastIndexOf(" ");
+  return `${cut.slice(0, wordEnd > 0 ? wordEnd : maxLength).trim()}…`;
+}
+
+/**
+ * Search-result title, capped at 60 chars (Google's desktop truncation
+ * point). Titles carry a `| CekatAI` brand suffix that must survive the cap:
+ * truncating mid-sentence and losing the brand is how the 72-char titles
+ * shipped before. The head is trimmed instead, with an ellipsis, then the
+ * suffix is re-appended.
+ */
+const BRAND_SUFFIX = /\s*\|\s*(Cekat(?:\.AI|AI)?)\s*$/;
+
+export function metaTitle(text: string | undefined, maxLength = 60): string {
+  const cleaned = (text ?? "").replace(/\s+/g, " ").trim();
+  if (!cleaned) return "";
+  if (cleaned.length <= maxLength) return cleaned;
+
+  const suffix = cleaned.match(BRAND_SUFFIX);
+  if (!suffix) return metaSnippet(cleaned, maxLength);
+
+  const suffixText = `| ${suffix[1]}`;
+  const budget = maxLength - suffixText.length - 1; // room for the space
+  if (budget < 12) return metaSnippet(cleaned, maxLength); // degenerate title
+  const head = metaSnippet(cleaned.slice(0, suffix.index).trim(), budget);
+  return `${head} ${suffixText}`;
+}
+
+/**
+ * Reciprocal hreflang for a page that exists in both locales. Keys match the
+ * blog sitemap and `alternates()` (`en` / `id`), not `id-ID` — mixed codes on
+ * the same URL are a manual-action-shaped inconsistency.
+ */
+export function reciprocalLanguages(paths: {
+  en: string;
+  id: string;
+}): Record<string, string> {
+  return {
+    en: `${SITE_URL}${paths.en}`,
+    id: `${SITE_URL}${paths.id}`,
+    "x-default": `${SITE_URL}${paths.id}`,
+  };
+}

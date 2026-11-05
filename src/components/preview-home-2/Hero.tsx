@@ -1,0 +1,105 @@
+import Link from "next/link";
+import { AnimGate } from "./AnimGate";
+import { HeroAurora } from "./HeroAurora";
+import { HeroFade } from "./HeroFade";
+import { HeroForm } from "./HeroForm";
+import { HeroStage } from "./HeroStage";
+import { SplitText } from "./SplitText";
+import { Band, Shell } from "./ui";
+import type { HomeContent } from "./types";
+
+/**
+ * Band 2 — hero.
+ *
+ * Composition follows /preview-home and Amplemarket: centred copy, then a
+ * single conversion action (an inline email field rather than two competing
+ * buttons), then a full-width stage where the looping product cards float on
+ * top of the Cekat dashboard. The loop is therefore part of the hero, not a
+ * section of its own; the Growth Loop diagram now has its own band below.
+ */
+export function Hero({ content }: { content: HomeContent }) {
+  const hero = content.hero;
+
+  return (
+    <Band
+      id="hero"
+      tone="white"
+      className="ph2-grid-bg overflow-hidden pt-10 pb-16 md:pt-14 md:pb-20"
+    >
+      {/* Sits behind the copy and the stage; the gate div spans the whole band
+          so the aurora keeps drifting only while the hero is actually on
+          screen. */}
+      <AnimGate className="ph2-aurora-gate">
+        <HeroAurora />
+      </AnimGate>
+
+      <Shell className="relative">
+        {/* Fades out on scroll (see HeroFade), handing the viewport to the
+            draggable stage below — and, on load, runs the entrance
+            (`ph2-hero-in`, see preview-home-2.css): the pill lifts, the
+            headline's masked words rise, then the lede, the form and the
+            secondary link follow on a stagger. Pure CSS on purpose: this block
+            is the LCP candidate, so its entrance must not wait for a script to
+            download, parse and hydrate. The child order below *is* the timing —
+            the selectors are nth-child over exactly these five. */}
+        <HeroFade className="ph2-hero-in mx-auto flex max-w-[54rem] flex-col items-center text-center">
+          <Link
+            href={hero.pill.href}
+            className="group inline-flex items-center gap-2.5 rounded-full border border-[#BFDBFE] bg-[#EFF6FF] px-4 py-1.5 text-[0.8rem] font-semibold text-[#101828] transition-colors duration-200 hover:border-primary/40"
+          >
+            <span aria-hidden className="h-1.5 w-1.5 rounded-full bg-primary" />
+            {hero.pill.label}
+            <span
+              aria-hidden
+              className="text-primary transition-transform duration-200 group-hover:translate-x-0.5 motion-reduce:transition-none"
+            >
+              →
+            </span>
+          </Link>
+
+          <h1 className="mt-6 text-[clamp(2.35rem,5.2vw,4.15rem)] leading-[1.04] font-bold tracking-[-0.03em] text-balance text-[#101828]">
+            <SplitText
+              text={hero.titleLead}
+              accent={hero.titleAccent}
+            />
+          </h1>
+
+          <p className="mt-5 max-w-[38rem] text-[1.125rem] leading-[1.6] text-[#4B5563]">
+            {hero.sub}
+          </p>
+
+          <HeroForm form={hero.form} />
+
+          {/*
+            The trust checklist used to render here, but it duplicated the
+            form's own note ("14 hari · tanpa kartu · 10 menit") almost
+            word-for-word — same promises twice within 100px. The form note
+            stays; this list goes.
+          */}
+          <Link
+            href={hero.form.secondary.href}
+            className="group mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-primary"
+          >
+            {hero.form.secondary.label}
+            <span
+              aria-hidden
+              className="transition-transform duration-200 group-hover:translate-x-0.5 motion-reduce:transition-none"
+            >
+              →
+            </span>
+          </Link>
+        </HeroFade>
+      </Shell>
+
+      {/*
+        Breaks out wider than the 1200px frame on purpose: the drag canvas
+        needs edge-to-edge room (cards park flush against the viewport), and a
+        960px+ dashboard cannot breathe inside 1120px of content. Every other
+        band stays on the frame; only this canvas goes full-bleed.
+      */}
+      <Shell className="relative mt-12 max-w-[1400px] md:mt-16">
+        <HeroStage dashboard={content.dashboard} stage={content.liveStage} />
+      </Shell>
+    </Band>
+  );
+}

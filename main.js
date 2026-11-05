@@ -1,6 +1,59 @@
 (() => {
   const $ = (s, el = document) => el.querySelector(s);
   const $$ = (s, el = document) => [...el.querySelectorAll(s)];
+  const supportedLocales = new Set(['en', 'id', 'cn', 'jp', 'kr']);
+  const localeMatch = window.location.pathname.match(/^\/(en|id|cn|jp|kr)(?:\/|$)/);
+  const locale = localeMatch?.[1] || 'id';
+  const localizedPath = (path) => {
+    const normalized = path.replace(/\/$/, '') || '/';
+    if (normalized === '/case-studies' || normalized === '/studi-kasus') {
+      return locale === 'id' || locale === 'en'
+        ? '/studi-kasus'
+        : `/${locale}/case-studies`;
+    }
+    const indonesiaPaths = {
+      '/pricing': '/harga',
+      '/features': '/fitur',
+      '/industries': '/industri',
+      '/integrations': '/integrasi',
+      '/solutions': '/solusi',
+      '/stories': '/cerita',
+    };
+    const pathForLocale = locale === 'id' ? (indonesiaPaths[normalized] || normalized) : normalized;
+    return locale === 'id' ? pathForLocale : `/${locale}${pathForLocale}`;
+  };
+
+  // Keep the static homepage navigation in the same locale as the current route.
+  const homeNav = $('.nav');
+  if (homeNav) {
+    const currentLocale = $('[data-current-locale]', homeNav);
+    if (currentLocale) currentLocale.textContent = locale.toUpperCase();
+    $$('a[data-locale]', homeNav).forEach((link) => {
+      const targetLocale = link.dataset.locale;
+      if (targetLocale && supportedLocales.has(targetLocale)) {
+        link.href = targetLocale === 'id' ? '/' : `/${targetLocale}`;
+      }
+    });
+    $$('.nav__links a[href^="/"]', homeNav).forEach((link) => {
+      if (!link.hasAttribute('data-locale')) {
+        link.href = localizedPath(new URL(link.href, window.location.origin).pathname);
+      }
+    });
+    $$('[data-sales-link]', homeNav).forEach((link) => {
+      link.href = `${locale === 'id' ? '' : `/${locale}`}/contact-us`;
+    });
+  }
+
+  // Remember the explicit choice before the browser follows the locale link;
+  // the cookie is read by the Next proxy and localStorage mirrors it client-side.
+  document.addEventListener('click', (event) => {
+    const target = event.target instanceof Element ? event.target : null;
+    const link = target?.closest('a[data-locale]');
+    const targetLocale = link?.getAttribute('data-locale');
+    if (!targetLocale || !supportedLocales.has(targetLocale)) return;
+    document.cookie = `locale_pref=${targetLocale}; path=/; max-age=${60 * 60 * 24 * 365}; samesite=lax`;
+    try { window.localStorage.setItem('locale_pref', targetLocale); } catch {}
+  }, true);
 
   // Hero rotating word (Notion pattern): the pill starts as its icon, types the word open, holds, backspaces
   // back to the icon, swaps icon and colour, then types the next word. The pill width follows the text.
@@ -159,7 +212,11 @@
   mItems.forEach((it) => {
     it.addEventListener('mouseenter', () => showPrev(it.dataset.prev));
     it.addEventListener('focus', () => showPrev(it.dataset.prev));
-    it.addEventListener('click', () => setTimeout(() => document.getElementById(`tab-${it.dataset.stage}`)?.click(), 0));
+    it.addEventListener('click', () => {
+      if (it.getAttribute('href') === '#journey') {
+        setTimeout(() => document.getElementById(`tab-${it.dataset.stage}`)?.click(), 0);
+      }
+    });
   });
   showPrev('marketing');
 

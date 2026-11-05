@@ -1,0 +1,53 @@
+# Cekat.AI
+
+> Cekat.AI is an Indonesian AI agent platform that combines AI-powered customer service, omnichannel CRM, automated ordering, and broadcast marketing in one platform. It is trusted by 3,000+ businesses across 15+ industries in Indonesia, handling over 1,000,000 customer interactions. Cekat.AI is an official Meta Business Partner and complies with Indonesia's Personal Data Protection Law (UU PDP).
+
+Cekat.AI (PT. Teknologi Cekat Indonesia, launched August 2023) helps businesses reply to customers 24/7 with natural, human-like AI agents on WhatsApp (Official Business API), Instagram DM, Facebook Messenger, and website live chat, with no coding required and setup in minutes. Offices in Jakarta, Tangerang, Singapore, and Kuala Lumpur.
+
+## Products
+
+- [Chat](https://cekat.ai/chat): 24/7 AI super agent for customer conversations across every channel, with seamless human handoff.
+- [CRM](https://cekat.ai/crm): Conversation-native CRM, leads, pipelines, customer journeys, and follow-ups tracked automatically.
+- [Marketing](https://cekat.ai/marketing): Broadcast campaigns with customer segmentation, plus ads performance and conversion tracking (Meta, Google, TikTok CAPI).
+- [Order](https://cekat.ai/order): Order automation from chat, shipping cost checks, QR payments, tickets, and workflow automation.
+
+## Key pages
+
+Indonesian is the default locale (no path prefix); English sits under `/en/`.
+
+- Features hub: [Indonesian](https://cekat.ai/fitur) · [English](https://cekat.ai/en/features) — AI agent, WhatsApp automation, omnichannel CRM, broadcast, order automation
+- Solutions hub: [Indonesian](https://cekat.ai/solusi) · [English](https://cekat.ai/en/solutions) — how sales, customer service, marketing, HR, and operations use the platform
+- Industries hub: [Indonesian](https://cekat.ai/industri) · [English](https://cekat.ai/en/industries) — use cases and results by vertical (healthcare, retail, F&B, education, and more)
+- Pricing: [Indonesian](https://cekat.ai/harga) · [English](https://cekat.ai/pricing)
+- Integrations: [Indonesian](https://cekat.ai/integrasi) · [English](https://cekat.ai/en/integrations)
+- [Contact](https://cekat.ai/contact): free consultation with the sales team
+- [Blog](https://cekat.ai/blog)
+
+## Selected feature pages (both locales)
+
+- WhatsApp blast: [id](https://cekat.ai/fitur/wa-blast) · [en](https://cekat.ai/en/features/whatsapp-blast)
+- AI chatbot: [id](https://cekat.ai/fitur/chatbot) · [en](https://cekat.ai/en/features/ai-chatbot)
+- WhatsApp Business API: [id](https://cekat.ai/fitur/whatsapp-business-api) · [en](https://cekat.ai/en/features/whatsapp-business-api)
+- Omnichannel inbox: [id](https://cekat.ai/fitur/aplikasi-omnichannel) · [en](https://cekat.ai/en/features/omnichannel-application)
+- CRM automation: [id](https://cekat.ai/fitur/crm-otomatis) · [en](https://cekat.ai/en/features/crm-automation)
+
+## Selected industry pages
+
+- Healthcare / klinik: [id](https://cekat.ai/industri/kesehatan) · [en](https://cekat.ai/en/industries/healthcare)
+- Retail & e-commerce: [id](https://cekat.ai/industri/ritel) · [en](https://cekat.ai/en/industries/retail-ecommerce)
+- Food & beverage: [id](https://cekat.ai/industri/fnb) · [en](https://cekat.ai/en/industries/food-beverage)
+- Education: [id](https://cekat.ai/industri/pendidikan) · [en](https://cekat.ai/en/industries/education)
+
+## Selected solution pages (by role)
+
+- Sales: [id](https://cekat.ai/solusi/sales) · [en](https://cekat.ai/en/solutions/sales)
+- Customer service: [id](https://cekat.ai/solusi/customer-service) · [en](https://cekat.ai/en/solutions/customer-service)
+- Marketing: [id](https://cekat.ai/solusi/marketing) · [en](https://cekat.ai/en/solutions/marketing)
+
+## Facts
+
+- 3,000+ businesses use Cekat.AI, including Holywings Group, Vio Optical Clinic, Minori Group, Rumah Zakat, Moir Salon, and Threeland Property.
+- Scale: 10,000,000,000+ tokens and 2,000,000+ conversations processed every day, with 24/7 availability and 100% chat coverage.
+- Customer results include up to 70% higher conversion rates and +60% revenue after implementation.
+- AI agents can be built in about 5 minutes by pasting business SOPs, no coding needed.
+- Supported channels: WhatsApp Business API (official), Instagram, TikTok, Facebook Messenger, Telegram, web live chat, email, and custom API channels.

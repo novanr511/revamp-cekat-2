@@ -1,0 +1,147 @@
+{
+  "crm": {
+    "name": "CRM",
+    "category": "Customer relationships",
+    "tone": "blue",
+    "title": "Stop Losing Customers to Your Competitors",
+    "subtitle": "What if your customer data could predict retention? See how AI makes it possible.",
+    "description": "Manage sales pipelines, leads, and customer relationships in one integrated AI CRM. Track conversations, understand every customer journey, and automate follow-ups with Cekat.",
+    "heroImage": "manage-work-with-boards.png",
+    "heroLabel": "A customer pipeline that stays in sync",
+    "whatMakesHeading": "What makes Cekat.AI CRM different",
+    "pillars": [
+      { "title": "Built for conversations", "body": "Unlike traditional CRM, Cekat connects directly to your customer conversations. Every chat, call, and interaction automatically becomes a trackable record." },
+      { "title": "CRM + automation in one system", "body": "Trigger follow-ups, assign leads, and move deals automatically. Reduce manual work and make sure no opportunity is missed." },
+      { "title": "See the full customer journey", "body": "Know exactly where customers come from—website, ads, WhatsApp, or social media. Track every action from the first interaction to conversion." }
+    ],
+    "stepsHeading": "A clearer path from first contact to closed deal",
+    "steps": [
+      { "title": "Capture & organize customers", "body": "Cekat CRM captures leads and customer data from your website, WhatsApp, and social media. All interactions are organized in one place.", "image": "capture-and-organize-customers.png" },
+      { "title": "Track the customer journey", "body": "See where customers come from and what actions they take. Track the full journey from first contact to conversion.", "image": "track-customer-journey.png" },
+      { "title": "Filter & find faster", "body": "Quickly search and filter customers, deals, or activities. Focus on the leads that matter most.", "image": "filter-and-find-faster.png" },
+      { "title": "Manage work with boards", "body": "Create boards to organize your workflows, deals, or pipelines. Each board represents a clear process.", "image": "manage-work-with-boards.png" }
+    ],
+    "testimonial": {
+      "heading": "Real results for growing businesses",
+      "quote": "Our revenue increased by more than 50%! Cekat AI allows us to secure property visits and close deals even while I'm asleep, because no leads are missed.",
+      "name": "Adam Sulaiman",
+      "role": "President Director · Threeland Property",
+      "image": "adam-sulaiman.png",
+      "alt": "Adam Sulaiman"
+    },
+    "faqHeading": "Frequently asked questions about Cekat.AI CRM",
+    "faqs": [
+      { "question": "How does Cekat.AI CRM help sales teams?", "answer": "Cekat.AI CRM helps sales teams capture and manage leads from multiple channels in one dashboard. Teams can track conversations, organize deals in pipelines, and focus on the leads most likely to convert." },
+      { "question": "How does Cekat.AI CRM support customer service teams?", "answer": "Cekat.AI CRM keeps all customer interactions in one place, so support teams can quickly understand the customer's history and context. This helps agents respond faster and resolve issues more efficiently." },
+      { "question": "Can I track where my leads come from?", "answer": "Yes. Cekat.AI CRM records the entry point of each lead, such as your website, ads, WhatsApp, or social channels. This helps you understand customer journeys and identify the channels that drive the most conversions." }
+    ],
+    "ctaTitle": "Turn every customer interaction into your next deal",
+    "ctaBody": "See every conversation, track every journey, and automate follow-ups, all in one AI-powered CRM."
+  },
+  "chat": {
+    "name": "Chat",
+    "category": "AI-powered customer conversations",
+    "tone": "cyan",
+    "title": "Boost Admin Productivity by 10× with an AI Super Agent",
+    "subtitle": "Never miss a message. Never miss a sale. AI handles every channel, 24/7.",
+    "description": "Answer customer chats around the clock with an AI agent that understands intent, works across channels, and hands complex conversations to your team with context.",
+    "heroImage": "ai-handles-conversations.png",
+    "heroLabel": "AI handles conversations across every channel",
+    "whatMakesHeading": "What makes Cekat.AI Chat different",
+    "pillars": [
+      { "title": "AI that understands intent—not just keywords", "body": "Cekat.AI's chat agents understand natural language and context, enabling intent-aware, multilingual conversations that feel human, not robotic." },
+      { "title": "Omnichannel chat coverage", "body": "Cekat.AI supports WhatsApp (Official API), Instagram, website live chat, and other integrated platforms, with all interactions unified in one centralized chat interface." },
+      { "title": "Seamless escalation to human agents", "body": "When the AI detects complex or sensitive queries, it routes them to human agents with full context, so customers do not need to repeat previous messages." }
+    ],
+    "stepsHeading": "From the first message to a better answer",
+    "steps": [
+      { "title": "Connect channels", "body": "Sync WhatsApp, Instagram, Web Chat, and other platforms into one system so all customer messages go straight into Cekat.AI.", "image": "connect-channels.png" },
+      { "title": "Train your AI agent", "body": "Configure AI to follow your business rules and tone, no coding needed. Train it with example phrases and intents specific to your business.", "image": "train-your-ai-agent.png" },
+      { "title": "AI handles conversations", "body": "AI responds in real time by answering FAQs, clarifying user intent, capturing lead details, and triggering follow-up actions with relevant context.", "image": "ai-handles-conversations.png" },
+      { "title": "Escalate & sync", "body": "When needed, conversations escalate to live agents with full context, and data syncs back to your CRM or automation workflows.", "image": "escalate-and-sync.png" },
+      { "title": "Analyze & improve", "body": "Track message volume, response accuracy, user satisfaction, and intent categories so you can continuously optimize AI performance.", "image": "analyze-and-improve.png" }
+    ],
+    "testimonial": {
+      "heading": "A team that can be reached around the clock",
+      "quote": "Outside of working hours, we rely on AI technology. Rumah Zakat can be reached 24/7, and we fully utilize AI once our working hours are over.",
+      "name": "Tantan Supriatna",
+      "role": "Customer Relation Department Head · Rumah Zakat",
+      "image": "tantan-supriatna.png",
+      "alt": "Tantan Supriatna"
+    },
+    "faqHeading": "Frequently asked questions about Cekat.AI Chat",
+    "faqs": [
+      { "question": "What is Cekat.AI Chat?", "answer": "Cekat.AI Chat is an AI-powered conversational agent that automatically engages, understands, and responds to customer messages across platforms." },
+      { "question": "Can Cekat.AI Chat handle multiple channels?", "answer": "Yes. It supports omnichannel messaging including WhatsApp, Instagram, and website live chat." },
+      { "question": "Is coding required to set up chat automation?", "answer": "No. You can configure and train the AI using business rules and sample phrases, without coding skills." }
+    ],
+    "ctaTitle": "Turn every chat into a conversation that converts",
+    "ctaBody": "Engage customers faster, reduce operational load, and scale your business with AI-powered chat."
+  },
+  "marketing": {
+    "name": "Marketing",
+    "category": "Campaigns & performance analytics",
+    "tone": "orange",
+    "title": "Know Which Ads Actually Grow Your Sales",
+    "subtitle": "See the full picture of your marketing performance with insights backed by data, not assumptions.",
+    "description": "Connect advertising performance to customer behavior and sales. Track campaigns, segment audiences, and understand which marketing activity drives results.",
+    "heroImage": "see-what-actually-works.png",
+    "heroLabel": "See which campaigns drive customer actions",
+    "whatMakesHeading": "What makes Cekat.AI Marketing different",
+    "pillars": [
+      { "title": "End-to-end ads attribution", "body": "Cekat.AI connects ad performance directly to business outcomes. See which campaigns generate leads, conversions, and sales—not just clicks." },
+      { "title": "Real customer behavior tracking", "body": "Track what customers do after clicking your ads, from website visits and button clicks to form submissions and custom events." },
+      { "title": "One dashboard for marketing performance", "body": "Review Meta Ads performance directly inside Cekat.AI. Campaign data, leads, and conversion insights are centralized so teams can analyze and optimize faster." }
+    ],
+    "stepsHeading": "From campaign data to more confident decisions",
+    "steps": [
+      { "title": "Review all Meta Ads in one dashboard", "body": "Analyze Facebook, Instagram, and Meta Ads directly in Cekat.AI without switching tabs. All campaign data is centralized in one view.", "image": "review-all-meta-ads-in-one-dashboard.png" },
+      { "title": "Understand customer behavior", "body": "See how users interact with your website, chat, and app after clicking your ads. You don't just see traffic—you see intent.", "image": "understand-customer-behavior.png" },
+      { "title": "See what actually works", "body": "Track campaign performance, identify winning ads, and spot profitable angles so decisions are based on results.", "image": "see-what-actually-works.png" },
+      { "title": "Allocate budget with precision", "body": "Use real tracking data to invest in campaigns and audiences that drive conversions and revenue.", "image": "allocate-budget-with-precision.png" },
+      { "title": "Improve performance & lower CAC", "body": "Combine ad data and customer behavior to accelerate conversions and work toward a lower Customer Acquisition Cost (CAC).", "image": "improve-performance-and-lower-cac.png" }
+    ],
+    "faqHeading": "Frequently asked questions about Cekat.AI Marketing",
+    "faqs": [
+      { "question": "What is Cekat.AI Marketing?", "answer": "Cekat.AI Marketing is an AI-powered marketing analytics platform that helps you track ads performance, customer behavior, and ROI in one unified dashboard." },
+      { "question": "Can Cekat.AI show which ads increase sales?", "answer": "Cekat.AI connects ads data with customer behavior and conversions, so you can see which campaigns drive revenue." },
+      { "question": "Does Cekat.AI track customer behavior beyond ads?", "answer": "Yes. Cekat.AI tracks website behavior, chat interactions, and custom events to build complete customer profiles." },
+      { "question": "Can I personalize marketing based on customer behavior?", "answer": "You can segment customers based on behavior and run personalized campaigns and broadcasts." }
+    ],
+    "ctaTitle": "Turn your marketing data into real revenue",
+    "ctaBody": "Stop guessing which campaigns work. Track ads, understand customer behavior, and optimize every marketing dollar with Cekat.AI."
+  },
+  "order": {
+    "name": "Automation",
+    "category": "Orders & business workflows",
+    "tone": "blue",
+    "title": "Automate Complex Operations & Scale Your Business without Friction",
+    "subtitle": "From complex logic to seamless automation. Explore how AI keeps your business running 24/7.",
+    "description": "Connect conversations, tickets, notifications, and operational systems with flexible workflows that reduce repetitive manual work.",
+    "heroImage": "full-visibility-across-every-automation-step.png",
+    "heroLabel": "See every step in an automated workflow",
+    "whatMakesHeading": "What makes Cekat.AI Automation different",
+    "pillars": [
+      { "title": "Powerful, customizable workflow logic", "body": "Automation adapts to operational complexity with multi-step logic, connected actions, and context-aware workflows." },
+      { "title": "Flexible trigger options", "body": "Workflows can be triggered by schedules, specific events such as chat keywords, or changes in customer data such as a new lead." },
+      { "title": "Connects Cekat.AI features", "body": "Use auto-labeling, ticket creation, admin notifications, and automatic data syncing so work flows smoothly across systems." }
+    ],
+    "stepsHeading": "Move work forward automatically",
+    "steps": [
+      { "title": "Conversations come in from every channel", "body": "Incoming chats from WhatsApp, Instagram, Live Chat, and other channels are captured automatically, without manual forwarding or switching tools.", "image": "conversations-come-in-from-every-channel.png" },
+      { "title": "Automation triggers instantly", "body": "When a message arrives, predefined rules can label conversations by intent and turn important messages into tickets.", "image": "automation-triggers-instantly.png" },
+      { "title": "Auto-create a ticket", "body": "Turn high-priority conversations into tickets automatically, so requests, complaints, and opportunities are not missed.", "image": "auto-create-ticket.png" },
+      { "title": "Notify the right team", "body": "Route every ticket and update to the right team, giving each workflow clear ownership.", "image": "automatic-notifications-to-the-right-team.png" },
+      { "title": "Get visibility across every step", "body": "Track data flow, ticket status, and workflow bottlenecks so teams know what is happening and can respond.", "image": "full-visibility-across-every-automation-step.png" },
+      { "title": "Improve end-to-end operations", "body": "Reduce manual data entry, fragmented systems, and repetitive tasks so teams can focus on work that drives growth.", "image": "end-to-end-operational-efficiency.png" }
+    ],
+    "faqHeading": "Frequently asked questions about Cekat.AI Automation",
+    "faqs": [
+      { "question": "What is Cekat.AI Automation?", "answer": "A visual, AI-powered workflow builder that automates business processes without coding, handling triggers and actions across connected systems." },
+      { "question": "What can be automated with Cekat.AI?", "answer": "From chat flows and lead follow-ups to ticket creation, team notifications, and cross-system data synchronization, everything can run in connected workflows." },
+      { "question": "Can I automate workflows without technical knowledge?", "answer": "Yes. The drag-and-drop visual logic builder lets teams create automated workflows without technical knowledge." }
+    ],
+    "ctaTitle": "Ready to put your business on autopilot?",
+    "ctaBody": "Let automation handle repetitive work so your team can focus on growth and customer experience."
+  }
+}
