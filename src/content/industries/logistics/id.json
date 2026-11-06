@@ -29,8 +29,8 @@
       "label": "cek resi, pickup, dan kendala COD terjawab"
     },
     {
-      "value": "3.000+",
-      "label": "bisnis pakai Cekat.AI"
+      "value": "API",
+      "label": "status kiriman terhubung ke data order"
     }
   ],
   "benefits": [

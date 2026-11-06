@@ -12,6 +12,7 @@ import { HighlightedText } from "../shared/highlighted-text";
 import { WorkflowScene } from "./workflow-scene";
 import { sceneArtwork, sceneKind } from "./scene-art";
 import { DefinitionBlock } from "./definition-block";
+import { StatCards } from "./stat-cards";
 
 vi.mock("../shared/hero-entrance", () => ({ HeroEntrance: () => null }));
 
@@ -20,6 +21,36 @@ function renderWithLocale(ui: ReactElement) {
 }
 
 describe("secondary page composition", () => {
+  it("keeps long and wide stat values on one responsive line", () => {
+    render(
+      <StatCards
+        stats={[
+          { value: "4% → 30%", label: "Original range" },
+          { value: "1,000,000+", label: "Original long number" },
+          { value: "+50%", label: "Original short number" },
+          { value: "ロールベース", label: "Original localized value" },
+        ]}
+      />,
+    );
+
+    expect(screen.getByText("4% → 30%")).toHaveClass(
+      "whitespace-nowrap",
+      "text-[clamp(1.75rem,3.2vw,2.5rem)]",
+    );
+    expect(screen.getByText("1,000,000+")).toHaveClass(
+      "whitespace-nowrap",
+      "text-[clamp(1.75rem,3.2vw,2.5rem)]",
+    );
+    expect(screen.getByText("+50%")).toHaveClass(
+      "whitespace-nowrap",
+      "text-[clamp(1.75rem,3.2vw,2.5rem)]",
+    );
+    expect(screen.getByText("ロールベース")).toHaveClass(
+      "whitespace-nowrap",
+      "text-[clamp(1.75rem,3.2vw,2.5rem)]",
+    );
+  });
+
   it("gives long existing statistics a full-width mobile card without shortening the value", () => {
     const { container } = render(<DefinitionBlock definition="Original definition" stats={[
       { value: "1,000,000+", label: "Original attribution" },

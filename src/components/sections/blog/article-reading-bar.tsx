@@ -3,11 +3,10 @@
 import { useEffect, useState } from "react";
 import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/layout/container";
-import { cn } from "@/lib/utils";
 
 /**
- * Slim bar under the navbar that reveals the article title, a back link, and a
- * reading progress indicator once the reader scrolls past the header.
+ * Slim in-flow bar under the navbar with the article title, a back link, and a
+ * reading progress indicator. It scrolls away with the article content.
  */
 export function ArticleReadingBar({
   title,
@@ -17,7 +16,6 @@ export function ArticleReadingBar({
   backLabel: string;
 }) {
   const [progress, setProgress] = useState(0);
-  const [show, setShow] = useState(false);
 
   useEffect(() => {
     let raf = 0;
@@ -28,7 +26,6 @@ export function ArticleReadingBar({
         const docHeight =
           document.documentElement.scrollHeight - window.innerHeight;
         setProgress(docHeight > 0 ? Math.min(1, scrollTop / docHeight) : 0);
-        setShow(scrollTop > 360);
       });
     };
     window.addEventListener("scroll", onScroll, { passive: true });
@@ -40,14 +37,7 @@ export function ArticleReadingBar({
   }, []);
 
   return (
-    <div
-      className={cn(
-        "fixed inset-x-0 top-16 z-40 border-b border-border bg-background/90 backdrop-blur transition-all duration-300",
-        show
-          ? "translate-y-0 opacity-100"
-          : "pointer-events-none -translate-y-full opacity-0",
-      )}
-    >
+    <div className="relative border-b border-border bg-background/90 backdrop-blur">
       <Container className="flex h-12 items-center gap-4">
         <Link
           href="/blog"

@@ -9,6 +9,22 @@ const INDUSTRY_LINKS = {
   Property: { en: "property", id: "properti" },
 } as const;
 
+export function industryHrefFor(locale: string, industry: string) {
+  const normalizedIndustry = industry.replaceAll("&amp;", "&");
+  const label = (
+    Object.keys(INDUSTRY_LINKS) as Array<keyof typeof INDUSTRY_LINKS>
+  ).find(
+    (candidate) => candidate.replaceAll("&amp;", "&") === normalizedIndustry,
+  );
+
+  if (!label) return undefined;
+
+  const slugs = INDUSTRY_LINKS[label];
+  return locale === "id"
+    ? `/industri/${slugs.id}`
+    : `/${locale}/industries/${slugs.en}`;
+}
+
 /**
  * The reference markup gives every industry menu item the same hub href.
  * Rewrite by the item's visible label, rather than by its original href, so
@@ -16,11 +32,9 @@ const INDUSTRY_LINKS = {
  */
 export function localizeIndustryNav(markup: string, locale: string) {
   let next = markup;
-  for (const [label, slugs] of Object.entries(INDUSTRY_LINKS)) {
-    const href =
-      locale === "id"
-        ? `/industri/${slugs.id}`
-        : `/${locale}/industries/${slugs.en}`;
+  for (const label of Object.keys(INDUSTRY_LINKS)) {
+    const href = industryHrefFor(locale, label);
+    if (!href) continue;
     const pattern = new RegExp(
       `(<a\\b(?=[^>]*\\bclass="[^"]*\\bmlink\\b[^"]*")[^>]*\\bhref=")[^"]*("[^>]*>\\s*${label.replace(/[.*+?^${}()|[\\]\\]/g, "\\$&")}\\s*</a>)`,
       "g",

@@ -1,4 +1,5 @@
 import type { Locale } from "@/i18n/routing";
+import { industryHrefFor } from "@/lib/localize-industry-nav";
 
 type Copy = Record<string, string>;
 
@@ -3462,7 +3463,6 @@ export function localizeRevampHomeMarkup(markup: string, locale: Locale) {
       `<span class="tr" style="--i:0">${animatedHeroPrefix}</span>`,
     );
   }
-  if (Object.keys(copy).length === 0) return result;
   const productNames = [
     "Cekat Marketing",
     "Cekat Chat",
@@ -3522,5 +3522,25 @@ export function localizeRevampHomeMarkup(markup: string, locale: Locale) {
   for (const [token, value] of protectedDataAttributes) {
     result = result.replaceAll(token, value);
   }
+
+  result = result.replace(
+    /<button\b([^>]*)>([\s\S]*?)<\/button>/g,
+    (button, attributes: string, content: string) => {
+      if (!/\bdata-demo(?:\s*=|\s|$)/.test(attributes)) return button;
+
+      const industry = attributes.match(/\bdata-industry="([^"]*)"/)?.[1];
+      const href = industry
+        ? (industryHrefFor(locale, industry) ?? contactHref)
+        : contactHref;
+      const linkAttributes = attributes
+        .replace(/\s+type="[^"]*"/g, "")
+        .replace(/\s+data-demo(?:="[^"]*")?/g, "")
+        .replace(/\s+data-industry="[^"]*"/g, "")
+        .replace(/\s+data-interest="[^"]*"/g, "");
+
+      return `<a${linkAttributes} href="${href}">${content}</a>`;
+    },
+  );
+
   return result;
 }

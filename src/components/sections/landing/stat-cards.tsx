@@ -3,12 +3,12 @@ import { Reveal } from "@/components/sections/new-home/reveal";
 import { cn } from "@/lib/utils";
 
 /**
- * The reference's stat-card row. Same numbers the plain stats strip carries,
+ * The reference's stat-card row. Same proof points the plain stats strip carries,
  * given card weight for industry pages: a vertical's proof points are the
  * thing a reader scans for first.
  *
- * No new figures are introduced here. Every value comes from the page's own
- * stats array, where client-specific numbers stay attributed in their label.
+ * No new figures are introduced here. Every card comes from the page's own
+ * stats array, where client-specific metrics stay attributed in their label.
  */
 export function StatCards({
   stats,
@@ -28,10 +28,7 @@ export function StatCards({
               <div className="h-full border-t-2 border-[#ccdaf1] bg-white p-6">
                 <dd
                   className={cn(
-                    "font-numeric leading-none font-semibold tracking-[-0.055em] text-primary tabular-nums break-words",
-                    stat.value.length > 8
-                      ? "text-[clamp(2rem,3vw,2.4rem)]"
-                      : "text-[clamp(2rem,4vw,3.5rem)]",
+                    "font-numeric leading-none font-semibold tracking-[-0.055em] text-primary tabular-nums whitespace-nowrap text-[clamp(1.75rem,3.2vw,2.5rem)]",
                   )}
                 >
                   {stat.value}

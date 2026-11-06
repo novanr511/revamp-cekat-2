@@ -4784,7 +4784,7 @@ select {
   text-underline-offset: 4px;
   text-decoration-thickness: 1px;
 }
-/* The whole card opens the sales form */
+/* The whole card links to its industry page */
 .ind__cta::after {
   content: "";
   position: absolute;

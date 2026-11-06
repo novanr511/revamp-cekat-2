@@ -61,6 +61,31 @@ describe("revamp homepage localization", () => {
   });
 
   it.each([
+    ["en", "/en/contact-us", "/en/industries/financial-services"],
+    ["id", "/contact-us", "/industri/keuangan"],
+    ["cn", "/cn/contact-us", "/cn/industries/financial-services"],
+    ["jp", "/jp/contact-us", "/jp/industries/financial-services"],
+    ["kr", "/kr/contact-us", "/kr/industries/financial-services"],
+  ] as const)(
+    "routes homepage sales CTAs and industry cards correctly in %s",
+    (locale, contactHref, financialHref) => {
+      const localized = localizeRevampHomeMarkup(revampHomeMarkup, locale);
+
+      expect(localized).not.toContain("data-demo");
+      expect(localized).not.toContain("data-industry=");
+      expect(localized).toContain(
+        `<a class="ind__cta" href="${financialHref}">`,
+      );
+      expect(localized).toContain(
+        `<a class="btn btn--outline-light btn--lg" href="${contactHref}">`,
+      );
+      expect(localized).toContain(
+        `<a class="btn btn--ghost" href="${contactHref}">`,
+      );
+    },
+  );
+
+  it.each([
     ["en", "/en/blog", "/en/contact-us", "Blog", "Talk to sales"],
     ["id", "/blog", "/contact-us", "Blog", "Hubungi tim sales"],
     ["cn", "/cn/blog", "/cn/contact-us", "博客", "联系销售"],
@@ -450,8 +475,12 @@ describe("revamp homepage localization", () => {
     expect(industries).not.toContain("Make every patient conversation");
     expect(industries).not.toContain("Talk to us");
     expect(industries).not.toContain("Customer journeys look different");
-    expect(industries).toContain('data-industry="Healthcare"');
-    expect(industries).toContain('data-industry="Retail &amp; F&amp;B"');
+    expect(industries).toContain(
+      '<a class="ind__cta" href="/kr/industries/healthcare">',
+    );
+    expect(industries).toContain(
+      '<a class="ind__cta" href="/kr/industries/retail-ecommerce">',
+    );
 
     for (const translated of [
       "연결된 고객 여정은 무엇을 바꿀까요?",

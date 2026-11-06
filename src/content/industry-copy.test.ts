@@ -174,7 +174,7 @@ const EXPECTED_STATS: Record<
       ],
       unchanged: [
         { value: "24/7", label: "[existing industry 24/7 line — leave as is]" },
-        { value: "3,000+", label: "businesses run on Cekat.AI" },
+        { value: "API", label: "tracking reads the latest order data" },
       ],
     },
     id: {
@@ -188,7 +188,7 @@ const EXPECTED_STATS: Record<
       ],
       unchanged: [
         { value: "24/7", label: "[baris 24/7 industri yang ada — biarkan]" },
-        { value: "3.000+", label: "bisnis berjalan di Cekat.AI" },
+        { value: "API", label: "status kiriman terhubung ke data order" },
       ],
     },
   },
@@ -342,7 +342,10 @@ const EXPECTED_STATS: Record<
       ],
       unchanged: [
         { value: "24/7", label: "[existing industry 24/7 line — leave as is]" },
-        { value: "3,000+", label: "businesses run on Cekat.AI" },
+        {
+          value: "CRM",
+          label: "pipeline for leads, test drives, and service bookings",
+        },
       ],
     },
     id: {
@@ -360,7 +363,7 @@ const EXPECTED_STATS: Record<
       ],
       unchanged: [
         { value: "24/7", label: "[baris 24/7 industri yang ada — biarkan]" },
-        { value: "3.000+", label: "bisnis berjalan di Cekat.AI" },
+        { value: "CRM", label: "pipeline untuk leads, test drive, dan servis" },
       ],
     },
   },
@@ -709,7 +712,7 @@ function readIndustry(slug: string, locale: Locale) {
 }
 
 describe("industry replacement copy", () => {
-  it("uses the document metrics while preserving the existing 24/7 and 3,000+ boxes", () => {
+  it("uses document metrics and preserves the updated industry cards", () => {
     for (const [slug, locales] of Object.entries(EXPECTED_STATS)) {
       for (const locale of ["en", "id"] as const) {
         const content = readIndustry(slug, locale);
