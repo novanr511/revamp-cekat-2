@@ -43,20 +43,20 @@
     {
       "title": "Reply in the Traveler's Language, Around the Clock",
       "body": "Travelers ask from different countries and timezones, in different languages. Cekat.AI's agent is multilingual and understands intent, not just keywords, so a question in Japanese at 2 AM and one in Indonesian at noon both get an instant, accurate answer. Coverage never sleeps, and no inquiry waits for an agent to come online.",
-      "image": "/images/home/ai-working-hours.png",
-      "imageAlt": "24/7 multilingual coverage across timezones in Cekat.AI"
+      "visual": "industryLanguages",
+      "visualAlt": "24/7 multilingual coverage across timezones in Cekat.AI"
     },
     {
       "title": "Turn Past Travelers Into Repeat Bookings",
       "body": "Broadcast campaigns go through the official WhatsApp Business API to segments built from real data, past travelers, seasonal bookers, leads who asked but never paid, with names and trip history pulled from the CRM. A well-timed seasonal promo reaches the people most likely to book again, instead of a blast everyone ignores.",
-      "image": "/images/marketing/understand-customer-behavior.png",
-      "imageAlt": "Traveler segmentation for seasonal promos in Cekat.AI"
+      "visual": "industryContactRecord",
+      "visualAlt": "Traveler segmentation for seasonal promos in Cekat.AI"
     },
     {
       "title": "Every Traveler and Trip, Organized in One Place",
       "body": "WhatsApp, Instagram DM, and website chat flow into one inbox, and every chat updates the traveler's CRM card automatically, past trips, questions, campaigns received. Your team sees full context instantly, and complex or high-value bookings escalate to a human with the whole conversation attached, so no lead slips through in a busy season.",
-      "image": "/images/crm/track-customer-journey.png",
-      "imageAlt": "Traveler journey tracked in the Cekat.AI CRM"
+      "visual": "industryBooking",
+      "visualAlt": "Traveler journey tracked in the Cekat.AI CRM"
     }
   ],
   "caseStudy": {

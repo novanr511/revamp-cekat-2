@@ -1,8 +1,9 @@
 import type { ComponentProps } from "react";
 import { describe, it, expect, vi } from "vitest";
-import { render, screen } from "@testing-library/react";
+import { fireEvent, render, screen } from "@testing-library/react";
 import { NextIntlClientProvider } from "next-intl";
 import { Footer } from "./footer";
+import enMessages from "../../../messages/en.json";
 
 vi.mock("@/i18n/navigation", () => ({
   usePathname: () => "/",
@@ -14,8 +15,15 @@ vi.mock("@/i18n/navigation", () => ({
 }));
 
 const messages = {
-  nav: { crm: "CRM", chat: "Chat", marketing: "Marketing", order: "Order" },
+  nav: {
+    ...enMessages.nav,
+    crm: "CRM",
+    chat: "Chat",
+    marketing: "Marketing",
+    order: "Order",
+  },
   footer: {
+    ...enMessages.footer,
     productHeading: "Product",
     legalHeading: "Legal",
     terms: "Terms & Conditions",
@@ -75,6 +83,90 @@ describe("Footer", () => {
 
     expect(screen.getByRole("contentinfo")).toHaveClass("border-t", "bg-white");
     expect(screen.getByRole("img", { name: "Meta" })).toBeInTheDocument();
-    expect(screen.getAllByRole("img", { name: "Cekat.AI" })).toHaveLength(2);
+    expect(screen.getAllByRole("img", { name: "Cekat.AI" })).toHaveLength(1);
+    expect(screen.getByRole("contentinfo")).toHaveAttribute(
+      "data-layout",
+      "link-columns",
+    );
+  });
+
+  it("keeps the existing homepage tabs unchanged and enlarges secondary-page tabs", () => {
+    const { rerender } = render(
+      <NextIntlClientProvider locale="en" messages={messages}>
+        <Footer />
+      </NextIntlClientProvider>,
+    );
+
+    expect(screen.getByRole("tab", { name: /Indonesia/ })).toHaveClass(
+      "min-h-10",
+    );
+
+    rerender(
+      <NextIntlClientProvider locale="en" messages={messages}>
+        <Footer largeTouchTargets />
+      </NextIntlClientProvider>,
+    );
+
+    expect(screen.getByRole("tab", { name: /Indonesia/ })).toHaveClass(
+      "min-h-11",
+    );
+  });
+
+  it("lays out five link groups before the separate office row", () => {
+    const { container } = render(
+      <NextIntlClientProvider locale="en" messages={messages}>
+        <Footer />
+      </NextIntlClientProvider>,
+    );
+    const links = container.querySelector("[data-footer-links]")!;
+    const offices = container.querySelector("[data-footer-offices]")!;
+    expect(links).toHaveClass(
+      "grid-cols-2",
+      "sm:grid-cols-3",
+      "xl:grid-cols-5",
+    );
+    expect(links.querySelectorAll("h3")).toHaveLength(5);
+    expect(screen.getByRole("tablist")).toHaveClass("grid-cols-3", "sm:flex");
+    expect(
+      links.compareDocumentPosition(offices) & Node.DOCUMENT_POSITION_FOLLOWING,
+    ).toBeTruthy();
+  });
+
+  it("retains every country switch and its original office information", () => {
+    render(
+      <NextIntlClientProvider locale="en" messages={messages}>
+        <Footer />
+      </NextIntlClientProvider>,
+    );
+    expect(screen.getByRole("tab", { name: /Indonesia/ })).toHaveAttribute(
+      "aria-selected",
+      "true",
+    );
+    fireEvent.click(screen.getByRole("tab", { name: /Singapore/ }));
+    expect(screen.getByRole("tab", { name: /Singapore/ })).toHaveAttribute(
+      "aria-selected",
+      "true",
+    );
+    expect(
+      screen.getByText(enMessages.footer.singaporeCompanyName),
+    ).toBeVisible();
+    expect(
+      screen.getByText(enMessages.footer.singaporeOfficeAddress),
+    ).toBeVisible();
+    expect(screen.queryByText("Jakarta Office")).not.toBeInTheDocument();
+    fireEvent.click(screen.getByRole("tab", { name: /Malaysia/ }));
+    expect(screen.getByRole("tab", { name: /Malaysia/ })).toHaveAttribute(
+      "aria-selected",
+      "true",
+    );
+    expect(
+      screen.getByText(enMessages.footer.malaysiaCompanyName),
+    ).toBeVisible();
+    expect(
+      screen.getByText(enMessages.footer.malaysiaOfficeAddress),
+    ).toBeVisible();
+    fireEvent.click(screen.getByRole("tab", { name: /Indonesia/ }));
+    expect(screen.getByText("Jakarta Office")).toBeVisible();
+    expect(screen.getByText("Tangerang Office")).toBeVisible();
   });
 });

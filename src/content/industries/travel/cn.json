@@ -43,20 +43,20 @@
     {
       "title": "全天候以旅行者语言回复",
       "body": "旅行者来自不同的国家和时区，用不同的语言提出问题。 Cekat.AI 的代理会讲多种语言，并且能够理解意图，而不仅仅是关键字，因此凌晨 2 点用日语提出的问题和中午用印尼语提出的问题都可以得到即时、准确的答案。报道永不休止，无需等待客服人员上线即可进行查询。",
-      "image": "/images/home/ai-working-hours.png",
-      "imageAlt": "Cekat.AI 跨时区 24/7 多语言覆盖"
+      "visual": "industryLanguages",
+      "visualAlt": "Cekat.AI 跨时区 24/7 多语言覆盖"
     },
     {
       "title": "让过去的旅客重复预订",
       "body": "广播活动通过官方 WhatsApp Business API 进行细分，这些细分是根据真实数据、过去的旅行者、季节性预订者、询问但从未付款的潜在客户以及从 CRM 中提取的姓名和旅行历史记录构建的。适时的季节性促销将惠及最有可能再次预订的人群，而不是所有人都忽视的爆炸性促销。",
-      "image": "/images/marketing/understand-customer-behavior.png",
-      "imageAlt": "Cekat.AI 中季节性促销的旅行者细分"
+      "visual": "industryContactRecord",
+      "visualAlt": "Cekat.AI 中季节性促销的旅行者细分"
     },
     {
       "title": "每个旅行者和旅行都在一个地方组织",
       "body": "WhatsApp、Instagram DM 和网站聊天流入一个收件箱，每次聊天都会自动更新旅行者的 CRM 卡、过去的旅行、问题和收到的活动。您的团队可以立即看到完整的上下文，复杂或高价值的预订会升级给人工，并附加整个对话，因此在繁忙的季节不会漏掉任何线索。",
-      "image": "/images/crm/track-customer-journey.png",
-      "imageAlt": "Cekat.AI CRM 跟踪旅客旅程"
+      "visual": "industryBooking",
+      "visualAlt": "Cekat.AI CRM 跟踪旅客旅程"
     }
   ],
   "caseStudy": {

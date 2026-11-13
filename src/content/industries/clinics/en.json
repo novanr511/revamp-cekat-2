@@ -47,26 +47,26 @@
     {
       "title": "Bookings Confirmed in Chat, No-Shows Cut by Reminders",
       "body": "Connect Cekat.AI to your clinic booking system through the API and the AI books, confirms, and reschedules without leaving the conversation. Automated reminders go out before every appointment, so the doctor slots you filled actually stay filled instead of going empty because someone forgot.",
-      "image": "/images/home/api-integration.png",
-      "imageAlt": "Cekat.AI API integration with a clinic booking system"
+      "visual": "industryBooking",
+      "visualAlt": "Cekat.AI API integration with a clinic booking system"
     },
     {
       "title": "Post-Visit Follow-Up That Runs Itself",
       "body": "Patients who should come back for a control visit often disappear the moment they walk out. Cekat.AI sends automated follow-ups based on each patient's visit history, control schedules, treatment continuations, or a note that results are ready for pickup, so care never breaks off halfway and doctor slots stay booked.",
-      "image": "/images/crm/track-customer-journey.png",
-      "imageAlt": "Patient journey tracking for follow-ups in Cekat.AI"
+      "visual": "industryAutomation",
+      "visualAlt": "Patient journey tracking for follow-ups in Cekat.AI"
     },
     {
       "title": "Patient Contact Data Tidy per Branch",
       "body": "Patient numbers saved on an admin's personal phone are a risk, not an asset. Cekat.AI captures every contact and conversation into the CRM automatically, organized per branch with role-based access, so each branch owns its own patient data while management still sees the full picture.",
-      "image": "/images/crm/capture-and-organize-customers.png",
-      "imageAlt": "Patient contact data organized in the Cekat.AI CRM"
+      "visual": "industryContactRecord",
+      "visualAlt": "Patient contact data organized in the Cekat.AI CRM"
     },
     {
       "title": "Medical and Sensitive Cases Go Straight to Your Staff",
       "body": "The AI handles routine questions about schedules, services, and registration. The moment a medical complaint or sensitive case appears, the conversation escalates to your clinic staff with the full chat history attached, so patients never repeat their story and medical decisions stay with your clinicians.",
-      "image": "/images/chat/escalate-and-sync.png",
-      "imageAlt": "Conversation escalating from AI to clinic staff in Cekat.AI"
+      "visual": "industryHandoff",
+      "visualAlt": "Conversation escalating from AI to clinic staff in Cekat.AI"
     }
   ],
   "pillars": [

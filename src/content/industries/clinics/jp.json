@@ -47,26 +47,26 @@
     {
       "title": "予約はチャットで確認、ノーショウはリマインダーでカット",
       "body": "API を介して Cekat.AI をクリニック予約システムに接続すると、会話を離れることなく AI が予約、確認、再スケジュールを行います。自動リマインダーは毎回の予約の前に表示されるため、あなたが記入した医師の枠は、誰かが忘れて空になるのではなく、実際には埋まったままになります。",
-      "image": "/images/home/api-integration.png",
-      "imageAlt": "Cekat.AI API とクリニック予約システムの統合"
+      "visual": "industryBooking",
+      "visualAlt": "Cekat.AI API とクリニック予約システムの統合"
     },
     {
       "title": "自動的に実行される訪問後のフォローアップ",
       "body": "対照訪問のために戻ってくるはずの患者は、出て行った瞬間に消えてしまうことがよくあります。 Cekat.AI は、各患者の来院履歴、管理スケジュール、治療の継続、または結果を受け取る準備ができているというメモに基づいて自動フォローアップを送信するため、治療が途中で中断されることはなく、医師の枠は予約されたままになります。",
-      "image": "/images/crm/track-customer-journey.png",
-      "imageAlt": "Cekat.AI でのフォローアップのための患者の経過追跡"
+      "visual": "industryAutomation",
+      "visualAlt": "Cekat.AI でのフォローアップのための患者の経過追跡"
     },
     {
       "title": "患者連絡先データを支店ごとに整理",
       "body": "管理者の個人携帯電話に保存されている患者番号は資産ではなくリスクです。 Cekat.AI は、すべての連絡先と会話を CRM に自動的に取り込み、役割ベースのアクセスを使用して支店ごとに整理するため、経営陣は全体像を把握しながら、各支店が独自の患者データを所有します。",
-      "image": "/images/crm/capture-and-organize-customers.png",
-      "imageAlt": "Cekat.AI CRM で整理された患者の連絡先データ"
+      "visual": "industryContactRecord",
+      "visualAlt": "Cekat.AI CRM で整理された患者の連絡先データ"
     },
     {
       "title": "医療および慎重な対応が必要なケースはスタッフに直接連絡されます",
       "body": "AI は、スケジュール、サービス、登録に関する日常的な質問に対応します。医療上の苦情やデリケートなケースが現れた瞬間、会話は完全なチャット履歴が添付された状態でクリニックのスタッフにエスカレートされるため、患者が同じ話を繰り返すことはなく、医療上の決定は臨床医に委ねられます。",
-      "image": "/images/chat/escalate-and-sync.png",
-      "imageAlt": "Cekat.AI で AI から診療所スタッフへ会話がエスカレート"
+      "visual": "industryHandoff",
+      "visualAlt": "Cekat.AI で AI から診療所スタッフへ会話がエスカレート"
     }
   ],
   "pillars": [

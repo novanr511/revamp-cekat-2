@@ -43,26 +43,26 @@
     {
       "title": "最初のチャットで解決されたログインと支払いの問題",
       "body": "ログインできない生徒や支払いに不安がある生徒は、文句を言おうとしているのではなく、学ぼうとしているのです。 Cekat.AI は一般的な問題をその場で解決し、エンジニアが必要なケースについては、会話からチケットが自動的に作成され、適切なチームにルーティングされるため、受信箱には何も沈みません。",
-      "image": "/images/order/auto-create-ticket.png",
-      "imageAlt": "Cekat.AI のチャットから自動作成されたサポート チケット"
+      "visual": "industryTicketQueue",
+      "visualAlt": "Cekat.AI のチャットから自動作成されたサポート チケット"
     },
     {
       "title": "体験登録者は最初のレッスンまでずっと歩いて行きました",
       "body": "ほとんどの試用版ユーザーは、製品に満足できなかったためにやめたのではなく、最初から始めなかったためにやめました。 Cekat.AI は、新しいサインアップを自動的に歓迎し、最初のレッスンを案内し、数日経ってもログインしていないユーザーをフォローアップします。各ユーザーの行動によってトリガーされる、コードなしで組み立てられるフローです。",
-      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
-      "imageAlt": "Cekat.AI の自動化された新規ユーザー オンボーディング フロー"
+      "visual": "industryEnrollment",
+      "visualAlt": "Cekat.AI の自動化された新規ユーザー オンボーディング フロー"
     },
     {
       "title": "静かになった生徒には、やめてしまう前に注意してもらいましょう",
       "body": "チャーンが突然起こることはほとんどありません。それは1週間の未開封のレッスンから始まります。 Cekat.AI は、サインアップからアクティブ、そして沈黙に至るまで、CRM 内での各ユーザーのジャーニーを追跡し、来月の更新が危うくなる前にユーザーを元に戻すための個人的なナッジを送信します。チームは推測するのではなく、誰が危険にさらされているかを確認します。",
-      "image": "/images/crm/track-customer-journey.png",
-      "imageAlt": "Cekat.AI CRM で追跡される学習者の行動"
+      "visual": "industryAutomation",
+      "visualAlt": "Cekat.AI CRM で追跡される学習者の行動"
     },
     {
       "title": "セグメント別のキャンペーン、CSAT を常に表示",
       "body": "卒業生向けの新しいバッチ プロモーション、アクセス期限切れの更新リマインダー、まだ購入していないリード向けの無料コンテンツ。 Cekat.AI は、WhatsApp の公式ブロードキャストのコース、アクティビティ、支払いステータスごとにユーザーをセグメント化し、すべての会話で CSAT を測定するため、サポートの品質は感覚ではなく数値として表示されます。",
-      "image": "/images/marketing/understand-customer-behavior.png",
-      "imageAlt": "Cekat.AI の EdTech キャンペーンを強化するユーザー セグメント"
+      "visual": "industryAnalytics",
+      "visualAlt": "Cekat.AI の EdTech キャンペーンを強化するユーザー セグメント"
     }
   ],
   "pillars": [

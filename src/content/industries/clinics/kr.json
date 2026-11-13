@@ -47,26 +47,26 @@
     {
       "title": "채팅으로 예약 확정, 알림으로 노쇼 차단",
       "body": "API 및 AI 도서를 통해 Cekat.AI를 진료소 예약 시스템에 연결하고, 대화를 종료하지 않고 확인하고 일정을 변경하세요. 자동 알림은 매 진료 시간 전에 나가기 때문에 누군가 잊어버렸기 때문에 채워진 의사 자리가 비어 있는 것이 아니라 실제로 채워진 상태로 유지됩니다.",
-      "image": "/images/home/api-integration.png",
-      "imageAlt": "Cekat.AI API와 진료소 예약 시스템 통합"
+      "visual": "industryBooking",
+      "visualAlt": "Cekat.AI API와 진료소 예약 시스템 통합"
     },
     {
       "title": "자체적으로 실행되는 방문 후 후속 조치",
       "body": "대조 방문을 위해 다시 와야 하는 환자는 나가는 순간 사라지는 경우가 많습니다. Cekat.AI는 각 환자의 방문 기록, 관리 일정, 치료 지속 또는 결과를 받을 준비가 되었다는 메모를 기반으로 자동화된 후속 조치를 보내므로 치료가 중간에 중단되지 않고 의사 예약이 예약된 상태로 유지됩니다.",
-      "image": "/images/crm/track-customer-journey.png",
-      "imageAlt": "Cekat.AI의 후속 조치를 위한 환자 여정 추적"
+      "visual": "industryAutomation",
+      "visualAlt": "Cekat.AI의 후속 조치를 위한 환자 여정 추적"
     },
     {
       "title": "지점별 환자 연락처 데이터 정리",
       "body": "관리자의 개인 전화에 저장된 환자 번호는 자산이 아니라 위험입니다. Cekat.AI는 역할 기반 액세스를 통해 지점별로 구성된 모든 연락처와 대화를 CRM에 자동으로 캡처하므로 각 지점은 자체 환자 데이터를 소유하는 동시에 경영진은 전체 그림을 볼 수 있습니다.",
-      "image": "/images/crm/capture-and-organize-customers.png",
-      "imageAlt": "Cekat.AI CRM에 정리된 환자 연락처 데이터"
+      "visual": "industryContactRecord",
+      "visualAlt": "Cekat.AI CRM에 정리된 환자 연락처 데이터"
     },
     {
       "title": "의료 및 민감한 사건은 담당 직원에게 직접 전달됩니다.",
       "body": "AI는 일정, 서비스, 등록에 관한 일상적인 질문을 처리합니다. 의학적 불만 사항이나 민감한 사례가 나타나는 순간 전체 채팅 기록이 첨부되어 대화가 진료소 직원에게 확대되므로 환자는 자신의 이야기를 반복하지 않으며 의학적 결정은 임상의에게 있습니다.",
-      "image": "/images/chat/escalate-and-sync.png",
-      "imageAlt": "Cekat.AI의 AI에서 진료소 직원으로 대화가 확대됨"
+      "visual": "industryHandoff",
+      "visualAlt": "Cekat.AI의 AI에서 진료소 직원으로 대화가 확대됨"
     }
   ],
   "pillars": [

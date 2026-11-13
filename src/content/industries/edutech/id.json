@@ -43,26 +43,26 @@
     {
       "title": "Kendala Login dan Pembayaran Beres di Chat Pertama",
       "body": "Siswa yang gagal login atau bingung status pembayarannya bukan mau komplain, dia mau belajar. Cekat.AI menjawab kendala umum saat itu juga, dan untuk kasus yang butuh tim teknis, tiket dibuat otomatis dari percakapan lalu diarahkan ke tim yang tepat, jadi nggak ada masalah yang tenggelam di inbox.",
-      "image": "/images/order/auto-create-ticket.png",
-      "imageAlt": "Tiket kendala dibuat otomatis dari chat di Cekat.AI"
+      "visual": "industryTicketQueue",
+      "visualAlt": "Tiket kendala dibuat otomatis dari chat di Cekat.AI"
     },
     {
       "title": "Pendaftar Trial Diantar Sampai Kelas Pertamanya",
       "body": "Kebanyakan user trial berhenti bukan karena produknya kurang, tapi karena nggak pernah mulai. Cekat.AI menyapa pendaftar baru otomatis, mengarahkan ke kelas pertamanya, dan mem-follow-up yang belum juga login setelah beberapa hari, alurnya kamu rakit sendiri tanpa coding, dipicu perilaku masing-masing user.",
-      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
-      "imageAlt": "Alur onboarding user baru otomatis di Cekat.AI"
+      "visual": "industryEnrollment",
+      "visualAlt": "Alur onboarding user baru otomatis di Cekat.AI"
     },
     {
       "title": "Siswa Mulai Menghilang? Disapa Sebelum Beneran Churn",
       "body": "Churn jarang datang tiba-tiba; biasanya diawali seminggu materi nggak dibuka. Cekat.AI melacak perjalanan tiap user di CRM, dari daftar, aktif, sampai mulai diam, dan mengirim nudge personal buat ngajak balik belajar sebelum perpanjangan bulan berikutnya jadi taruhan. Timmu melihat siapa yang berisiko, bukan menebak.",
-      "image": "/images/crm/track-customer-journey.png",
-      "imageAlt": "Perjalanan belajar user terpantau di CRM Cekat.AI"
+      "visual": "industryAutomation",
+      "visualAlt": "Perjalanan belajar user terpantau di CRM Cekat.AI"
     },
     {
       "title": "Campaign per Segmen, CSAT Kepantau Terus",
       "body": "Promo batch baru buat alumni, reminder perpanjangan buat yang masa aksesnya mau habis, konten gratis buat leads yang belum beli. Cekat.AI mensegmentasi user dari kelas, aktivitas, dan status pembayarannya untuk broadcast WhatsApp resmi, sambil mengukur CSAT di tiap percakapan supaya kualitas support kelihatan sebagai angka, bukan perasaan.",
-      "image": "/images/marketing/understand-customer-behavior.png",
-      "imageAlt": "Segmentasi user dan campaign edutech di Cekat.AI"
+      "visual": "industryAnalytics",
+      "visualAlt": "Segmentasi user dan campaign edutech di Cekat.AI"
     }
   ],
   "pillars": [

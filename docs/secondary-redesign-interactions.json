@@ -1,0 +1,1267 @@
+{
+  "checks": [
+    {
+      "check": "/marketing preview 1: 7 hari",
+      "evidence": "Initial selected view remains selected; keyboard focus visible",
+      "pass": true
+    },
+    {
+      "check": "/marketing preview 1: 30 hari",
+      "evidence": "Keyboard activation selects the view and changes its sample content",
+      "pass": true
+    },
+    {
+      "check": "/marketing chapter 1",
+      "evidence": "#feature-1 exists, URL updates and chapter is visible below the header",
+      "pass": true
+    },
+    {
+      "check": "/marketing chapter 2",
+      "evidence": "#feature-2 exists, URL updates and chapter is visible below the header",
+      "pass": true
+    },
+    {
+      "check": "/marketing chapter 3",
+      "evidence": "#feature-3 exists, URL updates and chapter is visible below the header",
+      "pass": true
+    },
+    {
+      "check": "/marketing chapter 4",
+      "evidence": "#feature-4 exists, URL updates and chapter is visible below the header",
+      "pass": true
+    },
+    {
+      "check": "/marketing chapter 5",
+      "evidence": "#feature-5 exists, URL updates and chapter is visible below the header",
+      "pass": true
+    },
+    {
+      "check": "/marketing FAQ 1",
+      "evidence": "Mouse click toggles and Enter restores the native details state",
+      "pass": true
+    },
+    {
+      "check": "/marketing FAQ 2",
+      "evidence": "Mouse click toggles and Enter restores the native details state",
+      "pass": true
+    },
+    {
+      "check": "/marketing FAQ 3",
+      "evidence": "Mouse click toggles and Enter restores the native details state",
+      "pass": true
+    },
+    {
+      "check": "/marketing FAQ 4",
+      "evidence": "Mouse click toggles and Enter restores the native details state",
+      "pass": true
+    },
+    {
+      "check": "/marketing hero secondary action",
+      "evidence": "#capabilities scrolls to real content",
+      "pass": true
+    },
+    {
+      "check": "/marketing trial CTA",
+      "evidence": "Existing https://chat.cekat.ai/register hrefs verified; no signup submitted",
+      "pass": true
+    },
+    {
+      "check": "/chat preview 1: WhatsApp",
+      "evidence": "Initial selected view remains selected; keyboard focus visible",
+      "pass": true
+    },
+    {
+      "check": "/chat preview 1: Instagram",
+      "evidence": "Keyboard activation selects the view and changes its sample content",
+      "pass": true
+    },
+    {
+      "check": "/chat preview 1: Web chat",
+      "evidence": "Keyboard activation selects the view and changes its sample content",
+      "pass": true
+    },
+    {
+      "check": "/chat chapter 1",
+      "evidence": "#feature-1 exists, URL updates and chapter is visible below the header",
+      "pass": true
+    },
+    {
+      "check": "/chat chapter 2",
+      "evidence": "#feature-2 exists, URL updates and chapter is visible below the header",
+      "pass": true
+    },
+    {
+      "check": "/chat chapter 3",
+      "evidence": "#feature-3 exists, URL updates and chapter is visible below the header",
+      "pass": true
+    },
+    {
+      "check": "/chat chapter 4",
+      "evidence": "#feature-4 exists, URL updates and chapter is visible below the header",
+      "pass": true
+    },
+    {
+      "check": "/chat chapter 5",
+      "evidence": "#feature-5 exists, URL updates and chapter is visible below the header",
+      "pass": true
+    },
+    {
+      "check": "/chat FAQ 1",
+      "evidence": "Mouse click toggles and Enter restores the native details state",
+      "pass": true
+    },
+    {
+      "check": "/chat FAQ 2",
+      "evidence": "Mouse click toggles and Enter restores the native details state",
+      "pass": true
+    },
+    {
+      "check": "/chat FAQ 3",
+      "evidence": "Mouse click toggles and Enter restores the native details state",
+      "pass": true
+    },
+    {
+      "check": "/chat hero secondary action",
+      "evidence": "#capabilities scrolls to real content",
+      "pass": true
+    },
+    {
+      "check": "/chat trial CTA",
+      "evidence": "Existing https://chat.cekat.ai/register hrefs verified; no signup submitted",
+      "pass": true
+    },
+    {
+      "check": "/crm preview 1: Semua deal",
+      "evidence": "Initial selected view remains selected; keyboard focus visible",
+      "pass": true
+    },
+    {
+      "check": "/crm preview 1: Prioritas",
+      "evidence": "Keyboard activation selects the view and changes its sample content",
+      "pass": true
+    },
+    {
+      "check": "/crm chapter 1",
+      "evidence": "#feature-1 exists, URL updates and chapter is visible below the header",
+      "pass": true
+    },
+    {
+      "check": "/crm chapter 2",
+      "evidence": "#feature-2 exists, URL updates and chapter is visible below the header",
+      "pass": true
+    },
+    {
+      "check": "/crm chapter 3",
+      "evidence": "#feature-3 exists, URL updates and chapter is visible below the header",
+      "pass": true
+    },
+    {
+      "check": "/crm chapter 4",
+      "evidence": "#feature-4 exists, URL updates and chapter is visible below the header",
+      "pass": true
+    },
+    {
+      "check": "/crm FAQ 1",
+      "evidence": "Mouse click toggles and Enter restores the native details state",
+      "pass": true
+    },
+    {
+      "check": "/crm FAQ 2",
+      "evidence": "Mouse click toggles and Enter restores the native details state",
+      "pass": true
+    },
+    {
+      "check": "/crm FAQ 3",
+      "evidence": "Mouse click toggles and Enter restores the native details state",
+      "pass": true
+    },
+    {
+      "check": "/crm hero secondary action",
+      "evidence": "#capabilities scrolls to real content",
+      "pass": true
+    },
+    {
+      "check": "/crm trial CTA",
+      "evidence": "Existing https://chat.cekat.ai/register hrefs verified; no signup submitted",
+      "pass": true
+    },
+    {
+      "check": "/order preview 1: Alur kerja",
+      "evidence": "Initial selected view remains selected; keyboard focus visible",
+      "pass": true
+    },
+    {
+      "check": "/order preview 1: Riwayat",
+      "evidence": "Keyboard activation selects the view and changes its sample content",
+      "pass": true
+    },
+    {
+      "check": "/order chapter 1",
+      "evidence": "#feature-1 exists, URL updates and chapter is visible below the header",
+      "pass": true
+    },
+    {
+      "check": "/order chapter 2",
+      "evidence": "#feature-2 exists, URL updates and chapter is visible below the header",
+      "pass": true
+    },
+    {
+      "check": "/order chapter 3",
+      "evidence": "#feature-3 exists, URL updates and chapter is visible below the header",
+      "pass": true
+    },
+    {
+      "check": "/order chapter 4",
+      "evidence": "#feature-4 exists, URL updates and chapter is visible below the header",
+      "pass": true
+    },
+    {
+      "check": "/order chapter 5",
+      "evidence": "#feature-5 exists, URL updates and chapter is visible below the header",
+      "pass": true
+    },
+    {
+      "check": "/order chapter 6",
+      "evidence": "#feature-6 exists, URL updates and chapter is visible below the header",
+      "pass": true
+    },
+    {
+      "check": "/order FAQ 1",
+      "evidence": "Mouse click toggles and Enter restores the native details state",
+      "pass": true
+    },
+    {
+      "check": "/order FAQ 2",
+      "evidence": "Mouse click toggles and Enter restores the native details state",
+      "pass": true
+    },
+    {
+      "check": "/order FAQ 3",
+      "evidence": "Mouse click toggles and Enter restores the native details state",
+      "pass": true
+    },
+    {
+      "check": "/order hero secondary action",
+      "evidence": "#capabilities scrolls to real content",
+      "pass": true
+    },
+    {
+      "check": "/order trial CTA",
+      "evidence": "Existing https://chat.cekat.ai/register hrefs verified; no signup submitted",
+      "pass": true
+    },
+    {
+      "check": "/fitur/chatbot preview 1: WhatsApp",
+      "evidence": "Initial selected view remains selected; keyboard focus visible",
+      "pass": true
+    },
+    {
+      "check": "/fitur/chatbot preview 1: Instagram",
+      "evidence": "Keyboard activation selects the view and changes its sample content",
+      "pass": true
+    },
+    {
+      "check": "/fitur/chatbot preview 1: Web chat",
+      "evidence": "Keyboard activation selects the view and changes its sample content",
+      "pass": true
+    },
+    {
+      "check": "/fitur/chatbot chapter 1",
+      "evidence": "#feature-1 exists, URL updates and chapter is visible below the header",
+      "pass": true
+    },
+    {
+      "check": "/fitur/chatbot chapter 2",
+      "evidence": "#feature-2 exists, URL updates and chapter is visible below the header",
+      "pass": true
+    },
+    {
+      "check": "/fitur/chatbot chapter 3",
+      "evidence": "#feature-3 exists, URL updates and chapter is visible below the header",
+      "pass": true
+    },
+    {
+      "check": "/fitur/chatbot chapter 4",
+      "evidence": "#feature-4 exists, URL updates and chapter is visible below the header",
+      "pass": true
+    },
+    {
+      "check": "/fitur/chatbot chapter 5",
+      "evidence": "#feature-5 exists, URL updates and chapter is visible below the header",
+      "pass": true
+    },
+    {
+      "check": "/fitur/chatbot FAQ 1",
+      "evidence": "Mouse click toggles and Enter restores the native details state",
+      "pass": true
+    },
+    {
+      "check": "/fitur/chatbot FAQ 2",
+      "evidence": "Mouse click toggles and Enter restores the native details state",
+      "pass": true
+    },
+    {
+      "check": "/fitur/chatbot FAQ 3",
+      "evidence": "Mouse click toggles and Enter restores the native details state",
+      "pass": true
+    },
+    {
+      "check": "/fitur/chatbot FAQ 4",
+      "evidence": "Mouse click toggles and Enter restores the native details state",
+      "pass": true
+    },
+    {
+      "check": "/fitur/chatbot FAQ 5",
+      "evidence": "Mouse click toggles and Enter restores the native details state",
+      "pass": true
+    },
+    {
+      "check": "/fitur/chatbot FAQ 6",
+      "evidence": "Mouse click toggles and Enter restores the native details state",
+      "pass": true
+    },
+    {
+      "check": "/fitur/chatbot FAQ 7",
+      "evidence": "Mouse click toggles and Enter restores the native details state",
+      "pass": true
+    },
+    {
+      "check": "/fitur/chatbot FAQ 8",
+      "evidence": "Mouse click toggles and Enter restores the native details state",
+      "pass": true
+    },
+    {
+      "check": "/fitur/chatbot FAQ 9",
+      "evidence": "Mouse click toggles and Enter restores the native details state",
+      "pass": true
+    },
+    {
+      "check": "/fitur/chatbot FAQ 10",
+      "evidence": "Mouse click toggles and Enter restores the native details state",
+      "pass": true
+    },
+    {
+      "check": "/fitur/chatbot hero secondary action",
+      "evidence": "#capabilities scrolls to real content",
+      "pass": true
+    },
+    {
+      "check": "/fitur/chatbot trial CTA",
+      "evidence": "Existing https://chat.cekat.ai/register hrefs verified; no signup submitted",
+      "pass": true
+    },
+    {
+      "check": "/industri/kesehatan capability 1",
+      "evidence": "Only the selected description is expanded; preview caption and accessible region follow the selected control",
+      "pass": true
+    },
+    {
+      "check": "/industri/kesehatan capability 2",
+      "evidence": "Only the selected description is expanded; preview caption and accessible region follow the selected control",
+      "pass": true
+    },
+    {
+      "check": "/industri/kesehatan capability 3",
+      "evidence": "Only the selected description is expanded; preview caption and accessible region follow the selected control",
+      "pass": true
+    },
+    {
+      "check": "/industri/kesehatan capability 4",
+      "evidence": "Only the selected description is expanded; preview caption and accessible region follow the selected control",
+      "pass": true
+    },
+    {
+      "check": "/industri/kesehatan FAQ 1",
+      "evidence": "Mouse click toggles and Enter restores the native details state",
+      "pass": true
+    },
+    {
+      "check": "/industri/kesehatan FAQ 2",
+      "evidence": "Mouse click toggles and Enter restores the native details state",
+      "pass": true
+    },
+    {
+      "check": "/industri/kesehatan FAQ 3",
+      "evidence": "Mouse click toggles and Enter restores the native details state",
+      "pass": true
+    },
+    {
+      "check": "/industri/kesehatan FAQ 4",
+      "evidence": "Mouse click toggles and Enter restores the native details state",
+      "pass": true
+    },
+    {
+      "check": "/industri/kesehatan FAQ 5",
+      "evidence": "Mouse click toggles and Enter restores the native details state",
+      "pass": true
+    },
+    {
+      "check": "/industri/kesehatan FAQ 6",
+      "evidence": "Mouse click toggles and Enter restores the native details state",
+      "pass": true
+    },
+    {
+      "check": "/industri/kesehatan FAQ 7",
+      "evidence": "Mouse click toggles and Enter restores the native details state",
+      "pass": true
+    },
+    {
+      "check": "/industri/kesehatan FAQ 8",
+      "evidence": "Mouse click toggles and Enter restores the native details state",
+      "pass": true
+    },
+    {
+      "check": "/industri/kesehatan FAQ 9",
+      "evidence": "Mouse click toggles and Enter restores the native details state",
+      "pass": true
+    },
+    {
+      "check": "/industri/kesehatan hero secondary action",
+      "evidence": "#capabilities scrolls to real content",
+      "pass": true
+    },
+    {
+      "check": "/industri/kesehatan trial CTA",
+      "evidence": "Existing https://chat.cekat.ai/register hrefs verified; no signup submitted",
+      "pass": true
+    },
+    {
+      "check": "/industri filter: Semua industri",
+      "evidence": "29 matching cards; selected state updates",
+      "pass": true
+    },
+    {
+      "check": "/industri filter: Layanan & kesehatan",
+      "evidence": "9 matching cards; selected state updates",
+      "pass": true
+    },
+    {
+      "check": "/industri filter: Commerce & mobilitas",
+      "evidence": "11 matching cards; selected state updates",
+      "pass": true
+    },
+    {
+      "check": "/industri filter: Komunitas & teknologi",
+      "evidence": "9 matching cards; selected state updates",
+      "pass": true
+    },
+    {
+      "check": "/industri search",
+      "evidence": "Case-insensitive search reduces 29 cards to 1",
+      "pass": true
+    },
+    {
+      "check": "/industri empty/reset",
+      "evidence": "Empty message appears; reset restores all 29 cards and clears query",
+      "pass": true
+    },
+    {
+      "check": "/industri first directory destination",
+      "evidence": "http://localhost:4173/industri/kesehatan",
+      "pass": true
+    },
+    {
+      "check": "/industri last directory destination",
+      "evidence": "http://localhost:4173/industri/edutech",
+      "pass": true
+    },
+    {
+      "check": "/fitur filter: Semua fitur",
+      "evidence": "47 matching cards; selected state updates",
+      "pass": true
+    },
+    {
+      "check": "/fitur filter: Chat",
+      "evidence": "14 matching cards; selected state updates",
+      "pass": true
+    },
+    {
+      "check": "/fitur filter: AI Agent",
+      "evidence": "7 matching cards; selected state updates",
+      "pass": true
+    },
+    {
+      "check": "/fitur filter: CRM",
+      "evidence": "9 matching cards; selected state updates",
+      "pass": true
+    },
+    {
+      "check": "/fitur filter: Marketing",
+      "evidence": "11 matching cards; selected state updates",
+      "pass": true
+    },
+    {
+      "check": "/fitur filter: Automation",
+      "evidence": "6 matching cards; selected state updates",
+      "pass": true
+    },
+    {
+      "check": "/fitur search",
+      "evidence": "Case-insensitive search reduces 47 cards to 10",
+      "pass": true
+    },
+    {
+      "check": "/fitur empty/reset",
+      "evidence": "Empty message appears; reset restores all 47 cards and clears query",
+      "pass": true
+    },
+    {
+      "check": "/fitur first directory destination",
+      "evidence": "http://localhost:4173/fitur/chatbot",
+      "pass": true
+    },
+    {
+      "check": "/fitur last directory destination",
+      "evidence": "http://localhost:4173/fitur/utm-generator",
+      "pass": true
+    },
+    {
+      "check": "Platform product link 1",
+      "evidence": "http://localhost:4173/marketing",
+      "pass": true
+    },
+    {
+      "check": "Platform product link 2",
+      "evidence": "http://localhost:4173/chat",
+      "pass": true
+    },
+    {
+      "check": "Platform product link 3",
+      "evidence": "http://localhost:4173/crm",
+      "pass": true
+    },
+    {
+      "check": "Platform product link 4",
+      "evidence": "http://localhost:4173/order",
+      "pass": true
+    },
+    {
+      "check": "Contact sales",
+      "evidence": "http://localhost:4173/contact-us",
+      "pass": true
+    },
+    {
+      "check": "Journal opening allocation",
+      "evidence": "9 unique story destinations across lead, support and initial feed",
+      "pass": true
+    },
+    {
+      "check": "Lead story",
+      "evidence": "http://localhost:4173/blog/ab-testing-iklan-kualitas-chat",
+      "pass": true
+    },
+    {
+      "check": "Supporting story 1",
+      "evidence": "http://localhost:4173/blog/insight-chat-untuk-creative-brief",
+      "pass": true
+    },
+    {
+      "check": "Supporting story 2",
+      "evidence": "http://localhost:4173/blog/tes-hook-atau-offer-iklan",
+      "pass": true
+    },
+    {
+      "check": "Blog category: Semua",
+      "evidence": "http://localhost:4173/blog; matching category marked current",
+      "pass": true
+    },
+    {
+      "check": "Blog category: Finance",
+      "evidence": "http://localhost:4173/blog?category=finance; matching category marked current",
+      "pass": true
+    },
+    {
+      "check": "Blog category: Marketing",
+      "evidence": "http://localhost:4173/blog?category=marketing; matching category marked current",
+      "pass": true
+    },
+    {
+      "check": "Blog category: Sales",
+      "evidence": "http://localhost:4173/blog?category=sales; matching category marked current",
+      "pass": true
+    },
+    {
+      "check": "Blog category: CRM",
+      "evidence": "http://localhost:4173/blog?category=crm; matching category marked current",
+      "pass": true
+    },
+    {
+      "check": "Blog category: Whatsapp Business Api",
+      "evidence": "http://localhost:4173/blog?category=whatsapp-business-api; matching category marked current",
+      "pass": true
+    },
+    {
+      "check": "Blog category: Ai Agent",
+      "evidence": "http://localhost:4173/blog?category=ai-agent; matching category marked current",
+      "pass": true
+    },
+    {
+      "check": "Blog category: Automation",
+      "evidence": "http://localhost:4173/blog?category=automation; matching category marked current",
+      "pass": true
+    },
+    {
+      "check": "Blog category: Omnichannel",
+      "evidence": "http://localhost:4173/blog?category=omnichannel; matching category marked current",
+      "pass": true
+    },
+    {
+      "check": "Blog category: Ticketing System",
+      "evidence": "http://localhost:4173/blog?category=ticketing-system; matching category marked current",
+      "pass": true
+    },
+    {
+      "check": "Blog category: Transaksi Online",
+      "evidence": "http://localhost:4173/blog?category=transaksi-online; matching category marked current",
+      "pass": true
+    },
+    {
+      "check": "Blog search submit",
+      "evidence": "GET-compatible URL /blog?q=produktivitas, filtered heading, no unrelated lead",
+      "pass": true
+    },
+    {
+      "check": "Blog search clear",
+      "evidence": "Returns to unfiltered /blog and clears the visible field",
+      "pass": true
+    },
+    {
+      "check": "Blog empty state",
+      "evidence": "No-match query displays the real empty message and no story cards",
+      "pass": true
+    },
+    {
+      "check": "Blog loading state",
+      "evidence": "Delayed test response displays loading feedback and disables duplicate requests",
+      "pass": true
+    },
+    {
+      "check": "Blog error state",
+      "evidence": "Injected 503 keeps existing posts and shows a retry action",
+      "pass": true
+    },
+    {
+      "check": "Blog real retry/pagination",
+      "evidence": "Real /api/blog response appends posts (6 to 15) without duplicates and removes error",
+      "pass": true
+    },
+    {
+      "check": "Article TOC 1",
+      "evidence": "#key-advantages navigates to the actual article heading",
+      "pass": true
+    },
+    {
+      "check": "Article TOC 2",
+      "evidence": "#kenapa-chat-count-saja-adalah-jebakan navigates to the actual article heading",
+      "pass": true
+    },
+    {
+      "check": "Article TOC 3",
+      "evidence": "#metrik-yang-benar-benar-reflect-produktivitas navigates to the actual article heading",
+      "pass": true
+    },
+    {
+      "check": "Article TOC 4",
+      "evidence": "#aht-dan-masalahnya navigates to the actual article heading",
+      "pass": true
+    },
+    {
+      "check": "Article TOC 5",
+      "evidence": "#baseline-yang-fair-untuk-tim-dengan-skill-mix-berbeda navigates to the actual article heading",
+      "pass": true
+    },
+    {
+      "check": "Article TOC 6",
+      "evidence": "#yang-manager-harus-review-mingguan navigates to the actual article heading",
+      "pass": true
+    },
+    {
+      "check": "Article TOC 7",
+      "evidence": "#peran-cekat-dalam-cs-productivity-tracking navigates to the actual article heading",
+      "pass": true
+    },
+    {
+      "check": "Article TOC 8",
+      "evidence": "#ukur-produktivitas-tanpa-menciptakan-burnout navigates to the actual article heading",
+      "pass": true
+    },
+    {
+      "check": "Article TOC 9",
+      "evidence": "#pertanyaan-yang-sering-diajukan-faq navigates to the actual article heading",
+      "pass": true
+    },
+    {
+      "check": "Article TOC 10",
+      "evidence": "#apa-metrik-terbaik-untuk-mengukur-produktivitas-agen-customer-service navigates to the actual article heading",
+      "pass": true
+    },
+    {
+      "check": "Article TOC 11",
+      "evidence": "#kenapa-jumlah-chat-saja-menyesatkan-dalam-menilai-produktivitas-agen navigates to the actual article heading",
+      "pass": true
+    },
+    {
+      "check": "Article TOC 12",
+      "evidence": "#apa-masalah-mengukur-produktivitas-dengan-aht navigates to the actual article heading",
+      "pass": true
+    },
+    {
+      "check": "Article TOC 13",
+      "evidence": "#bagaimana-membuat-baseline-yang-fair-untuk-tim-dengan-skill-mix-berbeda navigates to the actual article heading",
+      "pass": true
+    },
+    {
+      "check": "Article TOC 14",
+      "evidence": "#metrik-apa-saja-yang-sebaiknya-direview-manajer-setiap-minggu navigates to the actual article heading",
+      "pass": true
+    },
+    {
+      "check": "Article copy link",
+      "evidence": "Clipboard contains canonical article URL; success status displayed",
+      "pass": true
+    },
+    {
+      "check": "Article share WhatsApp",
+      "evidence": "Canonical encoded share destination verified; no message or post submitted",
+      "pass": true
+    },
+    {
+      "check": "Article share LinkedIn",
+      "evidence": "Canonical encoded share destination verified; no message or post submitted",
+      "pass": true
+    },
+    {
+      "check": "Article author profile",
+      "evidence": "http://localhost:4173/blog/author/superadmin",
+      "pass": true
+    },
+    {
+      "check": "Article tag empty state",
+      "evidence": "The selected article has no tags, so no empty tag section or dead tag link is rendered",
+      "pass": true
+    },
+    {
+      "check": "Desktop navigation dropdown 1",
+      "evidence": "Enter opens; Escape closes",
+      "pass": true
+    },
+    {
+      "check": "Desktop navigation dropdown 2",
+      "evidence": "Enter opens; Escape closes",
+      "pass": true
+    },
+    {
+      "check": "Desktop navigation dropdown 3",
+      "evidence": "Enter opens; Escape closes",
+      "pass": true
+    },
+    {
+      "check": "Mobile blog navigation",
+      "evidence": "http://localhost:4173/blog",
+      "pass": true
+    },
+    {
+      "check": "Mobile menu",
+      "evidence": "Click opens; Escape closes; Blog link navigates",
+      "pass": true
+    },
+    {
+      "check": "No JavaScript /marketing",
+      "evidence": "Hero and complete feature content are server-rendered and visible",
+      "pass": true
+    },
+    {
+      "check": "No JavaScript /chat",
+      "evidence": "Hero and complete feature content are server-rendered and visible",
+      "pass": true
+    },
+    {
+      "check": "No JavaScript /crm",
+      "evidence": "Hero and complete feature content are server-rendered and visible",
+      "pass": true
+    },
+    {
+      "check": "No JavaScript /order",
+      "evidence": "Hero and complete feature content are server-rendered and visible",
+      "pass": true
+    },
+    {
+      "check": "No JavaScript /fitur/chatbot",
+      "evidence": "Hero and complete feature content are server-rendered and visible",
+      "pass": true
+    },
+    {
+      "check": "No JavaScript /industri/kesehatan",
+      "evidence": "Hero and complete feature content are server-rendered and visible",
+      "pass": true
+    },
+    {
+      "check": "No JavaScript directory",
+      "evidence": "All 29 links visible; inactive search/filter controls hidden",
+      "pass": true
+    },
+    {
+      "check": "No JavaScript pagination",
+      "evidence": "Native link opens /blog?page=2 with real posts",
+      "pass": true
+    },
+    {
+      "check": "No JavaScript search",
+      "evidence": "Native GET form opens actual keyword results",
+      "pass": true
+    },
+    {
+      "check": "Normal motion and homepage isolation",
+      "evidence": "Product hero/chapter visible after motion; client navigation home removes secondary-page root",
+      "pass": true
+    },
+    {
+      "check": "Internal destination HTTP checks",
+      "evidence": "110 unique collected local hrefs checked with GET; failures: none",
+      "pass": true
+    }
+  ],
+  "pageErrors": [],
+  "destinations": [
+    {
+      "href": "/",
+      "status": 200
+    },
+    {
+      "href": "/blog",
+      "status": 200
+    },
+    {
+      "href": "/blog/ab-testing-iklan-kualitas-chat",
+      "status": 200
+    },
+    {
+      "href": "/blog/ad-fatigue-kapan-ganti-creative",
+      "status": 200
+    },
+    {
+      "href": "/blog/alasan-penolakan-input-marketing",
+      "status": 200
+    },
+    {
+      "href": "/blog/author/superadmin",
+      "status": 200
+    },
+    {
+      "href": "/blog/eskalasi-tiket-cs-ke-tim-teknis",
+      "status": 200
+    },
+    {
+      "href": "/blog/insight-chat-untuk-creative-brief",
+      "status": 200
+    },
+    {
+      "href": "/blog/integrasi-whatsapp-instagram-inbox",
+      "status": 200
+    },
+    {
+      "href": "/blog/kontrak-metrik-agency-klien",
+      "status": 200
+    },
+    {
+      "href": "/blog/library-creative-berdasarkan-outcome",
+      "status": 200
+    },
+    {
+      "href": "/blog/postcampaign-review-learning",
+      "status": 200
+    },
+    {
+      "href": "/blog/spam-test-leads-analisis-campaign",
+      "status": 200
+    },
+    {
+      "href": "/blog/template-balasan-cepat-cs",
+      "status": 200
+    },
+    {
+      "href": "/blog/tes-hook-atau-offer-iklan",
+      "status": 200
+    },
+    {
+      "href": "/blog?category=ai-agent",
+      "status": 200
+    },
+    {
+      "href": "/blog?category=automation",
+      "status": 200
+    },
+    {
+      "href": "/blog?category=crm",
+      "status": 200
+    },
+    {
+      "href": "/blog?category=finance",
+      "status": 200
+    },
+    {
+      "href": "/blog?category=marketing",
+      "status": 200
+    },
+    {
+      "href": "/blog?category=omnichannel",
+      "status": 200
+    },
+    {
+      "href": "/blog?category=sales",
+      "status": 200
+    },
+    {
+      "href": "/blog?category=ticketing-system",
+      "status": 200
+    },
+    {
+      "href": "/blog?category=transaksi-online",
+      "status": 200
+    },
+    {
+      "href": "/blog?category=whatsapp-business-api",
+      "status": 200
+    },
+    {
+      "href": "/blog?page=2",
+      "status": 200
+    },
+    {
+      "href": "/chat",
+      "status": 200
+    },
+    {
+      "href": "/contact-us",
+      "status": 200
+    },
+    {
+      "href": "/crm",
+      "status": 200
+    },
+    {
+      "href": "/fitur",
+      "status": 200
+    },
+    {
+      "href": "/fitur/agentic-ai",
+      "status": 200
+    },
+    {
+      "href": "/fitur/ai-feedback",
+      "status": 200
+    },
+    {
+      "href": "/fitur/ai-multi-bahasa",
+      "status": 200
+    },
+    {
+      "href": "/fitur/aplikasi-broadcast-whatsapp",
+      "status": 200
+    },
+    {
+      "href": "/fitur/aplikasi-crm",
+      "status": 200
+    },
+    {
+      "href": "/fitur/aplikasi-omnichannel",
+      "status": 200
+    },
+    {
+      "href": "/fitur/auto-reply-whatsapp",
+      "status": 200
+    },
+    {
+      "href": "/fitur/automasi-workflow",
+      "status": 200
+    },
+    {
+      "href": "/fitur/bot-facebook-messenger",
+      "status": 200
+    },
+    {
+      "href": "/fitur/buat-ai-agent",
+      "status": 200
+    },
+    {
+      "href": "/fitur/cek-ongkir-otomatis",
+      "status": 200
+    },
+    {
+      "href": "/fitur/chatbot",
+      "status": 200
+    },
+    {
+      "href": "/fitur/chatbot-ai-whatsapp",
+      "status": 200
+    },
+    {
+      "href": "/fitur/crm-otomatis",
+      "status": 200
+    },
+    {
+      "href": "/fitur/dashboard-roas",
+      "status": 200
+    },
+    {
+      "href": "/fitur/desain-alur-chat",
+      "status": 200
+    },
+    {
+      "href": "/fitur/follow-up-otomatis",
+      "status": 200
+    },
+    {
+      "href": "/fitur/function-calling",
+      "status": 200
+    },
+    {
+      "href": "/fitur/instagram-bot",
+      "status": 200
+    },
+    {
+      "href": "/fitur/integrasi-capi",
+      "status": 200
+    },
+    {
+      "href": "/fitur/integrasi-meta-ads",
+      "status": 200
+    },
+    {
+      "href": "/fitur/integrasi-tiktok-ads",
+      "status": 200
+    },
+    {
+      "href": "/fitur/jam-kerja-ai",
+      "status": 200
+    },
+    {
+      "href": "/fitur/knowledge-base",
+      "status": 200
+    },
+    {
+      "href": "/fitur/live-chat-website",
+      "status": 200
+    },
+    {
+      "href": "/fitur/manajemen-data-pelanggan",
+      "status": 200
+    },
+    {
+      "href": "/fitur/manajemen-komplain",
+      "status": 200
+    },
+    {
+      "href": "/fitur/manajemen-kontak",
+      "status": 200
+    },
+    {
+      "href": "/fitur/manajemen-lead",
+      "status": 200
+    },
+    {
+      "href": "/fitur/manajemen-pipeline",
+      "status": 200
+    },
+    {
+      "href": "/fitur/multichat-wa",
+      "status": 200
+    },
+    {
+      "href": "/fitur/open-api",
+      "status": 200
+    },
+    {
+      "href": "/fitur/otomatisasi-order",
+      "status": 200
+    },
+    {
+      "href": "/fitur/pembayaran-qr-otomatis",
+      "status": 200
+    },
+    {
+      "href": "/fitur/pengaturan-ai",
+      "status": 200
+    },
+    {
+      "href": "/fitur/segmentasi-pelanggan",
+      "status": 200
+    },
+    {
+      "href": "/fitur/sistem-manajemen-tiket",
+      "status": 200
+    },
+    {
+      "href": "/fitur/tahapan-customer",
+      "status": 200
+    },
+    {
+      "href": "/fitur/utm-generator",
+      "status": 200
+    },
+    {
+      "href": "/fitur/wa-blast",
+      "status": 200
+    },
+    {
+      "href": "/fitur/website-tracker",
+      "status": 200
+    },
+    {
+      "href": "/fitur/whatsapp-bisnis",
+      "status": 200
+    },
+    {
+      "href": "/fitur/whatsapp-bot",
+      "status": 200
+    },
+    {
+      "href": "/fitur/whatsapp-bulk",
+      "status": 200
+    },
+    {
+      "href": "/fitur/whatsapp-business-api",
+      "status": 200
+    },
+    {
+      "href": "/fitur/whatsapp-call-ai",
+      "status": 200
+    },
+    {
+      "href": "/fitur/whatsapp-multi-device",
+      "status": 200
+    },
+    {
+      "href": "/industri",
+      "status": 200
+    },
+    {
+      "href": "/industri/apotek",
+      "status": 200
+    },
+    {
+      "href": "/industri/barbershop",
+      "status": 200
+    },
+    {
+      "href": "/industri/dental",
+      "status": 200
+    },
+    {
+      "href": "/industri/edutech",
+      "status": 200
+    },
+    {
+      "href": "/industri/fmcg",
+      "status": 200
+    },
+    {
+      "href": "/industri/fnb",
+      "status": 200
+    },
+    {
+      "href": "/industri/gym-olahraga",
+      "status": 200
+    },
+    {
+      "href": "/industri/hiburan",
+      "status": 200
+    },
+    {
+      "href": "/industri/isp",
+      "status": 200
+    },
+    {
+      "href": "/industri/jasa-profesional",
+      "status": 200
+    },
+    {
+      "href": "/industri/kesehatan",
+      "status": 200
+    },
+    {
+      "href": "/industri/keuangan",
+      "status": 200
+    },
+    {
+      "href": "/industri/klinik",
+      "status": 200
+    },
+    {
+      "href": "/industri/lembaga-sosial",
+      "status": 200
+    },
+    {
+      "href": "/industri/logistik",
+      "status": 200
+    },
+    {
+      "href": "/industri/maskapai",
+      "status": 200
+    },
+    {
+      "href": "/industri/otomotif",
+      "status": 200
+    },
+    {
+      "href": "/industri/outsourcing",
+      "status": 200
+    },
+    {
+      "href": "/industri/pemerintahan",
+      "status": 200
+    },
+    {
+      "href": "/industri/pendidikan",
+      "status": 200
+    },
+    {
+      "href": "/industri/perhotelan",
+      "status": 200
+    },
+    {
+      "href": "/industri/properti",
+      "status": 200
+    },
+    {
+      "href": "/industri/ritel",
+      "status": 200
+    },
+    {
+      "href": "/industri/saas",
+      "status": 200
+    },
+    {
+      "href": "/industri/salon-kecantikan",
+      "status": 200
+    },
+    {
+      "href": "/industri/sekolah",
+      "status": 200
+    },
+    {
+      "href": "/industri/teknologi-startup",
+      "status": 200
+    },
+    {
+      "href": "/industri/transportasi",
+      "status": 200
+    },
+    {
+      "href": "/industri/travel",
+      "status": 200
+    },
+    {
+      "href": "/marketing",
+      "status": 200
+    },
+    {
+      "href": "/order",
+      "status": 200
+    },
+    {
+      "href": "/studi-kasus",
+      "status": 200
+    }
+  ]
+}

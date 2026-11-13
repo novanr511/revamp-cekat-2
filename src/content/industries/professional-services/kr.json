@@ -7,12 +7,7 @@
     "badge": "전문 서비스",
     "title": "사무실이 문을 닫은 후에도 모든 상담 요청에 응답하세요.",
     "subtitle": "첫 번째 질문부터 자격 확인, 확정된 상담까지 Cekat.AI는 자동화된 알림을 통해 WhatsApp 및 웹 채팅에 대한 접수를 연중무휴 24시간 처리하므로 파트너는 근무 시간 외 핫라인이 되지 않습니다.",
-    "useCases": [
-      "상담요청",
-      "자동 섭취",
-      "상담 일정",
-      "서비스당 파이프라인"
-    ]
+    "useCases": ["상담요청", "자동 섭취", "상담 일정", "서비스당 파이프라인"]
   },
   "definition": "전문 서비스를 위한 Cekat.AI는 인도네시아의 법률 회사, 공증인, 세무 및 회계 컨설턴트, 대행사 및 건축가를 위한 AI 고객 서비스 플랫폼으로, 하나의 플랫폼에서 자동 알림 및 파트너별 파이프라인을 갖춘 상담 예약 시스템을 통해 연중무휴 24시간 고객 접수 및 자격 심사를 처리합니다.",
   "stats": [
@@ -51,26 +46,26 @@
     {
       "title": "AI가 처리하는 반복적인 섭취 질문",
       "body": "\"나 같은 사건도 처리하시나요?\" \"어떤 서류가 필요한가요?\" \"절차는 얼마나 걸리나요?\" 매일 같은 입학 질문이 도착합니다. Cekat.AI는 회사의 지식 기반에서 자연어로 답변한 다음 필요성, 긴급성 및 기본 세부 사항에 대해 질문하므로 파트너에게 전달되는 내용은 빈 채팅이 아닌 잘 구성된 문의입니다.",
-      "image": "/images/chat/ai-handles-conversations.png",
-      "imageAlt": "Cekat.AI 받은 편지함에서 잠재 고객 접수 질문을 처리하는 AI 에이전트"
+      "visual": "industryInbox",
+      "visualAlt": "Cekat.AI 받은 편지함에서 잠재 고객 접수 질문을 처리하는 AI 에이전트"
     },
     {
       "title": "채팅에서 바로 예약된 상담",
       "body": "\"언제 시간이 되세요?\"라는 질문은 더 이상 필요하지 않습니다. 전화로. Cekat.AI는 대화 내에서 슬롯을 제공하고 상담 일정을 캡처하며 API 통합을 통해 사무실에서 이미 사용하는 캘린더 또는 예약 시스템에 연결할 수 있으며 클라이언트는 확인된 시간에 간단히 나타납니다.",
-      "image": "/images/home/api-integration.png",
-      "imageAlt": "사무실 달력 및 예약 시스템과 Cekat.AI API 통합"
+      "visual": "industryBooking",
+      "visualAlt": "사무실 달력 및 예약 시스템과 Cekat.AI API 통합"
     },
     {
       "title": "노쇼(No-Show)를 줄이는 자동 알림",
       "body": "조용히 놓친 회의는 청구 가능한 시간이 지났습니다. Cekat.AI는 WhatsApp에서 상담할 때마다 가져올 문서를 포함하여 미리 알림을 보내고, 클라이언트가 시간을 옮겨야 할 때 동일한 채팅에서 일정 변경이 이루어지므로 확보된 슬롯이 낭비되는 대신 채워집니다.",
-      "image": "/images/order/automatic-notifications-to-the-right-team.png",
-      "imageAlt": "Cekat.AI의 자동 상담 알림 및 일정 알림"
+      "visual": "industryAutomation",
+      "visualAlt": "Cekat.AI의 자동 상담 알림 및 일정 알림"
     },
     {
       "title": "파트너 또는 서비스 라인별로 파이프라인에서 추적되는 모든 문의",
       "body": "한 파트너의 전화에 있는 리드는 회사에서 수익이 새어나가는 것입니다. Cekat.AI는 파트너 또는 서비스 라인별로 파이프라인으로 구성된 채팅 기록 및 명시된 요구 사항을 첨부하여 CRM 카드에 대한 모든 문의를 자동으로 캡처하므로 관리 파트너는 묻지 않고 하나의 보드에서 모든 잠재 고객을 볼 수 있습니다.",
-      "image": "/images/crm/track-customer-journey.png",
-      "imageAlt": "Cekat.AI CRM의 파트너별 클라이언트 조회 파이프라인"
+      "visual": "industryPipeline",
+      "visualAlt": "Cekat.AI CRM의 파트너별 클라이언트 조회 파이프라인"
     }
   ],
   "pillars": [

@@ -43,26 +43,26 @@
     {
       "title": "Retailer Restock Requests Answered at Any Hour",
       "body": "Store owners check their shelves after closing time, and they will not wait a week for the next sales visit. Cekat.AI answers product availability, pricing, and minimum order quantities at any hour, logs the restock request as an order, and hands it to the area sales team the moment the workday starts.",
-      "image": "/images/home/ai-working-hours.png",
-      "imageAlt": "AI answering restock requests outside working hours in Cekat.AI"
+      "visual": "industryCatalog",
+      "visualAlt": "AI answering restock requests outside working hours in Cekat.AI"
     },
     {
       "title": "Promos Reach the Right Retailer Segments",
       "body": "Trade promos, loyalty points, and new-variant launches no longer die in a buried WhatsApp group. Cekat.AI broadcasts through the official WhatsApp Business API to the outlet segments you choose, by region, store type, or order history, with automatic follow-ups chasing the outlets that have not responded.",
-      "image": "/images/marketing/understand-customer-behavior.png",
-      "imageAlt": "Outlet segmentation for promo broadcasts in Cekat.AI"
+      "visual": "industryBroadcast",
+      "visualAlt": "Outlet segmentation for promo broadcasts in Cekat.AI"
     },
     {
       "title": "Complaints Route Straight to the Right Region",
       "body": "Damaged packaging, a wrong variant shipped, a promo prize that never arrived, consumer and store complaints become tickets automatically and route to the regional team or distributor covering that area, full chat history attached. Automatic notifications make sure the right team knows first, before the complaint reaches social media.",
-      "image": "/images/order/automatic-notifications-to-the-right-team.png",
-      "imageAlt": "Complaint routed automatically to the regional team in Cekat.AI"
+      "visual": "industryTicketQueue",
+      "visualAlt": "Complaint routed automatically to the regional team in Cekat.AI"
     },
     {
       "title": "One Complete View of Every Outlet",
       "body": "Every chat enriches the outlet's profile: order history, promos joined, complaints filed, all recorded automatically into a customer data platform. You can see which outlets stopped ordering and which segments respond best to promos, so your sales team walks into every visit with data instead of guesswork.",
-      "image": "/images/crm/track-customer-journey.png",
-      "imageAlt": "Each outlet's journey tracked in Cekat.AI"
+      "visual": "industryAnalytics",
+      "visualAlt": "Each outlet's journey tracked in Cekat.AI"
     }
   ],
   "pillars": [

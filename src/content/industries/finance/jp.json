@@ -43,26 +43,26 @@
     {
       "title": "AI に対するルーチン、チームへの影響を考慮した完全なコンテキスト",
       "body": "金融に関する会話の中には、人が対応しなければならないものもあります。 Cekat.AI は日常的な質問に答え、ケースがデリケートまたは複雑になった瞬間に、会話全体を添付してスタッフにエスカレーションします。 AI の勤務時間により、チームと AI の間の引き継ぎは自動的に行われ、顧客が同じことを繰り返すことはありません。",
-      "image": "/images/chat/escalate-and-sync.png",
-      "imageAlt": "Cekat.AI の完全なコンテキストを備えたスタッフへの自動エスカレーション"
+      "visual": "industryInbox",
+      "visualAlt": "Cekat.AI の完全なコンテキストを備えたスタッフへの自動エスカレーション"
     },
     {
       "title": "すべての苦情は追跡チケットになります",
       "body": "混雑した受信トレイで苦情が失われると、コンプライアンスと評判のリスクになります。 Cekat.AI は、受信した問題に自動的にラベルを付け、チケットを作成し、通知とともに適切なチームにルーティングします。そのため、すべての苦情は最初のメッセージから解決まで追跡され、静かに消えるものは何もありません。",
-      "image": "/images/order/auto-create-ticket.png",
-      "imageAlt": "Cekat.AI での財務上の苦情に対するチケットの自動作成"
+      "visual": "industryDocuments",
+      "visualAlt": "Cekat.AI での財務上の苦情に対するチケットの自動作成"
     },
     {
       "title": "あらゆるケースを完全に可視化",
       "body": "各会話のステータス、所有者、解決パスが 1 か所に表示され、すべてのタッチポイントから対話記録が自動的に構築され、手動でログを記録する必要はありません。監査やレビューで、いつ何が起こったのかが尋ねられるとき、証跡は個人的なチャットに散在するのではなく、すでにそこにあります。",
-      "image": "/images/order/full-visibility-across-every-automation-step.png",
-      "imageAlt": "Cekat.AI のあらゆる顧客ケースを完全に可視化"
+      "visual": "industryAnalytics",
+      "visualAlt": "Cekat.AI のあらゆる顧客ケースを完全に可視化"
     },
     {
       "title": "すべての顧客に 1 つの生きた記録",
       "body": "すべてのやり取りで CRM カードが自動的に作成および更新され、手動入力は不要で、各顧客の質問、申し込み、履歴の完全な記録が構築されます。チームは、個別のチャネルやスプレッドシートからコンテキストをつなぎ合わせるのではなく、1 つのプロファイルを開いて全体像を確認します。",
-      "image": "/images/crm/capture-and-organize-customers.png",
-      "imageAlt": "Cekat.AI CRM で整理された生きた顧客記録"
+      "visual": "industryContactRecord",
+      "visualAlt": "Cekat.AI CRM で整理された生きた顧客記録"
     }
   ],
   "pillars": [

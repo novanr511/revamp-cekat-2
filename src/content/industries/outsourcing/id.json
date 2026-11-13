@@ -43,26 +43,26 @@
     {
       "title": "AI Menangani Tier-1 di Semua Akun, 24/7",
       "body": "Status pesanan, jam operasional, kebijakan retur, tipe chat yang menghabiskan sebagian besar jam kerja agent, dijawab AI secara instan di semua akun klien sekaligus. Volume melonjak pun waktu respons tetap stabil, dan headcount nggak lagi harus ikut naik tiap kali kontrak baru masuk.",
-      "image": "/images/chat/ai-handles-conversations.png",
-      "imageAlt": "AI agent menjawab chat tier-1 pelanggan di inbox Cekat.AI"
+      "visual": "industryInbox",
+      "visualAlt": "AI agent menjawab chat tier-1 pelanggan di inbox Cekat.AI"
     },
     {
       "title": "Knowledge Base per Akun, Jawaban Nggak Ketukar",
       "body": "SOP klien fashion beda dengan klien elektronik, dan jawaban yang ketukar antar akun itu mimpi buruk BPO. Di Cekat.AI tiap akun punya knowledge base sendiri, salin dokumen, FAQ, dan SOP klien ke sana, dan AI di workspace itu menjawab hanya dari sumber tersebut, konsisten dengan brand voice masing-masing klien.",
-      "image": "/images/home/knowledge-source.png",
-      "imageAlt": "Knowledge base terpisah per akun klien di Cekat.AI"
+      "visual": "industryKnowledge",
+      "visualAlt": "Knowledge base terpisah per akun klien di Cekat.AI"
     },
     {
       "title": "Agent Cukup Pegang Eskalasi, Bukan Semua Chat",
       "body": "Kasus yang rumit atau sensitif dialihkan ke agent manusia lengkap dengan riwayat percakapan dan data pelanggannya, jadi nggak ada tanya ulang dari awal. Akses berbasis peran mengatur siapa memegang akun mana, dan utilisasi tim berubah jadi soal kualitas penanganan, bukan kecepatan mengetik.",
-      "image": "/images/chat/escalate-and-sync.png",
-      "imageAlt": "Eskalasi chat ke agent manusia dengan konteks penuh di Cekat.AI"
+      "visual": "industryHandoff",
+      "visualAlt": "Eskalasi chat ke agent manusia dengan konteks penuh di Cekat.AI"
     },
     {
       "title": "SLA dan Analitik per Klien Tanpa Rekap Manual",
       "body": "Laporan bulanan nggak perlu lagi disusun dari export spreadsheet tiap akhir bulan. Setiap workspace punya dashboard sendiri, volume chat, waktu respons, tingkat penyelesaian, performa AI dan agent, jadi review SLA tinggal membuka angka yang sama dengan klien, data hidup, bukan rekapan minggu lalu.",
-      "image": "/images/order/full-visibility-across-every-automation-step.png",
-      "imageAlt": "Dashboard performa dan SLA per akun klien di Cekat.AI"
+      "visual": "industryAnalytics",
+      "visualAlt": "Dashboard performa dan SLA per akun klien di Cekat.AI"
     }
   ],
   "pillars": [

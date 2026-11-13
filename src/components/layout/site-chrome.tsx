@@ -42,6 +42,9 @@ export function SiteChrome({
       ".cekat-page, .contact-us-page",
     );
     if (!root || typeof IntersectionObserver === "undefined") return;
+    // Redesigned secondary pages own their GSAP enhancement and teardown.
+    // Don't let the legacy observer animate those same section transforms.
+    if (root.querySelector(".r-page")) return;
 
     const sections = [
       ...root.querySelectorAll<HTMLElement>(
@@ -117,8 +120,10 @@ export function SiteChrome({
         </noscript>
         {children}
       </main>
-      <Footer />
-      <FloatingWhatsApp label={whatsappLabel} />
+      <Footer largeTouchTargets />
+      <aside aria-label={whatsappLabel}>
+        <FloatingWhatsApp label={whatsappLabel} />
+      </aside>
     </>
   );
 }

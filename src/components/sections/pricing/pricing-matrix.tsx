@@ -18,18 +18,29 @@ export function PricingMatrix({ plan }: { plan: Plan }) {
   const priced = showsPrices(locale);
 
   return (
-    <div className="mt-14">
+    <div className="pricing-comparison mt-14">
       <div className="mx-auto max-w-2xl text-center">
-        <p className="eyebrow-rule mb-4 inline-flex font-numeric text-[0.68rem] font-semibold tracking-[0.2em] text-primary uppercase">
+        <h2
+          id={`pricing-comparison-${plan.id}`}
+          className="mb-4 font-numeric text-2xl font-semibold tracking-tight text-foreground md:text-3xl"
+        >
           {t("compareHeading")}
-        </p>
+        </h2>
         <p className="font-numeric text-base text-muted-foreground">
           {t("compareIntro")}
         </p>
       </div>
 
-      <div className="mt-8 overflow-x-auto rounded-[1.35rem] border border-foreground/10 bg-white shadow-[0_24px_50px_-40px_rgba(16,24,40,0.45)]">
-        <table className="w-full min-w-[46rem] border-collapse text-left">
+      <div
+        role="region"
+        aria-labelledby={`pricing-comparison-${plan.id}`}
+        tabIndex={0}
+        className="pricing-table-scroll mt-8 overflow-x-auto rounded-[1.35rem] border border-border bg-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
+      >
+        <table
+          aria-labelledby={`pricing-comparison-${plan.id}`}
+          className="w-full min-w-[46rem] border-collapse text-left"
+        >
           <thead>
             <tr className="border-b border-border bg-surface-subtle">
               <th

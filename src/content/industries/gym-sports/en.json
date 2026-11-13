@@ -43,26 +43,26 @@
     {
       "title": "Schedules, Prices, and Availability Answered Instantly",
       "body": "\"Any court left Saturday at 7?\" \"Which morning classes do you run?\" \"Can I rent a racket?\" Cekat.AI answers from a knowledge base built on your schedule, prices, and house rules, in natural language that understands intent, so the asker gets certainty in seconds and takes the slot, instead of trying the venue next door.",
-      "image": "/images/chat/ai-handles-conversations.png",
-      "imageAlt": "AI agent answering schedule and price questions in the Cekat.AI inbox"
+      "visual": "industryBooking",
+      "visualAlt": "AI agent answering schedule and price questions in the Cekat.AI inbox"
     },
     {
       "title": "Remind Members Before Sessions, Cut the No-Shows",
       "body": "A booked slot nobody shows up for is revenue you can't resell. Cekat.AI sends automatic reminders before a match or class starts, with confirm and reschedule options in the same chat, so cancellations surface early and the slot can still go to another member.",
-      "image": "/images/order/automatic-notifications-to-the-right-team.png",
-      "imageAlt": "Automatic reminders sent ahead of session schedules in Cekat.AI"
+      "visual": "industryEnrollment",
+      "visualAlt": "Automatic reminders sent ahead of session schedules in Cekat.AI"
     },
     {
       "title": "Renewals Chased Automatically, Not After They Lapse",
       "body": "A membership that expires quietly is a member who leaves quietly. Cekat.AI tracks each member's cycle in the CRM and sends renewal follow-ups before the expiry date, plus a relevant nudge for members who haven't shown up in a while, so renewals happen because someone was reminded on time, not remembered too late.",
-      "image": "/images/crm/track-customer-journey.png",
-      "imageAlt": "Member journey from active to renewal tracked in the Cekat.AI CRM"
+      "visual": "industryAutomation",
+      "visualAlt": "Member journey from active to renewal tracked in the Cekat.AI CRM"
     },
     {
       "title": "Promos That Reach the Right Member Segment",
       "body": "Blasting the same promo to every contact is the fastest way to get muted. Cekat.AI segments members by behavior, morning class regulars, weekend padel players, memberships about to expire, and sends broadcasts through the official WhatsApp Business API to the segment that cares, so an open court promo or a new class actually gets read.",
-      "image": "/images/marketing/understand-customer-behavior.png",
-      "imageAlt": "Member segments by behavior for promo broadcasts in Cekat.AI"
+      "visual": "industryBroadcast",
+      "visualAlt": "Member segments by behavior for promo broadcasts in Cekat.AI"
     }
   ],
   "pillars": [

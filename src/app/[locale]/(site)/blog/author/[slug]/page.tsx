@@ -134,30 +134,30 @@ export default async function AuthorPage({
         subtitle={bio}
         chips={chips}
       >
-        <div className="mx-auto flex max-w-xl items-center justify-center gap-4 rounded-[1.35rem] border border-white/12 bg-white/8 p-5 backdrop-blur lg:mx-0 lg:max-w-md">
+        <div className="mx-auto flex max-w-xl items-center justify-center gap-4 rounded-[1.35rem] border border-[#ccdaf1] bg-white/90 p-5 shadow-[0_18px_40px_-36px_rgba(16,24,40,0.4)] backdrop-blur lg:mx-0 lg:max-w-md">
           {author.avatar ? (
             <Image
               src={author.avatar}
               alt={author.name}
               width={72}
               height={72}
-              className="size-16 shrink-0 rounded-full ring-2 ring-white/25"
+              className="size-16 shrink-0 rounded-full ring-2 ring-[#ccdaf1]"
               unoptimized
               priority
             />
           ) : (
-            <span className="flex size-16 shrink-0 items-center justify-center rounded-full bg-primary/25 font-numeric text-2xl font-semibold text-white ring-2 ring-white/25">
+            <span className="flex size-16 shrink-0 items-center justify-center rounded-full bg-primary/10 font-numeric text-2xl font-semibold text-[#1352bf] ring-2 ring-[#ccdaf1]">
               {author.name.charAt(0)}
             </span>
           )}
           <div className="min-w-0 text-left">
-            <p className="font-numeric text-base font-semibold text-white">
+            <p className="font-numeric text-base font-semibold text-[#09214c]">
               {author.name}
             </p>
-            <p className="mt-0.5 font-numeric text-sm text-sky-100/80">
+            <p className="mt-0.5 font-numeric text-sm text-[#505f73]">
               {t("authorRole")}
             </p>
-            <p className="mt-2 font-numeric text-xs tracking-[0.12em] text-sky-200/70 uppercase">
+            <p className="mt-2 font-numeric text-xs tracking-[0.12em] text-[#1352bf] uppercase">
               {t("authorPostCount", { count: total })}
             </p>
           </div>

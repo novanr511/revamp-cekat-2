@@ -43,26 +43,26 @@
     {
       "title": "Login and Payment Issues Fixed in the First Chat",
       "body": "A student who cannot log in or is unsure about a payment is not trying to complain, they are trying to learn. Cekat.AI resolves common issues on the spot, and for cases that need an engineer, a ticket is created automatically from the conversation and routed to the right team, so nothing sinks in the inbox.",
-      "image": "/images/order/auto-create-ticket.png",
-      "imageAlt": "Support ticket auto-created from a chat in Cekat.AI"
+      "visual": "industryTicketQueue",
+      "visualAlt": "Support ticket auto-created from a chat in Cekat.AI"
     },
     {
       "title": "Trial Signups Walked All the Way to Their First Lesson",
       "body": "Most trial users quit not because the product fell short, but because they never started. Cekat.AI greets new signups automatically, points them to their first lesson, and follows up with anyone who still has not logged in after a few days, flows you assemble without code, triggered by each user's behavior.",
-      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
-      "imageAlt": "Automated new-user onboarding flow in Cekat.AI"
+      "visual": "industryEnrollment",
+      "visualAlt": "Automated new-user onboarding flow in Cekat.AI"
     },
     {
       "title": "Students Going Quiet Get a Nudge Before They Churn",
       "body": "Churn is rarely sudden; it starts with a week of unopened lessons. Cekat.AI tracks each user's journey in the CRM, from signup to active to going quiet, and sends personal nudges to bring them back before next month's renewal is at stake. Your team sees who is at risk instead of guessing.",
-      "image": "/images/crm/track-customer-journey.png",
-      "imageAlt": "Learner journeys tracked in the Cekat.AI CRM"
+      "visual": "industryAutomation",
+      "visualAlt": "Learner journeys tracked in the Cekat.AI CRM"
     },
     {
       "title": "Campaigns by Segment, CSAT Always in View",
       "body": "A new batch promo for alumni, renewal reminders for expiring access, free content for leads who have not bought yet. Cekat.AI segments users by course, activity, and payment status for official WhatsApp broadcasts, while measuring CSAT on every conversation so support quality shows up as a number, not a feeling.",
-      "image": "/images/marketing/understand-customer-behavior.png",
-      "imageAlt": "User segments powering EdTech campaigns in Cekat.AI"
+      "visual": "industryAnalytics",
+      "visualAlt": "User segments powering EdTech campaigns in Cekat.AI"
     }
   ],
   "pillars": [

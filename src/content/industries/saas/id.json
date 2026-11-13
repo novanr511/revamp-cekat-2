@@ -43,26 +43,26 @@
     {
       "title": "User Trial Dikawal Sampai Aktif, Bukan Dibiarkan Menghilang",
       "body": "Kebanyakan user trial berhenti sebelum sempat merasakan value produkmu. Cekat.AI menyapa user baru, menjawab pertanyaan setup di momen mereka stuck, dan mengirim follow-up otomatis lewat WhatsApp berdasarkan perjalanan masing-masing user, jadi lebih banyak trial yang sampai ke aha moment, bukan menghilang diam-diam di hari kedua.",
-      "image": "/images/crm/track-customer-journey.png",
-      "imageAlt": "Perjalanan user trial terpantau di CRM Cekat.AI"
+      "visual": "industryInbox",
+      "visualAlt": "Perjalanan user trial terpantau di CRM Cekat.AI"
     },
     {
       "title": "Laporan Bug Langsung Jadi Tiket untuk Tim Engineering",
       "body": "Bug yang dilaporkan lewat chat sering hilang sebelum sampai ke engineer. Cekat.AI mengubah laporan bug jadi tiket otomatis, lengkap dengan kronologi dari user, lalu meneruskannya ke tim yang tepat. Engineering dapat konteks yang utuh tanpa ikut piket bales chat, dan user bisa nanya update-nya kapan saja.",
-      "image": "/images/order/auto-create-ticket.png",
-      "imageAlt": "Laporan bug otomatis menjadi tiket di Cekat.AI"
+      "visual": "industryTicketQueue",
+      "visualAlt": "Laporan bug otomatis menjadi tiket di Cekat.AI"
     },
     {
       "title": "Kasus Kompleks Dioper ke Timmu, Lengkap dengan Konteks",
       "body": "AI menangani pertanyaan yang berulang, timmu menangani yang butuh manusia. Saat ada kasus billing yang sensitif atau permintaan enterprise, percakapan dioper ke agent manusia lengkap dengan seluruh riwayatnya, user nggak perlu mengulang cerita, dan engineer cuma dipanggil saat memang dibutuhkan.",
-      "image": "/images/chat/escalate-and-sync.png",
-      "imageAlt": "Eskalasi percakapan dari AI ke agent manusia di Cekat.AI"
+      "visual": "industryHandoff",
+      "visualAlt": "Eskalasi percakapan dari AI ke agent manusia di Cekat.AI"
     },
     {
       "title": "Tahu Apa yang Ditanya User, dan Seberapa Puas Mereka",
       "body": "Setiap percakapan jadi data. Kamu bisa lihat topik yang paling sering ditanya, di mana user sering stuck, dan skor CSAT dari tiap interaksi, jadi keputusan roadmap dan perbaikan onboarding berangkat dari percakapan user sungguhan, bukan tebakan di meeting.",
-      "image": "/images/marketing/understand-customer-behavior.png",
-      "imageAlt": "Analitik percakapan dan kepuasan pelanggan di Cekat.AI"
+      "visual": "industryAnalytics",
+      "visualAlt": "Analitik percakapan dan kepuasan pelanggan di Cekat.AI"
     }
   ],
   "pillars": [

@@ -43,26 +43,26 @@
     {
       "title": "Delivery Requests Arrive as Clean Orders, Not Paper Notes",
       "body": "Cekat.AI turns the chat into your pharmacy's online storefront on WhatsApp. The AI captures items, buyer details, shipping cost via cek ongkir, and a payment QR inside the conversation, orders land complete and consistent without staff retyping, and buyers never have to install an app.",
-      "image": "/images/order/end-to-end-operational-efficiency.png",
-      "imageAlt": "Delivery order created and paid inside a chat in Cekat.AI"
+      "visual": "industryCatalog",
+      "visualAlt": "Delivery order created and paid inside a chat in Cekat.AI"
     },
     {
       "title": "Chronic Patients Reminded to Refill on Time",
       "body": "Patients on monthly medication are usually late because they forgot, not because they left. Cekat.AI sends automated refill reminders through the official WhatsApp Business API based on each patient's purchase history, so their therapy stays on track and they keep coming back to your pharmacy.",
-      "image": "/images/crm/track-customer-journey.png",
-      "imageAlt": "Refill reminders based on purchase history in Cekat.AI"
+      "visual": "industryAutomation",
+      "visualAlt": "Refill reminders based on purchase history in Cekat.AI"
     },
     {
       "title": "Consultations Always End with the Pharmacist, Not the AI",
       "body": "On dosage, drug interactions, or health complaints, the AI does not guess and does not give medical advice. Those conversations escalate to your pharmacist automatically with the full chat history, so buyers still get fast service without compromising safety or professional responsibility.",
-      "image": "/images/chat/escalate-and-sync.png",
-      "imageAlt": "Consultation escalating from AI to a pharmacist in Cekat.AI"
+      "visual": "industryBooking",
+      "visualAlt": "Consultation escalating from AI to a pharmacist in Cekat.AI"
     },
     {
       "title": "Someone Still Answers at 11 PM, Without an Extra Shift",
       "body": "Medicine questions ignore closing time. With AI working hours, Cekat.AI answers stock, price, and ordering questions through the night, flags which chats need a pharmacist, and hands them over with full context when the morning shift starts, so no chat goes stale in the inbox.",
-      "image": "/images/home/ai-working-hours.png",
-      "imageAlt": "AI working hours routing between pharmacy staff and AI in Cekat.AI"
+      "visual": "industryHandoff",
+      "visualAlt": "AI working hours routing between pharmacy staff and AI in Cekat.AI"
     }
   ],
   "pillars": [

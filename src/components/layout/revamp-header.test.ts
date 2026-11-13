@@ -37,6 +37,28 @@ const MENU_PREVIEW_COPY = [
 ] as const;
 
 describe("revamp header links", () => {
+  it.each(["id", "en", "cn", "jp", "kr"] as const)(
+    "links capability menus to standalone product pages in %s",
+    (locale) => {
+      const markup = localizeRevampHeaderMarkup(revampHeaderMarkup, locale);
+      const prefix = locale === "id" ? "" : `/${locale}`;
+      for (const [key, route] of [
+        ["broadcasts", "broadcast"],
+        ["automation", "otomatisasi"],
+        ["analytics", "analitik"],
+      ]) {
+        expect(markup).toMatch(
+          new RegExp(
+            `<a class="mitem" href="${prefix}/${route}"[^>]*data-prev="${key}"`,
+          ),
+        );
+      }
+      expect(markup).toContain(
+        `href="${prefix}/${locale === "id" ? "integrasi" : "integrations"}"`,
+      );
+    },
+  );
+
   it.each([
     ["en", "Free trial", "Start free trial"],
     ["id", "Gratis", "Mulai uji coba gratis"],

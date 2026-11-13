@@ -19,6 +19,7 @@ import { EntryGrid } from "./entry-card";
 import Image from "next/image";
 import { PRODUCT_ART } from "./product-stage";
 import { localeValue } from "@/lib/locale-value";
+import { RevampHub } from "@/components/sections/revamp/hub";
 
 const HUB_TEMPLATE = {
   features: "/features",
@@ -109,6 +110,7 @@ export async function LandingHub({
   const tn = await getTranslations({ locale, namespace: "nav" });
   const tl = await getTranslations({ locale, namespace: "landing" });
   const tb = await getTranslations({ locale, namespace: "breadcrumb" });
+  const ts = await getTranslations({ locale, namespace: "secondary" });
   const readMore = tl("readMore");
 
   const entries = REGISTRY[kind].filter((entry) => entry.slugs[locale]);
@@ -166,6 +168,31 @@ export async function LandingHub({
     splitAt > 20 && splitAt < heading.length - 20
       ? heading.slice(splitAt + 1)
       : undefined;
+
+  if (["industries"].includes(kind)) {
+    return (
+      <>
+        <JsonLd data={jsonLd} />
+        <RevampHub
+          industry={kind === "industries"}
+          heading={heading}
+          body={t("body")}
+          definition={definition}
+          directoryHeading={kind === "industries" ? ts("findFit") : heading}
+          entries={entries.map((entry) => ({
+            id: entry.id,
+            slug: entry.slugs[locale]!,
+            title: localeValue(entry.title, locale) || entry.id,
+            tagline: entry.tagline
+              ? localeValue(entry.tagline, locale)
+              : undefined,
+            category: entry.category,
+            image: kind === "industries" ? industryPhoto(entry.id) : undefined,
+          }))}
+        />
+      </>
+    );
+  }
 
   return (
     <>

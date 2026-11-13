@@ -7,12 +7,7 @@
     "badge": "软件即服务",
     "title": "支持了解您的产品，无需扩大团队",
     "subtitle": "从功能问题到登录问题再到错误报告，Cekat.AI 通过网络聊天和 WhatsApp 上的产品文档提供 24/7 的解答，因此您的小型 CS 团队不再陷入重复的工单中",
-    "useCases": [
-      "来自您的文档的答案",
-      "试用入职",
-      "错误报告票",
-      "用户问题分析"
-    ]
+    "useCases": ["来自您的文档的答案", "试用入职", "错误报告票", "用户问题分析"]
   },
   "definition": "Cekat.AI for SaaS 是一个面向印度尼西亚 SaaS 公司的 AI 客户服务平台，为 SaaS 产品提供 24/7 的客户支持，直接回答文档中的问题，指导试用用户激活，并将错误报告转化为一个平台中有组织的票证。",
   "stats": [
@@ -43,26 +38,26 @@
     {
       "title": "引导试用用户激活，而不是随波逐流",
       "body": "大多数试用用户在感受到你的产品的价值之前就退出了。 Cekat.AI 迎接新注册用户，在他们遇到困难时回答设置问题，并根据每个用户的旅程自动发送 WhatsApp 后续信息，以便更多的尝试到达顿悟时刻，而不是在第二天悄然消失。",
-      "image": "/images/crm/track-customer-journey.png",
-      "imageAlt": "在 Cekat.AI CRM 中跟踪试用用户旅程"
+      "visual": "industryInbox",
+      "visualAlt": "在 Cekat.AI CRM 中跟踪试用用户旅程"
     },
     {
       "title": "错误报告变成工程票",
       "body": "聊天中报告的错误往往在到达工程师手中之前就消失了。 Cekat.AI 自动将错误报告转换为票据，并附有用户的时间顺序，并将其发送给正确的团队。工程人员无需加入支持轮换即可获得完整的背景信息，用户可以随时请求状态更新。",
-      "image": "/images/order/auto-create-ticket.png",
-      "imageAlt": "Bug 报告自动转换为 Cekat.AI 中的票证"
+      "visual": "industryTicketQueue",
+      "visualAlt": "Bug 报告自动转换为 Cekat.AI 中的票证"
     },
     {
       "title": "复杂的案例移交给您的团队，包括上下文",
       "body": "人工智能处理重复的问题，您的团队处理需要人工处理的问题。当敏感的计费案例或企业请求出现时，对话将移交给人工代理并附加完整的历史记录，用户永远不会重复自己，工程师只会在真正需要时才介入。",
-      "image": "/images/chat/escalate-and-sync.png",
-      "imageAlt": "在 Cekat.AI 中，对话从 AI 升级到人工代理"
+      "visual": "industryHandoff",
+      "visualAlt": "在 Cekat.AI 中，对话从 AI 升级到人工代理"
     },
     {
       "title": "了解用户的要求以及他们的满意度",
       "body": "每一次对话都会成为数据。查看用户最常询问的主题、他们遇到的问题以及每次交互的 CSAT 分数，以便路线图通话和引导修复从真实的用户对话开始，而不是在会议中进行猜测。",
-      "image": "/images/marketing/understand-customer-behavior.png",
-      "imageAlt": "Cekat.AI 中的对话分析和客户满意度"
+      "visual": "industryAnalytics",
+      "visualAlt": "Cekat.AI 中的对话分析和客户满意度"
     }
   ],
   "pillars": [

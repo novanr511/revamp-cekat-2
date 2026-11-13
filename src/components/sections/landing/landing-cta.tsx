@@ -51,14 +51,14 @@ export async function LandingCta({
                 <Button
                   nativeButton={false}
                   render={<AppAnchor href={REGISTER_URL} />}
-                  className="h-13 rounded-full bg-white px-8 text-sm text-ink-void shadow-[0_18px_40px_-18px_rgba(255,255,255,0.35)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-sky-50"
+                  className="secondary-final-cta__register h-13 rounded-full bg-white px-8 text-sm text-ink-void shadow-[0_18px_40px_-18px_rgba(255,255,255,0.35)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-sky-50"
                 >
                   {th("ctaSecondary")}
                 </Button>
                 <Button
                   variant="outline"
                   nativeButton={false}
-                  className="h-13 rounded-full border-white/35 bg-white/10 px-8 text-sm text-white backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:border-white/70 hover:bg-white/15"
+                  className="secondary-final-cta__sales h-13 rounded-full border-white/35 bg-white/10 px-8 text-sm text-white backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:border-white/70 hover:bg-white/15"
                   render={
                     <WhatsAppAnchor target="_blank" rel="noopener noreferrer" />
                   }

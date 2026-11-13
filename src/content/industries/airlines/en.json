@@ -43,26 +43,26 @@
     {
       "title": "Fare, Baggage, and Check-in Questions Answered Instantly",
       "body": "\"How many kilos of cabin baggage?\" \"Until when can I check in online?\" \"Can I bring a power bank?\" Cekat.AI answers from a knowledge base built on your fare rules, baggage policy, and procedures, in natural language that understands intent, so the thousandth chat gets an answer as consistent as the first.",
-      "image": "/images/home/knowledge-source.png",
-      "imageAlt": "Airline policies stored as a knowledge source in Cekat.AI"
+      "visual": "industryKnowledge",
+      "visualAlt": "Airline policies stored as a knowledge source in Cekat.AI"
     },
     {
       "title": "Serve Passengers in Their Own Language, 24/7",
       "body": "Your passengers message from different time zones and not all of them speak Indonesian. Cekat.AI detects each passenger's language and replies in kind, at any hour, so a traveler in Tokyo, Jeddah, or Amsterdam gets an answer as fast as one in Jakarta.",
-      "image": "/images/home/multiple-specialized-agents.png",
-      "imageAlt": "Multiple specialized AI agents serving passengers across languages in Cekat.AI"
+      "visual": "industryLanguages",
+      "visualAlt": "Multiple specialized AI agents serving passengers across languages in Cekat.AI"
     },
     {
       "title": "Notify Passengers Before They Have to Ask",
       "body": "Schedule changes, flight information, and refund progress can go out proactively to the affected passenger segment through broadcasts on the official WhatsApp Business API. Passengers who already know don't flood the inbox, so chat volume drops before it spikes, and the AI answers instantly whatever questions remain.",
-      "image": "/images/order/automatic-notifications-to-the-right-team.png",
-      "imageAlt": "Automated notifications reaching the right passenger segment in Cekat.AI"
+      "visual": "industryBroadcast",
+      "visualAlt": "Automated notifications reaching the right passenger segment in Cekat.AI"
     },
     {
       "title": "Complex Cases Escalate to Agents with Full Context",
       "body": "Delay compensation, lost baggage, a refund stuck in process, some cases belong with a human. Cekat.AI hands these conversations to your agents with the full chat history and passenger details attached, and through API integration the AI can read from the booking systems you already run, so no passenger has to repeat their story.",
-      "image": "/images/chat/escalate-and-sync.png",
-      "imageAlt": "Conversation escalated to a human agent with full context in Cekat.AI"
+      "visual": "industryHandoff",
+      "visualAlt": "Conversation escalated to a human agent with full context in Cekat.AI"
     }
   ],
   "pillars": [

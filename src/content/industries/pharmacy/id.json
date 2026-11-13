@@ -43,26 +43,26 @@
     {
       "title": "Pesan Antar Masuk Sebagai Order Rapi, Bukan Catatan Kertas",
       "body": "Cekat.AI mengubah chat jadi apotek online via WhatsApp. AI mencatat item, data pembeli, ongkir lewat cek ongkir, dan QR pembayaran langsung di percakapan, order masuk lengkap dan konsisten tanpa staf mengetik ulang, dan pembeli nggak perlu install aplikasi apa pun.",
-      "image": "/images/order/end-to-end-operational-efficiency.png",
-      "imageAlt": "Order pesan antar dibuat dan dibayar dalam chat di Cekat.AI"
+      "visual": "industryCatalog",
+      "visualAlt": "Order pesan antar dibuat dan dibayar dalam chat di Cekat.AI"
     },
     {
       "title": "Pasien Kronis Diingatkan Tebus Ulang Tepat Waktu",
       "body": "Pasien yang rutin menebus obat bulanan sering telat bukan karena pindah, tapi karena lupa. Cekat.AI mengirim reminder tebus ulang otomatis lewat WhatsApp Business API resmi berdasarkan riwayat pembelian tiap pasien, jadi terapi mereka jalan terus dan mereka kembali ke apotekmu, bukan ke yang lain.",
-      "image": "/images/crm/track-customer-journey.png",
-      "imageAlt": "Reminder tebus ulang dari riwayat pembelian di Cekat.AI"
+      "visual": "industryAutomation",
+      "visualAlt": "Reminder tebus ulang dari riwayat pembelian di Cekat.AI"
     },
     {
       "title": "Konsultasi Selalu Berakhir di Apoteker, Bukan di AI",
       "body": "Soal dosis, interaksi obat, atau keluhan kesehatan, AI tidak menebak dan tidak memberi saran medis. Percakapan seperti itu otomatis dialihkan ke apoteker lengkap dengan riwayat chat-nya, jadi pembeli tetap dilayani cepat tanpa mengorbankan keamanan dan tanggung jawab profesi.",
-      "image": "/images/chat/escalate-and-sync.png",
-      "imageAlt": "Eskalasi konsultasi dari AI ke apoteker di Cekat.AI"
+      "visual": "industryBooking",
+      "visualAlt": "Eskalasi konsultasi dari AI ke apoteker di Cekat.AI"
     },
     {
       "title": "Jam 11 Malam Tetap Ada yang Jawab, Tanpa Nambah Shift",
       "body": "Pertanyaan obat nggak kenal jam tutup toko. Dengan pengaturan jam kerja AI, Cekat.AI menjawab stok, harga, dan cara pemesanan sepanjang malam, mencatat mana yang butuh apoteker, dan menyerahkannya lengkap dengan konteks begitu shift pagi mulai, nggak ada chat yang basi di inbox.",
-      "image": "/images/home/ai-working-hours.png",
-      "imageAlt": "Pengaturan jam kerja AI dan staf apotek di Cekat.AI"
+      "visual": "industryHandoff",
+      "visualAlt": "Pengaturan jam kerja AI dan staf apotek di Cekat.AI"
     }
   ],
   "pillars": [

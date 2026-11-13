@@ -47,26 +47,26 @@
     {
       "title": "From a Price Chat Straight to a Booked Consultation",
       "body": "The moment a patient shows interest, the AI offers a slot and books the consultation inside the conversation, connected to your clinic schedule through the API, with a reminder before the day. \"I'll let you know\" turns into an appointment that actually lands on the calendar.",
-      "image": "/images/home/api-integration.png",
-      "imageAlt": "API integration booking dental consultations in Cekat.AI"
+      "visual": "industryBooking",
+      "visualAlt": "API integration booking dental consultations in Cekat.AI"
     },
     {
       "title": "Six-Month Recalls and Braces Checks Run Automatically",
       "body": "Recalls that depend on an admin's memory always leak. Cekat.AI sends automated reminders through the official WhatsApp Business API based on each patient's history, six-month scaling, monthly braces adjustments, braces-removal schedules, so your chairs fill with returning patients, not just new ones.",
-      "image": "/images/crm/track-customer-journey.png",
-      "imageAlt": "Recall reminders running from patient history in Cekat.AI"
+      "visual": "industryAutomation",
+      "visualAlt": "Recall reminders running from patient history in Cekat.AI"
     },
     {
       "title": "Anxious Questions at 11 PM Still Get an Answer",
       "body": "Pain after an extraction, a swollen gum, a loose bracket, anxiety does not wait for practice hours. The AI replies with aftercare guidance from your clinic's own knowledge base, including when something needs urgent care, then hands the case to your medical team with full context when the clinic opens.",
-      "image": "/images/home/ai-working-hours.png",
-      "imageAlt": "AI answering patient questions outside practice hours in Cekat.AI"
+      "visual": "industryInbox",
+      "visualAlt": "AI answering patient questions outside practice hours in Cekat.AI"
     },
     {
       "title": "Aftercare Education That Stays Consistent in Every Chat",
       "body": "What not to eat after getting braces, post-whitening care, how to wear a retainer, every answer comes from education material your clinic wrote itself. Each patient gets instructions that match the dentist's standard exactly, whenever they ask, whoever is on shift.",
-      "image": "/images/home/knowledge-source.png",
-      "imageAlt": "Knowledge base powering patient education answers in Cekat.AI"
+      "visual": "industryKnowledge",
+      "visualAlt": "Knowledge base powering patient education answers in Cekat.AI"
     }
   ],
   "pillars": [

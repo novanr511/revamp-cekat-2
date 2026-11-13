@@ -43,20 +43,20 @@
     {
       "title": "Tutup Booking Event dan Venue Langsung di Chat",
       "body": "Inquiry event dan rombongan dulu artinya tanya-jawab manual yang panjang. Cekat.AI ngumpulin detailnya, tanggal, jumlah orang, paket, budget, langsung di percakapan, terhubung ke sistemmu lewat API, dan nyerahin inquiry yang udah matang ke tim dengan semua info lengkap, jadi nggak ada yang mandek nunggu balasan.",
-      "image": "/images/home/api-integration.png",
-      "imageAlt": "Booking event ditangani lewat integrasi API di Cekat.AI"
+      "visual": "industryBooking",
+      "visualAlt": "Booking event ditangani lewat integrasi API di Cekat.AI"
     },
     {
       "title": "Satu Inbox untuk Semua Tamu, dari Semua Channel",
       "body": "WhatsApp, Instagram DM, Facebook Messenger, dan chat website masuk ke satu inbox dengan riwayat lengkap per tamu. Tim langsung lihat riwayat menginap, permintaan, dan pertanyaan sebelumnya, dan yang butuh manusia, permintaan khusus, komplain, dialihkan beserta seluruh percakapannya. Tamu nggak perlu ngulang cerita.",
-      "image": "/images/crm/capture-and-organize-customers.png",
-      "imageAlt": "Percakapan tamu terorganisir di CRM Cekat.AI"
+      "visual": "industryDispatch",
+      "visualAlt": "Percakapan tamu terorganisir di CRM Cekat.AI"
     },
     {
       "title": "Isi Tanggal Sepi dengan Promo yang Beneran Dibuka Tamu",
       "body": "Broadcast dikirim lewat WhatsApp Business API resmi ke segmen dari data nyata, tamu lama, klien event, booking yang lama nggak balik, dengan nama dan konteks dari CRM. Penawaran rate weekday atau paket musiman nyampe ke tamu yang paling mungkin bilang iya, bukan blast generik yang diabaikan semua orang.",
-      "image": "/images/marketing/understand-customer-behavior.png",
-      "imageAlt": "Segmentasi tamu untuk promo perhotelan di Cekat.AI"
+      "visual": "industryInbox",
+      "visualAlt": "Segmentasi tamu untuk promo perhotelan di Cekat.AI"
     }
   ],
   "caseStudy": {

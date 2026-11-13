@@ -43,20 +43,20 @@
     {
       "title": "Jual dan Konfirmasi Tiket Langsung di Chat",
       "body": "Cekat.AI mengambil order tiket di dalam percakapan, jumlah tiket, data pembeli, sampai QR pembayaran, tanpa nyuruh penonton pindah aplikasi dan tanpa admin ngetik ulang ke spreadsheet. Penonton jalan dari nanya sampai tiket terkonfirmasi dalam satu chat, dan tiap order masuk rapi dan lengkap.",
-      "image": "/images/order/end-to-end-operational-efficiency.png",
-      "imageAlt": "Order tiket dibuat dan dibayar langsung dalam percakapan di Cekat.AI"
+      "visual": "industryOrder",
+      "visualAlt": "Order tiket dibuat dan dibayar langsung dalam percakapan di Cekat.AI"
     },
     {
       "title": "Guest List dan Booking Table Beres, Admin Nggak Perlu Begadang",
       "body": "DM guest list dan booking table justru paling ramai tengah malam, pas admin udah offline. Cekat.AI menjawab dan mencatat tiap permintaan begitu masuk, lengkap ke kartu CRM dengan riwayat chat-nya, jadi nggak ada nama yang kelewat dan tim di pintu tinggal buka daftar yang udah rapi.",
-      "image": "/images/home/ai-working-hours.png",
-      "imageAlt": "AI meng-cover chat guest list dan booking di luar jam kerja di Cekat.AI"
+      "visual": "industryBooking",
+      "visualAlt": "AI meng-cover chat guest list dan booking di luar jam kerja di Cekat.AI"
     },
     {
       "title": "Event Berubah? Kabari Semua Pemegang Tiket Sekali Jalan",
       "body": "Jadwal mundur, lineup ganti, atau event batal, biasanya inbox langsung banjir. Lewat broadcast di WhatsApp Business API resmi, kamu bisa umumkan perubahan ke segmen pemegang tiket duluan, dan AI menjawab pertanyaan refund yang menyusul dengan jawaban konsisten sesuai kebijakanmu, bukan jawaban beda-beda dari admin yang panik.",
-      "image": "/images/marketing/understand-customer-behavior.png",
-      "imageAlt": "Segmentasi penonton untuk broadcast pengumuman event di Cekat.AI"
+      "visual": "industryDispatch",
+      "visualAlt": "Segmentasi penonton untuk broadcast pengumuman event di Cekat.AI"
     }
   ],
   "caseStudy": {

@@ -43,26 +43,26 @@
     {
       "title": "AI 자격: 예산, 모델, 보상 판매",
       "body": "모든 채팅이 진지한 구매자는 아닙니다. Cekat.AI는 영업팀이 먼저 물어볼 내용, 모델, 예산 또는 자금 조달 계획, 거래할 차량이 있는지 여부를 자연 언어로 묻습니다. 따라서 영업사원은 명확한 프로필로 리드를 선택하고 처음부터 시작하는 대신 곧바로 제안으로 이동합니다.",
-      "image": "/images/chat/ai-handles-conversations.png",
-      "imageAlt": "AI 에이전트 자격을 갖춘 자동차 구매자 리드가 Cekat.AI 받은 편지함에 표시됩니다."
+      "visual": "automotiveLeadQualification",
+      "visualAlt": "모델, 예산, 보상 판매 조건으로 자동차 구매 리드를 확인하는 Cekat.AI 받은 편지함 UI"
     },
     {
       "title": "채팅을 통해 예약한 시승 및 서비스 슬롯",
       "body": "시운전 예약은 더 이상 전화 태그 게임이 아니며 서비스 예약은 한 명의 관리자에게 쌓이지 않습니다. Cekat.AI는 대화 내 일정을 캡처하고 적절한 영업사원이나 서비스 조언자에게 알리며 API 통합을 통해 작업장의 예약 시스템에 연결할 수 있으므로 고객이 정시에 나타납니다.",
-      "image": "/images/order/automatic-notifications-to-the-right-team.png",
-      "imageAlt": "Cekat.AI의 적절한 팀에 자동 테스트 드라이브 및 서비스 알림"
+      "visual": "automotiveBooking",
+      "visualAlt": "시승과 정비 예약을 설정하고 담당 팀에 자동 알림을 보내는 Cekat.AI 화면"
     },
     {
       "title": "자동 조종 장치에서 정기적인 서비스 미리 알림 실행",
       "body": "고객은 서비스 일정을 잊어버리고 작업장은 가장 예측 가능한 수익을 잃습니다. Cekat.AI는 각 고객의 기록을 기반으로 공식 WhatsApp Business API를 통해 정기적인 서비스 알림을 보내고 동일한 채팅에서 예약 슬롯을 열어 차량이 더 가까운 작업장 대신 작업장으로 돌아올 수 있도록 합니다.",
-      "image": "/images/marketing/understand-customer-behavior.png",
-      "imageAlt": "Cekat.AI의 고객 이력을 기반으로 한 서비스 알림 캠페인"
+      "visual": "automotiveServiceReminder",
+      "visualAlt": "고객 이력을 기반으로 WhatsApp 정비 알림을 보내는 Cekat.AI 워크플로 화면"
     },
     {
       "title": "모든 리드는 영업사원의 전화가 아닌 CRM 파이프라인에 연결됩니다.",
       "body": "개인 전화기에 있는 리드는 누출되는 리드입니다. Cekat.AI는 채팅 내역, 원하는 모델, 후속 상태 등 모든 대화를 CRM 카드에 자동으로 캡처하여 새로운 리드부터 거래까지 파이프라인으로 구성하므로 감독자는 묻지 않고도 모든 잠재 고객의 위치를 ​​확인할 수 있습니다.",
-      "image": "/images/crm/track-customer-journey.png",
-      "imageAlt": "딜러는 Cekat.AI CRM에서 잠재 고객부터 거래까지 파이프라인을 리드합니다."
+      "visual": "automotiveCrmPipeline",
+      "visualAlt": "잠재 고객부터 계약 성사까지 관리하는 Cekat.AI CRM 자동차 딜러 파이프라인"
     }
   ],
   "pillars": [

@@ -7,12 +7,7 @@
     "badge": "食品及饮料",
     "title": "即使在最后一次通话之后，也能回复每一项预订和订单",
     "subtitle": "从餐桌预订到菜单问题再到活动查询，Cekat.AI 都可以在 WhatsApp 和 Instagram 上以自然语言 24/7 即时回复，无需添加前台工作人员",
-    "useCases": [
-      "24小时预约",
-      "菜单、促销、定价",
-      "活动及餐饮查询",
-      "聊天订购"
-    ]
+    "useCases": ["24小时预约", "菜单、促销、定价", "活动及餐饮查询", "聊天订购"]
   },
   "definition": "Cekat.AI for F&B 是一个面向印度尼西亚餐厅、咖啡馆、酒吧和食品企业的人工智能客户服务平台，24/7 回答预订、菜单和活动查询，直接从聊天中接受订单，并在一个平台上组织每一次预订。",
   "stats": [
@@ -47,20 +42,20 @@
     {
       "title": "菜单、促销和价格问题立即得到解答",
       "body": "“有素食选择吗？” “套餐多少钱？” “今晚有促销活动吗？” Cekat.AI 以自然语言进行回答，理解意图而不是匹配关键字，因此饥饿的客人可以在几秒钟内获得确定性并决定进来，而不是滚动到下一个回答更快的地方。",
-      "image": "/images/chat/ai-handles-conversations.png",
-      "imageAlt": "AI 代理在 Cekat.AI 收件箱中回答菜单和促销问题"
+      "visual": "industryKnowledge",
+      "visualAlt": "AI 代理在 Cekat.AI 收件箱中回答菜单和促销问题"
     },
     {
       "title": "活动和餐饮查询永远不会漏掉",
       "body": "生日、公司晚宴、私人预订、高价值的询问，这些询问过去只有管理员有时间才会阅读。 Cekat.AI 会自动将每个线索捕获到 CRM 卡中，并提供完整的对话历史记录，因此您的活动团队可以跟进真正的线索，而不是在拥挤的收件箱中挖掘。",
-      "image": "/images/crm/capture-and-organize-customers.png",
-      "imageAlt": "Cekat.AI CRM 中捕获的活动和餐饮查询"
+      "visual": "industryBooking",
+      "visualAlt": "Cekat.AI CRM 中捕获的活动和餐饮查询"
     },
     {
       "title": "将聊天变成确认订单",
       "body": "对于送货和外卖，Cekat.AI 会在对话中获取订单、商品、客户详细信息、通过 cek ongkir 的运输成本以及付款二维码，而无需管理员在电子表格中重新输入任何内容。客人只需一次聊天即可从提出问题到付款订单，并且每笔订单都一致且完整。",
-      "image": "/images/order/end-to-end-operational-efficiency.png",
-      "imageAlt": "在 Cekat.AI 的聊天对话中创建并支付订单"
+      "visual": "industryOrder",
+      "visualAlt": "在 Cekat.AI 的聊天对话中创建并支付订单"
     }
   ],
   "caseStudy": {

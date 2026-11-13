@@ -87,7 +87,7 @@ describe("message catalog consistency", () => {
   });
 
   it("localizes company, integration, and shared landing-page copy", () => {
-    const namespaces = ["about", "integrations", "landing"];
+    const namespaces = ["about", "integrations", "landing", "secondary"];
     const stringLeaves = (value: unknown): string[] => {
       if (Array.isArray(value)) return value.flatMap(stringLeaves);
       if (value && typeof value === "object") {
@@ -96,7 +96,19 @@ describe("message catalog consistency", () => {
       return typeof value === "string" ? [value] : [];
     };
     const english = read("en") as Record<string, unknown>;
-    const allowed = new Set(["3,000+", "Meta"]);
+    const allowed = new Set([
+      "3,000+",
+      "Meta",
+      "Andi Pratama",
+      "WhatsApp Business API",
+      "Rina · Toyota Avanza",
+      "Dimas K.",
+      "Nadia P.",
+      "Andi P.",
+      "Rina S.",
+      "Budi W.",
+      "Maya T.",
+    ]);
 
     for (const locale of ["cn", "jp", "kr"] as const) {
       const localized = read(locale) as Record<string, unknown>;

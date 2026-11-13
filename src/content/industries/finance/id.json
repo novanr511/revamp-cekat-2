@@ -43,26 +43,26 @@
     {
       "title": "Rutin ke AI, Sensitif ke Timmu, Lengkap dengan Konteks",
       "body": "Sebagian percakapan keuangan wajib ditangani manusia. Cekat.AI menjawab pertanyaan rutin dan, begitu sebuah kasus jadi sensitif atau kompleks, langsung dialihkan ke stafmu lengkap dengan seluruh percakapannya. Dengan AI working hours, handoff antara tim dan AI berjalan otomatis, dan nasabah nggak perlu mengulang cerita.",
-      "image": "/images/chat/escalate-and-sync.png",
-      "imageAlt": "Eskalasi otomatis ke staf lengkap dengan konteks di Cekat.AI"
+      "visual": "industryInbox",
+      "visualAlt": "Eskalasi otomatis ke staf lengkap dengan konteks di Cekat.AI"
     },
     {
       "title": "Setiap Komplain Jadi Tiket yang Terlacak",
       "body": "Komplain yang hilang di inbox sibuk adalah risiko compliance dan reputasi. Cekat.AI melabeli keluhan yang masuk secara otomatis, membuat tiket, dan mengarahkannya ke tim yang tepat beserta notifikasi, jadi setiap komplain terlacak dari pesan pertama sampai selesai, dan nggak ada yang diam-diam menghilang.",
-      "image": "/images/order/auto-create-ticket.png",
-      "imageAlt": "Pembuatan tiket otomatis untuk komplain keuangan di Cekat.AI"
+      "visual": "industryDocuments",
+      "visualAlt": "Pembuatan tiket otomatis untuk komplain keuangan di Cekat.AI"
     },
     {
       "title": "Visibilitas Penuh di Setiap Kasus",
       "body": "Kamu melihat status, penanggung jawab, dan jalur penyelesaian tiap percakapan di satu tempat, dengan catatan interaksi yang terbentuk otomatis dari setiap touchpoint, tanpa logging manual. Saat audit atau review nanya apa yang terjadi dan kapan, jejaknya sudah ada, bukan berserakan di chat pribadi.",
-      "image": "/images/order/full-visibility-across-every-automation-step.png",
-      "imageAlt": "Visibilitas penuh di setiap kasus customer di Cekat.AI"
+      "visual": "industryAnalytics",
+      "visualAlt": "Visibilitas penuh di setiap kasus customer di Cekat.AI"
     },
     {
       "title": "Satu Living Record untuk Tiap Nasabah",
       "body": "Setiap interaksi otomatis membuat dan memperbarui kartu CRM, tanpa input manual, membangun catatan lengkap pertanyaan, aplikasi, dan riwayat tiap nasabah. Timmu buka satu profil dan langsung lihat gambaran utuh, bukan menjahit konteks dari channel dan spreadsheet yang terpisah-pisah.",
-      "image": "/images/crm/capture-and-organize-customers.png",
-      "imageAlt": "Living record nasabah terorganisir di CRM Cekat.AI"
+      "visual": "industryContactRecord",
+      "visualAlt": "Living record nasabah terorganisir di CRM Cekat.AI"
     }
   ],
   "pillars": [

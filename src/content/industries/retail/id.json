@@ -43,26 +43,26 @@
     {
       "title": "Dari \"Berapa Ongkirnya?\" Sampai Lunas, Tanpa Keluar Chat",
       "body": "AI agent Cekat.AI cek ongkir, konfirmasi alamat, bikin order lengkap dengan data customer, lalu kirim QR pembayaran, semuanya di percakapan yang sama. Tanpa link checkout yang setengah pembelimu tidak pernah selesaikan, tanpa admin salin-tempel order ke spreadsheet.",
-      "image": "/images/order/end-to-end-operational-efficiency.png",
-      "imageAlt": "Order dibuat dan dibayar langsung di dalam chat lewat Cekat.AI"
+      "visual": "industryKnowledge",
+      "visualAlt": "Order dibuat dan dibayar langsung di dalam chat lewat Cekat.AI"
     },
     {
       "title": "Kejar Balik Checkout yang Ditinggal Pembeli",
       "body": "Kebanyakan checkout yang ditinggal bukan penjualan yang hilang, cuma belum selesai. Cekat.AI follow-up otomatis saat pembayaran masih pending, promo mau habis, atau waktunya beli lagi, tiap nudge dipicu perilaku customer beneran, bukan daftar reminder yang dikerjakan manual.",
-      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
-      "imageAlt": "Alur follow-up otomatis untuk pembayaran pending di Cekat.AI"
+      "visual": "industryOrder",
+      "visualAlt": "Alur follow-up otomatis untuk pembayaran pending di Cekat.AI"
     },
     {
       "title": "Broadcast Promo ke Pembeli yang Paling Mungkin Beli",
       "body": "Campaign terkirim lewat WhatsApp Business API resmi ke segmen dari data nyata, pelanggan setia, customer yang lama diam, leads yang klik tapi belum bayar, dengan nama dan konteks dari CRM. Promo yang relevan dibuka dan dibales; yang generik di-skip.",
-      "image": "/images/marketing/understand-customer-behavior.png",
-      "imageAlt": "Segmentasi customer berdasarkan perilaku belanja di Cekat.AI"
+      "visual": "industryBroadcast",
+      "visualAlt": "Segmentasi customer berdasarkan perilaku belanja di Cekat.AI"
     },
     {
       "title": "Tahu Posisi Tiap Pembeli, Visitor, Lead, atau Langganan",
       "body": "Setiap chat, pembelian, dan campaign otomatis memperbarui kartu CRM customer, tanpa input manual. Customer Stages melacak tiap kontak dari Visitor ke Lead ke Buyer lengkap dengan saran langkah berikutnya, jadi tim kamu selalu tahu siapa yang masih lihat-lihat, siapa yang hampir beli, dan siapa yang waktunya di-follow-up repeat order.",
-      "image": "/images/crm/track-customer-journey.png",
-      "imageAlt": "Tahapan customer journey terlacak di CRM Cekat.AI"
+      "visual": "industryContactRecord",
+      "visualAlt": "Tahapan customer journey terlacak di CRM Cekat.AI"
     }
   ],
   "pillars": [

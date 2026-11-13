@@ -43,26 +43,26 @@
     {
       "title": "Status Updates That Arrive Before the Question",
       "body": "Package picked up, in transit at the hub, courier heading to the address, Cekat.AI pushes automatic updates over WhatsApp at every milestone you choose. Customers stop asking because they already know, inbound chat volume drops, and COD delivery failures shrink because recipients know when to be home.",
-      "image": "/images/order/automatic-notifications-to-the-right-team.png",
-      "imageAlt": "Automatic delivery status notifications sent from Cekat.AI"
+      "visual": "industryDispatch",
+      "visualAlt": "Automatic delivery status notifications sent from Cekat.AI"
     },
     {
       "title": "Problem Packages Escalate Instead of Sinking",
       "body": "A failed COD, an address that cannot be found, a damaged or lost package, sensitive cases like these cannot wait in a queue. Cekat.AI creates a ticket from the conversation automatically, routes it to the right field or claims team with the full chat history, and keeps the customer informed while the case is worked.",
-      "image": "/images/order/auto-create-ticket.png",
-      "imageAlt": "Lost-package complaint auto-created as a ticket in Cekat.AI"
+      "visual": "industryTicketQueue",
+      "visualAlt": "Lost-package complaint auto-created as a ticket in Cekat.AI"
     },
     {
       "title": "Pickup Scheduling Handled Inside the Chat",
       "body": "Sellers and regular shippers should not need a phone call to book a pickup. The AI asks for the address, package count, and pickup window, then logs it as a clean order for your operations team. The flow follows business logic you define yourself, no coding needed, so pickups run consistently across every branch.",
-      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
-      "imageAlt": "Pickup request flow automated with business logic in Cekat.AI"
+      "visual": "industryBooking",
+      "visualAlt": "Pickup request flow automated with business logic in Cekat.AI"
     },
     {
       "title": "Corporate Leads Qualified Automatically",
       "body": "Buried among hundreds of tracking chats are companies asking about contract rates and recurring shipments. Cekat.AI recognizes these high-value inquiries, asks about volume, routes, and frequency, then captures them into a CRM card with the conversation attached, so your sales team follows up on serious leads instead of scrolling a crowded inbox.",
-      "image": "/images/crm/capture-and-organize-customers.png",
-      "imageAlt": "Corporate shipping leads captured in the Cekat.AI CRM"
+      "visual": "industryPipeline",
+      "visualAlt": "Corporate shipping leads captured in the Cekat.AI CRM"
     }
   ],
   "pillars": [

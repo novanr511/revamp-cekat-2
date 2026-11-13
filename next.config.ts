@@ -51,9 +51,9 @@ const nextConfig: NextConfig = {
   images: {
     formats: ["image/avif", "image/webp"],
     // Next 16 narrowed the default to [75]. 50 is for large decorative
-    // gradients (the hero sky), where the artefacts are invisible but the
-    // saving is roughly half the bytes. Screenshots stay at 75.
-    qualities: [50, 75],
+    // gradients (the hero sky); product-interface artwork uses 90 to retain
+    // crisp edges and small UI details at high-density display sizes.
+    qualities: [50, 75, 90],
     remotePatterns: [
       {
         protocol: "https",

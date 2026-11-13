@@ -51,26 +51,26 @@
     {
       "title": "Pertanyaan Intake yang Berulang Ditangani AI",
       "body": "\"Bisa tangani kasus seperti ini?\" \"Dokumennya apa saja?\" \"Prosesnya berapa lama?\" Pertanyaan intake yang sama datang tiap hari. Cekat.AI menjawabnya dengan bahasa natural dari knowledge base kantormu, lalu menanyakan kebutuhan, urgensi, dan detail dasarnya, jadi yang sampai ke partner sudah inquiry matang, bukan chat kosong.",
-      "image": "/images/chat/ai-handles-conversations.png",
-      "imageAlt": "AI agent menangani pertanyaan intake calon klien di inbox Cekat.AI"
+      "visual": "industryInbox",
+      "visualAlt": "AI agent menangani pertanyaan intake calon klien di inbox Cekat.AI"
     },
     {
       "title": "Konsultasi Terjadwal Langsung dari Chat",
       "body": "Nggak perlu lagi bolak-balik \"bisanya kapan?\" lewat telepon. Cekat.AI menawarkan slot dan mencatat jadwal konsultasi langsung di percakapan, dan lewat integrasi API bisa tersambung ke kalender atau sistem booking yang kantormu pakai, klien tinggal datang di jam yang sudah pasti.",
-      "image": "/images/home/api-integration.png",
-      "imageAlt": "Integrasi API Cekat.AI dengan kalender dan sistem booking kantor"
+      "visual": "industryBooking",
+      "visualAlt": "Integrasi API Cekat.AI dengan kalender dan sistem booking kantor"
     },
     {
       "title": "Reminder Otomatis, No-Show Turun",
       "body": "Meeting yang batal diam-diam itu jam kerja partner yang hangus. Cekat.AI mengirim reminder sebelum jadwal konsultasi lewat WhatsApp, lengkap dengan dokumen yang perlu dibawa, dan kalau klien minta ganti waktu, reschedule beres di chat yang sama, slot yang kosong bisa langsung diisi.",
-      "image": "/images/order/automatic-notifications-to-the-right-team.png",
-      "imageAlt": "Reminder dan notifikasi jadwal konsultasi otomatis di Cekat.AI"
+      "visual": "industryAutomation",
+      "visualAlt": "Reminder dan notifikasi jadwal konsultasi otomatis di Cekat.AI"
     },
     {
       "title": "Setiap Inquiry Masuk Pipeline per Partner atau Layanan",
       "body": "Leads yang nyangkut di HP salah satu partner itu revenue kantor yang bocor. Cekat.AI menangkap tiap inquiry jadi kartu CRM otomatis, lengkap dengan riwayat chat dan kebutuhannya, tersusun di pipeline per partner atau lini layanan, jadi managing partner melihat semua prospek dalam satu papan, bukan nanya satu-satu.",
-      "image": "/images/crm/track-customer-journey.png",
-      "imageAlt": "Pipeline inquiry klien per partner di CRM Cekat.AI"
+      "visual": "industryPipeline",
+      "visualAlt": "Pipeline inquiry klien per partner di CRM Cekat.AI"
     }
   ],
   "pillars": [

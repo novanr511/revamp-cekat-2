@@ -43,26 +43,26 @@
     {
       "title": "깨끗한 의자와 이발소 슬롯, 혼돈 없는 워크인",
       "body": "깔끔한 시스템이 없으면 프런트 데스크에서 어떤 의자가 비어 있는지 추측하고 이미 예약한 고객과 워크인이 충돌합니다. 달력 또는 예약 도구와의 API 통합을 통해 Cekat.AI는 채팅 내에서 바로 일정을 확인하고 일정을 변경하며 모든 예약은 이름, 시간 및 선택한 이발사와 함께 기록되므로 팀은 아직 방문할 수 있는 의자가 무엇인지 정확히 알 수 있습니다.",
-      "image": "/images/home/api-integration.png",
-      "imageAlt": "예약 시스템과 Cekat.AI 간의 API 통합"
+      "visual": "industryBooking",
+      "visualAlt": "예약 시스템과 Cekat.AI 간의 API 통합"
     },
     {
       "title": "매 컷 전 자동 알림, 노쇼(No-Show) 감소",
       "body": "한 가지 노쇼는 다른 누군가가 정확한 좌석을 원할 때 30분 동안 의자에 앉아 있는 것입니다. Cekat.AI는 채팅에 내장된 확인 및 일정 변경 옵션을 통해 각 약속 전에 자동 알림을 보내므로 취소가 조기에 표면화되고 슬롯은 아무 말도 없이 비어 있는 대신 다른 클라이언트로 이동됩니다.",
-      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
-      "imageAlt": "Cekat.AI에 코드 없이 구축된 자동 예약 알림 흐름"
+      "visual": "industryAutomation",
+      "visualAlt": "Cekat.AI에 코드 없이 구축된 자동 예약 알림 흐름"
     },
     {
       "title": "이발이 자라기 전에 고객을 다시 데려오세요",
       "body": "행복한 고객은 떠나는 일이 거의 없으며 단지 잊어버립니다. Cekat.AI는 각 고객의 방문 기록을 CRM에 보관하고 마지막 컷 후 몇 주 후에 선택한 간격에 따라 자동 재예약 알림을 보내 고객이 다른 매장을 시도하기 전에 다음 약속을 확정합니다.",
-      "image": "/images/crm/track-customer-journey.png",
-      "imageAlt": "Cekat.AI CRM에서 추적되는 고객 방문 기록"
+      "visual": "industryContactRecord",
+      "visualAlt": "Cekat.AI CRM에서 추적되는 고객 방문 기록"
     },
     {
       "title": "한동안 방문하지 않은 고객을 위한 폭발적인 프로모션",
       "body": "귀하의 연락처 목록은 아카이브가 아닌 자산입니다. Cekat.AI는 활동 및 마지막 방문별로 클라이언트를 분류한 다음 번호를 하나씩 복사하지 않고 공식 WhatsApp Business API, 주중 프로모션, 그루밍 번들 또는 3개월이 지난 사람에 대한 컴백 제안을 통해 방송을 보냅니다.",
-      "image": "/images/marketing/understand-customer-behavior.png",
-      "imageAlt": "Cekat.AI의 캠페인을 지원하는 고객 행동 세그먼트"
+      "visual": "industryBroadcast",
+      "visualAlt": "Cekat.AI의 캠페인을 지원하는 고객 행동 세그먼트"
     }
   ],
   "pillars": [

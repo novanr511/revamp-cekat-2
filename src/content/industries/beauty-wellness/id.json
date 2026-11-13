@@ -43,26 +43,26 @@
     {
       "title": "Booking dan Rebooking Langsung dari Chat",
       "body": "Hubungkan Cekat.AI ke sistem jadwalmu lewat API, dan AI bisa booking, konfirmasi, sampai reschedule langsung di percakapan. Tanpa telepon bolak-balik, tanpa kursi dobel-booking, dan setiap selesai treatment, AI bisa ngingetin klien buat rebooking sesi berikutnya sebelum mereka lupa.",
-      "image": "/images/home/api-integration.png",
-      "imageAlt": "Integrasi API untuk booking jadwal salon di Cekat.AI"
+      "visual": "industryBooking",
+      "visualAlt": "Integrasi API untuk booking jadwal salon di Cekat.AI"
     },
     {
       "title": "Tekan No-Show dengan Reminder yang Jalan Sendiri",
       "body": "Kursi kosong gara-gara janji yang kelupaan itu revenue yang nggak balik lagi. Cekat.AI kirim reminder otomatis sebelum tiap kunjungan dan follow-up pas waktunya kontrol ulang, semuanya dipicu dari riwayat booking klien, bukan daftar manual yang harus diingat satu-satu sama tim.",
-      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
-      "imageAlt": "Reminder jadwal otomatis di Cekat.AI"
+      "visual": "industryAutomation",
+      "visualAlt": "Reminder jadwal otomatis di Cekat.AI"
     },
     {
       "title": "Kirim Promo ke Klien yang Tepat, Bukan ke Semua",
       "body": "Campaign dikirim lewat WhatsApp Business API resmi ke segmen yang dibangun dari data nyata, pelanggan setia yang waktunya touch-up, klien yang baru coba satu layanan, atau yang lama nggak balik. Nama dan riwayatnya langsung dari CRM, jadi promo terasa kayak undangan personal, bukan blast massal.",
-      "image": "/images/marketing/understand-customer-behavior.png",
-      "imageAlt": "Segmentasi klien untuk promo kecantikan di Cekat.AI"
+      "visual": "industryBroadcast",
+      "visualAlt": "Segmentasi klien untuk promo kecantikan di Cekat.AI"
     },
     {
       "title": "Semua Percakapan Klien Rapi di Satu Tempat",
       "body": "WhatsApp, Instagram DM, dan chat website masuk ke satu inbox dengan riwayat lengkap per klien, treatment sebelumnya, pertanyaan yang pernah diajukan, promo yang sudah diterima. Front desk langsung paham konteks, dan yang butuh sentuhan manusia dialihkan ke tim beserta percakapannya. Klien nggak perlu ngulang cerita.",
-      "image": "/images/crm/capture-and-organize-customers.png",
-      "imageAlt": "Percakapan klien terorganisir di CRM Cekat.AI"
+      "visual": "industryInbox",
+      "visualAlt": "Percakapan klien terorganisir di CRM Cekat.AI"
     }
   ],
   "pillars": [

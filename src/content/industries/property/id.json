@@ -53,26 +53,26 @@
     {
       "title": "Setiap Chat Jadi Leads Terkualifikasi di CRM",
       "body": "AI menanyakan hal yang biasa ditanya agenmu, budget, lokasi incaran, tipe unit, kapan mau beli, dan semua jawabannya masuk ke kartu CRM yang dibuat otomatis, tanpa input manual. Timmu bangun pagi dengan daftar prospek terkualifikasi lengkap dengan riwayat chat, bukan tumpukan pesan belum dibaca.",
-      "image": "/images/crm/capture-and-organize-customers.png",
-      "imageAlt": "Leads properti tertangkap dan terorganisir di CRM Cekat.AI"
+      "visual": "industryPipeline",
+      "visualAlt": "Leads properti tertangkap dan terorganisir di CRM Cekat.AI"
     },
     {
       "title": "Kunjungan Properti Terjadwal Langsung dari Chat",
       "body": "Hubungkan kalender lewat integrasi API dan AI langsung booking jadwal kunjungan di dalam percakapan, tanggal terkonfirmasi, reminder terkirim, tanpa telepon bolak-balik. Prospek yang nanya tengah malam datang ke show unit hari Sabtu, dan reminder otomatis memastikan mereka benar-benar datang.",
-      "image": "/images/home/api-integration.png",
-      "imageAlt": "Booking kunjungan properti lewat integrasi API di Cekat.AI"
+      "visual": "industryBooking",
+      "visualAlt": "Booking kunjungan properti lewat integrasi API di Cekat.AI"
     },
     {
       "title": "Follow-Up Jalan Otomatis Sampai Deal Bergerak",
       "body": "Kebanyakan deal properti mati karena didiamkan, bukan ditolak. Cekat.AI mengirim follow-up sesuai perilaku tiap prospek, reminder sebelum promo berakhir, nudge saat leads mulai diam setelah kunjungan, dipicu jadwal, keyword chat, atau perubahan data customer. Tidak ada leads yang terlupakan cuma karena agen lagi sibuk.",
-      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
-      "imageAlt": "Alur follow-up otomatis di Cekat.AI"
+      "visual": "industryAutomation",
+      "visualAlt": "Alur follow-up otomatis di Cekat.AI"
     },
     {
       "title": "Satu Pipeline untuk Semua Deal, dari Leads sampai Closing",
       "body": "Setiap prospek bergerak lewat Customer Stages, Visitor, Lead, Buyer, lengkap dengan saran langkah berikutnya, dan sales pipeline menampilkan progres deal secara real-time. Kamu tahu persis berapa kunjungan, negosiasi, dan closing yang sedang jalan tanpa perlu minta rekap ke siapa pun.",
-      "image": "/images/crm/track-customer-journey.png",
-      "imageAlt": "Pelacakan sales pipeline dan customer journey di Cekat.AI"
+      "visual": "industryPipeline",
+      "visualAlt": "Pelacakan sales pipeline dan customer journey di Cekat.AI"
     }
   ],
   "tabs": [

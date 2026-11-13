@@ -43,26 +43,26 @@
     {
       "title": "試用版ユーザーは、放置されずにアクティベーションに誘導されます",
       "body": "トライアル ユーザーのほとんどは、製品の価値を感じる前にやめてしまいます。 Cekat.AI は新規サインアップを歓迎し、セットアップの質問に行き詰まった瞬間に答え、各ユーザーのジャーニーに基づいて自動化された WhatsApp フォローアップを送信するため、2 日目に静かに消えるのではなく、より多くのトライアルが「なるほど」の瞬間に到達します。",
-      "image": "/images/crm/track-customer-journey.png",
-      "imageAlt": "Cekat.AI CRM で追跡されたトライアル ユーザー ジャーニー"
+      "visual": "industryInbox",
+      "visualAlt": "Cekat.AI CRM で追跡されたトライアル ユーザー ジャーニー"
     },
     {
       "title": "バグレポートがエンジニアリングのチケットに変わる",
       "body": "チャットで報告されたバグは、エンジニアに届く前に消えてしまう傾向があります。 Cekat.AI は、バグ レポートをユーザーの年表を備えたチケットに自動的に変換し、適切なチームにルーティングします。エンジニアリング部門はサポートローテーションに参加しなくても完全なコンテキストを取得できるため、ユーザーはいつでもステータスの更新を要求できます。",
-      "image": "/images/order/auto-create-ticket.png",
-      "imageAlt": "バグレポートは Cekat.AI で自動的にチケットに変換されます"
+      "visual": "industryTicketQueue",
+      "visualAlt": "バグレポートは Cekat.AI で自動的にチケットに変換されます"
     },
     {
       "title": "複雑なケースはコンテキストを含めてチームに引き継がれます",
       "body": "AI は反復的な質問を処理し、チームは人間が必要とするものを処理します。機密性の高い請求ケースや企業リクエストが届いた場合、会話は完全な履歴が添付された人間のエージェントに引き継がれ、ユーザーが同じことを繰り返すことはなく、エンジニアは本当に必要な場合にのみ引き込まれます。",
-      "image": "/images/chat/escalate-and-sync.png",
-      "imageAlt": "Cekat.AI で AI から人間エージェントにエスカレートする会話"
+      "visual": "industryHandoff",
+      "visualAlt": "Cekat.AI で AI から人間エージェントにエスカレートする会話"
     },
     {
       "title": "ユーザーの質問とユーザーの満足度を知る",
       "body": "すべての会話がデータになります。ユーザーが最もよく質問するトピック、どこで行き詰まったか、各インタラクションの CSAT スコアを確認できるため、ロードマップの通話やオンボーディングの修正は、会議での推測ではなく実際のユーザーの会話から始まります。",
-      "image": "/images/marketing/understand-customer-behavior.png",
-      "imageAlt": "Cekat.AI の会話分析と顧客満足度"
+      "visual": "industryAnalytics",
+      "visualAlt": "Cekat.AI の会話分析と顧客満足度"
     }
   ],
   "pillars": [

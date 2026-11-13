@@ -43,26 +43,26 @@
     {
       "title": "来自“运费是多少？”在一次聊天内付费",
       "body": "Cekat.AI 的代理检查运费、确认地址、使用客户详细信息创建订单并发送付款二维码，所有这些都在同一个对话中进行。没有结帐链接，一半的买家永远无法完成，也没有管理员手动将订单复制到电子表格中。",
-      "image": "/images/order/end-to-end-operational-efficiency.png",
-      "imageAlt": "在 Cekat.AI 的聊天对话中创建并支付订单"
+      "visual": "industryKnowledge",
+      "visualAlt": "在 Cekat.AI 的聊天对话中创建并支付订单"
     },
     {
       "title": "赢回买家放弃的结帐",
       "body": "大多数放弃结账并不是销售损失，而是未完成的结账。当付款仍待处理、促销即将到期或需要补货时，Cekat.AI 会自动跟进，每次推送均由客户的实际行为触发，而不是手动提醒列表。",
-      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
-      "imageAlt": "Cekat.AI 中待付款的自动化后续工作流程"
+      "visual": "industryOrder",
+      "visualAlt": "Cekat.AI 中待付款的自动化后续工作流程"
     },
     {
       "title": "向最有可能购买的买家广播促销信息",
       "body": "营销活动通过官方 WhatsApp Business API 向根据真实数据、重复购买者、流失客户、点击但从未付款的潜在客户构建的细分市场进行，并从 CRM 中提取姓名和背景。相关促销活动被打开并得到答复；通用的会被忽略。",
-      "image": "/images/marketing/understand-customer-behavior.png",
-      "imageAlt": "Cekat.AI 中按购买行为进行客户细分"
+      "visual": "industryBroadcast",
+      "visualAlt": "Cekat.AI 中按购买行为进行客户细分"
     },
     {
       "title": "了解每个买家的阶段、访客、潜在客户或回头客",
       "body": "每次聊天、购买和活动都会自动更新客户的 CRM 卡，无需手动输入。客户阶段跟踪从访客到潜在客户再到买家的每一次联系，并提供建议的后续步骤，因此您的团队始终知道谁在浏览、谁在做出决定以及谁应该重复购买。",
-      "image": "/images/crm/track-customer-journey.png",
-      "imageAlt": "Cekat.AI CRM 中跟踪的客户旅程阶段"
+      "visual": "industryContactRecord",
+      "visualAlt": "Cekat.AI CRM 中跟踪的客户旅程阶段"
     }
   ],
   "pillars": [

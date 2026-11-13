@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import type { Locale } from "@/i18n/routing";
@@ -14,10 +14,9 @@ import {
   mdiFacebook,
 } from "@/lib/icons";
 import { Container } from "./container";
-import { LogoBlack, LogoFooterGradient } from "./logo";
+import { LogoBlack } from "./logo";
 import { AppStoreBadge, MetaLogo, PlayStoreBadge } from "./store-badges";
 import { cn } from "@/lib/utils";
-import { Meteors } from "@/components/ui/meteors";
 
 const PRODUCT_LINKS = [
   { key: "chat", href: "/chat" },
@@ -99,7 +98,7 @@ function LinkColumn({
   className?: string;
 }) {
   return (
-    <div className={className}>
+    <div className={cn("min-w-0", className)}>
       <h3 className="font-numeric text-base font-semibold text-foreground">
         {title}
       </h3>
@@ -122,7 +121,7 @@ function FooterLink({
       <Link
         href={href}
         className={cn(
-          "text-xs leading-relaxed font-medium text-muted-foreground transition-colors duration-200 hover:text-foreground",
+          "inline-block py-1 text-sm leading-relaxed font-medium text-muted-foreground transition-colors duration-200 hover:text-foreground focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary",
           className,
         )}
       >
@@ -132,12 +131,15 @@ function FooterLink({
   );
 }
 
-export function Footer() {
+export function Footer({
+  largeTouchTargets = false,
+}: {
+  largeTouchTargets?: boolean;
+} = {}) {
   const t = useTranslations("footer");
   const tn = useTranslations("nav");
   const locale = useLocale() as Locale;
   const [activeCountry, setActiveCountry] = useState<string>("indonesia");
-  const shellRef = useRef<HTMLElement>(null);
 
   const featureLinks = REGISTRY.features
     .filter((entry) => entry.slugs[locale] && !entry.switcherFallbackId)
@@ -153,29 +155,23 @@ export function Footer() {
 
   return (
     <footer
-      ref={shellRef}
+      data-layout="link-columns"
       className="relative overflow-hidden border-t border-border bg-white text-foreground"
     >
       {/* Meta partner strip */}
       <div className="border-b border-border">
-        <Container className="flex flex-col items-center gap-3 border-x border-border py-6 font-numeric text-base text-foreground lg:flex-row lg:gap-6">
+        <Container className="flex flex-col items-center gap-3 py-6 font-numeric text-base text-foreground lg:flex-row lg:gap-6">
           <MetaLogo className="h-3 w-auto lg:h-5" />
           <p>{t("metaPartner")}</p>
         </Container>
       </div>
 
-      <div className="relative z-10 overflow-hidden pt-10 lg:pt-0">
-        <div
-          aria-hidden="true"
-          className="pointer-events-none absolute inset-0 z-0"
-        >
-          <Meteors number={14} className="bg-[#64748b]" />
-        </div>
-        <Container className="relative z-20 grid gap-12 py-4 lg:grid-cols-12">
-          {/* Brand + socials + offices */}
-          <div className="flex flex-col gap-8 lg:col-span-7">
-            <div className="flex flex-col items-center lg:items-start">
-              <LogoBlack className="h-11 w-auto" />
+      <div>
+        <Container className="grid gap-x-10 gap-y-12 py-12 lg:grid-cols-12 lg:py-16">
+          {/* Brand and app badges anchor the link columns. */}
+          <div className="flex min-w-0 flex-col items-start gap-8 lg:col-span-3">
+            <div className="flex flex-col items-start">
+              <LogoBlack className="h-9 w-auto" />
               <div className="mt-4 flex gap-4">
                 {SOCIALS.map((s) => (
                   <a
@@ -192,108 +188,6 @@ export function Footer() {
               </div>
             </div>
 
-            <div className="flex flex-col gap-6">
-              <p className="font-numeric text-xs text-foreground">
-                {t("officeHeading")}
-              </p>
-              <div
-                role="tablist"
-                aria-label={t("officeHeading")}
-                className="flex w-full max-w-full flex-nowrap items-center gap-1.5 overflow-x-auto rounded-xl border border-border bg-surface-muted p-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden sm:w-fit sm:flex-wrap"
-              >
-                {OFFICE_COUNTRIES.map((c) => {
-                  const isActive = activeCountry === c.key;
-                  return (
-                    <button
-                      key={c.key}
-                      type="button"
-                      role="tab"
-                      aria-selected={isActive}
-                      onClick={() => setActiveCountry(c.key)}
-                      className={cn(
-                        "inline-flex min-h-10 shrink-0 cursor-pointer items-center gap-1.5 rounded-lg border px-3.5 py-1.5 font-numeric text-sm whitespace-nowrap transition-colors duration-200 focus-visible:ring-3 focus-visible:ring-primary/25 focus-visible:outline-none",
-                        isActive
-                          ? "border-border/60 bg-white font-medium text-foreground shadow-xs"
-                          : "border-transparent text-muted-foreground hover:text-foreground",
-                      )}
-                    >
-                      <span className="font-emoji">{c.flag}</span>
-                      <span>{OFFICE_COUNTRY_LABELS[locale][c.key]}</span>
-                    </button>
-                  );
-                })}
-              </div>
-
-              <div className="min-h-[7.5rem] text-center lg:text-left">
-                {activeCountry === "indonesia" && (
-                  <div
-                    key="indonesia"
-                    className="animate-fade-in-up-blur grid grid-cols-1 gap-8 sm:grid-cols-2"
-                  >
-                    <div>
-                      <p className="text-xs text-muted-foreground">
-                        {t("jakartaOfficeName")}
-                      </p>
-                      <h3 className="mt-1.5 text-base font-semibold text-foreground">
-                        {t("companyLegalName")}
-                      </h3>
-                      <p className="mt-1.5 text-sm leading-relaxed text-foreground">
-                        {t("jakartaOfficeAddress")}
-                      </p>
-                    </div>
-                    <div>
-                      <p className="text-xs text-muted-foreground">
-                        {t("tangerangOfficeName")}
-                      </p>
-                      <h3 className="mt-1.5 text-base font-semibold text-foreground">
-                        {t("companyLegalName")}
-                      </h3>
-                      <p className="mt-1.5 text-sm leading-relaxed text-foreground">
-                        {t("tangerangOfficeAddress")}
-                      </p>
-                    </div>
-                  </div>
-                )}
-
-                {activeCountry === "singapore" && (
-                  <div
-                    key="singapore"
-                    className="animate-fade-in-up-blur sm:max-w-md"
-                  >
-                    <p className="text-xs text-muted-foreground">
-                      {t("singaporeOfficeName")}
-                    </p>
-                    <h3 className="mt-1.5 text-base font-semibold text-foreground">
-                      {t("singaporeCompanyName")}
-                    </h3>
-                    <p className="mt-1.5 text-sm leading-relaxed text-foreground">
-                      {t("singaporeOfficeAddress")}
-                    </p>
-                  </div>
-                )}
-
-                {activeCountry === "malaysia" && (
-                  <div
-                    key="malaysia"
-                    className="animate-fade-in-up-blur sm:max-w-md"
-                  >
-                    <p className="text-xs text-muted-foreground">
-                      {t("malaysiaOfficeName")}
-                    </p>
-                    <h3 className="mt-1.5 text-base font-semibold text-foreground">
-                      {t("malaysiaCompanyName")}
-                    </h3>
-                    <p className="mt-1.5 text-sm leading-relaxed text-foreground">
-                      {t("malaysiaOfficeAddress")}
-                    </p>
-                  </div>
-                )}
-              </div>
-            </div>
-          </div>
-
-          {/* Apps + link columns */}
-          <div className="flex flex-col gap-8 lg:col-span-5 lg:pl-12">
             <div>
               <h3 className="font-numeric text-xs text-foreground">
                 {t("downloadApp")}
@@ -317,106 +211,193 @@ export function Footer() {
                 </a>
               </div>
             </div>
+          </div>
 
-            <div className="grid grid-cols-2 gap-8">
-              <LinkColumn title={t("productHeading")}>
-                {PRODUCT_LINKS.map((l) => (
-                  <FooterLink key={l.key} href={l.href}>
-                    {tn(l.key)}
-                  </FooterLink>
-                ))}
-              </LinkColumn>
+          {/* Blueprint: link columns, not a narrow stacked sidebar. */}
+          <div
+            data-footer-links
+            className="grid min-w-0 grid-cols-2 gap-x-6 gap-y-8 sm:grid-cols-3 lg:col-span-9 xl:grid-cols-5"
+          >
+            <LinkColumn title={t("productHeading")}>
+              {PRODUCT_LINKS.map((l) => (
+                <FooterLink key={l.key} href={l.href}>
+                  {tn(l.key)}
+                </FooterLink>
+              ))}
+            </LinkColumn>
+            <LinkColumn title={tn("fitur")}>
+              {featureLinks.map((entry) => (
+                <FooterLink
+                  key={entry.id}
+                  href={{
+                    pathname: "/features/[slug]",
+                    params: { slug: entry.slugs[locale]! },
+                  }}
+                >
+                  {localeValue(entry.title, locale)}
+                </FooterLink>
+              ))}
+              <FooterLink
+                href="/features"
+                className="font-semibold text-primary"
+              >
+                {tn("viewAllFeatures")} <span aria-hidden>→</span>
+              </FooterLink>
+            </LinkColumn>
+            <LinkColumn title={tn("industries")}>
+              {industryLinks.map((entry) => (
+                <FooterLink
+                  key={entry.id}
+                  href={{
+                    pathname: "/industries/[slug]",
+                    params: { slug: entry.slugs[locale]! },
+                  }}
+                >
+                  {localeValue(entry.title, locale)}
+                </FooterLink>
+              ))}
+              <FooterLink
+                href="/industries"
+                className="font-semibold text-primary"
+              >
+                {tn("viewAllIndustries")} <span aria-hidden>→</span>
+              </FooterLink>
+            </LinkColumn>
+            <LinkColumn title={tn("solutions")}>
+              {solutionLinks.map((entry) => (
+                <FooterLink
+                  key={entry.id}
+                  href={{
+                    pathname: "/solutions/[slug]",
+                    params: { slug: entry.slugs[locale]! },
+                  }}
+                >
+                  {localeValue(entry.title, locale)}
+                </FooterLink>
+              ))}
+              <FooterLink
+                href="/solutions"
+                className="font-semibold text-primary"
+              >
+                {tn("viewAllSolutions")} <span aria-hidden>→</span>
+              </FooterLink>
+            </LinkColumn>
+            <LinkColumn title={t("legalHeading")}>
+              {LEGAL_LINKS.map((l) => (
+                <FooterLink key={l.key} href={l.href}>
+                  {t(l.key)}
+                </FooterLink>
+              ))}
+            </LinkColumn>
+          </div>
 
-              <LinkColumn title={t("legalHeading")}>
-                {LEGAL_LINKS.map((l) => (
-                  <FooterLink key={l.key} href={l.href}>
-                    {t(l.key)}
-                  </FooterLink>
-                ))}
-              </LinkColumn>
+          {/* Keep the three-country switcher as a separate, full-width office row. */}
+          <div
+            data-footer-offices
+            className="grid min-w-0 gap-8 border-t border-border pt-10 lg:col-span-12 lg:grid-cols-12 lg:gap-10"
+          >
+            <div className="flex min-w-0 flex-col items-start gap-4 lg:col-span-5">
+              <p className="font-numeric text-xs text-foreground">
+                {t("officeHeading")}
+              </p>
+              <div
+                role="tablist"
+                aria-label={t("officeHeading")}
+                className="grid w-full max-w-full grid-cols-3 items-center gap-1 rounded-xl border border-border bg-surface-muted p-1 sm:flex sm:w-fit sm:flex-wrap sm:gap-1.5"
+              >
+                {OFFICE_COUNTRIES.map((c) => {
+                  const isActive = activeCountry === c.key;
+                  return (
+                    <button
+                      key={c.key}
+                      type="button"
+                      role="tab"
+                      aria-selected={isActive}
+                      onClick={() => setActiveCountry(c.key)}
+                      className={cn(
+                        "inline-flex min-w-0 cursor-pointer items-center justify-center gap-1 rounded-lg border px-1 py-1.5 font-numeric text-xs transition-colors duration-200 focus-visible:ring-3 focus-visible:ring-primary/25 focus-visible:outline-none sm:shrink-0 sm:gap-1.5 sm:px-3.5 sm:text-sm sm:whitespace-nowrap",
+                        largeTouchTargets ? "min-h-11" : "min-h-10",
+                        isActive
+                          ? "border-border/60 bg-white font-medium text-foreground shadow-xs"
+                          : "border-transparent text-muted-foreground hover:text-foreground",
+                      )}
+                    >
+                      <span className="font-emoji">{c.flag}</span>
+                      <span>{OFFICE_COUNTRY_LABELS[locale][c.key]}</span>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+            <div className="min-h-[7.5rem] min-w-0 text-left lg:col-span-7">
+              {activeCountry === "indonesia" && (
+                <div
+                  key="indonesia"
+                  className="grid grid-cols-1 gap-8 sm:grid-cols-2"
+                >
+                  <div>
+                    <p className="text-xs text-muted-foreground">
+                      {t("jakartaOfficeName")}
+                    </p>
+                    <h3 className="mt-1.5 text-base font-semibold text-foreground">
+                      {t("companyLegalName")}
+                    </h3>
+                    <p className="mt-1.5 text-sm leading-relaxed text-foreground">
+                      {t("jakartaOfficeAddress")}
+                    </p>
+                  </div>
+                  <div>
+                    <p className="text-xs text-muted-foreground">
+                      {t("tangerangOfficeName")}
+                    </p>
+                    <h3 className="mt-1.5 text-base font-semibold text-foreground">
+                      {t("companyLegalName")}
+                    </h3>
+                    <p className="mt-1.5 text-sm leading-relaxed text-foreground">
+                      {t("tangerangOfficeAddress")}
+                    </p>
+                  </div>
+                </div>
+              )}
 
-              <LinkColumn title={tn("fitur")}>
-                {featureLinks.map((entry) => (
-                  <FooterLink
-                    key={entry.id}
-                    href={{
-                      pathname: "/features/[slug]",
-                      params: { slug: entry.slugs[locale]! },
-                    }}
-                  >
-                    {localeValue(entry.title, locale)}
-                  </FooterLink>
-                ))}
-                <li>
-                  <Link
-                    href="/features"
-                    className="inline-flex items-center gap-1.5 text-xs font-semibold text-primary transition-colors hover:text-primary/80"
-                  >
-                    {tn("viewAllFeatures")}
-                    <span aria-hidden>→</span>
-                  </Link>
-                </li>
-              </LinkColumn>
+              {activeCountry === "singapore" && (
+                <div key="singapore" className="sm:max-w-md">
+                  <p className="text-xs text-muted-foreground">
+                    {t("singaporeOfficeName")}
+                  </p>
+                  <h3 className="mt-1.5 text-base font-semibold text-foreground">
+                    {t("singaporeCompanyName")}
+                  </h3>
+                  <p className="mt-1.5 text-sm leading-relaxed text-foreground">
+                    {t("singaporeOfficeAddress")}
+                  </p>
+                </div>
+              )}
 
-              <LinkColumn title={tn("industries")}>
-                {industryLinks.map((entry) => (
-                  <FooterLink
-                    key={entry.id}
-                    href={{
-                      pathname: "/industries/[slug]",
-                      params: { slug: entry.slugs[locale]! },
-                    }}
-                  >
-                    {localeValue(entry.title, locale)}
-                  </FooterLink>
-                ))}
-                <li>
-                  <Link
-                    href="/industries"
-                    className="inline-flex items-center gap-1.5 text-xs font-semibold text-primary transition-colors hover:text-primary/80"
-                  >
-                    {tn("viewAllIndustries")}
-                    <span aria-hidden>→</span>
-                  </Link>
-                </li>
-              </LinkColumn>
-
-              <LinkColumn title={tn("solutions")}>
-                {solutionLinks.map((entry) => (
-                  <FooterLink
-                    key={entry.id}
-                    href={{
-                      pathname: "/solutions/[slug]",
-                      params: { slug: entry.slugs[locale]! },
-                    }}
-                  >
-                    {localeValue(entry.title, locale)}
-                  </FooterLink>
-                ))}
-                <li>
-                  <Link
-                    href="/solutions"
-                    className="inline-flex items-center gap-1.5 text-xs font-semibold text-primary transition-colors hover:text-primary/80"
-                  >
-                    {tn("viewAllSolutions")}
-                    <span aria-hidden>→</span>
-                  </Link>
-                </li>
-              </LinkColumn>
+              {activeCountry === "malaysia" && (
+                <div key="malaysia" className="sm:max-w-md">
+                  <p className="text-xs text-muted-foreground">
+                    {t("malaysiaOfficeName")}
+                  </p>
+                  <h3 className="mt-1.5 text-base font-semibold text-foreground">
+                    {t("malaysiaCompanyName")}
+                  </h3>
+                  <p className="mt-1.5 text-sm leading-relaxed text-foreground">
+                    {t("malaysiaOfficeAddress")}
+                  </p>
+                </div>
+              )}
             </div>
           </div>
         </Container>
 
         {/* Bottom bar */}
-        <div className="relative z-20 py-8">
+        <div className="border-t border-border py-6">
           <Container>
-            <p className="text-center text-xs font-medium text-muted-foreground">
+            <p className="text-left text-xs font-medium text-muted-foreground">
               Copyright &copy; {new Date().getFullYear()} CekatAI. {t("rights")}
             </p>
           </Container>
-        </div>
-        <div className="relative z-0 flex justify-center overflow-hidden py-4">
-          <LogoFooterGradient className="h-auto w-full max-w-5xl" />
         </div>
       </div>
     </footer>

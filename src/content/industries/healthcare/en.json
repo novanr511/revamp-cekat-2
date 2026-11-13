@@ -33,6 +33,7 @@
       "label": "industries served"
     }
   ],
+  "benefitsHeading": "Patient support that keeps every step connected",
   "benefits": [
     {
       "title": "Patients Ask at 9 PM. Your Clinic Answers at 9 PM.",
@@ -43,20 +44,20 @@
     {
       "title": "Book Appointments Straight From the Chat",
       "body": "Connect Cekat.AI to your scheduling system via API and the AI books, confirms, and reschedules appointments inside the conversation. No phone tag, no missed bookings, and automated reminders reduce no-shows before they happen.",
-      "image": "/images/home/api-integration.png",
-      "imageAlt": "API integration for appointment booking in Cekat.AI"
+      "visual": "industryBooking",
+      "visualAlt": "API integration for appointment booking in Cekat.AI"
     },
     {
       "title": "Every Patient Conversation, Organized in One Place",
       "body": "WhatsApp, Instagram DM, and website chat flow into one inbox with a complete interaction history per patient. Front-desk teams see full context instantly, and complex or sensitive questions escalate to a human with the whole conversation attached.",
-      "image": "/images/crm/capture-and-organize-customers.png",
-      "imageAlt": "Patient conversations organized in the Cekat.AI CRM"
+      "visual": "industryInbox",
+      "visualAlt": "Patient conversations organized in the Cekat.AI CRM"
     },
     {
       "title": "Complaints Become Tickets, Not Lost Messages",
       "body": "A complaint buried in a busy inbox becomes a lost patient. Cekat.AI labels incoming issues automatically, creates a ticket, and notifies the right team, so every concern is tracked from first message to resolution.",
-      "image": "/images/order/auto-create-ticket.png",
-      "imageAlt": "Automatic ticket creation for patient complaints in Cekat.AI"
+      "visual": "industryTicketQueue",
+      "visualAlt": "Automatic ticket creation for patient complaints in Cekat.AI"
     }
   ],
   "caseStudy": {

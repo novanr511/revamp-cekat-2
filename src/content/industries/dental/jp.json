@@ -47,26 +47,26 @@
     {
       "title": "価格チャットから予約相談まで",
       "body": "患者が興味を示した瞬間に、AI がスロットを提供し、会話内で診察を予約します。API を通じてクリニックのスケジュールに接続され、前日のリマインダーが表示されます。 「お知らせします」は、実際にカレンダーに登録される予定に変わります。",
-      "image": "/images/home/api-integration.png",
-      "imageAlt": "Cekat.AI で歯科診察を予約する API 統合"
+      "visual": "industryBooking",
+      "visualAlt": "Cekat.AI で歯科診察を予約する API 統合"
     },
     {
       "title": "6 か月間のリコールと中括弧のチェックが自動的に実行されます",
       "body": "管理者の記憶に依存するリコールは常にリークします。 Cekat.AI は、各患者の病歴、6 か月のスケーリング、毎月の矯正装置の調整、矯正装置の取り外しスケジュールに基づいて、公式 WhatsApp Business API を通じて自動リマインダーを送信するため、新しい患者だけでなく再診の患者で椅子がいっぱいになります。",
-      "image": "/images/crm/track-customer-journey.png",
-      "imageAlt": "Cekat.AI の患者履歴から実行されるリコールリマインダー"
+      "visual": "industryAutomation",
+      "visualAlt": "Cekat.AI の患者履歴から実行されるリコールリマインダー"
     },
     {
       "title": "午後 11 時になっても気になる質問には答えが得られます",
       "body": "抜歯後の痛み、歯肉の腫れ、ブラケットの緩み、不安は練習時間まで待ってくれません。 AI は、緊急ケアが必要な場合など、クリニック独自のナレッジ ベースからアフターケア ガイダンスを返信し、クリニックの開院時に完全なコンテキストとともにケースを医療チームに引き渡します。",
-      "image": "/images/home/ai-working-hours.png",
-      "imageAlt": "Cekat.AI で診療時間外に患者の質問に答える AI"
+      "visual": "industryInbox",
+      "visualAlt": "Cekat.AI で診療時間外に患者の質問に答える AI"
     },
     {
       "title": "チャットごとに一貫したアフターケア教育",
       "body": "歯列矯正後に食べてはいけないもの、ホワイトニング後のケア、リテーナーの装着方法など、すべての答えはクリニックが独自に作成した教育資料から得られます。各患者は、シフトの誰に尋ねても、歯科医の基準に正確に一致する指示をいつでも受けられます。",
-      "image": "/images/home/knowledge-source.png",
-      "imageAlt": "Cekat.AI での患者教育の回答を強化するナレッジ ベース"
+      "visual": "industryKnowledge",
+      "visualAlt": "Cekat.AI での患者教育の回答を強化するナレッジ ベース"
     }
   ],
   "pillars": [

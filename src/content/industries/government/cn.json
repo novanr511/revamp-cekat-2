@@ -44,26 +44,26 @@
     {
       "title": "永不关闭的公共服务",
       "body": "市民经常在下班后、晚上或周末，在服务柜台关闭很久之后才伸出援手。 Cekat.AI 随时提供一致、准确的答案，因此没有人等到周一才能获取今天所需的信息，并且员工会返回已处理的对话，而不是不断增加的积压。",
-      "image": "/images/home/ai-working-hours.png",
-      "imageAlt": "Cekat.AI 中员工和 AI 代理之间的 AI 工作时间路由"
+      "visual": "industryTicketQueue",
+      "visualAlt": "Cekat.AI 中员工和 AI 代理之间的 AI 工作时间路由"
     },
     {
       "title": "每项投诉都会成为可追踪的票证，并发送至正确的单位",
       "body": "公民投诉一旦落空，就会削弱公众的信任。 Cekat.AI 自动标记每个收到的报告，创建一个票证，并通过通知将其发送给负责单位，因此每个投诉从第一条消息到解决方案都会被跟踪，并且问责制内置于流程中，而不是留在记忆中。",
-      "image": "/images/order/automatic-notifications-to-the-right-team.png",
-      "imageAlt": "投诉将作为 Cekat.AI 中的跟踪单发送至正确的单位"
+      "visual": "industryBooking",
+      "visualAlt": "投诉将作为 Cekat.AI 中的跟踪单发送至正确的单位"
     },
     {
       "title": "从报告到解决的完整可见性",
       "body": "每个对话的状态、所有者和解决路径都在一个位置可见，并且每次交互都会自动生成记录，无需手动记录。当审查或审计询问处理的内容和时间时，跟踪已经存在，而不是分散在个人设备和渠道中。",
-      "image": "/images/order/full-visibility-across-every-automation-step.png",
-      "imageAlt": "在 Cekat.AI 中全面了解每个公民案例"
+      "visual": "industryAnalytics",
+      "visualAlt": "在 Cekat.AI 中全面了解每个公民案例"
     },
     {
       "title": "公民使用的每个渠道都有一个收件箱",
       "body": "WhatsApp、Instagram、Facebook Messenger 和网站聊天流入单个收件箱，每个公民都有一份互动历史记录。在一个频道上提问并在另一个频道上跟进的居民会保持相同的上下文，因此平台之间不会发生任何冲突，也不会要求任何人重复他们的情况。",
-      "image": "/images/chat/connect-channels.png",
-      "imageAlt": "来自各个渠道的公民对话统一在 Cekat.AI 中"
+      "visual": "industryInbox",
+      "visualAlt": "来自各个渠道的公民对话统一在 Cekat.AI 中"
     }
   ],
   "pillars": [

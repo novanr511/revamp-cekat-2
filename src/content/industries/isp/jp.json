@@ -43,26 +43,26 @@
     {
       "title": "請求と支払いに関する質問はすぐに回答されます",
       "body": "「今月の請求額はいくらですか?」 \"どこで支払いますか？\" 「もう異動したのに、なぜまだ縁が切れているのですか？」同じ質問が毎日届き、管理者の時間を食いつぶします。 Cekat.AI はナレッジ ベースから自然言語で回答し、支払い詳細を送信し、チャット履歴を添付して奇妙な支払いケースをチームにエスカレーションします。",
-      "image": "/images/home/knowledge-source.png",
-      "imageAlt": "お客様の請求に関する質問に答える Cekat.AI ナレッジ ベース"
+      "visual": "industryTicketQueue",
+      "visualAlt": "お客様の請求に関する質問に答える Cekat.AI ナレッジ ベース"
     },
     {
       "title": "チャットから予約された新規インストールと技術訪問",
       "body": "見込み客が補償範囲について質問すると、すぐに答えが得られます。設置の準備が完了すると、AI は必要な住所と詳細を収集し、会話の中で設置枠や技術者の訪問を予約します。すべてのリクエストは完全なコンテキストとともにログに記録されるため、現場チームは読みかけのチャットから推測するのではなく、情報に基づいて出発します。",
-      "image": "/images/order/end-to-end-operational-efficiency.png",
-      "imageAlt": "Cekat.AI での会話に基づいてスケジュールされた設置と技術者の訪問"
+      "visual": "industryDispatch",
+      "visualAlt": "Cekat.AI での会話に基づいてスケジュールされた設置と技術者の訪問"
     },
     {
       "title": "WhatsApp での顧客への自動通知",
       "body": "期日のリマインダー、支払いの確認、定期メンテナンスのお知らせ、エリアがオンラインに戻ったときのアップデートはすべて、公式の WhatsApp Business API を通じて自動的に送信されます。顧客は苦情を言う前にあなたからの連絡を受け取ることができ、請求チームは一度に 1 つのチャットで支払いを追跡する必要がなくなります。",
-      "image": "/images/order/automatic-notifications-to-the-right-team.png",
-      "imageAlt": "WhatsApp で顧客に配信される自動 Cekat.AI 通知"
+      "visual": "industryBroadcast",
+      "visualAlt": "WhatsApp で顧客に配信される自動 Cekat.AI 通知"
     },
     {
       "title": "苦情はチケットとなり、適切なエリアのチームに転送されます",
       "body": "受信したすべての停止レポートは自動的にチケットに変換され、顧客の詳細と場所が記入されて、そのエリアの技術チームに転送されます。開いているすべてのチケットを 1 つのビューで確認できるため、苦情が受信トレイに埋もれることはなく、顧客が同じ問題について 3 回チャットする必要もありません。",
-      "image": "/images/order/auto-create-ticket.png",
-      "imageAlt": "Cekat.AI で顧客の苦情が自動的にチケットに変換される"
+      "visual": "industryHandoff",
+      "visualAlt": "Cekat.AI で顧客の苦情が自動的にチケットに変換される"
     }
   ],
   "pillars": [

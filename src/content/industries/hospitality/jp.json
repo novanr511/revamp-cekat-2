@@ -43,20 +43,20 @@
     {
       "title": "チャット内でイベントと会場の予約を閉じる",
       "body": "イベントやグループに関する問い合わせは、かつては手動での質問を長時間やり取りする必要がありました。 Cekat.AI は、会話の中で詳細、日付、人数、パッケージ、予算をキャプチャし、API を介してシステムに接続し、すでに収集されたすべてのものを備えた適切な問い合わせをチームに提供するため、返答を待って立ち止まることはありません。",
-      "image": "/images/home/api-integration.png",
-      "imageAlt": "Cekat.AI の API 統合を通じてイベント予約が処理される"
+      "visual": "industryBooking",
+      "visualAlt": "Cekat.AI の API 統合を通じてイベント予約が処理される"
     },
     {
       "title": "すべてのチャネルにわたって、すべてのゲストに 1 つの受信箱",
       "body": "WhatsApp、Instagram DM、Facebook Messenger、Web サイトのチャットは、ゲストごとの完全な履歴を含む 1 つの受信箱に流れます。チームは過去の滞在、リクエスト、質問を即座に確認し、人手が必要なあらゆるもの、特別なリクエスト、苦情はすべて会話全体に付随してエスカレートするため、ゲストが同じことを繰り返すことはありません。",
-      "image": "/images/crm/capture-and-organize-customers.png",
-      "imageAlt": "Cekat.AI CRM で整理されたゲストの会話"
+      "visual": "industryDispatch",
+      "visualAlt": "Cekat.AI CRM で整理されたゲストの会話"
     },
     {
       "title": "静かなデートを実際にオープンしているゲストのプロモーションで埋める",
       "body": "ブロードキャスト キャンペーンは、公式 WhatsApp Business API を介して、CRM から取得された名前とコンテキストを使用して、実際のデータ、過去のゲスト、イベント クライアント、失効した予約から構築されたセグメントに配信されます。平日料金のオファーや季節限定のパッケージは、誰もが無視するありきたりな宣伝ではなく、イエスと答える可能性が最も高いゲストに届きます。",
-      "image": "/images/marketing/understand-customer-behavior.png",
-      "imageAlt": "Cekat.AI でのホスピタリティ プロモーションのためのゲストのセグメンテーション"
+      "visual": "industryInbox",
+      "visualAlt": "Cekat.AI でのホスピタリティ プロモーションのためのゲストのセグメンテーション"
     }
   ],
   "caseStudy": {

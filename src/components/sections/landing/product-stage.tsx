@@ -9,12 +9,14 @@ export function ProductStage({
   photo,
   label,
   tone = "chat",
+  staticVisual,
 }: {
   image: string;
   imageAlt: string;
   photo?: string;
   label?: string;
   tone?: string;
+  staticVisual?: boolean;
 }) {
   return (
     <div className={cn("product-stage product-stage--live", photo && "product-stage--photo")} data-tone={tone}>
@@ -23,7 +25,7 @@ export function ProductStage({
           <Image src={photo} alt={imageAlt} fill preload sizes="(max-width: 1024px) 90vw, 360px" className="object-cover" />
         </div>
       )}
-      <WorkflowScene image={image} imageAlt={imageAlt} title={label} hero />
+      <WorkflowScene image={image} imageAlt={imageAlt} title={label} hero staticVisual={staticVisual} />
     </div>
   );
 }

@@ -43,20 +43,20 @@
     {
       "title": "Bales Pakai Bahasa Si Traveler, Sepanjang Waktu",
       "body": "Traveler nanya dari berbagai negara dan timezone, dalam bahasa berbeda-beda. AI Cekat.AI multibahasa dan paham maksud, bukan cuma keyword, jadi pertanyaan bahasa Jepang jam 2 pagi dan bahasa Indonesia jam 12 siang sama-sama dapat jawaban instan dan akurat. Coverage nggak pernah tidur, nggak ada inquiry yang nunggu agent online.",
-      "image": "/images/home/ai-working-hours.png",
-      "imageAlt": "Coverage multibahasa 24/7 lintas timezone di Cekat.AI"
+      "visual": "industryLanguages",
+      "visualAlt": "Coverage multibahasa 24/7 lintas timezone di Cekat.AI"
     },
     {
       "title": "Ubah Traveler Lama Jadi Repeat Booking",
       "body": "Broadcast dikirim lewat WhatsApp Business API resmi ke segmen dari data nyata, traveler lama, pemesan musiman, leads yang nanya tapi belum bayar, dengan nama dan riwayat trip dari CRM. Promo musiman yang timing-nya pas nyampe ke orang yang paling mungkin booking lagi, bukan blast yang diabaikan semua orang.",
-      "image": "/images/marketing/understand-customer-behavior.png",
-      "imageAlt": "Segmentasi traveler untuk promo musiman di Cekat.AI"
+      "visual": "industryContactRecord",
+      "visualAlt": "Segmentasi traveler untuk promo musiman di Cekat.AI"
     },
     {
       "title": "Semua Traveler dan Trip Rapi di Satu Tempat",
       "body": "WhatsApp, Instagram DM, dan chat website masuk ke satu inbox, dan tiap chat meng-update kartu CRM traveler otomatis, trip sebelumnya, pertanyaan, campaign yang diterima. Tim langsung lihat konteks lengkap, dan booking kompleks atau bernilai besar dialihkan ke manusia beserta percakapannya, jadi nggak ada leads yang lolos di musim ramai.",
-      "image": "/images/crm/track-customer-journey.png",
-      "imageAlt": "Perjalanan traveler terlacak di CRM Cekat.AI"
+      "visual": "industryBooking",
+      "visualAlt": "Perjalanan traveler terlacak di CRM Cekat.AI"
     }
   ],
   "caseStudy": {

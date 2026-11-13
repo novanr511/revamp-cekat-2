@@ -398,11 +398,31 @@ export function localizeRevampHeaderMarkup(markup: string, locale: Locale) {
     '<li><a class="mlink" href="/stories">Customer stories</a></li><li><a class="mlink" href="/case-studies">Case studies</a></li>',
   );
 
+  // These capabilities now have their own product destinations. Only replace
+  // product links, leaving the feature and integration directory links intact.
+  const productDestinations = {
+    broadcasts: "/broadcast",
+    automation: "/otomatisasi",
+    analytics: "/analitik",
+  } as const;
+  next = next.replace(
+    /(<a class="mitem" href=")[^"]+("[^>]*data-prev="(broadcasts|automation|analytics)"[^>]*>)/g,
+    (
+      _match,
+      start: string,
+      end: string,
+      key: keyof typeof productDestinations,
+    ) => `${start}${productDestinations[key]}${end}`,
+  );
+
   for (const path of [
     "/",
     "/marketing",
     "/chat",
     "/crm",
+    "/broadcast",
+    "/otomatisasi",
+    "/analitik",
     "/features",
     "/integrations",
     "/industries",

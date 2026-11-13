@@ -47,20 +47,20 @@
     {
       "title": "Menu, Promo, and Price Questions Answered Instantly",
       "body": "\"Is there a vegetarian option?\" \"How much for the set menu?\" \"Any promo tonight?\" Cekat.AI answers in natural language, understanding intent rather than matching keywords, so hungry guests get certainty in seconds and decide to come in, instead of scrolling to the next place that replied faster.",
-      "image": "/images/chat/ai-handles-conversations.png",
-      "imageAlt": "AI agent answering menu and promo questions in the Cekat.AI inbox"
+      "visual": "industryKnowledge",
+      "visualAlt": "AI agent answering menu and promo questions in the Cekat.AI inbox"
     },
     {
       "title": "Event and Catering Inquiries Never Slip Through",
       "body": "A birthday, a corporate dinner, a private booking, high-value inquiries that used to sit unread until an admin had time. Cekat.AI captures each one into a CRM card automatically, with full conversation history, so your events team follows up on real leads instead of digging through a crowded inbox.",
-      "image": "/images/crm/capture-and-organize-customers.png",
-      "imageAlt": "Event and catering inquiries captured in the Cekat.AI CRM"
+      "visual": "industryBooking",
+      "visualAlt": "Event and catering inquiries captured in the Cekat.AI CRM"
     },
     {
       "title": "Turn a Chat Into a Confirmed Order",
       "body": "For delivery and takeaway, Cekat.AI takes the order inside the conversation, items, customer details, shipping cost via cek ongkir, and a payment QR, without an admin retyping anything into a spreadsheet. Guests go from question to paid order in one chat, and every order lands consistent and complete.",
-      "image": "/images/order/end-to-end-operational-efficiency.png",
-      "imageAlt": "Order created and paid inside a chat conversation in Cekat.AI"
+      "visual": "industryOrder",
+      "visualAlt": "Order created and paid inside a chat conversation in Cekat.AI"
     }
   ],
   "caseStudy": {

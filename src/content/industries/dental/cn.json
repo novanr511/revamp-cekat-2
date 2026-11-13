@@ -7,12 +7,7 @@
     "badge": "牙科诊所",
     "title": "回答 在患者安静之前调整牙套价格",
     "subtitle": "从治疗价格范围到咨询预约和召回提醒，Cekat.AI 在 WhatsApp 和 Instagram 上以自然语言 24/7 即时回复，无需添加管理员",
-    "useCases": [
-      "治疗定价",
-      "咨询预约",
-      "检查提醒",
-      "善后指导"
-    ]
+    "useCases": ["治疗定价", "咨询预约", "检查提醒", "善后指导"]
   },
   "definition": "Cekat.AI 牙科诊所是印度尼西亚牙科诊所的人工智能客户服务平台，通过人工智能补充您的牙科诊所软件，可以立即回答治疗和价格范围问题，直接通过聊天预订咨询，并在一个平台上自动运行召回提醒。",
   "stats": [
@@ -47,26 +42,26 @@
     {
       "title": "从直接价格聊天到预约咨询",
       "body": "一旦患者表现出兴趣，人工智能就会在对话中提供一个时段并预订咨询，通过 API 连接到您的诊所日程，并在当天之前发出提醒。 “我会让你知道”变成了一个实际出现在日历上的约会。",
-      "image": "/images/home/api-integration.png",
-      "imageAlt": "API 集成在 Cekat.AI 中预订牙科咨询"
+      "visual": "industryBooking",
+      "visualAlt": "API 集成在 Cekat.AI 中预订牙科咨询"
     },
     {
       "title": "自动运行六个月的召回和支架检查",
       "body": "依赖于管理员内存的回忆总是会泄漏。 Cekat.AI 通过官方 WhatsApp Business API 根据每位患者的病史、六个月的换牙情况、每月的牙套调整、牙套移除时间表发送自动提醒，这样您的椅子上就会坐满回访的患者，而不仅仅是新患者。",
-      "image": "/images/crm/track-customer-journey.png",
-      "imageAlt": "从 Cekat.AI 中的患者历史记录中调用提醒"
+      "visual": "industryAutomation",
+      "visualAlt": "从 Cekat.AI 中的患者历史记录中调用提醒"
     },
     {
       "title": "晚上 11 点焦虑的问题仍能得到解答",
       "body": "拔牙后的疼痛、牙龈肿胀、托槽松动、焦虑等症状不会等到练习时间才出现。人工智能会根据您诊所自己的知识库提供善后指导，包括何时需要紧急护理，然后在诊所开门时将带有完整背景的案例交给您的医疗团队。",
-      "image": "/images/home/ai-working-hours.png",
-      "imageAlt": "AI 在 Cekat.AI 练习时间之外回答患者问题"
+      "visual": "industryInbox",
+      "visualAlt": "AI 在 Cekat.AI 练习时间之外回答患者问题"
     },
     {
       "title": "每次聊天中都保持一致的善后教育",
       "body": "戴牙套后不能吃什么，美白后护理，如何佩戴保持器，每个答案都来自您诊所自己编写的教育材料。无论何时轮班，每位患者都会得到完全符合牙医标准的说明。",
-      "image": "/images/home/knowledge-source.png",
-      "imageAlt": "Cekat.AI 中为患者教育提供支持的知识库"
+      "visual": "industryKnowledge",
+      "visualAlt": "Cekat.AI 中为患者教育提供支持的知识库"
     }
   ],
   "pillars": [

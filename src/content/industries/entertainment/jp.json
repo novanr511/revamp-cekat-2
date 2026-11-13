@@ -43,20 +43,20 @@
     {
       "title": "チャット内でチケットを販売および確認する",
       "body": "Cekat.AI は、ゲストを別のアプリに送信したり、管理者がスプレッドシートに注文を再入力したりすることなく、会話内のチケット注文、数量、購入者の詳細、支払い QR を取得します。ゲストは 1 回のチャットで質問からチケットの確認までを完了し、すべての注文が完全かつ一貫したものになります。",
-      "image": "/images/order/end-to-end-operational-efficiency.png",
-      "imageAlt": "Cekat.AI のチャット会話内でチケットの注文が作成され、支払われる"
+      "visual": "industryOrder",
+      "visualAlt": "Cekat.AI のチャット会話内でチケットの注文が作成され、支払われる"
     },
     {
       "title": "ゲストリストとテーブル予約を処理し、夜勤は必要ありません",
       "body": "ゲスト リストとテーブル DM のピークは真夜中以降、まさに管理者がログオフするときです。 Cekat.AI は、すべてのリクエストが到着した瞬間に応答して、完全なチャット履歴を含む CRM カードに記録します。そのため、名前がすり抜けることはなく、ドア チームは昨夜の DM をスクロールする代わりに、きれいなリストを開くことができます。",
-      "image": "/images/home/ai-working-hours.png",
-      "imageAlt": "Cekat.AI でゲスト リストと勤務時間外のチャット予約をカバーする AI"
+      "visual": "industryBooking",
+      "visualAlt": "Cekat.AI でゲスト リストと勤務時間外のチャット予約をカバーする AI"
     },
     {
       "title": "イベントが変更されましたか?すべてのチケット所有者に一度に伝えます",
       "body": "スケジュールが強まり、ラインナップが変更され、キャンセルがあり、受信箱があふれます。まず公式の WhatsApp Business API を通じて影響を受けるチケット所有者にアナウンスをブロードキャストし、その後に続く払い戻しの質問に対して AI が、パニックに陥った 5 人の管理者が 5 つの異なる回答を与えるのではなく、ポリシーに基づいた 1 つの一貫した回答で回答できるようにします。",
-      "image": "/images/marketing/understand-customer-behavior.png",
-      "imageAlt": "Cekat.AI でのイベント告知ブロードキャストの視聴者セグメント"
+      "visual": "industryDispatch",
+      "visualAlt": "Cekat.AI でのイベント告知ブロードキャストの視聴者セグメント"
     }
   ],
   "caseStudy": {

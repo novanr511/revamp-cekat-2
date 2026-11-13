@@ -43,26 +43,26 @@
     {
       "title": "Parents Ask After the Kids Are Asleep, Your School Still Answers",
       "body": "School decisions happen at the dinner table, not during office hours. Cekat.AI answers questions about fees, curriculum, and boarding facilities whenever they arrive, 9 PM or Sunday morning, so parents seriously comparing schools get certainty on the spot and your admissions team walks in to conversations already handled.",
-      "image": "/images/home/ai-working-hours.png",
-      "imageAlt": "AI working hours covering chats outside school office hours in Cekat.AI"
+      "visual": "industryInbox",
+      "visualAlt": "AI working hours covering chats outside school office hours in Cekat.AI"
     },
     {
       "title": "Brochure and Open House Leads Stop Leaking",
       "body": "A parent who requests a brochure and never hears back is a lost enrollment. Cekat.AI records every inquirer into a CRM card automatically, with target grade level and contact details, then organizes them in a pipeline from first question to re-registration, so your team knows exactly who needs just one more nudge.",
-      "image": "/images/crm/capture-and-organize-customers.png",
-      "imageAlt": "Prospective parent leads organized in a pipeline in the Cekat.AI CRM"
+      "visual": "industryPipeline",
+      "visualAlt": "Prospective parent leads organized in a pipeline in the Cekat.AI CRM"
     },
     {
       "title": "Deadlines and Documents Chased Automatically",
       "body": "An unfinished form, a report card never uploaded, a registration fee never paid, without reminders it all stalls midway. Cekat.AI sends automatic reminders before every deadline, triggered by schedule or an applicant's document status, so applications that are halfway done actually get finished instead of quietly fading out.",
-      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
-      "imageAlt": "Automated admissions deadline reminder flow in Cekat.AI"
+      "visual": "industryDocuments",
+      "visualAlt": "Automated admissions deadline reminder flow in Cekat.AI"
     },
     {
       "title": "Open House Invites That Reach the Right Families",
       "body": "Cekat.AI segments leads by grade level, interest, and application stage, then sends open house invitations or trial class info through official WhatsApp Business API broadcasts, with automatic follow-ups once the event is over. Your hall fills with parents genuinely considering your school, not a random contact list.",
-      "image": "/images/marketing/understand-customer-behavior.png",
-      "imageAlt": "Lead segments powering open house broadcasts in Cekat.AI"
+      "visual": "industryBroadcast",
+      "visualAlt": "Lead segments powering open house broadcasts in Cekat.AI"
     }
   ],
   "pillars": [

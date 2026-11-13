@@ -43,26 +43,26 @@
     {
       "title": "단일 대화로 예약된 좌석",
       "body": "첫 번째 질문부터 고정석까지 모든 것이 한 번의 채팅으로 이루어집니다. Cekat.AI는 경로, 날짜, 좌석 수, 승객 세부 정보를 기록한 다음 결제 QR을 보내고 결제가 완료되면 확인합니다. 더 이상 이름이나 날짜를 잘못 들어 전화 예약을 할 필요가 없습니다. 모든 주문은 완전하고 일관되게 도착합니다.",
-      "image": "/images/order/end-to-end-operational-efficiency.png",
-      "imageAlt": "Cekat.AI 채팅 내에서 좌석 예약이 생성되고 결제되었습니다."
+      "visual": "industryBooking",
+      "visualAlt": "Cekat.AI 채팅 내에서 좌석 예약이 생성되고 결제되었습니다."
     },
     {
       "title": "일정 변경 및 환불이 더 이상 복잡해지지 않습니다.",
       "body": "연착 승객, 시간표 변경, 계획 취소, 일정 변경 요청이 매일 들어오고 있습니다. Cekat.AI는 규칙에 따라 이를 처리하고 대체 출발 좌석을 확인하고 변경 사항을 기록한 다음 전체 채팅 기록과 함께 환불 요청을 팀에 에스컬레이션하므로 승객이 반송되는 대신 확실성을 얻을 수 있습니다.",
-      "image": "/images/chat/escalate-and-sync.png",
-      "imageAlt": "Cekat.AI의 전체 맥락을 통해 환불 요청이 팀에 에스컬레이션되었습니다."
+      "visual": "industryDocuments",
+      "visualAlt": "Cekat.AI의 전체 맥락을 통해 환불 요청이 팀에 에스컬레이션되었습니다."
     },
     {
       "title": "노선 변경은 출발 전에 승객에게 도달합니다",
       "body": "차량 문제, 출발 지연, 경로 변경, 이런 소식은 빠르게 전달되어야 합니다. 공식 WhatsApp Business API를 통해 Cekat.AI는 영향을 받는 노선 및 출발의 승객에게만 공지 사항을 방송하고 자동 출발 알림을 제공하므로 정보를 모르는 승객으로 인해 발생하는 빈 좌석은 오래된 이야기가 됩니다.",
-      "image": "/images/order/automatic-notifications-to-the-right-team.png",
-      "imageAlt": "Cekat.AI에서 자동으로 전송되는 일정 변경 방송"
+      "visual": "industryBroadcast",
+      "visualAlt": "Cekat.AI에서 자동으로 전송되는 일정 변경 방송"
     },
     {
       "title": "하나의 받은 편지함에 있는 모든 예약 채널",
       "body": "WhatsApp, Instagram DM, 웹사이트 실시간 채팅은 승객당 단일 내역이 포함된 하나의 받은 편지함으로 흐르므로 Instagram에 문의하고 WhatsApp에 책을 읽는 사람은 자신의 이야기를 반복하지 않습니다. 일반 승객은 CRM에서 자신이 선호하는 노선을 포착하여 프로모션이나 새로운 일정이 시작되면 후속 조치를 취할 수 있습니다.",
-      "image": "/images/chat/connect-channels.png",
-      "imageAlt": "하나의 Cekat.AI 받은 편지함에 연결된 모든 채팅 채널"
+      "visual": "industryInbox",
+      "visualAlt": "하나의 Cekat.AI 받은 편지함에 연결된 모든 채팅 채널"
     }
   ],
   "pillars": [

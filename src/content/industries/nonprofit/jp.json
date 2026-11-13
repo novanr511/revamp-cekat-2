@@ -43,26 +43,26 @@
     {
       "title": "オフィスが閉まった後でも24時間365日連絡可能",
       "body": "サポートと寛大さは、9 時から 5 時までのスケジュールでは実行されません。 AI 勤務時間により、エージェントはチームがログオフした後にチャットをカバーし、営業時間中に完全なコンテキストを提供して引き返すことができるため、真夜中の寄付者や週末に困っている受益者は、空の受信箱ではなく、常に対応力のある組織に届きます。",
-      "image": "/images/home/ai-working-hours.png",
-      "imageAlt": "AI の労働時間により、Cekat.AI の時間外でも組織に連絡できるようにする"
+      "visual": "industryInbox",
+      "visualAlt": "AI の労働時間により、Cekat.AI の時間外でも組織に連絡できるようにする"
     },
     {
       "title": "放送を通じて寄付キャンペーンを実施",
       "body": "ブロードキャスト キャンペーンは、公式 WhatsApp Business API を通じて、CRM から取得された名前と履歴を使用して、実際のデータ、定期的な寄付者、1 回限りの寄付者、イベント参加者から構築されたセグメントに発信されます。募金活動の呼びかけやプログラムの最新情報は、行動する可能性が最も高い支援者に届き、フォローアップは各人の活動に基づいて自動的に行われます。",
-      "image": "/images/marketing/understand-customer-behavior.png",
-      "imageAlt": "Cekat.AI でのキャンペーンの寄付者のセグメンテーション"
+      "visual": "industryBroadcast",
+      "visualAlt": "Cekat.AI でのキャンペーンの寄付者のセグメンテーション"
     },
     {
       "title": "すべてのサポーターと会話を 1 か所で",
       "body": "WhatsApp、Instagram DM、Facebook Messenger、Web サイトのチャットは、サポーターごとの完全な履歴、質問、受け取ったキャンペーン、議論されたギフトとともに 1 つの受信箱に流れます。あなたのチームは関係全体を即座に把握し、機密事項はすべて会話を伴う人物にエスカレートするため、サポーターが同じことを繰り返すことはありません。",
-      "image": "/images/crm/capture-and-organize-customers.png",
-      "imageAlt": "Cekat.AI CRM で整理されたサポーターの会話"
+      "visual": "industryAnalytics",
+      "visualAlt": "Cekat.AI CRM で整理されたサポーターの会話"
     },
     {
       "title": "推測ではなくプログラムに基づいた答え",
       "body": "信頼は正確さによって決まります。寄付者は自分のお金がどこに使われるのかを正確に知りたいと考えています。プログラムの詳細、資金配分、FAQ をナレッジ ベースに貼り付けると、エージェントが推測ではなく、それに基づいて回答します。セットアップには約 5 分かかり、コーディングは必要ありません。そのため、すべての返信で情報が正確かつ一貫した状態に保たれます。",
-      "image": "/images/home/knowledge-source.png",
-      "imageAlt": "Cekat.AI での正確な回答を基盤とするナレッジ ベース"
+      "visual": "industryKnowledge",
+      "visualAlt": "Cekat.AI での正確な回答を基盤とするナレッジ ベース"
     }
   ],
   "pillars": [

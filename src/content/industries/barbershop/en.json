@@ -43,26 +43,26 @@
     {
       "title": "Clear Chair and Barber Slots, Walk-ins Without the Chaos",
       "body": "Without a tidy system, the front desk guesses which chair is free and walk-ins collide with clients who already booked. Through API integration with your calendar or booking tool, Cekat.AI confirms schedules and reschedules right inside the chat, every booking recorded with name, time, and chosen barber, so your team knows exactly which chairs are still open for walk-ins.",
-      "image": "/images/home/api-integration.png",
-      "imageAlt": "API integration between a booking system and Cekat.AI"
+      "visual": "industryBooking",
+      "visualAlt": "API integration between a booking system and Cekat.AI"
     },
     {
       "title": "Automatic Reminders Before Every Cut, Fewer No-Shows",
       "body": "One no-show is a chair sitting idle for half an hour while someone else wanted that exact slot. Cekat.AI sends automatic reminders ahead of each appointment, with confirm and reschedule options built into the chat, so cancellations surface early and the slot goes to another client instead of going empty without a word.",
-      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
-      "imageAlt": "Automated booking reminder flow built without code in Cekat.AI"
+      "visual": "industryAutomation",
+      "visualAlt": "Automated booking reminder flow built without code in Cekat.AI"
     },
     {
       "title": "Bring Clients Back Before the Haircut Grows Out",
       "body": "Happy clients rarely leave, they just forget. Cekat.AI keeps each client's visit history in the CRM and sends an automatic rebooking nudge a few weeks after their last cut, on the interval you choose, so their next appointment is locked in before they ever think about trying another shop.",
-      "image": "/images/crm/track-customer-journey.png",
-      "imageAlt": "Client visit history tracked in the Cekat.AI CRM"
+      "visual": "industryContactRecord",
+      "visualAlt": "Client visit history tracked in the Cekat.AI CRM"
     },
     {
       "title": "Blast Promos to Clients Who Have Not Been In for a While",
       "body": "Your contact list is an asset, not an archive. Cekat.AI segments clients by activity and last visit, then sends broadcasts through the official WhatsApp Business API, weekday promos, grooming bundles, or a comeback offer for anyone gone three months, without copying numbers one by one.",
-      "image": "/images/marketing/understand-customer-behavior.png",
-      "imageAlt": "Customer behavior segments powering campaigns in Cekat.AI"
+      "visual": "industryBroadcast",
+      "visualAlt": "Customer behavior segments powering campaigns in Cekat.AI"
     }
   ],
   "pillars": [

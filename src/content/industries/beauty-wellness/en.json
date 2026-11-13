@@ -43,26 +43,26 @@
     {
       "title": "Booking and Rebooking Done Inside the Chat",
       "body": "Connect Cekat.AI to your scheduling system through API and the agent books, confirms, and reschedules appointments right in the conversation. No phone tag, no double-booked chairs, and after each visit it can nudge clients to rebook their next treatment before they forget.",
-      "image": "/images/home/api-integration.png",
-      "imageAlt": "API integration for salon appointment booking in Cekat.AI"
+      "visual": "industryBooking",
+      "visualAlt": "API integration for salon appointment booking in Cekat.AI"
     },
     {
       "title": "Cut No-Shows With Reminders That Send Themselves",
       "body": "An empty chair from a forgotten appointment is revenue you can't get back. Cekat.AI sends automatic reminders before each visit and follow-up nudges when it's time for the next one, each triggered by the client's actual booking history, not a manual list someone has to remember to send.",
-      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
-      "imageAlt": "Automated appointment reminders in Cekat.AI"
+      "visual": "industryAutomation",
+      "visualAlt": "Automated appointment reminders in Cekat.AI"
     },
     {
       "title": "Send Promos to the Right Clients, Not Everyone",
       "body": "Campaigns go out through the official WhatsApp Business API to segments built from real data, regulars due for a touch-up, clients who tried one service but not another, lapsed bookings worth winning back. Names and history come straight from the CRM, so a promo lands like a personal invitation, not a mass blast.",
-      "image": "/images/marketing/understand-customer-behavior.png",
-      "imageAlt": "Client segmentation for beauty promos in Cekat.AI"
+      "visual": "industryBroadcast",
+      "visualAlt": "Client segmentation for beauty promos in Cekat.AI"
     },
     {
       "title": "Every Client Conversation, Organized in One Place",
       "body": "WhatsApp, Instagram DM, and website chat flow into one inbox with a full history per client, past treatments, questions asked, promos received. Your front desk sees the whole picture instantly, and anything that needs a human touch escalates to your team with the conversation attached, so no client repeats themselves.",
-      "image": "/images/crm/capture-and-organize-customers.png",
-      "imageAlt": "Client conversations organized in the Cekat.AI CRM"
+      "visual": "industryInbox",
+      "visualAlt": "Client conversations organized in the Cekat.AI CRM"
     }
   ],
   "pillars": [

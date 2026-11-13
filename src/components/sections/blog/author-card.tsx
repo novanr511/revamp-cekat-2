@@ -32,11 +32,7 @@ export function AuthorCard({
       className="size-12 rounded-full"
       unoptimized
     />
-  ) : (
-    <span className="flex size-12 items-center justify-center rounded-full bg-primary/10 font-numeric text-base font-semibold text-primary">
-      {author.name.charAt(0)}
-    </span>
-  );
+  ) : null;
 
   const identity = (
     <div className="flex items-center gap-3">

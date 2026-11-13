@@ -43,26 +43,26 @@
     {
       "title": "질문 이전에 도착하는 상태 업데이트",
       "body": "패키지가 픽업되고, 허브에서 배송되고, 택배가 주소로 향하는 동안 Cekat.AI는 선택한 모든 마일스톤에서 WhatsApp을 통해 자동 업데이트를 푸시합니다. 고객은 이미 알고 있기 때문에 질문을 중단하고 수신자가 언제 집에 가야 하는지 알기 때문에 인바운드 채팅량이 감소하고 COD 전달 실패가 줄어듭니다.",
-      "image": "/images/order/automatic-notifications-to-the-right-team.png",
-      "imageAlt": "Cekat.AI에서 전송되는 자동 배송 상태 알림"
+      "visual": "industryDispatch",
+      "visualAlt": "Cekat.AI에서 전송되는 자동 배송 상태 알림"
     },
     {
       "title": "문제 패키지가 가라앉지 않고 확대됨",
       "body": "실패한 COD, 찾을 수 없는 주소, 손상되거나 분실된 패키지, 이와 같은 민감한 케이스는 대기열에서 기다릴 수 없습니다. Cekat.AI는 대화에서 자동으로 티켓을 생성하고 전체 채팅 기록을 통해 해당 티켓을 올바른 필드나 청구 팀에 전달하며 사례가 진행되는 동안 고객에게 정보를 계속 제공합니다.",
-      "image": "/images/order/auto-create-ticket.png",
-      "imageAlt": "Cekat.AI에서 티켓으로 자동 생성된 패키지 분실 불만 사항"
+      "visual": "industryTicketQueue",
+      "visualAlt": "Cekat.AI에서 티켓으로 자동 생성된 패키지 분실 불만 사항"
     },
     {
       "title": "픽업 일정은 채팅 내에서 처리됩니다.",
       "body": "판매자와 일반 배송업체는 픽업을 예약하기 위해 전화 통화를 할 필요가 없습니다. AI는 주소, 패키지 수, 픽업 창구를 요청한 다음 이를 운영 팀의 깔끔한 주문으로 기록합니다. 흐름은 코딩이 필요 없이 직접 정의한 비즈니스 논리를 따르므로 모든 지점에서 픽업이 일관되게 실행됩니다.",
-      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
-      "imageAlt": "Cekat.AI의 비즈니스 로직으로 픽업 요청 흐름 자동화"
+      "visual": "industryBooking",
+      "visualAlt": "Cekat.AI의 비즈니스 로직으로 픽업 요청 흐름 자동화"
     },
     {
       "title": "자동으로 검증된 기업 리드",
       "body": "수백 개의 추적 채팅 중에는 계약 요금과 반복 배송에 대해 묻는 회사가 묻혀 있습니다. Cekat.AI는 이러한 높은 가치의 문의를 인식하고 볼륨, 경로 및 빈도에 대해 질문한 다음 대화가 첨부된 CRM 카드에 캡처하므로 영업 팀은 복잡한 받은 편지함을 스크롤하는 대신 심각한 리드에 대한 후속 조치를 취할 수 있습니다.",
-      "image": "/images/crm/capture-and-organize-customers.png",
-      "imageAlt": "Cekat.AI CRM에 포착된 기업 배송 리드"
+      "visual": "industryPipeline",
+      "visualAlt": "Cekat.AI CRM에 포착된 기업 배송 리드"
     }
   ],
   "pillars": [

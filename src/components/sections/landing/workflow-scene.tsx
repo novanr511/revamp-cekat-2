@@ -16,13 +16,14 @@ const CHANNELS = [
 ] as const;
 
 /** A real, explorable product scene; no fabricated conversations or metrics. */
-export function WorkflowScene({ image, imageAlt, title, index = 0, count, hero = false }: {
+export function WorkflowScene({ image, imageAlt, title, index = 0, count, hero = false, staticVisual = false }: {
   image: string;
   imageAlt: string;
   title?: string;
   index?: number;
   count?: number;
   hero?: boolean;
+  staticVisual?: boolean;
 }) {
   const locale = useLocale();
   const isId = locale === "id";
@@ -32,6 +33,7 @@ export function WorkflowScene({ image, imageAlt, title, index = 0, count, hero =
   const activeChannel = CHANNELS[channel];
 
   useEffect(() => {
+    if (staticVisual) return;
     const root = ref.current;
     const media = window.matchMedia("(prefers-reduced-motion: reduce)");
     if (!root || typeof IntersectionObserver === "undefined") return;
@@ -90,10 +92,10 @@ export function WorkflowScene({ image, imageAlt, title, index = 0, count, hero =
       window.removeEventListener("blur", blur);
       media.removeEventListener("change", sync);
     };
-  }, [image]);
+  }, [image, staticVisual]);
 
   function movePointer(event: PointerEvent<HTMLDivElement>) {
-    if (event.pointerType !== "mouse" || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    if (staticVisual || event.pointerType !== "mouse" || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     const rect = event.currentTarget.getBoundingClientRect();
     event.currentTarget.style.setProperty("--pointer-x", `${((event.clientX - rect.left) / rect.width - 0.5) * 8}px`);
     event.currentTarget.style.setProperty("--pointer-y", `${((event.clientY - rect.top) / rect.height - 0.5) * 8}px`);
@@ -132,7 +134,7 @@ export function WorkflowScene({ image, imageAlt, title, index = 0, count, hero =
           <div className="workflow-scene__composition" data-scene-layer>
             <div className="workflow-scene__backplate" aria-hidden />
             <div className="workflow-scene__art" data-scene-float>
-              <Image src={sceneArtwork(image)} alt={imageAlt} fill sizes="(max-width: 640px) 90vw, (max-width: 1024px) 80vw, 640px" loading={hero ? "eager" : "lazy"} className="object-contain" />
+              <Image src={sceneArtwork(image)} alt={imageAlt} fill sizes="(max-width: 640px) 90vw, (max-width: 1024px) 80vw, 640px" loading={hero ? "eager" : "lazy"} fetchPriority={hero ? "high" : undefined} className="object-contain" />
             </div>
             <div className="workflow-scene__product-token" aria-hidden><Icon icon={sceneBolt} /><span>{kind === "pipeline" ? "CRM" : kind === "insights" ? "Marketing" : kind === "automation" ? "Automation" : kind === "intelligence" ? "AI Agent" : "Cekat Chat"}</span></div>
           </div>

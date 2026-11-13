@@ -43,26 +43,26 @@
     {
       "title": "予約と再予約はチャット内で行われます",
       "body": "API を通じて Cekat.AI をスケジュール システムに接続すると、エージェントが会話の中で直接予約、確認、再スケジュールを行います。電話タグや椅子の二重予約はなく、毎回の訪問後に、忘れないうちに次のトリートメントを再予約するようクライアントを促すことができます。",
-      "image": "/images/home/api-integration.png",
-      "imageAlt": "Cekat.AI でのサロン予約の API 統合"
+      "visual": "industryBooking",
+      "visualAlt": "Cekat.AI でのサロン予約の API 統合"
     },
     {
       "title": "自動送信リマインダーでノーショーをカット",
       "body": "約束を忘れて空になった椅子は、取り戻すことができない収入です。 Cekat.AI は、各訪問の前に自動リマインダーを送信し、次の訪問の時間になったらフォローアップのナッジを送信します。それぞれのトリガーは、誰かが忘れずに送信する必要がある手動のリストではなく、クライアントの実際の予約履歴によってトリガーされます。",
-      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
-      "imageAlt": "Cekat.AI の自動予定リマインダー"
+      "visual": "industryAutomation",
+      "visualAlt": "Cekat.AI の自動予定リマインダー"
     },
     {
       "title": "全員ではなく、適切なクライアントにプロモーションを送信する",
       "body": "キャンペーンは、公式 WhatsApp Business API を通じて、実際のデータから構築されたセグメント、修正が必要な常連客、あるサービスを試したが別のサービスを試しなかった顧客、取り戻す価値のある失効した予約に向けて発信されます。名前と履歴は CRM から直接取得されるため、プロモーションは大規模な宣伝ではなく、個人的な招待状のように表示されます。",
-      "image": "/images/marketing/understand-customer-behavior.png",
-      "imageAlt": "Cekat.AI での美容プロモーションのクライアント セグメンテーション"
+      "visual": "industryBroadcast",
+      "visualAlt": "Cekat.AI での美容プロモーションのクライアント セグメンテーション"
     },
     {
       "title": "クライアントとのあらゆる会話を 1 か所にまとめて整理",
       "body": "WhatsApp、Instagram DM、ウェブサイトのチャットは、クライアントごとの完全な履歴、過去の治療、質問、受け取ったプロモーションを含む 1 つの受信箱に流れます。フロントデスクは全体像を瞬時に把握し、人間的な対応が必要な事項はすべて、会話を伴ってチームにエスカレーションされるため、クライアントが同じことを繰り返すことはありません。",
-      "image": "/images/crm/capture-and-organize-customers.png",
-      "imageAlt": "Cekat.AI CRM で整理されたクライアントの会話"
+      "visual": "industryInbox",
+      "visualAlt": "Cekat.AI CRM で整理されたクライアントの会話"
     }
   ],
   "pillars": [

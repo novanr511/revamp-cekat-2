@@ -43,26 +43,26 @@
     {
       "title": "일정, 가격, 가용성에 대한 즉각적인 답변",
       "body": "\"토요일 7시에 법원이 떠나나요?\" \"아침 수업은 어떤 수업을 하시나요?\" \"라켓을 빌릴 수 있나요?\" Cekat.AI는 의도를 이해하는 자연어로 귀하의 일정, 가격 및 집안 규칙을 기반으로 구축된 지식 기반에서 답변하므로 질문자는 옆집 장소를 시도하는 대신 몇 초 만에 확실성을 얻고 자리를 차지합니다.",
-      "image": "/images/chat/ai-handles-conversations.png",
-      "imageAlt": "Cekat.AI 받은 편지함에서 일정 및 가격 질문에 답변하는 AI 에이전트"
+      "visual": "industryBooking",
+      "visualAlt": "Cekat.AI 받은 편지함에서 일정 및 가격 질문에 답변하는 AI 에이전트"
     },
     {
       "title": "세션 전에 회원들에게 상기시켜 노쇼를 줄이세요",
       "body": "아무도 나타나지 않는 예약된 슬롯은 재판매할 수 없는 수익입니다. Cekat.AI는 경기나 수업이 시작되기 전에 동일한 채팅에서 확인 및 일정 변경 옵션과 함께 자동 알림을 보내므로 취소가 조기에 표면화되고 슬롯은 여전히 ​​다른 회원에게 전달될 수 있습니다.",
-      "image": "/images/order/automatic-notifications-to-the-right-team.png",
-      "imageAlt": "Cekat.AI에서 세션 일정보다 앞서 자동 알림 전송"
+      "visual": "industryEnrollment",
+      "visualAlt": "Cekat.AI에서 세션 일정보다 앞서 자동 알림 전송"
     },
     {
       "title": "갱신은 만료된 이후가 아니라 자동으로 추적됩니다.",
       "body": "조용히 만료되는 멤버십은 조용히 탈퇴하는 회원입니다. Cekat.AI는 CRM에서 각 회원의 주기를 추적하고 만료일 전에 갱신 후속 조치를 보내고 한동안 나타나지 않은 회원에 대한 관련 넛지를 보내므로 누군가가 너무 늦게 기억하지 않고 제 시간에 알림을 받았기 때문에 갱신이 발생합니다.",
-      "image": "/images/crm/track-customer-journey.png",
-      "imageAlt": "Cekat.AI CRM에서 추적되는 활성에서 갱신까지의 회원 여정"
+      "visual": "industryAutomation",
+      "visualAlt": "Cekat.AI CRM에서 추적되는 활성에서 갱신까지의 회원 여정"
     },
     {
       "title": "적합한 회원 부문에 도달하는 프로모션",
       "body": "모든 연락처에 동일한 프로모션을 폭파하는 것이 음소거되는 가장 빠른 방법입니다. Cekat.AI는 행동, 오전 수업 단골, 주말 패들 선수, 만료 예정인 멤버십을 기준으로 회원을 분류하고 공식 WhatsApp Business API를 통해 관심 있는 세그먼트에 방송을 보내 공개 법정 프로모션이나 새로운 수업이 실제로 읽히도록 합니다.",
-      "image": "/images/marketing/understand-customer-behavior.png",
-      "imageAlt": "Cekat.AI의 프로모션 방송에 대한 행동별 회원 세그먼트"
+      "visual": "industryBroadcast",
+      "visualAlt": "Cekat.AI의 프로모션 방송에 대한 행동별 회원 세그먼트"
     }
   ],
   "pillars": [

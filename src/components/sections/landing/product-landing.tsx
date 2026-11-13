@@ -9,10 +9,12 @@ import { TRUSTED_LOGOS } from "@/components/sections/shared/trusted-logos";
 import { LandingHero } from "@/components/sections/landing/landing-hero";
 import { Pillars } from "@/components/sections/landing/pillars";
 import { BenefitAccordion } from "@/components/sections/landing/benefit-accordion";
+import { AlternatingStory } from "./alternating-story";
 import { LandingTestimonial } from "@/components/sections/landing/landing-testimonial";
 import { RichFaq } from "@/components/sections/landing/rich-faq";
 import { LandingCta } from "@/components/sections/landing/landing-cta";
 import { PRODUCT_ART } from "./product-stage";
+import { ProductSurface } from "./product-surface";
 
 export interface ProductStep {
   key: string;
@@ -29,9 +31,8 @@ const SERVICE_TYPE = {
 
 /**
  * Shared shell for the four product pages (chat, crm, marketing, order).
- * Same chapter rhythm as pricing and the registry landings: void hero →
- * trust strip → soft pillar cards → numbered how-it-works → optional proof →
- * FAQ → void closer.
+ * Chat, CRM and marketing use open alternating capability chapters.
+ * Order keeps its existing accordion, outside the six-page redesign scope.
  */
 export async function ProductLanding({
   locale,
@@ -49,6 +50,8 @@ export async function ProductLanding({
   faqCount?: number;
 }) {
   setRequestLocale(locale);
+  const CapabilitySection =
+    namespace === "order" ? BenefitAccordion : AlternatingStory;
   const t = await getTranslations({ locale, namespace });
   const tl = await getTranslations({ locale, namespace: "landing" });
   const tt = await getTranslations({ locale, namespace: "home.trustedBy" });
@@ -95,7 +98,7 @@ export async function ProductLanding({
   }));
 
   return (
-    <>
+    <ProductSurface product={namespace}>
       <JsonLd data={[...jsonLd, faqPageJsonLd(faqItems)]} />
       <div className="cv-auto">
         <LandingHero
@@ -122,7 +125,7 @@ export async function ProductLanding({
       </div>
 
       <div className="cv-auto">
-        <BenefitAccordion
+        <CapabilitySection
           eyebrow={tl("benefitsEyebrow")}
           heading={t("howItWorks.heading")}
           benefits={benefits}
@@ -155,6 +158,6 @@ export async function ProductLanding({
       <div className="cv-auto">
         <LandingCta heading={t("cta.heading")} body={t("cta.body")} />
       </div>
-    </>
+    </ProductSurface>
   );
 }

@@ -22,7 +22,7 @@ export function FloatingWhatsApp({ label }: { label: string }) {
       target="_blank"
       rel="noopener noreferrer"
       aria-label={label}
-      className="group fixed right-5 bottom-5 z-50 inline-flex items-center gap-2.5 rounded-full bg-primary py-3 pr-5 pl-3.5 font-numeric font-semibold text-primary-foreground shadow-card transition-transform duration-200 hover:scale-105 hover:bg-primary-dark focus-visible:ring-3 focus-visible:ring-primary/40 focus-visible:outline-none"
+      className="floating-whatsapp group fixed right-5 bottom-5 z-50 inline-flex items-center gap-2.5 rounded-full bg-primary py-3 pr-5 pl-3.5 font-numeric font-semibold text-primary-foreground shadow-card transition-transform duration-200 hover:scale-105 hover:bg-primary-dark focus-visible:ring-3 focus-visible:ring-primary/40 focus-visible:outline-none"
     >
       <Icon icon={mdiWhatsapp} className="size-7" />
       <span className="text-sm">{label}</span>

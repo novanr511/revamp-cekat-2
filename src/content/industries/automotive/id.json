@@ -43,26 +43,26 @@
     {
       "title": "AI Mengkualifikasi: Budget, Model, Tukar Tambah",
       "body": "Nggak semua chat itu pembeli serius. Cekat.AI menanyakan hal yang biasa ditanya sales di awal, model yang diincar, budget atau rencana pembiayaan, ada unit lama buat tukar tambah atau nggak, dengan bahasa natural, jadi sales-mu menerima leads yang jelas profilnya dan langsung masuk ke penawaran, bukan mulai dari nol.",
-      "image": "/images/chat/ai-handles-conversations.png",
-      "imageAlt": "AI agent mengkualifikasi leads pembeli mobil di inbox Cekat.AI"
+      "visual": "automotiveLeadQualification",
+      "visualAlt": "UI inbox Cekat.AI yang mengkualifikasi calon pembeli mobil berdasarkan model, budget, dan tukar tambah"
     },
     {
       "title": "Test Drive dan Booking Servis Terjadwal dari Chat",
       "body": "Jadwal test drive nggak perlu lagi telepon bolak-balik, dan antrean booking servis nggak menumpuk di satu admin. Cekat.AI mengambil jadwal langsung di percakapan, mengirim notifikasi ke sales atau service advisor yang tepat, dan lewat integrasi API bisa tersambung ke sistem booking bengkelmu, pelanggan tinggal datang sesuai slot.",
-      "image": "/images/order/automatic-notifications-to-the-right-team.png",
-      "imageAlt": "Notifikasi jadwal test drive dan servis otomatis ke tim yang tepat di Cekat.AI"
+      "visual": "automotiveBooking",
+      "visualAlt": "UI penjadwalan test drive dan servis dengan notifikasi otomatis ke tim yang tepat di Cekat.AI"
     },
     {
       "title": "Reminder Servis Berkala Jalan Otomatis",
       "body": "Pelanggan lupa jadwal servis, bengkel kehilangan pemasukan paling rutin. Cekat.AI mengirim reminder servis berkala lewat WhatsApp Business API resmi berdasarkan riwayat tiap pelanggan, sekalian membuka slot booking di chat yang sama, jadi unit balik ke bengkelmu, bukan ke bengkel yang kebetulan lebih dekat.",
-      "image": "/images/marketing/understand-customer-behavior.png",
-      "imageAlt": "Campaign reminder servis berbasis riwayat pelanggan di Cekat.AI"
+      "visual": "automotiveServiceReminder",
+      "visualAlt": "UI workflow reminder servis WhatsApp berdasarkan riwayat pelanggan di Cekat.AI"
     },
     {
       "title": "Setiap Lead Masuk Pipeline CRM, Bukan Catatan di HP Sales",
       "body": "Leads yang nyangkut di HP masing-masing sales itu leads yang bocor. Cekat.AI menangkap tiap percakapan jadi kartu CRM otomatis, lengkap dengan riwayat chat, model incaran, dan status follow-up, tersusun di pipeline dari leads baru sampai deal, jadi supervisor lihat posisi tiap prospek tanpa nanya satu-satu.",
-      "image": "/images/crm/track-customer-journey.png",
-      "imageAlt": "Pipeline leads dealer dari prospek sampai deal di CRM Cekat.AI"
+      "visual": "automotiveCrmPipeline",
+      "visualAlt": "Pipeline lead dealer dari prospek hingga deal di CRM Cekat.AI"
     }
   ],
   "pillars": [

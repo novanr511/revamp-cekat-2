@@ -43,26 +43,26 @@
     {
       "title": "Parents and Students Ask at 10 PM. You Answer at 10 PM.",
       "body": "Families research schools after work and after dinner, long past office hours. Cekat.AI replies at any hour with accurate answers on programs, fees, scholarships, and schedules, so a parent deciding tonight gets certainty instead of a voicemail, and your counselors arrive to handled conversations, not a backlog.",
-      "image": "/images/home/ai-working-hours.png",
-      "imageAlt": "AI working hours routing between counselors and AI agent in Cekat.AI"
+      "visual": "industryInbox",
+      "visualAlt": "AI working hours routing between counselors and AI agent in Cekat.AI"
     },
     {
       "title": "Every Inquiry Becomes a Captured Lead",
       "body": "A prospective student who asks and disappears is a lost enrollment. Cekat.AI records every inquiry into a CRM card automatically, no manual input, with the full conversation, program of interest, and contact details, so your team wakes up to a list of real applicants instead of scattered unread chats.",
-      "image": "/images/crm/capture-and-organize-customers.png",
-      "imageAlt": "Prospective students captured as leads in the Cekat.AI CRM"
+      "visual": "industryPipeline",
+      "visualAlt": "Prospective students captured as leads in the Cekat.AI CRM"
     },
     {
       "title": "Nurture Applicants From Inquiry to Enrollment",
       "body": "Most applicants go quiet, not away. Cekat.AI sends follow-up nudges matched to each applicant's stage, a reminder before a registration deadline, a check-in after a campus-tour question, triggered by schedules, chat keywords, or changes in their data. No candidate is forgotten because admissions got busy.",
-      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
-      "imageAlt": "Automated applicant follow-up workflows in Cekat.AI"
+      "visual": "industryDocuments",
+      "visualAlt": "Automated applicant follow-up workflows in Cekat.AI"
     },
     {
       "title": "One AI for Every Faculty and Program",
       "body": "Set up specialized AI agents per faculty, program, or campus, each answering from its own knowledge base, and route conversations to the right team automatically. When a question needs a real counselor, it escalates with the full history attached, the applicant never repeats themselves.",
-      "image": "/images/home/multiple-specialized-agents.png",
-      "imageAlt": "Multiple specialized AI agents per program in Cekat.AI"
+      "visual": "industryBroadcast",
+      "visualAlt": "Multiple specialized AI agents per program in Cekat.AI"
     }
   ],
   "pillars": [

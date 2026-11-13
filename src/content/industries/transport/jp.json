@@ -43,26 +43,26 @@
     {
       "title": "1 回の会話で座席を予約",
       "body": "最初の質問から席が固定されるまで、すべてが 1 つのチャットで行われます。 Cekat.AI はルート、日付、座席数、乗客の詳細を記録し、支払い QR を送信して支払いが完了すると確認します。名前や日付を聞き間違えて電話予約する必要はなくなり、すべての注文が完全かつ一貫した状態で届きます。",
-      "image": "/images/order/end-to-end-operational-efficiency.png",
-      "imageAlt": "Cekat.AI のチャット内で座席予約が作成され、支払われます"
+      "visual": "industryBooking",
+      "visualAlt": "Cekat.AI のチャット内で座席予約が作成され、支払われます"
     },
     {
       "title": "スケジュール変更と払い戻しが煩雑になるのを防ぐ",
       "body": "乗客の遅れ、時刻表の変更、計画のキャンセル、スケジュール変更のリクエストが毎日届きます。 Cekat.AI は、お客様のルールに従ってそれらを処理し、代替出発の座席を確認して変更を記録し、完全なチャット履歴とともに払い戻しリクエストをお客様のチームにエスカレーションします。これにより、乗客は振り回されることなく確実性を得ることができます。",
-      "image": "/images/chat/escalate-and-sync.png",
-      "imageAlt": "返金リクエストは Cekat.AI の完全なコンテキストとともにチームにエスカレーションされました"
+      "visual": "industryDocuments",
+      "visualAlt": "返金リクエストは Cekat.AI の完全なコンテキストとともにチームにエスカレーションされました"
     },
     {
       "title": "ルート変更は出発前に乗客に連絡",
       "body": "車両の問題、出発の遅れ、ルートの変更、このようなニュースは迅速に伝えなければなりません。 Cekat.AI は、公式 WhatsApp Business API を通じて、影響を受ける路線と出発便の乗客にのみアナウンスをブロードキャストし、さらに自動出発リマインダーを送信するため、何も知らされていない乗客によって空席が生じることは過去の話になります。",
-      "image": "/images/order/automatic-notifications-to-the-right-team.png",
-      "imageAlt": "Cekat.AIから自動送信されるスケジュール変更ブロードキャスト"
+      "visual": "industryBroadcast",
+      "visualAlt": "Cekat.AIから自動送信されるスケジュール変更ブロードキャスト"
     },
     {
       "title": "すべての予約チャネルを 1 つの受信箱に",
       "body": "WhatsApp、Instagram DM、Web サイトのライブチャットは、乗客ごとに 1 つの履歴を持つ 1 つの受信箱に流れ込むため、Instagram で質問したり、WhatsApp で本を読んだりする人が、自分のストーリーを繰り返すことはありません。一般の乗客はお気に入りのルートとともに CRM に取り込まれ、プロモーションや新しいスケジュールが開始されたときのフォローアップに備えます。",
-      "image": "/images/chat/connect-channels.png",
-      "imageAlt": "すべてのチャット チャネルが 1 つの Cekat.AI 受信箱に接続されています"
+      "visual": "industryInbox",
+      "visualAlt": "すべてのチャット チャネルが 1 つの Cekat.AI 受信箱に接続されています"
     }
   ],
   "pillars": [

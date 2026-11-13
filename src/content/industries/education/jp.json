@@ -43,26 +43,26 @@
     {
       "title": "保護者と生徒は午後 10 時に質問してください。午後 10 時に回答します。",
       "body": "家族は仕事の後や夕食後、勤務時間をとうに過ぎて学校について調べます。 Cekat.AI は、プログラム、料金、奨学金、スケジュールに関する正確な回答をいつでも返信します。そのため、今夜決断する親はボイスメールではなく確実な情報を得ることができ、カウンセラーが到着して、滞りなく会話を処理することができます。",
-      "image": "/images/home/ai-working-hours.png",
-      "imageAlt": "Cekat.AI におけるカウンセラーと AI エージェント間の AI 勤務時間ルーティング"
+      "visual": "industryInbox",
+      "visualAlt": "Cekat.AI におけるカウンセラーと AI エージェント間の AI 勤務時間ルーティング"
     },
     {
       "title": "すべての問い合わせが潜在顧客の獲得につながります",
       "body": "尋ねて消えた入学希望者は、入学喪失です。 Cekat.AI は、すべての問い合わせを手動入力なしで CRM カードに自動的に記録し、完全な会話、関心のあるプログラム、連絡先詳細を記録します。そのため、チームは散らばった未読チャットではなく、実際の応募者のリストを認識して目覚めることができます。",
-      "image": "/images/crm/capture-and-organize-customers.png",
-      "imageAlt": "Cekat.AI CRM で見込み客として捕らえられた入学予定の学生"
+      "visual": "industryPipeline",
+      "visualAlt": "Cekat.AI CRM で見込み客として捕らえられた入学予定の学生"
     },
     {
       "title": "お問い合わせから入学まで志願者を育成",
       "body": "ほとんどの応募者は立ち去るのではなく、黙ってしまいます。 Cekat.AI は、スケジュール、チャットのキーワード、データの変更をトリガーとして、各申請者の段階に合わせたフォローアップ ナッジ、登録締め切り前のリマインダー、キャンパス ツアーの質問後のチェックインを送信します。入学手続きが忙しくなって忘れられた候補者はいない。",
-      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
-      "imageAlt": "Cekat.AI での自動化された応募者フォローアップ ワークフロー"
+      "visual": "industryDocuments",
+      "visualAlt": "Cekat.AI での自動化された応募者フォローアップ ワークフロー"
     },
     {
       "title": "すべての学部とプログラムに 1 つの AI",
       "body": "学部、プログラム、キャンパスごとに専門の AI エージェントを設定し、それぞれが独自の知識ベースから応答し、会話を適切なチームに自動的にルーティングします。質問に本物のカウンセラーが必要な場合、質問はすべての履歴を添付してエスカレートし、申請者は決して同じことを繰り返すことはありません。",
-      "image": "/images/home/multiple-specialized-agents.png",
-      "imageAlt": "Cekat.AI のプログラムごとに複数の専門 AI エージェント"
+      "visual": "industryBroadcast",
+      "visualAlt": "Cekat.AI のプログラムごとに複数の専門 AI エージェント"
     }
   ],
   "pillars": [

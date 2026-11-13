@@ -44,26 +44,26 @@
     {
       "title": "Layanan Publik yang Tidak Pernah Tutup",
       "body": "Warga sering menghubungi setelah jam kerja, di malam hari, atau akhir pekan, jauh setelah loket layanan tutup. Cekat.AI merespons kapan pun dengan jawaban yang konsisten dan akurat, jadi tidak ada yang harus menunggu sampai Senin untuk informasi yang dibutuhkan hari ini, dan petugas kembali ke percakapan yang sudah tertangani, bukan tumpukan antrean.",
-      "image": "/images/home/ai-working-hours.png",
-      "imageAlt": "Pengaturan jam kerja AI dan petugas di Cekat.AI"
+      "visual": "industryTicketQueue",
+      "visualAlt": "Pengaturan jam kerja AI dan petugas di Cekat.AI"
     },
     {
       "title": "Setiap Komplain Jadi Tiket Terlacak, Diarahkan ke Unit yang Tepat",
       "body": "Komplain warga yang hilang menggerus kepercayaan publik. Cekat.AI melabeli setiap laporan yang masuk secara otomatis, membuat tiket, dan mengarahkannya ke unit yang bertanggung jawab beserta notifikasi, jadi setiap komplain terlacak dari pesan pertama sampai selesai, dan akuntabilitas melekat dalam proses, bukan bergantung pada ingatan.",
-      "image": "/images/order/automatic-notifications-to-the-right-team.png",
-      "imageAlt": "Komplain diarahkan ke unit yang tepat sebagai tiket terlacak di Cekat.AI"
+      "visual": "industryBooking",
+      "visualAlt": "Komplain diarahkan ke unit yang tepat sebagai tiket terlacak di Cekat.AI"
     },
     {
       "title": "Visibilitas Penuh dari Laporan sampai Penyelesaian",
       "body": "Status, penanggung jawab, dan jalur penyelesaian setiap percakapan terlihat di satu tempat, dengan catatan yang terbentuk otomatis dari tiap interaksi, tanpa logging manual. Saat evaluasi atau audit menanyakan apa yang ditangani dan kapan, jejaknya sudah tersedia, bukan berserakan di perangkat dan channel pribadi.",
-      "image": "/images/order/full-visibility-across-every-automation-step.png",
-      "imageAlt": "Visibilitas penuh di setiap kasus warga di Cekat.AI"
+      "visual": "industryAnalytics",
+      "visualAlt": "Visibilitas penuh di setiap kasus warga di Cekat.AI"
     },
     {
       "title": "Satu Inbox untuk Setiap Channel yang Dipakai Warga",
       "body": "WhatsApp, Instagram, Facebook Messenger, dan chat website mengalir ke satu inbox dengan satu riwayat interaksi per warga. Warga yang bertanya di satu channel lalu menindaklanjuti di channel lain tetap membawa konteks yang sama, jadi tidak ada yang jatuh di antara platform dan tidak ada yang diminta mengulang kasusnya.",
-      "image": "/images/chat/connect-channels.png",
-      "imageAlt": "Percakapan warga dari setiap channel disatukan di Cekat.AI"
+      "visual": "industryInbox",
+      "visualAlt": "Percakapan warga dari setiap channel disatukan di Cekat.AI"
     }
   ],
   "pillars": [

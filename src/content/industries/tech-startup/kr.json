@@ -43,26 +43,26 @@
     {
       "title": "하나의 받은 편지함에 모든 채널, 고객당 하나의 기록",
       "body": "WhatsApp, Instagram DM, Facebook Messenger 및 웹 채팅은 고객당 하나의 기록이 있는 단일 받은 편지함으로 흘러갑니다. 더 이상 5개의 탭을 열고 누군가 이미 응답했는지 묻지 않아도 됩니다. 소규모 팀은 모든 대화를 한 곳에서 볼 수 있으며 채널을 전환하는 고객은 이야기를 반복하지 않습니다.",
-      "image": "/images/chat/connect-channels.png",
-      "imageAlt": "하나의 Cekat.AI 받은 편지함에 연결된 모든 채팅 채널"
+      "visual": "industryInbox",
+      "visualAlt": "하나의 Cekat.AI 받은 편지함에 연결된 모든 채팅 채널"
     },
     {
       "title": "엔지니어링 시간을 빼앗지 않고 반복적인 흐름이 스스로 실행됩니다.",
       "body": "상태 확인, 리드 자격, 후속 조치, 내부 업데이트, 팀이 매일 반복하는 흐름은 코드 없이 드래그 앤 드롭 빌더를 사용하여 자동화할 수 있습니다. 귀하의 팀은 더 이상 복사 붙여넣기 기계가 되지 않으며 엔지니어링 로드맵이 내부 지원 도구 구축을 위해 중단되는 일도 없습니다.",
-      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
-      "imageAlt": "Cekat.AI의 코드 없는 자동화 빌더"
+      "visual": "industryAutomation",
+      "visualAlt": "Cekat.AI의 코드 없는 자동화 빌더"
     },
     {
       "title": "창립자들은 자정 지원 교대 근무에서 벗어났습니다.",
       "body": "초기에는 창업자들이 모든 채팅에 직접 답변하는데, 문제는 습관이 확장되지 않는다는 것입니다. AI 근무 시간을 사용하면 AI가 업무 시간 외에 업무 시간을 완전히 대신하고 피크 시간대에 로드를 공유하며, 중요한 사건은 여전히 ​​전체 맥락을 통해 인간에게 에스컬레이션되며, 아침에 이미 처리된 받은 편지함에 노트북을 열 수 있습니다.",
-      "image": "/images/home/ai-working-hours.png",
-      "imageAlt": "Cekat.AI에 구성된 AI 및 팀 근무 시간"
+      "visual": "industryHandoff",
+      "visualAlt": "Cekat.AI에 구성된 AI 및 팀 근무 시간"
     },
     {
       "title": "투자자 질문에 대한 지원 번호 준비",
       "body": "월별 대화, 사람 없이 해결한 횟수, 가장 많이 나온 주제 등이 모두 분석 대시보드에 캡처됩니다. 데이터를 통해 운영 효율성에 대한 질문에 답하고, 직감이 아닌 실제 고객 대화에서 제품 신호를 읽어보세요.",
-      "image": "/images/marketing/understand-customer-behavior.png",
-      "imageAlt": "Cekat.AI의 고객 대화 분석 대시보드"
+      "visual": "industryAnalytics",
+      "visualAlt": "Cekat.AI의 고객 대화 분석 대시보드"
     }
   ],
   "pillars": [

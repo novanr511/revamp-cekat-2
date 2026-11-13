@@ -43,26 +43,26 @@
     {
       "title": "AI 全天候 (24/7) 处理每个账户的一级事务",
       "body": "订单状态、营业时间、退货政策以及占用客服人员大部分时间的聊天类型，人工智能都会立即在每个客户帐户中立即答复。当交易量激增时，响应时间保持平稳，并且每次新合同落地时员工人数不再需要增加。",
-      "image": "/images/chat/ai-handles-conversations.png",
-      "imageAlt": "AI 代理在 Cekat.AI 收件箱中回答一级客户聊天"
+      "visual": "industryInbox",
+      "visualAlt": "AI 代理在 Cekat.AI 收件箱中回答一级客户聊天"
     },
     {
       "title": "每个帐户都有一个知识库，没有混淆的答案",
       "body": "时尚客户的 SOP 与电子客户的 SOP 完全不同，帐户之间交叉的答案对于 BPO 来说是噩梦。在 Cekat.AI 中，每个帐户都有自己的知识库，将客户的文档、常见问题解答和 SOP 粘贴到其中，并且该工作区中的 AI 仅从这些来源以该客户的品牌声音进行回答。",
-      "image": "/images/home/knowledge-source.png",
-      "imageAlt": "Cekat.AI 中每个客户帐户都有单独的知识库"
+      "visual": "industryKnowledge",
+      "visualAlt": "Cekat.AI 中每个客户帐户都有单独的知识库"
     },
     {
       "title": "代理处理升级，而不是每次聊天",
       "body": "复杂或敏感的案件会移交给人工代理，并附上对话历史记录和客户数据，因此没有人会重新开始故事。基于角色的访问控制谁工作哪些帐户，团队利用率取决于案件处理的好坏，而不是人们打字的速度。",
-      "image": "/images/chat/escalate-and-sync.png",
-      "imageAlt": "在 Cekat.AI 中将聊天升级到具有完整上下文的人工代理"
+      "visual": "industryHandoff",
+      "visualAlt": "在 Cekat.AI 中将聊天升级到具有完整上下文的人工代理"
     },
     {
       "title": "每个客户的 SLA 和分析，无需手动回顾",
       "body": "月度报告不再是月末电子表格组装工作。每个工作区都有自己的仪表板、聊天量、响应时间、解决率、AI 与代理性能，因此 SLA 审查意味着打开与客户看到的相同数字、实时数据，而不是上周的回顾。",
-      "image": "/images/order/full-visibility-across-every-automation-step.png",
-      "imageAlt": "Cekat.AI 中的每个客户端性能和 SLA 仪表板"
+      "visual": "industryAnalytics",
+      "visualAlt": "Cekat.AI 中的每个客户端性能和 SLA 仪表板"
     }
   ],
   "pillars": [

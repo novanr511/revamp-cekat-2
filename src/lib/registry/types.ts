@@ -6,6 +6,24 @@ export type FeatureCategory = "chat" | "crm" | "marketing" | "order" | "ai";
 export type IndustryCategory = "industry";
 export type SolutionCategory = "role";
 
+export type IndustryVisualName =
+  | "industryInbox"
+  | "industryKnowledge"
+  | "industryLanguages"
+  | "industryBroadcast"
+  | "industryHandoff"
+  | "industryBooking"
+  | "industryAutomation"
+  | "industryContactRecord"
+  | "industryPipeline"
+  | "industryDocuments"
+  | "industryAnalytics"
+  | "industryTicketQueue"
+  | "industryDispatch"
+  | "industryCatalog"
+  | "industryOrder"
+  | "industryEnrollment";
+
 export interface RegistryEntry<C extends string = string> {
   /** Canonical, locale-neutral page id, also the content directory name. */
   id: string;
@@ -56,6 +74,13 @@ export interface LandingContent {
     body: string;
     image?: string;
     imageAlt?: string;
+    visual?:
+      | "automotiveLeadQualification"
+      | "automotiveBooking"
+      | "automotiveServiceReminder"
+      | "automotiveCrmPipeline"
+      | IndustryVisualName;
+    visualAlt?: string;
   }>;
   tabs?: Array<{ label: string; title: string; body: string; image?: string }>;
   /** Role pages: problems the role hits without the platform, as cards. */

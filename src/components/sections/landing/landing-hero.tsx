@@ -18,6 +18,7 @@ export function LandingHero({
   productImage,
   visualLabel,
   tone,
+  staticVisual,
 }: {
   badge?: string;
   title: string;
@@ -29,6 +30,7 @@ export function LandingHero({
   productImage?: string;
   visualLabel?: string;
   tone?: string;
+  staticVisual?: boolean;
 }) {
   const th = useTranslations("home.hero");
 
@@ -39,7 +41,7 @@ export function LandingHero({
       subtitle={subtitle}
       chips={useCases}
       split={Boolean(productImage)}
-      visual={productImage ? <ProductStage image={productImage} imageAlt={imageAlt ?? title} photo={image} label={visualLabel ?? badge} tone={tone} /> : undefined}
+      visual={productImage ? <ProductStage image={productImage} imageAlt={imageAlt ?? title} photo={image} label={visualLabel ?? badge} tone={tone} staticVisual={staticVisual} /> : undefined}
       align="center"
       compactCenter={Boolean(useCases?.length)}
       tone={tone}

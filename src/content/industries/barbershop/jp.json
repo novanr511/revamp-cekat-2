@@ -43,26 +43,26 @@
     {
       "title": "椅子と理髪店のスロットをクリアし、混乱のないウォークインを実現",
       "body": "きちんとしたシステムがなければ、フロントデスクはどの椅子が空いているかを推測し、予約済みの顧客とウォークイン客が衝突してしまいます。カレンダーまたは予約ツールとの API 統合を通じて、Cekat.AI はチャット内でスケジュールを確認し、再スケジュールします。すべての予約は名前、時間、選択した理髪師とともに記録されるため、チームはどの椅子がまだウォークイン用に空いているかを正確に把握できます。",
-      "image": "/images/home/api-integration.png",
-      "imageAlt": "予約システムと Cekat.AI 間の API 統合"
+      "visual": "industryBooking",
+      "visualAlt": "予約システムと Cekat.AI 間の API 統合"
     },
     {
       "title": "すべてのカットの前に自動リマインダーが表示され、ノーショーが減少します",
       "body": "ノーショーの 1 つは、他の誰かがその時間枠を希望しているにもかかわらず、椅子が 30 分間何もせずに座っていることです。 Cekat.AI は、各約束の前に自動リマインダーを送信し、チャットに確認および再スケジュールのオプションが組み込まれているため、キャンセルが早期に表面化し、何も言わずに空席になるのではなく、枠が別のクライアントに割り当てられます。",
-      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
-      "imageAlt": "Cekat.AI でコードなしで構築された自動予約リマインダー フロー"
+      "visual": "industryAutomation",
+      "visualAlt": "Cekat.AI でコードなしで構築された自動予約リマインダー フロー"
     },
     {
       "title": "髪が伸びる前に顧客を呼び戻す",
       "body": "幸せな顧客はほとんど離れず、ただ忘れてしまいます。 Cekat.AI は、各クライアントの訪問履歴を CRM に保存し、最後のカットから数週間後に、選択した間隔で自動再予約ナッジを送信します。これにより、クライアントが別の店を試してみようと考える前に、次の予約が固定されます。",
-      "image": "/images/crm/track-customer-journey.png",
-      "imageAlt": "Cekat.AI CRM で追跡されるクライアントの訪問履歴"
+      "visual": "industryContactRecord",
+      "visualAlt": "Cekat.AI CRM で追跡されるクライアントの訪問履歴"
     },
     {
       "title": "しばらく来店していないクライアントに爆発的なプロモーションを行う",
       "body": "連絡先リストはアーカイブではなく資産です。 Cekat.AI は、アクティビティと最終訪問によってクライアントをセグメント化し、数字を 1 つずつコピーすることなく、公式 WhatsApp Business API、平日のプロモーション、グルーミング バンドル、または 3 か月経過した人へのカムバック オファーを通じてブロードキャストを送信します。",
-      "image": "/images/marketing/understand-customer-behavior.png",
-      "imageAlt": "Cekat.AI のキャンペーンを強化する顧客行動セグメント"
+      "visual": "industryBroadcast",
+      "visualAlt": "Cekat.AI のキャンペーンを強化する顧客行動セグメント"
     }
   ],
   "pillars": [

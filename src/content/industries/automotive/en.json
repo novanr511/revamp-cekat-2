@@ -43,26 +43,26 @@
     {
       "title": "The AI Qualifies: Budget, Model, Trade-In",
       "body": "Not every chat is a serious buyer. Cekat.AI asks what your sales team would ask first, which model, what budget or financing plan, whether there is a vehicle to trade in, in natural language, so salespeople pick up leads with a clear profile and go straight to the offer instead of starting from zero.",
-      "image": "/images/chat/ai-handles-conversations.png",
-      "imageAlt": "AI agent qualifying car buyer leads in the Cekat.AI inbox"
+      "visual": "automotiveLeadQualification",
+      "visualAlt": "Cekat.AI inbox UI qualifying car buyers by model, budget, and trade-in"
     },
     {
       "title": "Test Drives and Service Slots Booked from the Chat",
       "body": "Test-drive scheduling stops being a game of phone tag, and service bookings stop piling up on one admin. Cekat.AI captures the schedule inside the conversation, notifies the right salesperson or service advisor, and through API integration can connect to your workshop's booking system, the customer just shows up on time.",
-      "image": "/images/order/automatic-notifications-to-the-right-team.png",
-      "imageAlt": "Automatic test drive and service notifications to the right team in Cekat.AI"
+      "visual": "automotiveBooking",
+      "visualAlt": "Cekat.AI booking UI for test drives and service with automatic notifications to the right team"
     },
     {
       "title": "Periodic Service Reminders Run on Autopilot",
       "body": "Customers forget their service schedule, and the workshop loses its most predictable revenue. Cekat.AI sends periodic service reminders through the official WhatsApp Business API based on each customer's history, and opens a booking slot in the same chat, so the vehicle comes back to your workshop instead of whichever one is closer.",
-      "image": "/images/marketing/understand-customer-behavior.png",
-      "imageAlt": "Service reminder campaigns based on customer history in Cekat.AI"
+      "visual": "automotiveServiceReminder",
+      "visualAlt": "Cekat.AI WhatsApp service reminder workflow based on customer history"
     },
     {
       "title": "Every Lead Lands in a CRM Pipeline, Not a Salesperson's Phone",
       "body": "Leads that live in individual phones are leads that leak. Cekat.AI captures every conversation into a CRM card automatically, with chat history, the model they want, and follow-up status, organized in a pipeline from new lead to deal, so supervisors see where every prospect stands without asking around.",
-      "image": "/images/crm/track-customer-journey.png",
-      "imageAlt": "Dealer lead pipeline from prospect to deal in the Cekat.AI CRM"
+      "visual": "automotiveCrmPipeline",
+      "visualAlt": "Dealership lead pipeline from prospect to closed deal in the Cekat.AI CRM"
     }
   ],
   "pillars": [

@@ -1,0 +1,151 @@
+/* Six product pages only. Apple Business informs surface restraint, not layout.
+ * Pale blue, mint and cream retain Cekat's product hues without saturated fields.
+ * Existing typography, spacing, shapes, artwork and motion remain unchanged.
+ */
+.cekat-page .product-soft {
+  --product-blue: #f0f4fa;
+  --product-mint: #f0f7f5;
+  --product-cream: #faf6ed;
+  --product-neutral: #f7f8fa;
+  --product-line: #dde3e9;
+  --product-ink: #09214c;
+  --product-body: #3a4960;
+  --product-accent: #1352bf;
+  --product-accent-hover: #0d439f;
+  --product-wash: var(--product-mint);
+  --product-highlight: #e1efeb;
+  --surface-muted: var(--product-neutral);
+}
+.cekat-page .product-soft[data-product="marketing"],
+.cekat-page .product-soft[data-product="broadcast"],
+.cekat-page .product-soft[data-product="analitik"] {
+  --product-wash: var(--product-cream);
+  --product-highlight: #f3ead7;
+}
+.cekat-page .product-soft[data-product="crm"] {
+  --product-wash: var(--product-blue);
+  --product-highlight: #e2eaf5;
+}
+
+/* Keep the split field and revenue-stage stripe, lower their color intensity. */
+.cekat-page .product-soft .secondary-hero {
+  --hero-field: var(--product-wash);
+  --hero-highlight: var(--product-highlight);
+}
+.cekat-page .product-soft .secondary-hero::after {
+  background: linear-gradient(
+    90deg,
+    #d9e4f2 0 42%,
+    #dceee8 42% 76%,
+    #eee5d2 76%
+  );
+}
+.cekat-page .product-soft .secondary-hero a {
+  box-shadow: none;
+}
+
+/* White product UI on a pale field; dark ink remains legible on every tint. */
+.cekat-page .product-soft .workflow-scene {
+  --scene-surface: var(--product-wash);
+  border-color: var(--product-line);
+  box-shadow: 0 24px 48px -32px #09214c26;
+}
+.cekat-page .product-soft .workflow-scene__footer {
+  background: var(--product-neutral);
+  color: var(--product-ink);
+}
+.cekat-page .product-soft .workflow-scene__step,
+.cekat-page .product-soft .workflow-scene__step > span {
+  color: var(--product-accent);
+}
+.cekat-page .product-soft .workflow-scene__product-token {
+  background: white;
+  color: var(--product-ink);
+  box-shadow: 0 8px 20px -10px #09214c1a;
+}
+.cekat-page .product-soft .workflow-scene__product-token svg {
+  color: var(--product-accent);
+}
+.cekat-page .product-soft .workflow-scene__status i {
+  background: #aac6c0;
+}
+.cekat-page .product-soft .workflow-scene__status i:nth-child(2) {
+  background: #d6c5a2;
+}
+
+/* The lead card keeps its position and size, not a full saturated-blue fill. */
+.cekat-page .product-soft .capability-chapter .capability-card {
+  background: var(--product-blue);
+  color: var(--product-ink);
+}
+.cekat-page
+  .product-soft
+  .capability-chapter
+  .capability-grid
+  > :nth-child(2)
+  .capability-card {
+  background: var(--product-mint);
+}
+.cekat-page
+  .product-soft
+  .capability-chapter
+  .capability-grid
+  > :nth-child(3n)
+  .capability-card {
+  background: var(--product-cream);
+}
+.cekat-page .product-soft .capability-chapter .capability-card p {
+  color: var(--product-body);
+}
+.cekat-page .product-soft .capability-chapter .capability-card__icon {
+  background: #ffffffcc;
+  border-color: var(--product-line);
+  color: var(--product-accent);
+}
+.cekat-page .product-soft .alternating-story__visual {
+  background: var(--product-blue);
+}
+.cekat-page .product-soft article:nth-child(even) .alternating-story__visual {
+  background: var(--product-mint);
+}
+
+/* Keep the closing composition and curves; use pale fills with a clear blue CTA. */
+.cekat-page .product-soft .secondary-final-cta {
+  background: var(--product-neutral);
+  color: var(--product-ink);
+}
+.cekat-page .product-soft .secondary-final-cta::before {
+  background: #e7f1ed;
+}
+.cekat-page .product-soft .secondary-final-cta::after {
+  background: #f1e9d9;
+}
+.cekat-page .product-soft .secondary-final-cta h2 {
+  color: var(--product-ink);
+}
+.cekat-page .product-soft .secondary-final-cta p {
+  color: var(--product-body);
+}
+.cekat-page .product-soft .secondary-final-cta .eyebrow-rule-light {
+  color: var(--product-accent);
+}
+.cekat-page .product-soft .secondary-final-cta .eyebrow-rule-light::before {
+  background: var(--product-accent);
+}
+.cekat-page .product-soft .secondary-final-cta__register {
+  background: var(--product-accent);
+  color: white;
+  box-shadow: none;
+}
+.cekat-page .product-soft .secondary-final-cta__register:hover {
+  background: var(--product-accent-hover);
+}
+.cekat-page .product-soft .secondary-final-cta__sales {
+  background: white;
+  border-color: #c7d4e7;
+  color: var(--product-ink);
+}
+.cekat-page .product-soft .secondary-final-cta__sales:hover {
+  background: var(--product-blue);
+  border-color: var(--product-accent);
+}

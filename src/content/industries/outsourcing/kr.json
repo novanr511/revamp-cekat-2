@@ -43,26 +43,26 @@
     {
       "title": "AI는 모든 계정의 Tier-1을 연중무휴 24시간 처리합니다.",
       "body": "주문 상태, 영업 시간, 반품 정책, 상담원 근무 시간의 대부분을 차지하는 채팅 유형에 대해 AI가 모든 고객 계정에서 동시에 즉시 답변합니다. 볼륨이 급증해도 응답 시간은 일정하게 유지되며 더 이상 새 계약이 체결될 때마다 인원 수가 늘어날 필요가 없습니다.",
-      "image": "/images/chat/ai-handles-conversations.png",
-      "imageAlt": "Cekat.AI 받은 편지함에서 Tier-1 고객 채팅에 응답하는 AI 에이전트"
+      "visual": "industryInbox",
+      "visualAlt": "Cekat.AI 받은 편지함에서 Tier-1 고객 채팅에 응답하는 AI 에이전트"
     },
     {
       "title": "계정별 기술 자료, 혼동되는 답변 없음",
       "body": "패션 고객의 SOP는 전자 고객의 SOP와 전혀 다르며 계정 간 답변이 교차하는 것은 BPO의 악몽입니다. Cekat.AI에서 각 계정에는 고유한 지식 기반이 있으며 클라이언트의 문서, FAQ 및 SOP를 여기에 붙여넣으면 해당 작업 공간의 AI는 해당 소스의 클라이언트 브랜드 음성으로만 응답합니다.",
-      "image": "/images/home/knowledge-source.png",
-      "imageAlt": "Cekat.AI의 고객 계정별로 별도의 지식 기반"
+      "visual": "industryKnowledge",
+      "visualAlt": "Cekat.AI의 고객 계정별로 별도의 지식 기반"
     },
     {
       "title": "모든 채팅이 아닌 상담원이 에스컬레이션을 처리합니다.",
       "body": "복잡하거나 민감한 케이스는 대화 기록 및 고객 데이터가 첨부된 상담원에게 전달되므로 누구도 이야기를 다시 시작할 수 없습니다. 누가 어떤 계정을 담당하는지와 팀 활용도에 따라 역할 기반 액세스 제어는 사람들이 얼마나 빨리 입력하는지가 아니라 사례를 얼마나 잘 처리하는지에 대한 문제가 됩니다.",
-      "image": "/images/chat/escalate-and-sync.png",
-      "imageAlt": "Cekat.AI의 전체 컨텍스트를 통해 상담원에게 채팅 에스컬레이션"
+      "visual": "industryHandoff",
+      "visualAlt": "Cekat.AI의 전체 컨텍스트를 통해 상담원에게 채팅 에스컬레이션"
     },
     {
       "title": "클라이언트별 SLA 및 분석, 수동 요약 없음",
       "body": "월별 보고서는 더 이상 월말 스프레드시트 조립 작업이 아닙니다. 모든 작업 공간에는 자체 대시보드, 채팅 볼륨, 응답 시간, 해결 속도, AI 대 상담원 성능이 있으므로 SLA 검토는 지난 주의 요약 대신 클라이언트가 볼 수 있는 것과 동일한 숫자, 실시간 데이터를 여는 것을 의미합니다.",
-      "image": "/images/order/full-visibility-across-every-automation-step.png",
-      "imageAlt": "Cekat.AI의 클라이언트별 성능 및 SLA 대시보드"
+      "visual": "industryAnalytics",
+      "visualAlt": "Cekat.AI의 클라이언트별 성능 및 SLA 대시보드"
     }
   ],
   "pillars": [

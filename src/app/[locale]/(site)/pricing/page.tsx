@@ -16,6 +16,7 @@ import { TRUSTED_LOGOS } from "@/components/sections/shared/trusted-logos";
 import { Faq } from "@/components/sections/features/faq";
 import { PageHero } from "@/components/sections/shared/page-hero";
 import { VoidFinalCta } from "@/components/sections/shared/void-final-cta";
+import "@/components/sections/pricing/pricing-soft.css";
 
 const FAQ_COUNT = 6;
 
@@ -104,32 +105,32 @@ export default async function PricingPage({
         ]}
       />
 
-      <PageHero
-        tone="pricing"
-        eyebrow={t("hero.eyebrow")}
-        title={t("hero.title")}
-        subtitle={t("hero.subtitle")}
-        note={t("hero.note")}
-        chips={[t("tabs.chat"), t("tabs.crm"), t("tabs.marketing")]}
-      />
-
-      <div className="cv-auto">
-        <PricingTabs />
-      </div>
-
-      <div className="cv-auto">
-        <LogoMarquee heading={t("trustHeading")} logos={TRUSTED_LOGOS} />
-      </div>
-
-      <div className="cv-auto">
-        <Faq namespace="pricing" count={FAQ_COUNT} />
-      </div>
-
-      <div className="cv-auto">
-        <VoidFinalCta
-          namespace="pricing.cta"
-          headingLead={t("cta.heading")}
+      <div className="pricing-soft" data-layout="three-plans-table-faq">
+        <PageHero
+          tone="pricing"
+          eyebrow={t("hero.eyebrow")}
+          title={t("hero.title")}
+          subtitle={t("hero.subtitle")}
+          note={t("hero.note")}
+          chips={[t("tabs.chat"), t("tabs.crm"), t("tabs.marketing")]}
         />
+
+        <PricingTabs
+          trust={
+            <LogoMarquee heading={t("trustHeading")} logos={TRUSTED_LOGOS} />
+          }
+        />
+
+        <div className="pricing-faq">
+          <Faq namespace="pricing" count={FAQ_COUNT} />
+        </div>
+
+        <div className="pricing-closer">
+          <VoidFinalCta
+            namespace="pricing.cta"
+            headingLead={t("cta.heading")}
+          />
+        </div>
       </div>
     </>
   );

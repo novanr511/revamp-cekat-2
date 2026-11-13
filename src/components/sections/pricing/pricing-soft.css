@@ -1,0 +1,248 @@
+/* Blueprint: three plans, trust, comparison table, FAQ. Pricing-only surfaces. */
+.cekat-page {
+.pricing-soft {
+  --pricing-ink: #192e4e;
+  --pricing-muted: #4a5b72;
+  --pricing-line: #dce4ef;
+  --pricing-blue: #eff4fc;
+  /* Lavender distinguishes Enterprise; cool blue keeps the closer on-brand. */
+  --pricing-lavender: #f4f2fa;
+  --pricing-cool: #f1f5fb;
+  --pricing-cream: #faf7ef;
+  --foreground: var(--pricing-ink);
+  --muted-foreground: var(--pricing-muted);
+  --border: var(--pricing-line);
+  color: var(--pricing-ink);
+  background: white;
+}
+.pricing-soft .secondary-hero {
+  background: var(--pricing-blue);
+  border-color: var(--pricing-line);
+  padding-top: 64px;
+}
+.pricing-soft .secondary-hero__color-field {
+  display: none;
+}
+.pricing-soft .secondary-hero::after,
+.pricing-soft .pricing-card--popular::before,
+.pricing-soft .secondary-final-cta::before,
+.pricing-soft .secondary-final-cta::after { content: none; }
+.pricing-soft .pricing-studio { margin-top: 0; border-radius: 0; }
+.pricing-soft .secondary-hero__layout {
+  padding-bottom: 48px;
+}
+.pricing-soft .secondary-hero h1 {
+  max-width: 22ch;
+  font-size: clamp(2.1rem, 4.2vw, 3.75rem);
+  line-height: 1.12;
+  color: var(--pricing-ink);
+}
+.pricing-soft .secondary-hero .headline-highlight {
+  background: transparent;
+  color: inherit;
+}
+.pricing-soft .pricing-studio {
+  background: #fff;
+}
+.pricing-soft [role="tablist"] {
+  border-color: var(--pricing-line);
+  background: #f8fafc;
+  box-shadow: none;
+  border-radius: 16px;
+}
+.pricing-soft [role="tab"] {
+  border-radius: 10px;
+}
+.pricing-soft [role="tab"][aria-selected="true"] {
+  background: #e5edfb;
+  color: #1b4091;
+  box-shadow: none;
+}
+.pricing-soft .pricing-card {
+  background: #fcfdff;
+  border-color: var(--pricing-line);
+}
+.pricing-soft .pricing-card--popular {
+  background: var(--pricing-blue);
+  border-color: #b8ccec;
+}
+.pricing-soft .pricing-card[data-tier="enterprise"] {
+  background: var(--pricing-lavender);
+}
+.pricing-soft .pricing-card--custom {
+  background: var(--pricing-cream);
+}
+.pricing-soft .pricing-card__content {
+  padding: 28px;
+}
+.pricing-soft .pricing-card__head h3 {
+  font-size: 1.5rem;
+}
+.pricing-soft .pricing-card__badge {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  margin: 0;
+  background: #dfe9fb;
+  color: #1b4091;
+}
+.pricing-soft .pricing-card__cta {
+  margin-top: auto;
+  padding-top: 20px;
+}
+.pricing-soft .pricing-card__features {
+  border-color: var(--pricing-line);
+}
+.pricing-soft .pricing-trust {
+  margin-top: 48px;
+}
+.pricing-soft .pricing-trust > div {
+  border: 0;
+  padding: 0;
+  background: white;
+}
+.pricing-soft .pricing-trust > div > div {
+  padding: 0;
+}
+.pricing-soft .pricing-trust > div > div > div {
+  border: 1px solid var(--pricing-line);
+  border-radius: 16px;
+  background: #f8fafc;
+  box-shadow: none;
+}
+.pricing-soft .pricing-trust h2 {
+  max-width: 26rem;
+  text-transform: none;
+  letter-spacing: normal;
+  font-weight: 500;
+  line-height: 1.6;
+}
+.pricing-soft .pricing-table-scroll {
+  border-color: var(--pricing-line);
+}
+.pricing-soft .pricing-table-scroll thead tr {
+  background: #f5f7fb;
+}
+.pricing-soft .pricing-table-scroll :is(th, td) {
+  padding: 16px 20px;
+}
+.pricing-soft .pricing-table-scroll tbody th {
+  min-width: 200px;
+}
+.pricing-soft .pricing-table-scroll tbody tr:nth-child(even) {
+  background: #fbfcfe;
+}
+.pricing-soft .pricing-table-scroll :is(th, td).bg-primary\/5 {
+  background: #eff4fc;
+}
+.pricing-soft .pricing-three-sixty {
+  background: var(--pricing-lavender);
+  border-color: #ddd8eb;
+}
+.pricing-soft .pricing-three-sixty > div:last-child {
+  box-shadow: none;
+}
+.pricing-soft .pricing-faq > section {
+  background: #f7f9fc;
+}
+.pricing-soft .pricing-faq button {
+  min-height: 64px;
+}
+.pricing-soft .pricing-faq button:focus-visible {
+  outline: 2px solid #1352bf;
+  outline-offset: 4px;
+}
+.pricing-soft .pricing-faq [class*="rounded-[1.15rem]"] {
+  background: white;
+  border-color: var(--pricing-line);
+  box-shadow: none;
+}
+.pricing-soft
+  .pricing-faq
+  [class*="rounded-[1.15rem]"]:has(button[aria-expanded="true"]) {
+  background: var(--pricing-blue);
+  border-color: #c6d6ed;
+}
+.pricing-soft .secondary-final-cta {
+  background: var(--pricing-cool);
+  color: var(--pricing-ink);
+  border-top: 1px solid var(--pricing-line);
+}
+.pricing-soft .secondary-final-cta > [aria-hidden] {
+  display: none;
+}
+.pricing-soft .secondary-final-cta h2 {
+  color: var(--pricing-ink);
+  max-width: 20ch;
+}
+.pricing-soft .secondary-final-cta :is(p, li) {
+  color: var(--pricing-muted);
+}
+.pricing-soft .secondary-final-cta li > span {
+  background: #e2eaf8;
+  color: #1b4091;
+  box-shadow: none;
+}
+.pricing-soft .secondary-final-cta a {
+  box-shadow: none;
+  backdrop-filter: none;
+  transform: none;
+  transition:
+    background-color 160ms,
+    color 160ms;
+}
+.pricing-soft .secondary-final-cta a:first-child {
+  background: #1352bf;
+  color: white;
+}
+.pricing-soft .secondary-final-cta a:first-child:hover {
+  background: #0a3e95;
+}
+.pricing-soft .secondary-final-cta a:last-child {
+  background: white;
+  color: #1b4091;
+  border-color: #bacce7;
+}
+.pricing-soft .secondary-final-cta a:last-child:hover {
+  background: #eff4fc;
+}
+@media (min-width: 768px) {
+  .pricing-soft .pricing-card--custom {
+    grid-column: 1 / -1;
+  }
+  .pricing-soft .pricing-card--custom .pricing-card__content {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.7fr);
+    column-gap: 48px;
+  }
+  .pricing-soft
+    .pricing-card--custom
+    .pricing-card__content
+    > :not(.pricing-card__features) {
+    grid-column: 1;
+  }
+  .pricing-soft .pricing-card--custom .pricing-card__tagline {
+    min-height: 0;
+  }
+  .pricing-soft .pricing-card--custom .pricing-card__features {
+    grid-column: 2;
+    grid-row: 1 / span 4;
+    margin: 0;
+    padding: 0 0 0 32px;
+    border-top: 0;
+    border-left: 1px solid var(--pricing-line);
+    align-self: center;
+  }
+  .pricing-soft .pricing-card--custom .pricing-card__cta {
+    margin-top: 0;
+    max-width: 22rem;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .pricing-soft .pricing-faq :is([class*="transition"], button span) {
+    transition: none;
+  }
+}
+}

@@ -43,26 +43,26 @@
     {
       "title": "Semua Channel Masuk Satu Inbox, Satu Riwayat per Pelanggan",
       "body": "WhatsApp, Instagram DM, Facebook Messenger, dan web chat masuk ke satu inbox dengan satu riwayat per pelanggan. Nggak ada lagi buka lima tab dan saling tanya \"ini udah dibales belum?\", tim kecilmu lihat semua percakapan di satu tempat, dan pelanggan yang pindah channel nggak perlu mengulang cerita.",
-      "image": "/images/chat/connect-channels.png",
-      "imageAlt": "Semua channel chat terhubung ke satu inbox Cekat.AI"
+      "visual": "industryInbox",
+      "visualAlt": "Semua channel chat terhubung ke satu inbox Cekat.AI"
     },
     {
       "title": "Alur yang Berulang Jalan Sendiri, Tanpa Nyuri Waktu Engineering",
       "body": "Cek status, kualifikasi lead, kirim follow-up, update ke tim internal, alur yang tiap hari diulang bisa diotomasi lewat builder drag and drop, tanpa coding. Timmu berhenti jadi mesin copy paste, dan roadmap engineering nggak kepotong buat bikin tooling support internal.",
-      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
-      "imageAlt": "Automation builder tanpa coding di Cekat.AI"
+      "visual": "industryAutomation",
+      "visualAlt": "Automation builder tanpa coding di Cekat.AI"
     },
     {
       "title": "Founder Berhenti Jadi CS Tengah Malam",
       "body": "Di awal, founder bales semua chat sendiri, masalahnya kebiasaan itu nggak scale. Dengan AI working hours, AI mengambil alih penuh di luar jam kerja dan berbagi beban dengan tim di jam sibuk, kasus penting tetap dioper ke manusia lengkap dengan konteksnya, dan kamu buka laptop pagi-pagi ke inbox yang sudah beres, bukan yang minta dibales semua.",
-      "image": "/images/home/ai-working-hours.png",
-      "imageAlt": "Pengaturan jam kerja AI dan tim di Cekat.AI"
+      "visual": "industryHandoff",
+      "visualAlt": "Pengaturan jam kerja AI dan tim di Cekat.AI"
     },
     {
       "title": "Angka Support yang Siap Ditanya Investor",
       "body": "Berapa percakapan per bulan, berapa yang selesai tanpa manusia, topik apa yang paling sering muncul, semua terekam di dashboard analitik. Kamu bisa jawab pertanyaan soal efisiensi operasional dengan data, dan membaca sinyal produk dari percakapan pelanggan sungguhan, bukan dari feeling.",
-      "image": "/images/marketing/understand-customer-behavior.png",
-      "imageAlt": "Dashboard analitik percakapan pelanggan di Cekat.AI"
+      "visual": "industryAnalytics",
+      "visualAlt": "Dashboard analitik percakapan pelanggan di Cekat.AI"
     }
   ],
   "pillars": [

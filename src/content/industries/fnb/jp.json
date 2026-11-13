@@ -47,20 +47,20 @@
     {
       "title": "メニュー、プロモーション、価格に関する質問はすぐに回答されます",
       "body": "「ベジタリアンのオプションはありますか？」 「セットメニューはいくらですか？」 「今夜は何かプロモーションはありますか？」 Cekat.AI は自然言語で応答し、キーワードを一致させるのではなく意図を理解するため、お腹を空かせたゲストは、より速く応答した次の場所にスクロールするのではなく、数秒で確信を得て来店を決定します。",
-      "image": "/images/chat/ai-handles-conversations.png",
-      "imageAlt": "Cekat.AI 受信箱内のメニューとプロモーションの質問に答える AI エージェント"
+      "visual": "industryKnowledge",
+      "visualAlt": "Cekat.AI 受信箱内のメニューとプロモーションの質問に答える AI エージェント"
     },
     {
       "title": "イベントやケータリングのお問い合わせが漏れることはありません",
       "body": "誕生日、会社のディナー、個人的な予約、管理者が時間があるまで読まれずに放置されていた価値の高い問い合わせ。 Cekat.AI は、各会話を完全な会話履歴とともに CRM カードに自動的に取り込むため、イベント チームは混雑した受信トレイを調べるのではなく、実際の見込み客をフォローアップできます。",
-      "image": "/images/crm/capture-and-organize-customers.png",
-      "imageAlt": "Cekat.AI CRM で収集されたイベントとケータリングの問い合わせ"
+      "visual": "industryBooking",
+      "visualAlt": "Cekat.AI CRM で収集されたイベントとケータリングの問い合わせ"
     },
     {
       "title": "チャットを注文の確認に変える",
       "body": "配達と持ち帰りの場合、Cekat.AI は、管理者がスプレッドシートに何も入力し直すことなく、会話内で注文、商品、顧客の詳細、cek ongkir 経由の送料、支払い QR を取得します。ゲストは 1 回のチャットで質問から有料注文まで進み、すべての注文が一貫性のある完全なものになります。",
-      "image": "/images/order/end-to-end-operational-efficiency.png",
-      "imageAlt": "Cekat.AI のチャット会話内で注文が作成され、支払われる"
+      "visual": "industryOrder",
+      "visualAlt": "Cekat.AI のチャット会話内で注文が作成され、支払われる"
     }
   ],
   "caseStudy": {

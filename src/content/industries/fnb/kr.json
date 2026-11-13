@@ -47,20 +47,20 @@
     {
       "title": "메뉴, 프로모션 및 가격 질문에 즉시 답변 가능",
       "body": "\"채식 옵션이 있나요?\" \"세트 메뉴는 얼마예요?\" \"오늘 밤에 무슨 프로모션이라도 있어?\" Cekat.AI는 자연어로 응답하여 키워드를 일치시키기보다는 의도를 이해하므로 배고픈 손님은 더 빨리 응답한 다음 장소로 스크롤하는 대신 몇 초 만에 확실성을 얻고 들어오기로 결정합니다.",
-      "image": "/images/chat/ai-handles-conversations.png",
-      "imageAlt": "Cekat.AI 받은 편지함의 메뉴 및 프로모션 질문에 답변하는 AI 에이전트"
+      "visual": "industryKnowledge",
+      "visualAlt": "Cekat.AI 받은 편지함의 메뉴 및 프로모션 질문에 답변하는 AI 에이전트"
     },
     {
       "title": "이벤트 및 케이터링 문의는 절대 놓치지 마세요",
       "body": "생일, 기업 만찬, 개인 예약, 관리자가 시간을 가질 때까지 읽지 않은 채로 남아 있던 중요한 문의 사항입니다. Cekat.AI는 전체 대화 기록과 함께 자동으로 각 항목을 CRM 카드에 캡처하므로 이벤트 팀이 혼잡한 받은 편지함을 뒤지는 대신 실제 리드를 추적할 수 있습니다.",
-      "image": "/images/crm/capture-and-organize-customers.png",
-      "imageAlt": "Cekat.AI CRM에 포착된 이벤트 및 케이터링 문의"
+      "visual": "industryBooking",
+      "visualAlt": "Cekat.AI CRM에 포착된 이벤트 및 케이터링 문의"
     },
     {
       "title": "채팅을 확인된 주문으로 전환",
       "body": "배달 및 테이크아웃의 경우 Cekat.AI는 관리자가 스프레드시트에 아무것도 다시 입력하지 않고도 대화 내 주문, 품목, 고객 세부 정보, cek ongkir를 통한 배송비 및 결제 QR을 가져옵니다. 손님은 한 번의 채팅으로 질문부터 유료 주문까지 진행하며, 모든 주문은 일관되고 완전하게 이루어집니다.",
-      "image": "/images/order/end-to-end-operational-efficiency.png",
-      "imageAlt": "Cekat.AI의 채팅 대화 내에서 주문이 생성되고 결제되었습니다."
+      "visual": "industryOrder",
+      "visualAlt": "Cekat.AI의 채팅 대화 내에서 주문이 생성되고 결제되었습니다."
     }
   ],
   "caseStudy": {

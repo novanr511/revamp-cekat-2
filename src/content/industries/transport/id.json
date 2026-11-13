@@ -43,26 +43,26 @@
     {
       "title": "Booking Kursi Selesai dalam Satu Percakapan",
       "body": "Dari nanya jadwal sampai kursi terkunci, semuanya di chat yang sama. Cekat.AI mencatat rute, tanggal, jumlah kursi, dan data penumpang, lalu mengirim QR pembayaran sampai lunas. Nggak ada lagi booking via telepon yang salah dengar nama atau tanggal, tiap order masuk rapi dan lengkap.",
-      "image": "/images/order/end-to-end-operational-efficiency.png",
-      "imageAlt": "Booking kursi dibuat dan dibayar langsung di chat Cekat.AI"
+      "visual": "industryBooking",
+      "visualAlt": "Booking kursi dibuat dan dibayar langsung di chat Cekat.AI"
     },
     {
       "title": "Reschedule dan Refund Berhenti Jadi Drama",
       "body": "Penumpang telat, jadwal berubah, rencana batal, permintaan reschedule datang tiap hari. Cekat.AI menanganinya sesuai aturanmu, cek kursi di jadwal pengganti dan catat perubahannya, lalu mengalihkan permintaan refund ke timmu lengkap dengan riwayat chat, jadi penumpang dapat kepastian, bukan dilempar-lempar.",
-      "image": "/images/chat/escalate-and-sync.png",
-      "imageAlt": "Permintaan refund dialihkan ke tim dengan konteks lengkap di Cekat.AI"
+      "visual": "industryDocuments",
+      "visualAlt": "Permintaan refund dialihkan ke tim dengan konteks lengkap di Cekat.AI"
     },
     {
       "title": "Info Perubahan Jadwal Sampai Sebelum Penumpang Berangkat",
       "body": "Armada bermasalah, jadwal mundur, rute dialihkan, kabar seperti ini harus sampai cepat. Lewat WhatsApp Business API resmi, Cekat.AI mem-broadcast pengumuman ke penumpang di rute dan jadwal yang terdampak saja, plus reminder keberangkatan otomatis, jadi kursi kosong gara-gara penumpang belum dapat kabar jadi cerita lama.",
-      "image": "/images/order/automatic-notifications-to-the-right-team.png",
-      "imageAlt": "Broadcast perubahan jadwal terkirim otomatis dari Cekat.AI"
+      "visual": "industryBroadcast",
+      "visualAlt": "Broadcast perubahan jadwal terkirim otomatis dari Cekat.AI"
     },
     {
       "title": "Semua Channel Booking Masuk Satu Inbox",
       "body": "WhatsApp, Instagram DM, dan live chat website masuk ke satu inbox dengan satu riwayat per penumpang, jadi pelanggan yang nanya di Instagram lalu booking di WhatsApp nggak perlu mengulang cerita. Penumpang langganan tercatat di CRM lengkap dengan rute favoritnya, siap di-follow-up saat ada promo atau jadwal baru.",
-      "image": "/images/chat/connect-channels.png",
-      "imageAlt": "Semua channel chat terhubung ke satu inbox Cekat.AI"
+      "visual": "industryInbox",
+      "visualAlt": "Semua channel chat terhubung ke satu inbox Cekat.AI"
     }
   ],
   "pillars": [

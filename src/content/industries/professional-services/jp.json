@@ -51,26 +51,26 @@
     {
       "title": "AI が処理する反復的な摂取質問",
       "body": "「私のようなケースも扱っていますか？」 「どの書類が必要ですか？」 「手続きにはどれくらい時間がかかりますか？」同じような質問が毎日届きます。 Cekat.AI は、企業のナレッジ ベースから自然言語で質問に答え、必要性、緊急性、基本的な詳細を尋ねます。そのため、パートナーに届くのは、空虚なチャットではなく、整った形式の問い合わせになります。",
-      "image": "/images/chat/ai-handles-conversations.png",
-      "imageAlt": "Cekat.AI 受信箱で見込み顧客の取り込みに関する質問を処理する AI エージェント"
+      "visual": "industryInbox",
+      "visualAlt": "Cekat.AI 受信箱で見込み顧客の取り込みに関する質問を処理する AI エージェント"
     },
     {
       "title": "チャットから直接相談のスケジュールを設定",
       "body": "「いつ空いてる？」と聞かれる必要はもうありません。電話で。 Cekat.AI はスロットを提供し、会話内で相談スケジュールをキャプチャします。API 統合を通じて、オフィスがすでに使用しているカレンダーや予約システムに接続でき、クライアントは確認された時間に現れるだけです。",
-      "image": "/images/home/api-integration.png",
-      "imageAlt": "Cekat.AI API とオフィス カレンダーおよび予約システムの統合"
+      "visual": "industryBooking",
+      "visualAlt": "Cekat.AI API とオフィス カレンダーおよび予約システムの統合"
     },
     {
       "title": "ノーショーをなくす自動リマインダー",
       "body": "静かに会議を欠席した場合、請求対象となる時間は過ぎてしまいます。 Cekat.AI は、WhatsApp での各相談の前に、持参する書類を含むリマインダーを送信します。また、クライアントが時間を変更する必要がある場合、同じチャット内で再スケジュールが行われるため、解放されたスロットは無駄にならずに埋まります。",
-      "image": "/images/order/automatic-notifications-to-the-right-team.png",
-      "imageAlt": "Cekat.AI での自動相談リマインダーとスケジュール通知"
+      "visual": "industryAutomation",
+      "visualAlt": "Cekat.AI での自動相談リマインダーとスケジュール通知"
     },
     {
       "title": "パートナーまたはサービスラインごとにパイプラインで追跡されるすべての問い合わせ",
       "body": "あるパートナーの電話にリードが座っていると、その収益が会社の外に漏れてしまいます。 Cekat.AI は、すべての問い合わせを CRM カードに自動的に取り込み、チャット履歴と明示されたニーズを添付し、パートナーまたはサービス ラインごとのパイプラインに整理します。そのため、管理パートナーはあちこちに尋ねるのではなく、すべての見込み客を 1 つのボード上で確認できます。",
-      "image": "/images/crm/track-customer-journey.png",
-      "imageAlt": "Cekat.AI CRM のパートナーごとのクライアント問い合わせパイプライン"
+      "visual": "industryPipeline",
+      "visualAlt": "Cekat.AI CRM のパートナーごとのクライアント問い合わせパイプライン"
     }
   ],
   "pillars": [

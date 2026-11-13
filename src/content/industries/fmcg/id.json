@@ -43,26 +43,26 @@
     {
       "title": "Permintaan Restock Toko Terjawab Kapan Pun",
       "body": "Pemilik toko sering baru sempat cek stok setelah tutup, dan nggak mau nunggu salesman datang minggu depan. Cekat.AI menjawab ketersediaan produk, harga, dan minimal order jam berapa pun, mencatat permintaan restock jadi order, dan meneruskannya ke tim penjualan area begitu jam kerja mulai.",
-      "image": "/images/home/ai-working-hours.png",
-      "imageAlt": "AI menjawab permintaan restock di luar jam kerja di Cekat.AI"
+      "visual": "industryCatalog",
+      "visualAlt": "AI menjawab permintaan restock di luar jam kerja di Cekat.AI"
     },
     {
       "title": "Promo Sampai ke Segmen Toko yang Tepat",
       "body": "Program trade promo, poin, dan launching varian baru nggak lagi berhenti di grup WhatsApp yang tenggelam. Cekat.AI mem-broadcast promo lewat WhatsApp Business API resmi ke segmen outlet yang kamu pilih, per wilayah, tipe toko, atau riwayat order, lengkap dengan follow-up otomatis buat outlet yang belum merespons.",
-      "image": "/images/marketing/understand-customer-behavior.png",
-      "imageAlt": "Segmentasi outlet untuk broadcast promo di Cekat.AI"
+      "visual": "industryBroadcast",
+      "visualAlt": "Segmentasi outlet untuk broadcast promo di Cekat.AI"
     },
     {
       "title": "Komplain Langsung ke Region yang Tepat, Bukan Muter-Muter",
       "body": "Kemasan rusak, varian salah kirim, hadiah promo belum sampai, komplain konsumen dan toko otomatis dibuatkan tiket dan diteruskan ke tim region atau distributor yang menangani wilayahnya, lengkap dengan riwayat chat. Notifikasi otomatis memastikan tim yang tepat tahu duluan, sebelum komplainnya naik ke media sosial.",
-      "image": "/images/order/automatic-notifications-to-the-right-team.png",
-      "imageAlt": "Komplain diteruskan otomatis ke tim region di Cekat.AI"
+      "visual": "industryTicketQueue",
+      "visualAlt": "Komplain diteruskan otomatis ke tim region di Cekat.AI"
     },
     {
       "title": "Satu Tampilan Utuh untuk Setiap Outlet",
       "body": "Setiap chat memperkaya profil outlet: riwayat order, promo yang diikuti, komplain yang pernah masuk, semuanya tercatat otomatis jadi customer data platform. Kamu bisa lihat outlet mana yang berhenti order dan segmen mana yang paling responsif ke promo, jadi tim sales datang ke kunjungan dengan data, bukan kira-kira.",
-      "image": "/images/crm/track-customer-journey.png",
-      "imageAlt": "Riwayat perjalanan tiap outlet tercatat di Cekat.AI"
+      "visual": "industryAnalytics",
+      "visualAlt": "Riwayat perjalanan tiap outlet tercatat di Cekat.AI"
     }
   ],
   "pillars": [

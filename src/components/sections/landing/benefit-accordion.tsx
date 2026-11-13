@@ -29,10 +29,12 @@ export function BenefitAccordion({
   eyebrow,
   heading,
   benefits,
+  staticVisual,
 }: {
   eyebrow?: string;
   heading?: string;
   benefits: Benefit[];
+  staticVisual?: boolean;
 }) {
   const [open, setOpen] = useState(0);
   const id = useId();
@@ -136,7 +138,7 @@ export function BenefitAccordion({
 
                     {benefit.image && isOpen && (
                       <div className="mt-6 lg:hidden">
-                        <WorkflowScene image={benefit.image} imageAlt={benefit.imageAlt ?? benefit.title} title={benefit.title} index={index} count={benefits.length} />
+                        <WorkflowScene image={benefit.image} imageAlt={benefit.imageAlt ?? benefit.title} title={benefit.title} index={index} count={benefits.length} staticVisual={staticVisual} />
                       </div>
                     )}
                   </div>
@@ -153,7 +155,7 @@ export function BenefitAccordion({
               active?.image ? "hidden lg:block" : "hidden",
             )}
           >
-            {active?.image && <WorkflowScene image={active.image} imageAlt={active.imageAlt ?? active.title} title={active.title} index={open} count={benefits.length} />}
+            {active?.image && <WorkflowScene image={active.image} imageAlt={active.imageAlt ?? active.title} title={active.title} index={open} count={benefits.length} staticVisual={staticVisual} />}
           </div>
         </div>}
       </Container>

@@ -43,20 +43,20 @@
     {
       "title": "在聊天中关闭活动和场地预订",
       "body": "事件和团体查询过去意味着长时间来回的手动问题。 Cekat.AI 在对话中捕获详细信息、日期、人数、套餐、预算，通过 API 连接到您的系统，并在所有信息都已收集完毕的情况下向您的团队发出热情、合格的询问，因此在等待回复时不会出现任何停滞。",
-      "image": "/images/home/api-integration.png",
-      "imageAlt": "通过 Cekat.AI 中的 API 集成处理活动预订"
+      "visual": "industryBooking",
+      "visualAlt": "通过 Cekat.AI 中的 API 集成处理活动预订"
     },
     {
       "title": "跨每个渠道为每位客人提供一个收件箱",
       "body": "WhatsApp、Instagram DM、Facebook Messenger 和网站聊天流入一个收件箱，并为每位客人提供完整的历史记录。您的团队可以立即查看过去的住宿、请求和问题，以及任何需要人工处理的问题、特殊请求、投诉，并通过附加的整个对话进行升级，因此没有客人会重复自己的情况。",
-      "image": "/images/crm/capture-and-organize-customers.png",
-      "imageAlt": "在 Cekat.AI CRM 中组织的来宾对话"
+      "visual": "industryDispatch",
+      "visualAlt": "在 Cekat.AI CRM 中组织的来宾对话"
     },
     {
       "title": "用促销客人实际开放来填补安静的日期",
       "body": "广播活动通过官方 WhatsApp Business API 发送到根据真实数据、过去的客人、活动客户、失效的预订构建的细分，并从 CRM 中提取姓名和背景。工作日价格优惠或季节性套餐会吸引最有可能答应的客人，而不是每个人都忽略的普通爆炸。",
-      "image": "/images/marketing/understand-customer-behavior.png",
-      "imageAlt": "Cekat.AI 中酒店促销的宾客细分"
+      "visual": "industryInbox",
+      "visualAlt": "Cekat.AI 中酒店促销的宾客细分"
     }
   ],
   "caseStudy": {

@@ -43,26 +43,26 @@
     {
       "title": "子供たちが寝た後でも親が質問しても学校は答えてくれます",
       "body": "学校の決定は勤務時間内ではなく、夕食の席で行われます。 Cekat.AI は、到着時、午後 9 時または日曜日の朝にいつでも、料金、カリキュラム、寄宿施設に関する質問に答えます。そのため、学校を真剣に比較する保護者はその場で確実性を得ることができ、入学チームはすでに対応済みの会話に参加します。",
-      "image": "/images/home/ai-working-hours.png",
-      "imageAlt": "Cekat.AI の学校のオフィス時間外のチャットをカバーする AI の勤務時間"
+      "visual": "industryInbox",
+      "visualAlt": "Cekat.AI の学校のオフィス時間外のチャットをカバーする AI の勤務時間"
     },
     {
       "title": "パンフレットとオープンハウスの案内状の漏洩を防ぐ",
       "body": "保護者がパンフレットをリクエストしても返事がない場合は、入学資格を喪失したことになります。 Cekat.AI は、すべての質問者を CRM カードに目標学年と連絡先の詳細とともに自動的に記録し、最初の質問から再登録までのパイプラインに整理します。そのため、チームは誰にあと 1 回の支援が必要かを正確に把握できます。",
-      "image": "/images/crm/capture-and-organize-customers.png",
-      "imageAlt": "Cekat.AI CRM のパイプラインに整理された親見込み客"
+      "visual": "industryPipeline",
+      "visualAlt": "Cekat.AI CRM のパイプラインに整理された親見込み客"
     },
     {
       "title": "締め切りと書類は自動的に追われる",
       "body": "未記入のフォーム、一度もアップロードされなかった成績表、決して支払われなかった登録料、リマインダーもなければ、すべてが途中で止まってしまいます。 Cekat.AI は、スケジュールや申請者の書類ステータスに応じて、締め切り前に自動リマインダーを送信するため、中途半端に完了した申請書は静かにフェードアウトするのではなく、実際に完了します。",
-      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
-      "imageAlt": "Cekat.AI の自動入学締め切りリマインダー フロー"
+      "visual": "industryDocuments",
+      "visualAlt": "Cekat.AI の自動入学締め切りリマインダー フロー"
     },
     {
       "title": "適切な家族に届くオープンハウスの招待状",
       "body": "Cekat.AI は、学年レベル、関心、申し込み段階ごとにリードを分類し、公式 WhatsApp Business API ブロードキャストを通じてオープンハウスの招待状やトライアル クラスの情報を送信し、イベント終了後には自動的にフォローアップします。会場は、無作為の連絡先リストではなく、学校を真剣に考えている保護者でいっぱいです。",
-      "image": "/images/marketing/understand-customer-behavior.png",
-      "imageAlt": "Cekat.AI のオープンハウス ブロードキャストを強化するリード セグメント"
+      "visual": "industryBroadcast",
+      "visualAlt": "Cekat.AI のオープンハウス ブロードキャストを強化するリード セグメント"
     }
   ],
   "pillars": [

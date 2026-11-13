@@ -1,8 +1,5 @@
-"use client";
-
-import { useCallback, useEffect, useRef, useState } from "react";
-import type { Locale } from "@/i18n/routing";
 import type { BlogPost } from "@/lib/wordpress";
+import { Link } from "@/i18n/navigation";
 import { PostCard } from "./post-card";
 
 export function BlogFeed({
@@ -11,69 +8,82 @@ export function BlogFeed({
   totalPages,
   categorySlug,
   query,
-  locale,
 }: {
   initialPosts: BlogPost[];
   initialPage: number;
   totalPages: number;
   categorySlug?: string;
   query?: string;
-  locale: Locale;
 }) {
-  const [posts, setPosts] = useState<BlogPost[]>(initialPosts);
-  const [page, setPage] = useState(initialPage);
-  const [loading, setLoading] = useState(false);
-  const sentinelRef = useRef<HTMLDivElement>(null);
-  const hasMore = page < totalPages;
-
-  const loadMore = useCallback(async () => {
-    if (loading || page >= totalPages) return;
-    setLoading(true);
-    const next = page + 1;
-    try {
-      const params = new URLSearchParams({ page: String(next), lang: locale });
-      if (categorySlug) params.set("category", categorySlug);
-      if (query) params.set("q", query);
-      const res = await fetch(`/api/blog?${params}`);
-      if (res.ok) {
-        const data = (await res.json()) as { posts: BlogPost[] };
-        setPosts((prev) => [...prev, ...data.posts]);
-        setPage(next);
-      }
-    } finally {
-      setLoading(false);
-    }
-  }, [loading, page, totalPages, categorySlug, query, locale]);
-
-  useEffect(() => {
-    const el = sentinelRef.current;
-    if (!el || !hasMore) return;
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries[0]?.isIntersecting) loadMore();
-      },
-      { rootMargin: "600px" },
-    );
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, [loadMore, hasMore]);
+  const pageNumbers = Array.from(
+    new Set(
+      [
+        1,
+        2,
+        3,
+        initialPage - 1,
+        initialPage,
+        initialPage + 1,
+        totalPages,
+      ].filter((number) => number > 0 && number <= totalPages),
+    ),
+  ).sort((a, b) => a - b);
+  const href = (page: number) => ({
+    pathname: "/blog" as const,
+    query: {
+      ...(page > 1 ? { page } : {}),
+      ...(categorySlug ? { category: categorySlug } : {}),
+      ...(query ? { q: query } : {}),
+    },
+  });
 
   return (
     <div>
-      <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-        {posts.map((post) => (
-          <PostCard key={post.id} post={post} locale={locale} />
+      <div className="r-blog-grid">
+        {initialPosts.map((post) => (
+          <PostCard key={post.id} post={post} listing />
         ))}
       </div>
-
-      {hasMore && (
-        <div
-          ref={sentinelRef}
-          className="flex items-center justify-center py-10"
-          aria-hidden
-        >
-          <span className="size-6 animate-spin rounded-full border-2 border-border border-t-primary" />
-        </div>
+      {totalPages > 1 && (
+        <nav className="r-blog-pagination" aria-label="Blog pages">
+          {initialPage > 1 ? (
+            <Link href={href(initialPage - 1)} aria-label="Previous page">
+              ←
+            </Link>
+          ) : (
+            <span className="r-blog-pagination__disabled" aria-hidden="true">
+              ←
+            </span>
+          )}
+          {pageNumbers.map((number, index) => (
+            <span key={number} className="r-blog-pagination__item">
+              {index > 0 && number - pageNumbers[index - 1] > 1 && (
+                <span
+                  className="r-blog-pagination__ellipsis"
+                  aria-hidden="true"
+                >
+                  …
+                </span>
+              )}
+              <Link
+                href={href(number)}
+                aria-label={`Page ${number}`}
+                aria-current={number === initialPage ? "page" : undefined}
+              >
+                {number}
+              </Link>
+            </span>
+          ))}
+          {initialPage < totalPages ? (
+            <Link href={href(initialPage + 1)} aria-label="Next page">
+              →
+            </Link>
+          ) : (
+            <span className="r-blog-pagination__disabled" aria-hidden="true">
+              →
+            </span>
+          )}
+        </nav>
       )}
     </div>
   );

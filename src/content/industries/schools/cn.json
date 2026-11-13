@@ -7,12 +7,7 @@
     "badge": "学校",
     "title": "在招生季回答每位家长的问题，即使是晚上 10 点",
     "subtitle": "从费用、要求到选拔时间表，Cekat.AI 在整个招生季都会通过 WhatsApp 和 Instagram 立即回复家长，每个潜在家庭都成为可追踪的线索",
-    "useCases": [
-      "招生问题",
-      "盘后答复",
-      "开放日线索",
-      "文件提醒"
-    ]
+    "useCases": ["招生问题", "盘后答复", "开放日线索", "文件提醒"]
   },
   "definition": "Cekat.AI for school 是一个面向印度尼西亚私立学校、国际学校、寄宿学校和幼儿园的人工智能客户服务平台，作为一个在线招生 (PSB) 信息系统，可以在一个平台上为家长提供 24/7 的答复，捕获并确定招生线索，并提醒家庭有关截止日期和文件的信息。",
   "stats": [
@@ -43,26 +38,26 @@
     {
       "title": "孩子睡了之后家长问，你们学校依然回答",
       "body": "学校的决定是在餐桌上做出的，而不是在办公时间。 Cekat.AI 会在学生到达时（晚上 9 点或周日早上）回答有关费用、课程和寄宿设施的问题，因此认真比较学校的家长可以当场获得确定性，并且您的招生团队会介入已经处理过的对话。",
-      "image": "/images/home/ai-working-hours.png",
-      "imageAlt": "AI 工作时间涵盖 Cekat.AI 学校办公时间以外的聊天内容"
+      "visual": "industryInbox",
+      "visualAlt": "AI 工作时间涵盖 Cekat.AI 学校办公时间以外的聊天内容"
     },
     {
       "title": "宣传册和开放日线索不再泄露",
       "body": "如果家长索要小册子却没有收到任何回复，那么他们就失去了入学机会。 Cekat.AI 会自动将每个询问者以及目标年级和联系方式记录到 CRM 卡中，然后将其组织在从第一个问题到重新注册的管道中，以便您的团队准确地知道谁需要再一次推动。",
-      "image": "/images/crm/capture-and-organize-customers.png",
-      "imageAlt": "在 Cekat.AI CRM 中以管道形式组织的潜在家长线索"
+      "visual": "industryPipeline",
+      "visualAlt": "在 Cekat.AI CRM 中以管道形式组织的潜在家长线索"
     },
     {
       "title": "自动追踪截止日期和文件",
       "body": "一份未完成的表格，一张从未上传的成绩单，从未支付的注册费，没有提醒，一切都中途停滞了。 Cekat.AI 在每个截止日期之前发送自动提醒，由日程安排或申请人的文件状态触发，因此完成一半的申请实际上已经完成，而不是悄然消失。",
-      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
-      "imageAlt": "Cekat.AI 中的自动录取截止日期提醒流程"
+      "visual": "industryDocuments",
+      "visualAlt": "Cekat.AI 中的自动录取截止日期提醒流程"
     },
     {
       "title": "面向合适家庭的开放日邀请",
       "body": "Cekat.AI 按年级、兴趣和申请阶段进行细分，然后通过官方 WhatsApp Business API 广播发送开放日邀请或试听课程信息，活动结束后自动跟进。你的大厅里挤满了真诚考虑你的学校的家长，而不是随机的联系人名单。",
-      "image": "/images/marketing/understand-customer-behavior.png",
-      "imageAlt": "主导部分为 Cekat.AI 的开放日广播提供支持"
+      "visual": "industryBroadcast",
+      "visualAlt": "主导部分为 Cekat.AI 的开放日广播提供支持"
     }
   ],
   "pillars": [

@@ -43,26 +43,26 @@
     {
       "title": "From \"How Much Is Shipping?\" to Paid, Inside One Chat",
       "body": "Cekat.AI's agent checks the shipping cost, confirms the address, creates the order with the customer's details, and sends a payment QR, all inside the same conversation. No checkout links half your buyers never finish, no admin copying orders into a spreadsheet by hand.",
-      "image": "/images/order/end-to-end-operational-efficiency.png",
-      "imageAlt": "Order created and paid inside a chat conversation in Cekat.AI"
+      "visual": "industryKnowledge",
+      "visualAlt": "Order created and paid inside a chat conversation in Cekat.AI"
     },
     {
       "title": "Win Back the Checkouts Your Buyers Abandoned",
       "body": "Most abandoned checkouts are not lost sales, they are unfinished ones. Cekat.AI follows up automatically when a payment is still pending, a promo is about to expire, or it is time to restock, with each nudge triggered by the customer's actual behavior instead of a manual reminder list.",
-      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
-      "imageAlt": "Automated follow-up workflow for pending payments in Cekat.AI"
+      "visual": "industryOrder",
+      "visualAlt": "Automated follow-up workflow for pending payments in Cekat.AI"
     },
     {
       "title": "Broadcast Promos to the Buyers Most Likely to Buy",
       "body": "Campaigns go out through the official WhatsApp Business API to segments built from real data, repeat buyers, lapsed customers, leads who clicked but never paid, with names and context pulled from the CRM. Relevant promos get opened and answered; generic ones get ignored.",
-      "image": "/images/marketing/understand-customer-behavior.png",
-      "imageAlt": "Customer segmentation by purchase behavior in Cekat.AI"
+      "visual": "industryBroadcast",
+      "visualAlt": "Customer segmentation by purchase behavior in Cekat.AI"
     },
     {
       "title": "Know Every Buyer's Stage, Visitor, Lead, or Repeat Customer",
       "body": "Every chat, purchase, and campaign updates the customer's CRM card automatically, no manual input. Customer Stages track each contact from Visitor to Lead to Buyer with suggested next steps, so your team always knows who is browsing, who is deciding, and who is due a repeat-purchase nudge.",
-      "image": "/images/crm/track-customer-journey.png",
-      "imageAlt": "Customer journey stages tracked in the Cekat.AI CRM"
+      "visual": "industryContactRecord",
+      "visualAlt": "Customer journey stages tracked in the Cekat.AI CRM"
     }
   ],
   "pillars": [

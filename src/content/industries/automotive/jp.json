@@ -43,26 +43,26 @@
     {
       "title": "AI の要件: 予算、モデル、下取り",
       "body": "すべてのチャットが真剣な購入者であるわけではありません。 Cekat.AI は、営業チームが最初に尋ねること、どのモデル、どのような予算や資金計画、下取りする車両があるかどうかを自然言語で尋ねるため、営業担当者は明確なプロフィールを持つ見込み客をピックアップし、ゼロから始めるのではなく、直接オファーに進みます。",
-      "image": "/images/chat/ai-handles-conversations.png",
-      "imageAlt": "Cekat.AI 受信トレイで自動車購入者候補を認定する AI エージェント"
+      "visual": "automotiveLeadQualification",
+      "visualAlt": "車種、予算、下取り希望に基づいて見込み客を確認する Cekat.AI の受信トレイ画面"
     },
     {
       "title": "チャットから予約したテストドライブとサービススロット",
       "body": "試乗のスケジュール設定は電話の鬼ごっこではなくなり、サービスの予約が 1 人の管理者に積み重なることもなくなりました。 Cekat.AI は会話内のスケジュールをキャプチャし、適切な営業担当者またはサービス アドバイザーに通知し、API 統合を通じてワークショップの予約システムに接続できるため、顧客は時間どおりに到着します。",
-      "image": "/images/order/automatic-notifications-to-the-right-team.png",
-      "imageAlt": "Cekat.AI の適切なチームへの自動テストドライブとサービス通知"
+      "visual": "automotiveBooking",
+      "visualAlt": "試乗と整備の予約を設定し、担当チームへ自動通知する Cekat.AI の画面"
     },
     {
       "title": "自動操縦で実行される定期的なサービスリマインダー",
       "body": "顧客はサービススケジュールを忘れてしまい、ワークショップは最も予測しやすい収益を失います。 Cekat.AI は、各顧客の履歴に基づいて公式 WhatsApp Business API を通じて定期的なサービス リマインダーを送信し、同じチャットで予約枠を開くため、車両は近い方のワークショップではなくワークショップに戻ります。",
-      "image": "/images/marketing/understand-customer-behavior.png",
-      "imageAlt": "Cekat.AI の顧客履歴に基づくサービス リマインダー キャンペーン"
+      "visual": "automotiveServiceReminder",
+      "visualAlt": "顧客履歴に基づいて WhatsApp で整備リマインダーを送る Cekat.AI のワークフロー画面"
     },
     {
       "title": "すべての見込み客は営業担当者の電話ではなく CRM パイプラインに到達します",
       "body": "個々の電話機に存在するリードは、漏洩するリードです。 Cekat.AI は、すべての会話を CRM カードに自動的に取り込み、チャット履歴、希望するモデル、フォローアップ ステータスを新規リードから取引までのパイプラインに整理するため、スーパーバイザーは尋ねることなくすべての見込み客の立場を確認できます。",
-      "image": "/images/crm/track-customer-journey.png",
-      "imageAlt": "ディーラーは Cekat.AI CRM の見込み顧客から取引までのパイプラインをリードします"
+      "visual": "automotiveCrmPipeline",
+      "visualAlt": "見込み客から成約までを管理する Cekat.AI CRM の自動車ディーラーパイプライン"
     }
   ],
   "pillars": [

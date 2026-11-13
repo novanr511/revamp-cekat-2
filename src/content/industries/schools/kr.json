@@ -43,26 +43,26 @@
     {
       "title": "부모는 아이들이 자고 나면 물어봐도 학교는 여전히 대답합니다.",
       "body": "학교 결정은 근무 시간이 아닌 저녁 식사 테이블에서 이루어집니다. Cekat.AI는 오후 9시 또는 일요일 아침에 도착할 때마다 비용, 커리큘럼 및 기숙사 시설에 대한 질문에 답변하므로 학교를 심각하게 비교하는 부모는 그 자리에서 확실성을 얻을 수 있으며 입학 팀은 이미 처리된 대화에 들어갑니다.",
-      "image": "/images/home/ai-working-hours.png",
-      "imageAlt": "Cekat.AI에서 학교 근무 시간 외 채팅을 다루는 AI 근무 시간"
+      "visual": "industryInbox",
+      "visualAlt": "Cekat.AI에서 학교 근무 시간 외 채팅을 다루는 AI 근무 시간"
     },
     {
       "title": "브로셔 및 오픈 하우스 리드가 누출을 중지합니다.",
       "body": "브로셔를 요청했지만 답변을 듣지 못한 학부모는 등록을 취소한 것입니다. Cekat.AI는 모든 문의자를 대상 학년 및 연락처 세부 정보와 함께 자동으로 CRM 카드에 기록한 다음 첫 번째 질문부터 재등록까지 파이프라인에서 정리하므로 팀에서는 누가 한 번만 더 넛지가 필요한지 정확히 알 수 있습니다.",
-      "image": "/images/crm/capture-and-organize-customers.png",
-      "imageAlt": "Cekat.AI CRM의 파이프라인에 구성된 잠재 상위 리드"
+      "visual": "industryPipeline",
+      "visualAlt": "Cekat.AI CRM의 파이프라인에 구성된 잠재 상위 리드"
     },
     {
       "title": "자동으로 추적되는 마감일 및 문서",
       "body": "미완성 양식, 업로드되지 않은 성적표, 지불되지 않은 등록비, 알림 없이 모든 것이 중간에 중단됩니다. Cekat.AI는 일정이나 신청자의 서류 상태에 따라 매 마감일 전에 자동 알림을 보내므로 절반쯤 완료된 신청서가 조용히 사라지는 대신 실제로 완료됩니다.",
-      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
-      "imageAlt": "Cekat.AI의 자동 입학 마감 알림 흐름"
+      "visual": "industryDocuments",
+      "visualAlt": "Cekat.AI의 자동 입학 마감 알림 흐름"
     },
     {
       "title": "적합한 가족에게 다가가는 오픈 하우스 초대",
       "body": "Cekat.AI 세그먼트는 학년, 관심 분야, 신청 단계별로 분류된 다음 공식 WhatsApp Business API 방송을 통해 오픈 하우스 초대 또는 평가판 수업 정보를 보내고 이벤트가 끝나면 자동 후속 조치를 취합니다. 귀하의 홀은 무작위 연락처 목록이 아닌 진심으로 학교를 고려하는 학부모들로 가득 차 있습니다.",
-      "image": "/images/marketing/understand-customer-behavior.png",
-      "imageAlt": "Cekat.AI의 오픈 하우스 방송을 지원하는 주요 세그먼트"
+      "visual": "industryBroadcast",
+      "visualAlt": "Cekat.AI의 오픈 하우스 방송을 지원하는 주요 세그먼트"
     }
   ],
   "pillars": [

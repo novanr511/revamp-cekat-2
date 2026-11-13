@@ -46,7 +46,7 @@ export function ShareButtons({
   };
 
   const btn =
-    "flex size-10 items-center justify-center rounded-full border border-foreground/12 bg-white text-muted-foreground transition-all duration-300 hover:-translate-y-0.5 hover:border-primary/40 hover:bg-primary/5 hover:text-primary";
+    "flex size-11 items-center justify-center rounded-full border border-foreground/12 bg-white text-muted-foreground transition-all duration-300 hover:-translate-y-0.5 hover:border-primary/40 hover:bg-primary/5 hover:text-primary";
 
   return (
     <div>
@@ -79,7 +79,9 @@ export function ShareButtons({
         </button>
       </div>
       {copied && (
-        <p className="mt-2 font-numeric text-xs text-primary">{copiedLabel}</p>
+        <p role="status" className="mt-2 font-numeric text-xs text-primary">
+          {copiedLabel}
+        </p>
       )}
     </div>
   );

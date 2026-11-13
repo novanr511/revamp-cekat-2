@@ -43,26 +43,26 @@
     {
       "title": "청구 및 지불 관련 질문에 대한 즉각적인 답변",
       "body": "\"이번 달 내 청구서는 얼마지?\" \"결제는 어디서 하나요?\" \"이미 전학했는데 왜 아직도 끊겨요?\" 매일 같은 질문이 도착해 관리자의 시간을 잡아먹습니다. Cekat.AI는 지식 기반에서 자연어로 답변하고, 결제 세부 정보를 보내고, 채팅 기록이 첨부된 이상한 결제 사례를 팀에 에스컬레이션합니다.",
-      "image": "/images/home/knowledge-source.png",
-      "imageAlt": "고객 청구 질문에 답변하는 Cekat.AI 지식 기반"
+      "visual": "industryTicketQueue",
+      "visualAlt": "고객 청구 질문에 답변하는 Cekat.AI 지식 기반"
     },
     {
       "title": "채팅을 통해 예약된 신규 설치 및 기술 방문",
       "body": "잠재 고객이 보장 범위에 대해 질문하고 즉시 답변을 얻습니다. 설치 준비가 완료되면 AI는 필요한 주소와 세부 정보를 수집한 다음 대화 중에 바로 설치 시간이나 기술자 방문을 예약합니다. 모든 요청은 전체 컨텍스트와 함께 기록되므로 현장 팀은 절반만 읽은 채팅에서 추측하는 대신 정보를 바탕으로 출발합니다.",
-      "image": "/images/order/end-to-end-operational-efficiency.png",
-      "imageAlt": "Cekat.AI 대화를 통해 예정된 설치 및 기술자 방문"
+      "visual": "industryDispatch",
+      "visualAlt": "Cekat.AI 대화를 통해 예정된 설치 및 기술자 방문"
     },
     {
       "title": "WhatsApp에서 고객에게 자동 알림",
       "body": "마감일 알림, 결제 확인, 예정된 유지 관리 공지, 해당 지역이 다시 온라인 상태가 되면 업데이트 등이 모두 공식 WhatsApp Business API를 통해 자동으로 전송됩니다. 고객이 불만을 제기하기 전에 귀하의 의견을 듣고 청구 팀은 한 번에 한 채팅씩 결제 추적을 중단합니다.",
-      "image": "/images/order/automatic-notifications-to-the-right-team.png",
-      "imageAlt": "WhatsApp을 통해 고객에게 자동 Cekat.AI 알림 전달"
+      "visual": "industryBroadcast",
+      "visualAlt": "WhatsApp을 통해 고객에게 자동 Cekat.AI 알림 전달"
     },
     {
       "title": "불만 사항은 해당 지역 팀으로 전달되는 티켓이 됩니다.",
       "body": "들어오는 모든 정전 보고서는 자동으로 티켓으로 바뀌고 고객의 세부 정보와 위치가 포함된 후 해당 지역의 기술 팀에 전달됩니다. 모든 진행 중인 티켓을 한 번에 볼 수 있으므로 받은 편지함에 불만 사항이 쌓이지 않으며 고객이 동일한 문제에 대해 세 번 채팅할 필요가 없습니다.",
-      "image": "/images/order/auto-create-ticket.png",
-      "imageAlt": "고객 불만 사항은 Cekat.AI에서 자동으로 티켓으로 변환됩니다."
+      "visual": "industryHandoff",
+      "visualAlt": "고객 불만 사항은 Cekat.AI에서 자동으로 티켓으로 변환됩니다."
     }
   ],
   "pillars": [

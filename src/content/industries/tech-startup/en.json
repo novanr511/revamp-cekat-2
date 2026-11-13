@@ -43,26 +43,26 @@
     {
       "title": "Every Channel in One Inbox, One History per Customer",
       "body": "WhatsApp, Instagram DM, Facebook Messenger, and web chat flow into a single inbox with one history per customer. No more five open tabs and asking around whether someone already replied, your small team sees every conversation in one place, and customers who switch channels never repeat their story.",
-      "image": "/images/chat/connect-channels.png",
-      "imageAlt": "All chat channels connected to one Cekat.AI inbox"
+      "visual": "industryInbox",
+      "visualAlt": "All chat channels connected to one Cekat.AI inbox"
     },
     {
       "title": "Repetitive Flows Run Themselves, Without Stealing Engineering Time",
       "body": "Status checks, lead qualification, follow-ups, internal updates, the flows your team repeats daily can be automated with a drag and drop builder, no code. Your team stops being a copy paste machine, and the engineering roadmap stops getting cut up to build internal support tooling.",
-      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
-      "imageAlt": "No-code automation builder in Cekat.AI"
+      "visual": "industryAutomation",
+      "visualAlt": "No-code automation builder in Cekat.AI"
     },
     {
       "title": "Founders Get Out of the Midnight Support Shift",
       "body": "Early on, founders answer every chat themselves, the problem is that habit does not scale. With AI working hours, the AI takes over fully outside business hours and shares the load during peak times, important cases still escalate to a human with full context, and you open your laptop in the morning to an inbox that is already handled.",
-      "image": "/images/home/ai-working-hours.png",
-      "imageAlt": "AI and team working hours configured in Cekat.AI"
+      "visual": "industryHandoff",
+      "visualAlt": "AI and team working hours configured in Cekat.AI"
     },
     {
       "title": "Support Numbers Ready for the Investor Question",
       "body": "Conversations per month, how many resolve without a human, which topics come up most, all captured in the analytics dashboard. Answer questions about operational efficiency with data, and read product signals from real customer conversations instead of gut feel.",
-      "image": "/images/marketing/understand-customer-behavior.png",
-      "imageAlt": "Customer conversation analytics dashboard in Cekat.AI"
+      "visual": "industryAnalytics",
+      "visualAlt": "Customer conversation analytics dashboard in Cekat.AI"
     }
   ],
   "pillars": [

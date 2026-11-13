@@ -43,26 +43,26 @@
     {
       "title": "質問の前に届くステータス更新",
       "body": "荷物が受け取られ、ハブで輸送中、宅配便が住所に向かうまで、Cekat.AI は選択したマイルストーンごとに WhatsApp 経由で自動更新をプッシュします。顧客はすでに知っているため質問をやめ、受信者がいつ帰宅するかを知っているため、受信チャットの量が減少し、代金引換配達の失敗が減少します。",
-      "image": "/images/order/automatic-notifications-to-the-right-team.png",
-      "imageAlt": "Cekat.AI から送信される自動配送ステータス通知"
+      "visual": "industryDispatch",
+      "visualAlt": "Cekat.AI から送信される自動配送ステータス通知"
     },
     {
       "title": "問題パッケージは沈下する代わりにエスカレートする",
       "body": "COD の失敗、住所が見つからない、荷物の破損または紛失、このようなデリケートなケースは、キューで待つことはできません。 Cekat.AI は、会話からチケットを自動的に作成し、完全なチャット履歴とともに適切な現場または請求チームにルーティングし、ケースの処理中は顧客に常に情報を提供します。",
-      "image": "/images/order/auto-create-ticket.png",
-      "imageAlt": "Cekat.AI で荷物紛失の苦情がチケットとして自動作成される"
+      "visual": "industryTicketQueue",
+      "visualAlt": "Cekat.AI で荷物紛失の苦情がチケットとして自動作成される"
     },
     {
       "title": "チャット内で処理されるピックアップのスケジュール設定",
       "body": "販売者と通常の配送業者は、集荷を予約するために電話をする必要はありません。 AI は住所、荷物数、受け取り期間を尋ね、それを運用チーム向けのクリーンな注文として記録します。フローは自分で定義したビジネス ロジックに従い、コーディングは必要ないため、ピックアップはすべてのブランチで一貫して実行されます。",
-      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
-      "imageAlt": "Cekat.AI のビジネス ロジックで自動化された集荷リクエスト フロー"
+      "visual": "industryBooking",
+      "visualAlt": "Cekat.AI のビジネス ロジックで自動化された集荷リクエスト フロー"
     },
     {
       "title": "企業のリードは自動的に認定される",
       "body": "何百もの追跡チャットの中に、契約料金や定期的な出荷について尋ねる企業が埋もれています。 Cekat.AI は、これらの価値の高い問い合わせを認識し、量、ルート、頻度について質問し、会話を添付して CRM カードに取り込むため、営業チームは混雑した受信トレイをスクロールする代わりに、重要な見込み客をフォローアップできます。",
-      "image": "/images/crm/capture-and-organize-customers.png",
-      "imageAlt": "Cekat.AI CRM で取得された法人配送リード"
+      "visual": "industryPipeline",
+      "visualAlt": "Cekat.AI CRM で取得された法人配送リード"
     }
   ],
   "pillars": [

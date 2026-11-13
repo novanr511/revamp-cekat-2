@@ -7,12 +7,7 @@
     "badge": "薬局",
     "title": "在庫確認は自動的に回答され、注文はチャットで行われます",
     "subtitle": "在庫や価格の確認から配達注文や補充のリマインダーまで、Cekat.AI は 24 時間年中無休で WhatsApp に即座に返信し、いつ薬剤師にチャットを渡すべきかを認識します。",
-    "useCases": [
-      "在庫と価格",
-      "配達注文",
-      "補充リマインダー",
-      "薬剤師相談"
-    ]
+    "useCases": ["在庫と価格", "配達注文", "補充リマインダー", "薬剤師相談"]
   },
   "definition": "Cekat.AI for pharmacies は、インドネシアの薬局および薬局ビジネス向けの AI カスタマー サービス プラットフォームであり、在庫と価格のチェックに 24 時間年中無休で回答し、WhatsApp チャットから直接配達注文を受け取り、薬剤師に相談を提供する AI で薬局ソフトウェアを補完し、すべてが 1 つのプラットフォームで行われます。",
   "stats": [
@@ -43,26 +38,26 @@
     {
       "title": "配達リクエストは紙のメモではなく、クリーンな注文として届きます",
       "body": "Cekat.AI は、チャットを WhatsApp 上の薬局のオンライン ストアフロントに変えます。 AI は商品、購入者の詳細、cek ongkir 経由の配送料、会話内の支払い QR をキャプチャし、スタッフが再入力することなく完全かつ一貫した注文が行われ、購入者はアプリをインストールする必要がありません。",
-      "image": "/images/order/end-to-end-operational-efficiency.png",
-      "imageAlt": "Cekat.AI のチャット内で配達注文を作成し、支払いを行う"
+      "visual": "industryCatalog",
+      "visualAlt": "Cekat.AI のチャット内で配達注文を作成し、支払いを行う"
     },
     {
       "title": "慢性患者は時間どおりに補充するよう注意を喚起する",
       "body": "毎月薬を服用している患者が遅刻するのは、通常、忘れたからではなく、忘れたからです。 Cekat.AI は、各患者の購入履歴に基づいて、公式 WhatsApp Business API を通じて自動補充リマインダーを送信するため、患者の治療は順調に進み、患者は薬局に戻ってき続けます。",
-      "image": "/images/crm/track-customer-journey.png",
-      "imageAlt": "Cekat.AI の購入履歴に基づく補充リマインダー"
+      "visual": "industryAutomation",
+      "visualAlt": "Cekat.AI の購入履歴に基づく補充リマインダー"
     },
     {
       "title": "相談は常に AI ではなく薬剤師で終わります",
       "body": "投与量、薬物相互作用、または健康上の苦情について、AI は推測したり、医学的なアドバイスを与えたりしません。これらの会話は、完全なチャット履歴とともに自動的に薬剤師にエスカレーションされるため、購入者は安全性や専門的責任を損なうことなく、迅速なサービスを受けることができます。",
-      "image": "/images/chat/escalate-and-sync.png",
-      "imageAlt": "AI から Cekat.AI の薬剤師に相談がエスカレートされる"
+      "visual": "industryBooking",
+      "visualAlt": "AI から Cekat.AI の薬剤師に相談がエスカレートされる"
     },
     {
       "title": "追加シフトなしで午後 11 時になっても応答する人がいる",
       "body": "薬に関する質問は終了時間を無視します。 AI の勤務時間により、Cekat.AI は在庫、価格、注文に関する質問に夜間を通じて回答し、薬剤師が必要なチャットにフラグを立て、朝の勤務が始まるときに完全なコンテキストとともに引き渡すため、受信トレイでチャットが古くなることはありません。",
-      "image": "/images/home/ai-working-hours.png",
-      "imageAlt": "Cekat.AI の薬局スタッフと AI 間の AI 勤務時間ルーティング"
+      "visual": "industryHandoff",
+      "visualAlt": "Cekat.AI の薬局スタッフと AI 間の AI 勤務時間ルーティング"
     }
   ],
   "pillars": [

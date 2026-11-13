@@ -43,20 +43,20 @@
     {
       "title": "旅行者の言語で 24 時間返信",
       "body": "旅行者は、さまざまな国やタイムゾーンから、さまざまな言語で質問します。 Cekat.AI のエージェントは多言語に対応しており、キーワードだけでなく意図も理解できるため、午前 2 時に日本語で質問しても、正午にインドネシア語で質問しても、どちらも即座に正確な回答が得られます。取材は決して休むことがなく、問い合わせはエージェントがオンラインになるまで待つことはありません。",
-      "image": "/images/home/ai-working-hours.png",
-      "imageAlt": "Cekat.AI では、タイムゾーンを越えて 24 時間年中無休の多言語対応が可能"
+      "visual": "industryLanguages",
+      "visualAlt": "Cekat.AI では、タイムゾーンを越えて 24 時間年中無休の多言語対応が可能"
     },
     {
       "title": "過去の旅行者をリピート予約に変える",
       "body": "ブロードキャスト キャンペーンは、公式 WhatsApp Business API を介して、CRM から取得された名前と旅行履歴を使用して、実際のデータ、過去の旅行者、季節限定の予約者、依頼したが支払わなかったリードから構築されたセグメントに送られます。誰もが無視する爆発的な宣伝ではなく、タイミングよく季節限定のプロモーションを再度予約する可能性が最も高い人々に届きます。",
-      "image": "/images/marketing/understand-customer-behavior.png",
-      "imageAlt": "Cekat.AI での季節プロモーションの旅行者セグメンテーション"
+      "visual": "industryContactRecord",
+      "visualAlt": "Cekat.AI での季節プロモーションの旅行者セグメンテーション"
     },
     {
       "title": "すべての旅行者と旅行を 1 か所で整理",
       "body": "WhatsApp、Instagram DM、Web サイトのチャットは 1 つの受信箱に流れ、すべてのチャットで旅行者の CRM カード、受け取った過去の旅行、質問、キャンペーンが自動的に更新されます。チームは完全なコンテキストを瞬時に把握し、複雑な予約や価値の高い予約は会話全体を添付した状態で人間にエスカレートするため、繁忙期に見込み客が漏れることはありません。",
-      "image": "/images/crm/track-customer-journey.png",
-      "imageAlt": "Cekat.AI CRM で追跡された旅行者の旅行"
+      "visual": "industryBooking",
+      "visualAlt": "Cekat.AI CRM で追跡された旅行者の旅行"
     }
   ],
   "caseStudy": {

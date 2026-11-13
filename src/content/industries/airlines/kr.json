@@ -43,26 +43,26 @@
     {
       "title": "요금, 수하물, 체크인 질문에 대한 즉각적인 답변",
       "body": "\"기내 수하물은 몇 킬로그램인가요?\" \"온라인 체크인은 언제까지 할 수 있나요?\" \"보조 배터리를 가져올 수 있나요?\" Cekat.AI는 운임 규정, 수하물 정책 및 절차를 기반으로 구축된 지식 기반에서 의도를 이해하는 자연어로 답변하므로 1000번째 채팅에서도 첫 번째 채팅만큼 일관된 답변을 얻을 수 있습니다.",
-      "image": "/images/home/knowledge-source.png",
-      "imageAlt": "Cekat.AI에 지식 소스로 저장된 항공사 정책"
+      "visual": "industryKnowledge",
+      "visualAlt": "Cekat.AI에 지식 소스로 저장된 항공사 정책"
     },
     {
       "title": "연중무휴 24시간 모국어로 승객에게 서비스 제공",
       "body": "승객들은 서로 다른 시간대에서 메시지를 보내고 있으며 승객 모두가 인도네시아어를 사용하는 것은 아닙니다. Cekat.AI는 각 승객의 언어를 감지하고 언제든지 친절하게 답변하므로 도쿄, 제다, 암스테르담에 있는 여행자는 자카르타에 있는 여행자만큼 빠르게 답변을 얻을 수 있습니다.",
-      "image": "/images/home/multiple-specialized-agents.png",
-      "imageAlt": "Cekat.AI에서 다양한 언어로 승객에게 서비스를 제공하는 여러 전문 AI 에이전트"
+      "visual": "industryLanguages",
+      "visualAlt": "Cekat.AI에서 다양한 언어로 승객에게 서비스를 제공하는 여러 전문 AI 에이전트"
     },
     {
       "title": "승객이 질문하기 전에 승객에게 알립니다.",
       "body": "일정 변경, 항공편 정보, 환불 진행 상황은 공식 WhatsApp Business API 방송을 통해 영향을 받는 승객 부문에 사전에 알릴 수 있습니다. 이미 알고 있는 승객은 받은편지함으로 가득 차는 일이 없기 때문에 채팅량이 급증하기 전에 줄어들고 AI는 남아 있는 모든 질문에 즉시 답변합니다.",
-      "image": "/images/order/automatic-notifications-to-the-right-team.png",
-      "imageAlt": "Cekat.AI의 올바른 승객 세그먼트에 도달하는 자동 알림"
+      "visual": "industryBroadcast",
+      "visualAlt": "Cekat.AI의 올바른 승객 세그먼트에 도달하는 자동 알림"
     },
     {
       "title": "복잡한 사례는 전체 맥락을 통해 상담원에게 에스컬레이션됩니다.",
       "body": "지연 보상, 수하물 분실, 환불 처리 중단 등 일부 사례는 사람의 몫입니다. Cekat.AI는 전체 채팅 내역과 승객 세부 정보가 첨부된 에이전트에게 이러한 대화를 전달하며, API 통합을 통해 AI는 이미 실행 중인 예약 시스템에서 읽을 수 있으므로 승객이 이야기를 반복할 필요가 없습니다.",
-      "image": "/images/chat/escalate-and-sync.png",
-      "imageAlt": "Cekat.AI의 전체 컨텍스트를 통해 대화가 인간 에이전트로 확대되었습니다."
+      "visual": "industryHandoff",
+      "visualAlt": "Cekat.AI의 전체 컨텍스트를 통해 대화가 인간 에이전트로 확대되었습니다."
     }
   ],
   "pillars": [

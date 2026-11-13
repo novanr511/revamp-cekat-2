@@ -7,12 +7,7 @@
     "badge": "약국",
     "title": "재고 확인 자동 답변, 주문은 채팅으로 완료",
     "subtitle": "재고 및 가격 확인부터 배달 주문 및 리필 알림에 이르기까지 Cekat.AI는 연중무휴 24시간 WhatsApp에서 즉시 응답하고 언제 약사에게 채팅을 전달할지 알고 있습니다.",
-    "useCases": [
-      "재고 및 가격",
-      "배달 주문",
-      "리필 알림",
-      "약사상담"
-    ]
+    "useCases": ["재고 및 가격", "배달 주문", "리필 알림", "약사상담"]
   },
   "definition": "약국용 Cekat.AI는 인도네시아의 약국 및 약국 사업을 위한 AI 고객 서비스 플랫폼으로, 연중무휴 재고 및 가격 확인에 응답하고, WhatsApp 채팅에서 바로 배송 주문을 받고, 약사에게 상담을 제공하는 AI로 약국 소프트웨어를 보완합니다. 이 모든 것이 하나의 플랫폼에서 가능합니다.",
   "stats": [
@@ -43,26 +38,26 @@
     {
       "title": "배달 요청은 종이 메모가 아닌 깔끔한 주문으로 도착합니다.",
       "body": "Cekat.AI는 채팅을 WhatsApp의 약국 온라인 매장으로 바꿔줍니다. AI는 품목, 구매자 세부 정보, cek ongkir를 통한 배송비 및 대화 내 결제 QR을 캡처하고 직원이 다시 입력할 필요 없이 완전하고 일관되게 주문을 완료하며 구매자는 앱을 설치할 필요가 없습니다.",
-      "image": "/images/order/end-to-end-operational-efficiency.png",
-      "imageAlt": "Cekat.AI 채팅 내에서 배달 주문이 생성되고 결제됩니다."
+      "visual": "industryCatalog",
+      "visualAlt": "Cekat.AI 채팅 내에서 배달 주문이 생성되고 결제됩니다."
     },
     {
       "title": "만성 환자에게 정시에 재충전하도록 알림",
       "body": "매월 약을 복용하는 환자는 퇴원해서가 아니라 잊어버렸기 때문에 늦는 경우가 많습니다. Cekat.AI는 각 환자의 구매 내역을 기반으로 공식 WhatsApp Business API를 통해 자동 리필 알림을 보내므로 치료가 제대로 진행되고 약국을 계속 방문할 수 있습니다.",
-      "image": "/images/crm/track-customer-journey.png",
-      "imageAlt": "Cekat.AI의 구매 내역을 기반으로 리필 알림"
+      "visual": "industryAutomation",
+      "visualAlt": "Cekat.AI의 구매 내역을 기반으로 리필 알림"
     },
     {
       "title": "상담은 언제나 AI가 아닌 약사에게서 끝난다",
       "body": "복용량, 약물 상호 작용 또는 건강 불만 사항에 대해 AI는 추측하거나 의학적 조언을 제공하지 않습니다. 이러한 대화는 전체 채팅 기록과 함께 자동으로 약사에게 전달되므로 구매자는 안전이나 전문적인 책임을 저해하지 않고도 빠른 서비스를 받을 수 있습니다.",
-      "image": "/images/chat/escalate-and-sync.png",
-      "imageAlt": "Cekat.AI에서 AI에서 약사까지 상담 확대"
+      "visual": "industryBooking",
+      "visualAlt": "Cekat.AI에서 AI에서 약사까지 상담 확대"
     },
     {
       "title": "누군가는 추가 교대근무 없이 오후 11시에 여전히 응답합니다.",
       "body": "의학 질문은 마감 시간을 무시합니다. AI 근무 시간을 통해 Cekat.AI는 밤새 재고, 가격 및 주문 질문에 답변하고, 약사가 필요한 채팅에 플래그를 지정하고, 아침 근무가 시작되면 완전한 맥락으로 이를 전달하므로 받은 편지함에서 채팅이 오래 지속되지 않습니다.",
-      "image": "/images/home/ai-working-hours.png",
-      "imageAlt": "Cekat.AI의 약국 직원과 AI 간의 AI 근무 시간 라우팅"
+      "visual": "industryHandoff",
+      "visualAlt": "Cekat.AI의 약국 직원과 AI 간의 AI 근무 시간 라우팅"
     }
   ],
   "pillars": [

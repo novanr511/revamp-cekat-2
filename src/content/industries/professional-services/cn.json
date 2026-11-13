@@ -7,12 +7,7 @@
     "badge": "专业服务",
     "title": "即使在办公室关闭后也能回答每一个咨询请求",
     "subtitle": "从第一个问题到资格认证再到确认咨询，Cekat.AI 24/7 全天候处理 WhatsApp 和网络聊天的受理，并提供自动提醒，因此合作伙伴不再是非工作时间的热线电话",
-    "useCases": [
-      "咨询请求",
-      "自动摄入",
-      "咨询安排",
-      "每项服务的管道"
-    ]
+    "useCases": ["咨询请求", "自动摄入", "咨询安排", "每项服务的管道"]
   },
   "definition": "Cekat.AI 专业服务是一个人工智能客户服务平台，为印度尼西亚的律师事务所、公证人、税务和会计顾问、代理机构和建筑师提供服务，通过咨询预订系统（具有自动提醒功能）以及一个平台中每个合作伙伴的管道，24/7 处理客户的接收和资格认证。",
   "stats": [
@@ -51,26 +46,26 @@
     {
       "title": "AI 处理重复性问题",
       "body": "“像我这样的案子你们也处理吗？” “我需要哪些文件？” “这个过程需要多长时间？”每天都会出现相同的入学问题。 Cekat.AI 从您公司的知识库中以自然语言回答这些问题，然后询问需求、紧迫性和基本细节，因此合作伙伴收到的是格式良好的询问，而不是空洞的聊天。",
-      "image": "/images/chat/ai-handles-conversations.png",
-      "imageAlt": "AI 代理在 Cekat.AI 收件箱中处理潜在客户的接收问题"
+      "visual": "industryInbox",
+      "visualAlt": "AI 代理在 Cekat.AI 收件箱中处理潜在客户的接收问题"
     },
     {
       "title": "直接通过聊天安排咨询",
       "body": "不再有“你什么时候有空？”这样的问题。通过电话。 Cekat.AI 提供时段并捕获对话中的咨询时间表，并通过 API 集成，它可以连接到您办公室已经使用的日历或预订系统，客户只需在确认的时间出现即可。",
-      "image": "/images/home/api-integration.png",
-      "imageAlt": "Cekat.AI API 与办公室日历和预订系统集成"
+      "visual": "industryBooking",
+      "visualAlt": "Cekat.AI API 与办公室日历和预订系统集成"
     },
     {
       "title": "自动提醒，减少缺席情况",
       "body": "悄悄错过的会议就意味着计费时间消失了。每次在 WhatsApp 上进行咨询之前，Cekat.AI 都会发送提醒，包括需要携带的文件，当客户需要移动时间时，会在同一个聊天中重新安排时间，这样空闲的时间就会被填满而不是浪费。",
-      "image": "/images/order/automatic-notifications-to-the-right-team.png",
-      "imageAlt": "Cekat.AI 中的自动咨询提醒和日程通知"
+      "visual": "industryAutomation",
+      "visualAlt": "Cekat.AI 中的自动咨询提醒和日程通知"
     },
     {
       "title": "每个合作伙伴或服务线的管道中跟踪的每个查询",
       "body": "一位合作伙伴手机中的线索会导致公司的收入流失。 Cekat.AI 自动捕获 CRM 卡中的每一项查询，并附加聊天历史记录和声明的需求，按合作伙伴或服务线组织在管道中，因此管理合伙人可以在一个板上看到每个潜在客户，而不是四处询问。",
-      "image": "/images/crm/track-customer-journey.png",
-      "imageAlt": "Cekat.AI CRM 中每个合作伙伴的客户查询渠道"
+      "visual": "industryPipeline",
+      "visualAlt": "Cekat.AI CRM 中每个合作伙伴的客户查询渠道"
     }
   ],
   "pillars": [

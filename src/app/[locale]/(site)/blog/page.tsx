@@ -6,24 +6,36 @@ import { alternates, SITE_URL } from "@/lib/seo";
 import { getCategories, getPosts } from "@/lib/wordpress";
 import { blogListingJsonLd, breadcrumbJsonLd } from "@/lib/jsonld";
 import { JsonLd } from "@/components/seo/json-ld";
-import { Container } from "@/components/layout/container";
-import { Reveal } from "@/components/sections/new-home/reveal";
-import { PageHero } from "@/components/sections/shared/page-hero";
+import { RevampCloser } from "@/components/sections/revamp/shared";
 import { HeroFeatured } from "@/components/sections/blog/hero-featured";
+import { StoryRail } from "@/components/sections/blog/story-rail";
 import { CategoryFilter } from "@/components/sections/blog/category-filter";
 import { BlogSearch } from "@/components/sections/blog/blog-search";
 import { BlogFeed } from "@/components/sections/blog/blog-feed";
 
 export const revalidate = 300;
 
-const PER_PAGE = 9;
+const PER_PAGE = 18;
+const HIGHLIGHT_SLUGS = [
+  "roadmap-eksperimen-marketing-90-hari",
+  "postcampaign-review-learning",
+  "kontrak-metrik-agency-klien",
+  "alasan-penolakan-input-marketing",
+];
+const FEED_PRIORITY_SLUGS = [
+  "ad-fatigue-kapan-ganti-creative",
+  "course-marketing-trial-booking-enrollment",
+  "hospitality-inquiry-completed-reservations",
+  "mall-campaign-engagement-activation",
+  "insurance-campaign-ad-chat-promises",
+];
 
 export async function generateMetadata({
   params,
   searchParams,
 }: {
   params: Promise<{ locale: string }>;
-  searchParams: Promise<{ category?: string; q?: string }>;
+  searchParams: Promise<{ category?: string; q?: string; page?: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
   const sp = await searchParams;
@@ -36,11 +48,11 @@ export async function generateMetadata({
   return {
     title,
     description,
-    // Filtered views (?q= search AND ?category= archive) are the same nine
+    // Filtered views (?q= search AND ?category= archive) are the same posts
     // cards under a canonical to /blog — keeping them out of the index stops
     // two near-duplicate URLs per category competing with the hub. `follow`
     // stays on so the in-page links still get crawled.
-    ...(query || categorySlug
+    ...(query || categorySlug || Number(sp.page) > 1
       ? { robots: { index: false, follow: true } }
       : {}),
     alternates: { canonical, languages },
@@ -51,9 +63,16 @@ export async function generateMetadata({
       siteName: "CekatAI",
       locale: locale === "id" ? "id_ID" : "en_US",
       type: "website",
-      images: [{ url: "/graph-image.jpg", width: 1200, height: 630, alt: title }],
+      images: [
+        { url: "/graph-image.jpg", width: 1200, height: 630, alt: title },
+      ],
     },
-    twitter: { card: "summary_large_image", title, description, images: ["/graph-image.jpg"] },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: ["/graph-image.jpg"],
+    },
   };
 }
 
@@ -62,7 +81,7 @@ export default async function BlogIndexPage({
   searchParams,
 }: {
   params: Promise<{ locale: string }>;
-  searchParams: Promise<{ category?: string; q?: string }>;
+  searchParams: Promise<{ category?: string; q?: string; page?: string }>;
 }) {
   const { locale: rawLocale } = await params;
   const locale = rawLocale as Locale;
@@ -70,26 +89,51 @@ export default async function BlogIndexPage({
   const sp = await searchParams;
   const categorySlug = sp.category;
   const query = sp.q?.trim() || undefined;
+  const requestedPage = Number(sp.page);
+  const page =
+    Number.isSafeInteger(requestedPage) && requestedPage > 0
+      ? requestedPage
+      : 1;
 
   const t = await getTranslations({ locale, namespace: "blog" });
   const tb = await getTranslations({ locale, namespace: "breadcrumb" });
+  const ts = await getTranslations({ locale, namespace: "secondary" });
   const categories = await getCategories(locale);
   const activeCategory = categorySlug
     ? categories.find((c) => c.slug === categorySlug)
     : undefined;
   const { posts, totalPages } = await getPosts({
-    page: 1,
+    page,
     perPage: PER_PAGE,
     categories: activeCategory?.ids,
     lang: locale,
     search: query,
   });
 
-  // The featured story is the editorial lead-in, not a result — hide it while
-  // filtering or searching so every card in view matches the query.
-  const showFeatured = !categorySlug && !query && posts.length > 0;
-  const featured = showFeatured ? posts[0] : undefined;
-  const gridPosts = showFeatured ? posts.slice(1) : posts;
+  // The Figma highlight curates published stories; filtered views stay entirely
+  // result-driven. The remaining posts retain their editorial date order.
+  const showFeatured =
+    page === 1 && !categorySlug && !query && posts.length > 0;
+  const highlights = showFeatured
+    ? HIGHLIGHT_SLUGS.map((slug) => posts.find((post) => post.slug === slug))
+        .filter((post): post is (typeof posts)[number] => Boolean(post))
+        .concat(posts.filter((post) => !HIGHLIGHT_SLUGS.includes(post.slug)))
+        .slice(0, 4)
+    : [];
+  const featured = highlights[0];
+  const supporting = highlights.slice(1);
+  const highlightedIds = new Set(highlights.map((post) => post.id));
+  const feedPosts = showFeatured
+    ? posts.filter((post) => !highlightedIds.has(post.id))
+    : posts;
+  const gridPosts = showFeatured
+    ? [
+        ...FEED_PRIORITY_SLUGS.map((slug) =>
+          feedPosts.find((post) => post.slug === slug),
+        ).filter((post): post is (typeof posts)[number] => Boolean(post)),
+        ...feedPosts.filter((post) => !FEED_PRIORITY_SLUGS.includes(post.slug)),
+      ]
+    : feedPosts;
   const blogUrl = `${SITE_URL}${getPathname({ href: "/blog", locale })}`;
 
   return (
@@ -102,86 +146,64 @@ export default async function BlogIndexPage({
             description: t("metaDescription"),
           }),
           breadcrumbJsonLd([
-            { name: tb("home"), url: `${SITE_URL}${getPathname({ href: "/", locale })}` },
+            {
+              name: tb("home"),
+              url: `${SITE_URL}${getPathname({ href: "/", locale })}`,
+            },
             { name: t("heroTitle"), url: blogUrl },
           ]),
         ]}
       />
 
-      <PageHero
-        tone="editorial"
-        eyebrow={t("eyebrow")}
-        title={t("heroTitle")}
-        subtitle={t("heroSubtitle")}
-        chips={[t("latest")]}
-        align="left"
-        className="editorial-index"
-      >
-        {featured && (
-          <HeroFeatured
-            post={featured}
-            locale={locale}
-            featuredLabel={t("featuredLabel")}
-            readMore={t("readMore")}
-          />
-        )}
-      </PageHero>
+      <div className="r-page r-journal r-journal-motion" data-r-tone="industry">
+        <section className="r-journal-hero">
+          <div className="r-container">
+            <h1 className="r-journal-title">Cekat.AI Blog</h1>
+            {featured && <HeroFeatured post={featured} />}
+            {supporting.length > 0 && <StoryRail posts={supporting} />}
+          </div>
+        </section>
 
-      <section className="relative overflow-hidden bg-white py-16 md:py-20">
-        <div
-          aria-hidden
-          className="pointer-events-none absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-primary/20 to-transparent"
-        />
-        <Container className="relative">
-          <Reveal>
-            <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
-              <div>
-                <p className="eyebrow-rule mb-4 inline-flex font-numeric text-[0.68rem] font-semibold tracking-[0.2em] text-primary uppercase">
-                  {t("eyebrow")}
-                </p>
-                <h2 className="text-[clamp(1.65rem,3vw,2.25rem)] leading-[1.1] font-semibold tracking-[-0.035em] text-balance text-foreground">
-                  {query ? t("searchResults", { query }) : t("latest")}
-                </h2>
-                <p className="mt-3 max-w-xl text-base leading-relaxed text-muted-foreground">
-                  {query ? t("searchSubtitle") : t("latestSubtitle")}
-                </p>
-              </div>
+        <section className="r-journal-feed">
+          <div className="r-container">
+            <div className="r-journal-feed__heading">
+              <h2>{query ? t("searchResults", { query }) : t("latest")}</h2>
               <BlogSearch
+                key={query || "all"}
                 initialQuery={query}
                 placeholder={t("searchPlaceholder")}
                 label={t("searchLabel")}
                 clearLabel={t("searchClear")}
+                openLabel={t("searchOpen")}
+                closeLabel={t("searchClose")}
               />
             </div>
-          </Reveal>
+            <div className="r-journal-filters">
+              <CategoryFilter
+                categories={categories}
+                activeSlug={categorySlug}
+                allLabel={t("allCategories")}
+              />
+            </div>
 
-          <Reveal delay={40} className="mt-6">
-            <CategoryFilter
-              categories={categories}
-              activeSlug={categorySlug}
-              allLabel={t("allCategories")}
-            />
-          </Reveal>
-
-          {posts.length === 0 ? (
-            <p className="mt-16 text-center font-numeric text-base text-muted-foreground">
-              {query ? t("searchEmpty", { query }) : t("empty")}
-            </p>
-          ) : (
-            <div className="mt-8">
+            {gridPosts.length === 0 ? (
+              <p className="mt-16 text-center font-numeric text-base text-muted-foreground">
+                {query ? t("searchEmpty", { query }) : t("empty")}
+              </p>
+            ) : (
               <BlogFeed
-                key={`${categorySlug ?? "all"}-${query ?? ""}`}
+                key={`${locale}-${page}-${categorySlug ?? "all"}-${query ?? ""}`}
                 initialPosts={gridPosts.map((p) => ({ ...p, content: "" }))}
-                initialPage={1}
+                initialPage={page}
                 totalPages={totalPages}
                 categorySlug={categorySlug}
                 query={query}
-                locale={locale}
               />
-            </div>
-          )}
-        </Container>
-      </section>
+            )}
+          </div>
+        </section>
+        <RevampCloser heading={ts("journalCta")} body={ts("journalCtaBody")} />
+      </div>
     </>
   );
 }

@@ -43,26 +43,26 @@
     {
       "title": "「送料はいくらですか？」より有料へ、1 つのチャット内で",
       "body": "Cekat.AI のエージェントは、送料の確認、住所の確認、顧客の詳細を含む注文の作成、支払い QR の送信をすべて同じ会話内で行います。チェックアウトリンクがないため、購入者の半分は完了せず、管理者が注文をスプレッドシートに手動でコピーする必要もありません。",
-      "image": "/images/order/end-to-end-operational-efficiency.png",
-      "imageAlt": "Cekat.AI のチャット会話内で注文が作成され、支払われる"
+      "visual": "industryKnowledge",
+      "visualAlt": "Cekat.AI のチャット会話内で注文が作成され、支払われる"
     },
     {
       "title": "購入者が放棄したチェックアウトを取り戻します",
       "body": "放棄されたチェックアウトのほとんどは、売上の損失ではなく、未完了の売上です。 Cekat.AI は、支払いがまだ保留中である場合、プロモーションの有効期限が近づいている場合、または再入荷の時期が来た場合に自動的にフォローアップし、手動のリマインダー リストではなく、顧客の実際の行動によって各ナッジがトリガーされます。",
-      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
-      "imageAlt": "Cekat.AI での保留中の支払いの自動フォローアップ ワークフロー"
+      "visual": "industryOrder",
+      "visualAlt": "Cekat.AI での保留中の支払いの自動フォローアップ ワークフロー"
     },
     {
       "title": "購入する可能性が最も高い購入者にプロモーションをブロードキャストする",
       "body": "キャンペーンは、公式 WhatsApp Business API を通じて、CRM から取得された名前とコンテキストを使用して、実際のデータ、リピート購入者、失効した顧客、クリックしたが支払いをしなかった見込み顧客から構築されたセグメントに発信されます。関連するプロモーションが開かれ、回答が得られます。一般的なものは無視されます。",
-      "image": "/images/marketing/understand-customer-behavior.png",
-      "imageAlt": "Cekat.AI での購入行動による顧客のセグメンテーション"
+      "visual": "industryBroadcast",
+      "visualAlt": "Cekat.AI での購入行動による顧客のセグメンテーション"
     },
     {
       "title": "すべてのバイヤーの段階、訪問者、見込み顧客、またはリピーターの顧客を把握する",
       "body": "すべてのチャット、購入、キャンペーンにより顧客の CRM カードが自動的に更新され、手動入力は必要ありません。顧客ステージでは、訪問者からリード、購入者に至るまでの各コンタクトを追跡し、次のステップを提案するため、チームは誰が閲覧しているか、誰が決定しているか、誰がリピート購入を促す予定であるかを常に把握できます。",
-      "image": "/images/crm/track-customer-journey.png",
-      "imageAlt": "Cekat.AI CRM で追跡されるカスタマー ジャーニーの段階"
+      "visual": "industryContactRecord",
+      "visualAlt": "Cekat.AI CRM で追跡されるカスタマー ジャーニーの段階"
     }
   ],
   "pillars": [

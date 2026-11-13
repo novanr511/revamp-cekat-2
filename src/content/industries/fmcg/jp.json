@@ -43,26 +43,26 @@
     {
       "title": "小売業者の再入荷リクエストにいつでも対応",
       "body": "店主は閉店後に棚をチェックし、次の販売訪問まで 1 週間も待つことはありません。 Cekat.AI は、製品の在庫状況、価格、最低注文数量をいつでも回答し、再入荷リクエストを注文として記録し、勤務日が始まると同時にエリアの営業チームに渡します。",
-      "image": "/images/home/ai-working-hours.png",
-      "imageAlt": "Cekat.AI の営業時間外の再入荷リクエストに AI が回答"
+      "visual": "industryCatalog",
+      "visualAlt": "Cekat.AI の営業時間外の再入荷リクエストに AI が回答"
     },
     {
       "title": "適切な小売業者セグメントにプロモーションを届ける",
       "body": "取引プロモーション、ロイヤルティ ポイント、および新しいバリエーションの発売が、埋もれた WhatsApp グループの中で消えることはもうありません。 Cekat.AI は、公式 WhatsApp Business API を通じて、地域、店舗の種類、注文履歴ごとに選択した販売店セグメントにブロードキャストし、応答のない販売店を追跡する自動フォローアップを行います。",
-      "image": "/images/marketing/understand-customer-behavior.png",
-      "imageAlt": "Cekat.AI でのプロモーション放送のアウトレット セグメンテーション"
+      "visual": "industryBroadcast",
+      "visualAlt": "Cekat.AI でのプロモーション放送のアウトレット セグメンテーション"
     },
     {
       "title": "苦情は適切な地域に直接ルートされます",
       "body": "パッケージの破損、誤ったバリエーションの発送、プロモーション賞品の未到着、消費者や店舗からの苦情は自動的にチケットとなり、その地域を担当する地域チームまたは販売代理店に転送され、完全なチャット履歴が添付されます。自動通知により、苦情がソーシャル メディアに届く前に、適切なチームが最初に知ることができます。",
-      "image": "/images/order/automatic-notifications-to-the-right-team.png",
-      "imageAlt": "苦情は Cekat.AI の地域チームに自動的に転送されます"
+      "visual": "industryTicketQueue",
+      "visualAlt": "苦情は Cekat.AI の地域チームに自動的に転送されます"
     },
     {
       "title": "すべてのアウトレットの完全なビュー",
       "body": "すべてのチャットにより、販売店のプロフィールが充実します。注文履歴、参加したプロモーション、提出された苦情はすべて顧客データ プラットフォームに自動的に記録されます。どの販売店が注文を中止したか、どのセグメントがプロモーションに最もよく反応したかを確認できるため、営業チームは推測ではなくデータを使用してすべての訪問に取り組みます。",
-      "image": "/images/crm/track-customer-journey.png",
-      "imageAlt": "Cekat.AI で追跡される各アウトレットのジャーニー"
+      "visual": "industryAnalytics",
+      "visualAlt": "Cekat.AI で追跡される各アウトレットのジャーニー"
     }
   ],
   "pillars": [

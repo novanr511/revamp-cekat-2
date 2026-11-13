@@ -43,26 +43,26 @@
     {
       "title": "1 つの受信トレイにすべてのチャネルがあり、顧客ごとに 1 つの履歴",
       "body": "WhatsApp、Instagram DM、Facebook Messenger、および Web チャットは、顧客ごとに 1 つの履歴を持つ単一の受信箱に流れます。タブを 5 つ開いたり、誰かがすでに返信したかどうかを尋ねたりする必要はもうありません。少人数のチームがすべての会話を 1 か所で確認できるため、チャネルを切り替えた顧客が同じ話を繰り返すことはありません。",
-      "image": "/images/chat/connect-channels.png",
-      "imageAlt": "すべてのチャット チャネルが 1 つの Cekat.AI 受信箱に接続されています"
+      "visual": "industryInbox",
+      "visualAlt": "すべてのチャット チャネルが 1 つの Cekat.AI 受信箱に接続されています"
     },
     {
       "title": "反復的なフローはエンジニアリング時間を奪うことなく自動的に実行されます",
       "body": "ステータスチェック、リードの認定、フォローアップ、内部更新など、チームが毎日繰り返すフローは、コードを使わずにドラッグ アンド ドロップ ビルダーを使用して自動化できます。チームはコピーペーストマシンではなくなり、エンジニアリング ロードマップは内部サポート ツールの構築のために細分化されなくなります。",
-      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
-      "imageAlt": "Cekat.AI のノーコード自動化ビルダー"
+      "visual": "industryAutomation",
+      "visualAlt": "Cekat.AI のノーコード自動化ビルダー"
     },
     {
       "title": "創業者は深夜のサポート勤務から抜け出す",
       "body": "初期の段階では、創業者はすべてのチャットに自分で応答しますが、問題は習慣が拡張できないことです。 AI の勤務時間では、AI が営業時間外に完全に引き継ぎ、ピーク時に負荷を分散します。重要なケースは依然として完全な状況を把握した人間にエスカレーションされ、朝ラップトップを開くと、すでに処理された受信トレイが表示されます。",
-      "image": "/images/home/ai-working-hours.png",
-      "imageAlt": "Cekat.AI で設定された AI とチームの労働時間"
+      "visual": "industryHandoff",
+      "visualAlt": "Cekat.AI で設定された AI とチームの労働時間"
     },
     {
       "title": "投資家からの質問に対応できるサポート番号",
       "body": "月ごとの会話、人間なしで解決した件数、最も話題になったトピックはすべて分析ダッシュボードに記録されます。業務効率に関する質問にデータで答え、直感ではなく実際の顧客との会話から製品のシグナルを読み取ります。",
-      "image": "/images/marketing/understand-customer-behavior.png",
-      "imageAlt": "Cekat.AI の顧客会話分析ダッシュボード"
+      "visual": "industryAnalytics",
+      "visualAlt": "Cekat.AI の顧客会話分析ダッシュボード"
     }
   ],
   "pillars": [

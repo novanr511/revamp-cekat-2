@@ -33,6 +33,7 @@
       "label": "サービスを提供する産業"
     }
   ],
+  "benefitsHeading": "患者対応を、すべての段階でつなぐ",
   "benefits": [
     {
       "title": "患者は午後9時に尋ねます。クリニックの返答は午後 9 時です。",
@@ -43,20 +44,20 @@
     {
       "title": "チャットから直接予約をする",
       "body": "Cekat.AI を API 経由でスケジュール システムに接続すると、AI が会話内で予約、確認、再スケジュールを行います。電話タグや予約の取り逃しがなく、自動リマインダーによりノーショウを事前に減らします。",
-      "image": "/images/home/api-integration.png",
-      "imageAlt": "Cekat.AI での予約のための API 統合"
+      "visual": "industryBooking",
+      "visualAlt": "Cekat.AI での予約のための API 統合"
     },
     {
       "title": "患者とのあらゆる会話を 1 か所に整理",
       "body": "WhatsApp、Instagram DM、Web サイトのチャットは 1 つの受信箱に流れ、患者ごとの完全なやり取り履歴が保存されます。フロントデスク チームは完全なコンテキストを瞬時に確認し、複雑な質問やデリケートな質問は会話全体を伴って人間にエスカレートされます。",
-      "image": "/images/crm/capture-and-organize-customers.png",
-      "imageAlt": "Cekat.AI CRM で整理された患者の会話"
+      "visual": "industryInbox",
+      "visualAlt": "Cekat.AI CRM で整理された患者の会話"
     },
     {
       "title": "苦情はメッセージの紛失ではなくチケットになる",
       "body": "多忙な受信トレイに埋もれていた苦情は、患者を迷子にしてしまいます。 Cekat.AI は、受信した問題に自動的にラベルを付け、チケットを作成し、適切なチームに通知するため、すべての懸念事項が最初のメッセージから解決まで追跡されます。",
-      "image": "/images/order/auto-create-ticket.png",
-      "imageAlt": "Cekat.AI での患者の苦情に対するチケットの自動作成"
+      "visual": "industryTicketQueue",
+      "visualAlt": "Cekat.AI での患者の苦情に対するチケットの自動作成"
     }
   ],
   "caseStudy": {

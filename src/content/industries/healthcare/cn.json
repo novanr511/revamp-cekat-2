@@ -7,12 +7,7 @@
     "badge": "医疗保健和诊所",
     "title": "即使在诊所关门后也能回答每位患者的问题",
     "subtitle": "从预约请求到产品问题，Cekat.AI 在 WhatsApp 和 Instagram 上以自然语言即时回复（24/7），无需增加前台人员",
-    "useCases": [
-      "24/7 患者解答",
-      "通过聊天预订",
-      "集中患者病史",
-      "投诉票"
-    ]
+    "useCases": ["24/7 患者解答", "通过聊天预订", "集中患者病史", "投诉票"]
   },
   "definition": "用于医疗保健的 Cekat.AI 是一个面向印度尼西亚诊所、医院和医疗企业的人工智能客户服务平台，可以 24/7 回答患者聊天，通过对话安排预约，并在一个合规平台上组织每个查询。",
   "stats": [
@@ -33,6 +28,7 @@
       "label": "所服务的行业"
     }
   ],
+  "benefitsHeading": "让患者服务的每一步紧密衔接",
   "benefits": [
     {
       "title": "患者晚上 9 点询问。您的诊所将于晚上 9 点答复。",
@@ -43,20 +39,20 @@
     {
       "title": "直接通过聊天进行预约",
       "body": "通过 API 将 Cekat.AI 连接到您的日程安排系统，AI 在对话中预订、确认和重新安排约会。没有电话标签，不会错过预订，并且自动提醒可以减少未出现的情况。",
-      "image": "/images/home/api-integration.png",
-      "imageAlt": "Cekat.AI 中用于预约预订的 API 集成"
+      "visual": "industryBooking",
+      "visualAlt": "Cekat.AI 中用于预约预订的 API 集成"
     },
     {
       "title": "每一次患者对话都集中在一个地方",
       "body": "WhatsApp、Instagram DM 和网站聊天流入一个收件箱，其中包含每位患者的完整互动历史记录。前台团队可以立即看到完整的上下文，复杂或敏感的问题会升级给人工，并附加整个对话。",
-      "image": "/images/crm/capture-and-organize-customers.png",
-      "imageAlt": "Cekat.AI CRM 中组织的患者对话"
+      "visual": "industryInbox",
+      "visualAlt": "Cekat.AI CRM 中组织的患者对话"
     },
     {
       "title": "投诉成为门票，而不是丢失的消息",
       "body": "埋藏在繁忙收件箱中的投诉会成为迷失的病人。 Cekat.AI 自动标记传入的问题、创建票证并通知正确的团队，以便跟踪每个问题从第一条消息到解决方案。",
-      "image": "/images/order/auto-create-ticket.png",
-      "imageAlt": "在 Cekat.AI 中自动创建患者投诉票证"
+      "visual": "industryTicketQueue",
+      "visualAlt": "在 Cekat.AI 中自动创建患者投诉票证"
     }
   ],
   "caseStudy": {

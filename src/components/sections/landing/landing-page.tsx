@@ -43,6 +43,7 @@ import { RelatedLinks } from "./related-links";
 import { LandingCta } from "./landing-cta";
 import { PRODUCT_ART } from "./product-stage";
 import { localeValue } from "@/lib/locale-value";
+import { RevampDetail } from "@/components/sections/revamp/detail";
 
 const HUB_TEMPLATE = {
   features: "/features",
@@ -52,13 +53,24 @@ const HUB_TEMPLATE = {
 
 type LandingParams = Promise<{ locale: string; slug: string }>;
 
+const INDUSTRY_HERO_ASSETS: Record<string, string> = {
+  healthcare: "healthcare-hero.webp",
+  retail: "retail-hero.webp",
+  fnb: "fnb-hero.webp",
+  education: "education-hero.webp",
+  finance: "finance-hero.webp",
+  property: "property-hero.webp",
+  "beauty-wellness": "beauty-wellness-hero.webp",
+  logistics: "logistics-hero.webp",
+};
+
 /**
- * Homepage industry portraits reused in the industry hero when the file
- * exists on disk. Only the eight curated rail photos ship today; other
- * verticals keep the text-only void hero until art lands.
+ * Dedicated wide, high-resolution art for the curated industries; fall back
+ * to the unchanged hub photo for other verticals.
  */
 function industryHeroImage(id: string): string | undefined {
-  const rel = `/images/industries/${id}.webp`;
+  const filename = INDUSTRY_HERO_ASSETS[id] ?? `${id}.webp`;
+  const rel = `/images/industries/${filename}`;
   const abs = path.join(process.cwd(), "public", rel);
   return existsSync(abs) ? rel : undefined;
 }
@@ -238,6 +250,24 @@ export async function LandingPage({
             ? `AI customer service for ${pageTitle}`
             : `AI automation for ${pageTitle} teams`,
       }),
+    );
+  }
+
+  if (kind === "industries") {
+    return (
+      <>
+        <JsonLd data={jsonLd} />
+        <RevampDetail
+          content={content}
+          title={pageTitle}
+          industry={isIndustry}
+          industryId={isIndustry ? entry.id : undefined}
+          photo={heroImage}
+          product={entry.category}
+          related={related}
+          faqHeading={t("faqHeading", { title: pageTitle })}
+        />
+      </>
     );
   }
 

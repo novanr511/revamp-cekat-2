@@ -43,26 +43,26 @@
     {
       "title": "Pertanyaan Tarif, Bagasi, dan Check-in Dijawab Instan",
       "body": "\"Bagasi kabin maksimal berapa kilo?\" \"Check-in online sampai jam berapa?\" \"Boleh bawa power bank?\" Cekat.AI menjawab dari knowledge base berisi aturan tarif, kebijakan bagasi, dan prosedur maskapaimu, dengan bahasa natural yang paham maksud penumpang, jadi jawaban di chat ke seribu sama konsistennya dengan chat pertama.",
-      "image": "/images/home/knowledge-source.png",
-      "imageAlt": "Kebijakan maskapai tersimpan sebagai knowledge base di Cekat.AI"
+      "visual": "industryKnowledge",
+      "visualAlt": "Kebijakan maskapai tersimpan sebagai knowledge base di Cekat.AI"
     },
     {
       "title": "Melayani Penumpang dalam Bahasa Mereka, 24/7",
       "body": "Penumpangmu chat dari zona waktu yang berbeda-beda dan nggak semuanya pakai bahasa Indonesia. Cekat.AI mendeteksi bahasa penumpang dan membalas dalam bahasa yang sama, tengah malam sekalipun, jadi penumpang di Tokyo, Jeddah, atau Amsterdam dapat jawaban secepat penumpang di Jakarta.",
-      "image": "/images/home/multiple-specialized-agents.png",
-      "imageAlt": "Beberapa AI agent melayani penumpang dalam banyak bahasa di Cekat.AI"
+      "visual": "industryLanguages",
+      "visualAlt": "Beberapa AI agent melayani penumpang dalam banyak bahasa di Cekat.AI"
     },
     {
       "title": "Kabari Penumpang Duluan, Sebelum Mereka Bertanya",
       "body": "Perubahan jadwal, informasi penerbangan, dan progres refund bisa dikirim proaktif ke segmen penumpang yang terdampak lewat broadcast di WhatsApp Business API resmi. Penumpang yang sudah dikabari nggak ikut membanjiri inbox, jadi volume chat turun sebelum sempat naik, dan sisa pertanyaannya dijawab AI secara instan.",
-      "image": "/images/order/automatic-notifications-to-the-right-team.png",
-      "imageAlt": "Notifikasi otomatis terkirim ke segmen penumpang yang tepat di Cekat.AI"
+      "visual": "industryBroadcast",
+      "visualAlt": "Notifikasi otomatis terkirim ke segmen penumpang yang tepat di Cekat.AI"
     },
     {
       "title": "Kasus Kompleks Naik ke Agen, Lengkap dengan Konteks",
       "body": "Kompensasi delay, bagasi hilang, refund yang nyangkut, ada kasus yang memang harus dipegang manusia. Cekat.AI mengalihkan percakapan seperti ini ke agenmu lengkap dengan riwayat chat dan data penumpangnya, dan lewat integrasi API, AI bisa membaca sistem booking yang sudah kamu pakai, jadi penumpang nggak perlu mengulang cerita dari awal.",
-      "image": "/images/chat/escalate-and-sync.png",
-      "imageAlt": "Percakapan dieskalasi ke agen manusia dengan konteks lengkap di Cekat.AI"
+      "visual": "industryHandoff",
+      "visualAlt": "Percakapan dieskalasi ke agen manusia dengan konteks lengkap di Cekat.AI"
     }
   ],
   "pillars": [

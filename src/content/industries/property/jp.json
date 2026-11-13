@@ -53,26 +53,26 @@
     {
       "title": "すべての問い合わせが CRM の適格なリードになります",
       "body": "AI は、予算、希望の場所、ユニットの種類、タイムラインなど、エージェントが質問するような質問をします。すべての回答は、手動入力なしで自動的に作成される CRM カードに反映されます。チームが目を覚ますと、未読チャットの山ではなく、完全な会話履歴を含む適格な見込み客のリストが表示されます。",
-      "image": "/images/crm/capture-and-organize-customers.png",
-      "imageAlt": "Cekat.AI CRM で取得および整理された不動産リード"
+      "visual": "industryPipeline",
+      "visualAlt": "Cekat.AI CRM で取得および整理された不動産リード"
     },
     {
       "title": "チャットから直接サイト訪問をスケジュール",
       "body": "API 統合を通じてカレンダーを接続すると、AI が会話内でプロパティへの訪問を記録し、日付が確認され、リマインダーが送信され、電話タグは不要になります。真夜中に尋ねた見込み客が土曜日にショーユニットにやって来ると、自動リマインダーが彼らが実際に現れることを確認します。",
-      "image": "/images/home/api-integration.png",
-      "imageAlt": "Cekat.AI の API 統合による施設訪問予約"
+      "visual": "industryBooking",
+      "visualAlt": "Cekat.AI の API 統合による施設訪問予約"
     },
     {
       "title": "取引が成立するまでフォローアップが自動的に実行されます",
       "body": "ほとんどの不動産取引は拒否ではなく沈黙によって消滅します。 Cekat.AI は、各見込み客の行動に合わせたフォローアップ ナッジ、プロモーション終了前のリマインダー、訪問後に潜在顧客が沈黙したときのナッジを、スケジュール、チャットのキーワード、顧客データの変化によってトリガーされて送信します。エージェントが忙しくなってリードが忘れられることはありません。",
-      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
-      "imageAlt": "Cekat.AI の自動フォローアップ ワークフロー"
+      "visual": "industryAutomation",
+      "visualAlt": "Cekat.AI の自動フォローアップ ワークフロー"
     },
     {
       "title": "1 つのパイプラインでリードからクロージングまでのすべての取引を表示",
       "body": "すべての見込み顧客は、訪問者、リード、バイヤーという顧客ステージを通過し、各時点で次のステップの提案が行われ、販売パイプラインには取引の進捗状況がリアルタイムで表示されます。誰にも概要を尋ねることなく、訪問、交渉、クロージングがどれだけ行われているかを正確に把握できます。",
-      "image": "/images/crm/track-customer-journey.png",
-      "imageAlt": "Cekat.AI でのセールス パイプラインとカスタマー ジャーニーの追跡"
+      "visual": "industryPipeline",
+      "visualAlt": "Cekat.AI でのセールス パイプラインとカスタマー ジャーニーの追跡"
     }
   ],
   "tabs": [

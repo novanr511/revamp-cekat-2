@@ -57,6 +57,18 @@ function preference(value: boolean) {
   act(() => { reduced = value; preferenceListeners.forEach((listener) => listener()); });
 }
 
+it("keeps standalone product visuals static and prioritizes the hero image", () => {
+  render(<NextIntlClientProvider locale="en" messages={{}}>
+    <WorkflowScene image="/images/marketing/see-what-actually-works.png" imageAlt="Campaign analytics illustration" hero staticVisual />
+  </NextIntlClientProvider>);
+  expect(motion.from).not.toHaveBeenCalled();
+  expect(motion.to).not.toHaveBeenCalled();
+  expect(preferenceListeners.size).toBe(0);
+  const image = screen.getByAltText("Campaign analytics illustration");
+  expect(image).toHaveAttribute("loading", "eager");
+  expect(image).toHaveAttribute("fetchpriority", "high");
+});
+
 describe.each([
   ["inbox artwork", "/images/home/hero-dashboard.png"],
   ["native coverage", "/images/home/ai-working-hours.png"],

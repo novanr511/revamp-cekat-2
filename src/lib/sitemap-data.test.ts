@@ -8,6 +8,21 @@ vi.mock("./wordpress", () => ({
 import { pageUrls } from "./sitemap-data";
 
 describe("pageUrls lastmod", () => {
+  it.each(["broadcast", "otomatisasi", "analitik"])(
+    "lists the standalone /%s page with reciprocal languages",
+    (product) => {
+      const url = pageUrls().find(
+        (entry) => entry.url === `https://cekat.ai/${product}`,
+      );
+      expect(url?.languages).toEqual({
+        en: `https://cekat.ai/en/${product}`,
+        id: `https://cekat.ai/${product}`,
+        "x-default": `https://cekat.ai/${product}`,
+      });
+      expect(url?.lastModified).toMatch(/^\d{4}-\d{2}-\d{2}T/);
+    },
+  );
+
   it("emits lastmod for landing content URLs when content files exist", () => {
     const urls = pageUrls();
     const landing = urls.find((u) => u.url.includes("/fitur/wa-blast"));

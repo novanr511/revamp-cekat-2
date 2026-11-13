@@ -1,0 +1,164 @@
+/* Blueprint (2), Emil animate + choreograph:
+ * One overlapping entrance establishes the editorial lead. Lists, filters and
+ * the closer stay still: readers should never wait for articles to reveal.
+ * CSS only, no scroll observer or animation runtime. Geometry stays unchanged.
+ */
+.r-page.r-journal-motion {
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* Cancel inherited 400–500ms image zoom and touch hover movement first. */
+.r-page.r-journal-motion :is(.r-editorial-feature, .r-post-card):hover img,
+.r-page.r-journal-motion .r-button:hover {
+  transform: none;
+}
+.r-page.r-journal-motion
+  :is(.r-editorial-feature, .r-story-rail__story, .r-post-card)
+  img,
+.r-page.r-journal-motion
+  :is(
+    .r-button,
+    .r-blog-categories a,
+    .r-blog-pagination a,
+    .r-blog-search button
+  ) {
+  transition: none;
+}
+.r-page.r-journal-motion
+  :is(.r-editorial-feature, .r-story-rail__story, .r-post-card):focus-visible
+  :is(h2, h3) {
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .r-page.r-journal-motion .r-journal-title {
+    animation: journal-title-enter 240ms var(--ease-out) both;
+  }
+  .r-page.r-journal-motion .r-editorial-feature__copy {
+    animation: journal-copy-enter 200ms var(--ease-out) 50ms both;
+  }
+  .r-page.r-journal-motion .r-editorial-feature__image {
+    animation: journal-image-enter 200ms var(--ease-out) 80ms both;
+  }
+
+  /* Press feedback, no moving titles or list rows. Release settles faster. */
+  .r-page.r-journal-motion
+    :is(
+      .r-button,
+      .r-blog-categories a,
+      .r-blog-pagination a,
+      .r-blog-search button
+    ) {
+    transition: transform 100ms var(--ease-out);
+  }
+  .r-page.r-journal-motion
+    :is(
+      .r-button,
+      .r-blog-categories a,
+      .r-blog-pagination a,
+      .r-blog-search button
+    ):active:not(:focus-visible) {
+    transform: scale(0.97);
+    transition-duration: 160ms;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .r-page.r-journal-motion
+      :is(.r-editorial-feature, .r-story-rail__story, .r-post-card)
+      img {
+      transition: transform 160ms var(--ease-out);
+    }
+    .r-page.r-journal-motion
+      :is(.r-editorial-feature, .r-story-rail__story, .r-post-card):hover:not(
+        :focus-visible
+      )
+      img {
+      transform: scale(1.025);
+    }
+    .r-page.r-journal-motion .r-button:hover:not(:focus-visible) {
+      transform: translateY(-2px);
+    }
+    .r-page.r-journal-motion .r-button:active:not(:focus-visible) {
+      transform: scale(0.97);
+    }
+  }
+
+  /* Mobile input enters as one object; close is instant (no exit queue).
+   * Keyboard opens and Escape bypass this, and unsupported browsers just show it.
+   */
+  @media (max-width: 700px) {
+    .r-page.r-journal-motion
+      .r-blog-search--open:not([data-motion="instant"])
+      input {
+      transition:
+        opacity 200ms var(--ease-out),
+        transform 200ms var(--ease-out);
+      @starting-style {
+        opacity: 0;
+        transform: translateY(4px);
+      }
+    }
+  }
+}
+
+/* Cancel movement immediately, including when the preference changes mid-flight.
+ * Static hover colors and focus outlines retain interaction feedback.
+ */
+@media (prefers-reduced-motion: reduce) {
+  .r-page.r-journal-motion
+    :is(
+      .r-journal-title,
+      .r-editorial-feature__copy,
+      .r-editorial-feature__image
+    ) {
+    animation: none;
+    transform: none;
+    opacity: 1;
+  }
+  .r-page.r-journal-motion
+    :is(.r-editorial-feature, .r-story-rail__story, .r-post-card)
+    img,
+  .r-page.r-journal-motion
+    :is(
+      .r-button,
+      .r-blog-categories a,
+      .r-blog-pagination a,
+      .r-blog-search button,
+      .r-blog-search input
+    ) {
+    transition: none;
+    transform: none;
+  }
+}
+
+@keyframes journal-title-enter {
+  from {
+    opacity: 0.9;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes journal-copy-enter {
+  from {
+    opacity: 0.9;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes journal-image-enter {
+  from {
+    opacity: 0.8;
+    transform: scale(0.99);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}

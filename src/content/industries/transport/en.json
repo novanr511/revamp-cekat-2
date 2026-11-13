@@ -43,26 +43,26 @@
     {
       "title": "A Seat Booked in a Single Conversation",
       "body": "From first question to a locked seat, everything happens in one chat. Cekat.AI records the route, date, seat count, and passenger details, then sends a payment QR and confirms once it is paid. No more phone bookings with misheard names or dates, every order arrives complete and consistent.",
-      "image": "/images/order/end-to-end-operational-efficiency.png",
-      "imageAlt": "Seat booking created and paid inside a chat in Cekat.AI"
+      "visual": "industryBooking",
+      "visualAlt": "Seat booking created and paid inside a chat in Cekat.AI"
     },
     {
       "title": "Reschedules and Refunds Stop Being a Mess",
       "body": "Late passengers, shifted timetables, cancelled plans, reschedule requests come in every day. Cekat.AI handles them by your rules, checking seats on the replacement departure and logging the change, then escalates refund requests to your team with the full chat history, so passengers get certainty instead of being bounced around.",
-      "image": "/images/chat/escalate-and-sync.png",
-      "imageAlt": "Refund request escalated to the team with full context in Cekat.AI"
+      "visual": "industryDocuments",
+      "visualAlt": "Refund request escalated to the team with full context in Cekat.AI"
     },
     {
       "title": "Route Changes Reach Passengers Before Departure",
       "body": "A vehicle issue, a delayed departure, a diverted route, news like this has to travel fast. Through the official WhatsApp Business API, Cekat.AI broadcasts announcements to passengers on the affected routes and departures only, plus automatic departure reminders, so empty seats caused by uninformed passengers become an old story.",
-      "image": "/images/order/automatic-notifications-to-the-right-team.png",
-      "imageAlt": "Schedule change broadcast sent automatically from Cekat.AI"
+      "visual": "industryBroadcast",
+      "visualAlt": "Schedule change broadcast sent automatically from Cekat.AI"
     },
     {
       "title": "Every Booking Channel in One Inbox",
       "body": "WhatsApp, Instagram DM, and website live chat flow into one inbox with a single history per passenger, so someone who asks on Instagram and books on WhatsApp never repeats their story. Regular passengers are captured in the CRM with their favorite routes, ready for a follow-up when a promo or new schedule launches.",
-      "image": "/images/chat/connect-channels.png",
-      "imageAlt": "Every chat channel connected to one Cekat.AI inbox"
+      "visual": "industryInbox",
+      "visualAlt": "Every chat channel connected to one Cekat.AI inbox"
     }
   ],
   "pillars": [

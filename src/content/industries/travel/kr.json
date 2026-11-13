@@ -43,20 +43,20 @@
     {
       "title": "24시간 내내 여행자의 언어로 답장하세요",
       "body": "여행자들은 다양한 국가와 시간대에서 다양한 언어로 질문합니다. Cekat.AI의 에이전트는 다국어를 구사하며 키워드뿐만 아니라 의도도 이해합니다. 따라서 오전 2시에 일본어로 질문하고 정오에 인도네시아어로 질문하면 모두 즉각적이고 정확한 답변을 얻을 수 있습니다. 보장 범위는 결코 잠들지 않으며, 상담원이 온라인에 접속할 때까지 어떠한 문의도 기다리지 않습니다.",
-      "image": "/images/home/ai-working-hours.png",
-      "imageAlt": "Cekat.AI의 시간대 전반에 걸쳐 연중무휴 24시간 다국어 지원"
+      "visual": "industryLanguages",
+      "visualAlt": "Cekat.AI의 시간대 전반에 걸쳐 연중무휴 24시간 다국어 지원"
     },
     {
       "title": "과거 여행자를 반복 예약으로 전환",
       "body": "방송 캠페인은 공식 WhatsApp Business API를 통해 실제 데이터, 과거 여행자, 계절별 예약자, 요청했지만 지불하지 않은 리드를 기반으로 구축된 세그먼트에 CRM에서 가져온 이름과 여행 기록을 통해 전달됩니다. 모두가 무시하는 폭발적인 프로모션 대신 ​​적절한 시기에 계절별 프로모션을 다시 예약할 가능성이 가장 높은 사람들에게 다가갑니다.",
-      "image": "/images/marketing/understand-customer-behavior.png",
-      "imageAlt": "Cekat.AI의 계절 프로모션을 위한 여행자 세분화"
+      "visual": "industryContactRecord",
+      "visualAlt": "Cekat.AI의 계절 프로모션을 위한 여행자 세분화"
     },
     {
       "title": "모든 여행자와 여행이 한 곳에서 정리됩니다.",
       "body": "WhatsApp, Instagram DM 및 웹사이트 채팅이 하나의 받은 편지함으로 흐르고 모든 채팅은 여행자의 CRM 카드, 과거 여행, 질문, 받은 캠페인을 자동으로 업데이트합니다. 귀하의 팀은 전체 상황을 즉시 확인하고 복잡하거나 가치가 높은 예약이 전체 대화와 함께 담당자에게 전달되므로 바쁜 시즌에 리드가 빠져나가는 일이 없습니다.",
-      "image": "/images/crm/track-customer-journey.png",
-      "imageAlt": "Cekat.AI CRM에서 추적되는 여행자 여정"
+      "visual": "industryBooking",
+      "visualAlt": "Cekat.AI CRM에서 추적되는 여행자 여정"
     }
   ],
   "caseStudy": {

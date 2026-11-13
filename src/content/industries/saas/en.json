@@ -43,26 +43,26 @@
     {
       "title": "Trial Users Guided to Activation, Not Left to Drift",
       "body": "Most trial users quit before they ever feel the value of your product. Cekat.AI greets new signups, answers setup questions at the exact moment they get stuck, and sends automated WhatsApp follow-ups based on each user's journey, so more trials reach the aha moment instead of silently disappearing on day two.",
-      "image": "/images/crm/track-customer-journey.png",
-      "imageAlt": "Trial user journey tracked in the Cekat.AI CRM"
+      "visual": "industryInbox",
+      "visualAlt": "Trial user journey tracked in the Cekat.AI CRM"
     },
     {
       "title": "Bug Reports Turn Into Tickets for Engineering",
       "body": "Bugs reported in chat tend to vanish before they reach an engineer. Cekat.AI converts bug reports into tickets automatically, complete with the user's chronology, and routes them to the right team. Engineering gets full context without joining the support rotation, and users can ask for a status update anytime.",
-      "image": "/images/order/auto-create-ticket.png",
-      "imageAlt": "Bug reports automatically converted into tickets in Cekat.AI"
+      "visual": "industryTicketQueue",
+      "visualAlt": "Bug reports automatically converted into tickets in Cekat.AI"
     },
     {
       "title": "Complex Cases Hand Over to Your Team, Context Included",
       "body": "The AI handles the repetitive questions, your team handles what needs a human. When a sensitive billing case or an enterprise request comes in, the conversation hands over to a human agent with the full history attached, the user never repeats themselves, and engineers only get pulled in when it is truly needed.",
-      "image": "/images/chat/escalate-and-sync.png",
-      "imageAlt": "Conversation escalating from AI to a human agent in Cekat.AI"
+      "visual": "industryHandoff",
+      "visualAlt": "Conversation escalating from AI to a human agent in Cekat.AI"
     },
     {
       "title": "Know What Users Ask, and How Satisfied They Leave",
       "body": "Every conversation becomes data. See the topics users ask about most, where they get stuck, and the CSAT score of each interaction, so roadmap calls and onboarding fixes start from real user conversations instead of guesses in a meeting.",
-      "image": "/images/marketing/understand-customer-behavior.png",
-      "imageAlt": "Conversation analytics and customer satisfaction in Cekat.AI"
+      "visual": "industryAnalytics",
+      "visualAlt": "Conversation analytics and customer satisfaction in Cekat.AI"
     }
   ],
   "pillars": [

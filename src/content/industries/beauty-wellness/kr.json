@@ -43,26 +43,26 @@
     {
       "title": "예약 및 재예약은 채팅 내에서 완료",
       "body": "API를 통해 Cekat.AI를 예약 시스템에 연결하고 상담원이 대화 중에 바로 약속을 확인하고 일정을 변경합니다. 전화 태그도 없고, 이중 예약된 의자도 없으며, 방문할 때마다 고객이 잊어버리기 전에 다음 치료를 다시 예약하도록 유도할 수 있습니다.",
-      "image": "/images/home/api-integration.png",
-      "imageAlt": "Cekat.AI의 미용실 예약을 위한 API 통합"
+      "visual": "industryBooking",
+      "visualAlt": "Cekat.AI의 미용실 예약을 위한 API 통합"
     },
     {
       "title": "자동으로 전송되는 알림으로 노쇼 방지",
       "body": "잊어버린 약속으로 인한 빈 의자는 되돌릴 수 없는 수익이다. Cekat.AI는 방문할 때마다 자동 알림을 보내고 다음 방문 시간이 되면 후속 알림을 보냅니다. 각 알림은 누군가가 보내야 하는 수동 목록이 아니라 고객의 실제 예약 내역에 따라 실행됩니다.",
-      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
-      "imageAlt": "Cekat.AI의 자동 약속 알림"
+      "visual": "industryAutomation",
+      "visualAlt": "Cekat.AI의 자동 약속 알림"
     },
     {
       "title": "모든 사람이 아닌 적절한 고객에게 프로모션을 보내세요",
       "body": "캠페인은 공식 WhatsApp Business API를 통해 실제 데이터로 구축된 세그먼트, 수정이 필요한 단골 고객, 한 서비스를 시도했지만 다른 서비스는 시도하지 않은 고객, 되찾을 가치가 있는 예약이 만료된 고객에게 전달됩니다. 이름과 내역은 CRM에서 직접 제공되므로 프로모션은 대규모 폭발이 아닌 개인 초대장처럼 전달됩니다.",
-      "image": "/images/marketing/understand-customer-behavior.png",
-      "imageAlt": "Cekat.AI의 뷰티 프로모션을 위한 고객 세분화"
+      "visual": "industryBroadcast",
+      "visualAlt": "Cekat.AI의 뷰티 프로모션을 위한 고객 세분화"
     },
     {
       "title": "모든 고객 대화가 한 곳에 정리됨",
       "body": "WhatsApp, Instagram DM 및 웹 사이트 채팅은 클라이언트별 전체 기록, 과거 치료, 질문, 받은 프로모션이 포함된 하나의 받은 편지함으로 흘러갑니다. 프런트 데스크에서는 전체 그림을 즉시 확인하고, 사람의 손길이 필요한 모든 사항은 첨부된 대화와 함께 팀에 전달되므로 고객이 같은 내용을 반복하지 않습니다.",
-      "image": "/images/crm/capture-and-organize-customers.png",
-      "imageAlt": "Cekat.AI CRM에서 정리된 고객 대화"
+      "visual": "industryInbox",
+      "visualAlt": "Cekat.AI CRM에서 정리된 고객 대화"
     }
   ],
   "pillars": [

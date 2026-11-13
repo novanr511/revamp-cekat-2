@@ -43,26 +43,26 @@
     {
       "title": "Routine to AI, Sensitive to Your Team, With Full Context",
       "body": "Some financial conversations must be handled by a person. Cekat.AI answers routine questions and, the moment a case turns sensitive or complex, escalates to your staff with the entire conversation attached. With AI working hours, the handoff between team and AI is automatic, and the customer never repeats themselves.",
-      "image": "/images/chat/escalate-and-sync.png",
-      "imageAlt": "Automatic escalation to staff with full context in Cekat.AI"
+      "visual": "industryInbox",
+      "visualAlt": "Automatic escalation to staff with full context in Cekat.AI"
     },
     {
       "title": "Every Complaint Becomes a Tracked Ticket",
       "body": "A complaint lost in a busy inbox is a compliance and reputation risk. Cekat.AI labels incoming issues automatically, creates a ticket, and routes it to the right team with a notification, so every complaint is tracked from first message to resolution, and nothing quietly disappears.",
-      "image": "/images/order/auto-create-ticket.png",
-      "imageAlt": "Automatic ticket creation for financial complaints in Cekat.AI"
+      "visual": "industryDocuments",
+      "visualAlt": "Automatic ticket creation for financial complaints in Cekat.AI"
     },
     {
       "title": "Full Visibility Across Every Case",
       "body": "You see each conversation's status, owner, and resolution path in one place, with an interaction record built automatically from every touchpoint, no manual logging. When an audit or a review asks what happened and when, the trail is already there instead of scattered across personal chats.",
-      "image": "/images/order/full-visibility-across-every-automation-step.png",
-      "imageAlt": "Full visibility across every customer case in Cekat.AI"
+      "visual": "industryAnalytics",
+      "visualAlt": "Full visibility across every customer case in Cekat.AI"
     },
     {
       "title": "One Living Record for Every Customer",
       "body": "Every interaction auto-creates and updates a CRM card, no manual input, building a complete record of each customer's questions, applications, and history. Your team opens one profile and sees the full picture, instead of stitching context together from separate channels and spreadsheets.",
-      "image": "/images/crm/capture-and-organize-customers.png",
-      "imageAlt": "Living customer records organized in the Cekat.AI CRM"
+      "visual": "industryContactRecord",
+      "visualAlt": "Living customer records organized in the Cekat.AI CRM"
     }
   ],
   "pillars": [

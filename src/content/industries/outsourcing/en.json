@@ -43,26 +43,26 @@
     {
       "title": "AI Handles Tier-1 Across Every Account, 24/7",
       "body": "Order status, opening hours, return policies, the chat types that eat most of an agent's shift, are answered instantly by AI across every client account at once. Response times stay flat when volume spikes, and headcount no longer has to climb every time a new contract lands.",
-      "image": "/images/chat/ai-handles-conversations.png",
-      "imageAlt": "AI agent answering tier-1 customer chats in the Cekat.AI inbox"
+      "visual": "industryInbox",
+      "visualAlt": "AI agent answering tier-1 customer chats in the Cekat.AI inbox"
     },
     {
       "title": "A Knowledge Base per Account, No Mixed-Up Answers",
       "body": "A fashion client's SOP is nothing like an electronics client's, and answers crossing between accounts is a BPO's nightmare. In Cekat.AI each account has its own knowledge base, paste the client's documents, FAQs, and SOPs into it, and the AI in that workspace answers only from those sources, in that client's brand voice.",
-      "image": "/images/home/knowledge-source.png",
-      "imageAlt": "Separate knowledge base per client account in Cekat.AI"
+      "visual": "industryKnowledge",
+      "visualAlt": "Separate knowledge base per client account in Cekat.AI"
     },
     {
       "title": "Agents Handle Escalations, Not Every Chat",
       "body": "Complex or sensitive cases hand over to a human agent with the conversation history and customer data attached, so nobody starts the story over. Role-based access controls who works which accounts, and team utilization becomes a matter of how well cases are handled, not how fast people type.",
-      "image": "/images/chat/escalate-and-sync.png",
-      "imageAlt": "Chat escalation to a human agent with full context in Cekat.AI"
+      "visual": "industryHandoff",
+      "visualAlt": "Chat escalation to a human agent with full context in Cekat.AI"
     },
     {
       "title": "Per-Client SLA and Analytics, No Manual Recaps",
       "body": "Monthly reports stop being an end-of-month spreadsheet assembly job. Every workspace has its own dashboard, chat volume, response times, resolution rates, AI versus agent performance, so an SLA review means opening the same numbers your client sees, live data instead of last week's recap.",
-      "image": "/images/order/full-visibility-across-every-automation-step.png",
-      "imageAlt": "Per-client performance and SLA dashboard in Cekat.AI"
+      "visual": "industryAnalytics",
+      "visualAlt": "Per-client performance and SLA dashboard in Cekat.AI"
     }
   ],
   "pillars": [

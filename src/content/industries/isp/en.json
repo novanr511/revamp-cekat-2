@@ -43,26 +43,26 @@
     {
       "title": "Billing and Payment Questions Answered Instantly",
       "body": "\"How much is my bill this month?\" \"Where do I pay?\" \"I already transferred, why am I still cut off?\" The same questions arrive every day and eat your admins' hours. Cekat.AI answers them from the knowledge base in natural language, sends payment details, and escalates odd payment cases to your team with the chat history attached.",
-      "image": "/images/home/knowledge-source.png",
-      "imageAlt": "Cekat.AI knowledge base answering customer billing questions"
+      "visual": "industryTicketQueue",
+      "visualAlt": "Cekat.AI knowledge base answering customer billing questions"
     },
     {
       "title": "New Installs and Tech Visits Booked from the Chat",
       "body": "A prospect asks about coverage and gets an instant answer. Ready to install, the AI collects the address and details it needs, then books an installation slot or a technician visit right in the conversation. Every request is logged with full context, so the field team heads out informed instead of guessing from a half-read chat.",
-      "image": "/images/order/end-to-end-operational-efficiency.png",
-      "imageAlt": "Installation and technician visits scheduled from a conversation in Cekat.AI"
+      "visual": "industryDispatch",
+      "visualAlt": "Installation and technician visits scheduled from a conversation in Cekat.AI"
     },
     {
       "title": "Automatic Notifications to Customers on WhatsApp",
       "body": "Due-date reminders, payment confirmations, scheduled maintenance announcements, and the update when an area comes back online, all sent automatically through the official WhatsApp Business API. Customers hear from you before they need to complain, and your billing team stops chasing payments one chat at a time.",
-      "image": "/images/order/automatic-notifications-to-the-right-team.png",
-      "imageAlt": "Automatic Cekat.AI notifications delivered to customers on WhatsApp"
+      "visual": "industryBroadcast",
+      "visualAlt": "Automatic Cekat.AI notifications delivered to customers on WhatsApp"
     },
     {
       "title": "Complaints Become Tickets Routed to the Right Area Team",
       "body": "Every incoming outage report is turned into a ticket automatically, complete with the customer's details and location, then forwarded to the technical team for that area. You see every open ticket in one view, so no complaint drowns in the inbox and no customer has to chat three times about the same problem.",
-      "image": "/images/order/auto-create-ticket.png",
-      "imageAlt": "Customer complaints automatically converted into tickets in Cekat.AI"
+      "visual": "industryHandoff",
+      "visualAlt": "Customer complaints automatically converted into tickets in Cekat.AI"
     }
   ],
   "pillars": [

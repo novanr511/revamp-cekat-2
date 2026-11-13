@@ -53,26 +53,26 @@
     {
       "title": "Every Inquiry Becomes a Qualified Lead in Your CRM",
       "body": "The AI asks the questions your agents would, budget, preferred location, unit type, timeline, and every answer lands in a CRM card created automatically, with no manual input. Your team wakes up to a list of qualified prospects with full conversation history, not a pile of unread chats.",
-      "image": "/images/crm/capture-and-organize-customers.png",
-      "imageAlt": "Property leads captured and organized in the Cekat.AI CRM"
+      "visual": "industryPipeline",
+      "visualAlt": "Property leads captured and organized in the Cekat.AI CRM"
     },
     {
       "title": "Site Visits Scheduled Straight From the Chat",
       "body": "Connect your calendar through API integration and the AI books property visits inside the conversation, date confirmed, reminder sent, no phone tag. A prospect who asks at midnight walks into your show unit on Saturday, and automated reminders make sure they actually show up.",
-      "image": "/images/home/api-integration.png",
-      "imageAlt": "Property visit booking via API integration in Cekat.AI"
+      "visual": "industryBooking",
+      "visualAlt": "Property visit booking via API integration in Cekat.AI"
     },
     {
       "title": "Follow-Up Runs Automatically Until the Deal Moves",
       "body": "Most property deals die from silence, not rejection. Cekat.AI sends follow-up nudges matched to each prospect's behavior, a reminder before a promo ends, a nudge when a lead goes quiet after a visit, triggered by schedules, chat keywords, or changes in customer data. No lead is forgotten because an agent got busy.",
-      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
-      "imageAlt": "Automated follow-up workflows in Cekat.AI"
+      "visual": "industryAutomation",
+      "visualAlt": "Automated follow-up workflows in Cekat.AI"
     },
     {
       "title": "One Pipeline Shows Every Deal From Lead to Closing",
       "body": "Every prospect moves through Customer Stages, Visitor, Lead, Buyer, with next-step suggestions at each point, and the sales pipeline shows deal progress in real time. You see exactly how many visits, negotiations, and closings are in motion without asking anyone for a recap.",
-      "image": "/images/crm/track-customer-journey.png",
-      "imageAlt": "Sales pipeline and customer journey tracking in Cekat.AI"
+      "visual": "industryPipeline",
+      "visualAlt": "Sales pipeline and customer journey tracking in Cekat.AI"
     }
   ],
   "tabs": [

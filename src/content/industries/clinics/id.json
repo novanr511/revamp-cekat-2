@@ -47,26 +47,26 @@
     {
       "title": "Booking Beres di Chat, No-Show Ditekan Reminder",
       "body": "Hubungkan Cekat.AI ke sistem booking klinik lewat API, dan AI bisa booking, konfirmasi, sampai reschedule tanpa keluar dari percakapan. Sebelum harinya tiba, reminder otomatis terkirim ke pasien, jadi slot dokter yang sudah dipesan beneran terisi, bukan kosong karena pasien lupa.",
-      "image": "/images/home/api-integration.png",
-      "imageAlt": "Integrasi API Cekat.AI dengan sistem booking klinik"
+      "visual": "industryBooking",
+      "visualAlt": "Integrasi API Cekat.AI dengan sistem booking klinik"
     },
     {
       "title": "Follow-Up Pasca Kunjungan Jalan Sendiri",
       "body": "Pasien yang harusnya kontrol ulang sering hilang begitu keluar pintu klinik. Cekat.AI mengirim follow-up otomatis berdasarkan riwayat kunjungan tiap pasien, jadwal kontrol, kelanjutan perawatan, sampai kabar hasil pemeriksaan siap diambil, jadi perawatan nggak putus di tengah dan slot dokter tetap terisi.",
-      "image": "/images/crm/track-customer-journey.png",
-      "imageAlt": "Pelacakan perjalanan pasien untuk follow-up di Cekat.AI"
+      "visual": "industryAutomation",
+      "visualAlt": "Pelacakan perjalanan pasien untuk follow-up di Cekat.AI"
     },
     {
       "title": "Data Kontak Pasien Rapi per Cabang",
       "body": "Nomor pasien yang tersimpan di HP admin bukan aset klinik, itu risiko. Cekat.AI menangkap setiap kontak dan percakapan ke CRM otomatis, terorganisir per cabang dengan akses berbasis peran, jadi tiap cabang pegang data pasiennya sendiri dan manajemen tetap melihat gambaran besarnya.",
-      "image": "/images/crm/capture-and-organize-customers.png",
-      "imageAlt": "Data kontak pasien terorganisir di CRM Cekat.AI"
+      "visual": "industryContactRecord",
+      "visualAlt": "Data kontak pasien terorganisir di CRM Cekat.AI"
     },
     {
       "title": "Yang Medis dan Sensitif Langsung ke Stafmu",
       "body": "AI menangani pertanyaan rutin soal jadwal, layanan, dan pendaftaran. Begitu muncul keluhan medis atau kasus sensitif, percakapan dialihkan ke staf klinik lengkap dengan riwayat chat-nya, pasien nggak perlu mengulang cerita, dan keputusan medis selalu ada di tangan tenaga kesehatanmu.",
-      "image": "/images/chat/escalate-and-sync.png",
-      "imageAlt": "Eskalasi percakapan dari AI ke staf klinik di Cekat.AI"
+      "visual": "industryHandoff",
+      "visualAlt": "Eskalasi percakapan dari AI ke staf klinik di Cekat.AI"
     }
   ],
   "pillars": [

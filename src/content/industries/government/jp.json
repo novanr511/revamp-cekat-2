@@ -44,26 +44,26 @@
     {
       "title": "決して閉鎖されない公共サービス",
       "body": "市民は仕事後、夕方、または週末、サービスカウンターが閉まった後もずっと電話をかけてきます。 Cekat.AI は、いつでも一貫した正確な回答を提供します。そのため、今日必要な情報を月曜日まで待つ人はいません。スタッフは、増え続けるバックログではなく、処理済みの会話に戻ります。",
-      "image": "/images/home/ai-working-hours.png",
-      "imageAlt": "Cekat.AI のスタッフと AI エージェント間の AI 勤務時間ルーティング"
+      "visual": "industryTicketQueue",
+      "visualAlt": "Cekat.AI のスタッフと AI エージェント間の AI 勤務時間ルーティング"
     },
     {
       "title": "すべての苦情は追跡チケットとなり、適切な部門にルーティングされます",
       "body": "住民の苦情が紛糾すると、国民の信頼が失墜します。 Cekat.AI は、受信した各レポートに自動的にラベルを付け、チケットを作成し、通知とともに責任部門にルーティングします。そのため、すべての苦情は最初のメッセージから解決まで追跡され、責任は記憶に残されるのではなくプロセスに組み込まれます。",
-      "image": "/images/order/automatic-notifications-to-the-right-team.png",
-      "imageAlt": "苦情は Cekat.AI の追跡チケットとして適切な部門にルーティングされます"
+      "visual": "industryBooking",
+      "visualAlt": "苦情は Cekat.AI の追跡チケットとして適切な部門にルーティングされます"
     },
     {
       "title": "レポートから解決までの完全な可視性",
       "body": "すべての会話のステータス、所有者、解決パスが 1 か所に表示され、各対話から自動的に記録が作成され、手動でログを記録する必要はありません。レビューや監査で何がいつ処理されたかを尋ねる場合、証跡は個人のデバイスやチャネルに散在するのではなく、すでに存在します。",
-      "image": "/images/order/full-visibility-across-every-automation-step.png",
-      "imageAlt": "Cekat.AI であらゆる市民の事件を完全に可視化"
+      "visual": "industryAnalytics",
+      "visualAlt": "Cekat.AI であらゆる市民の事件を完全に可視化"
     },
     {
       "title": "国民が使用するチャネルごとに 1 つの受信箱",
       "body": "WhatsApp、Instagram、Facebook Messenger、Web サイトのチャットは単一の受信箱に流れ、国民ごとに 1 つの対話履歴が含まれます。あるチャネルで質問し、別のチャネルでフォローアップする居住者は同じコンテキストを維持するため、プラットフォーム間で何も問題が発生せず、誰も自分のケースを繰り返すように求められることはありません。",
-      "image": "/images/chat/connect-channels.png",
-      "imageAlt": "Cekat.AI に統合されたあらゆるチャネルからの市民の会話"
+      "visual": "industryInbox",
+      "visualAlt": "Cekat.AI に統合されたあらゆるチャネルからの市民の会話"
     }
   ],
   "pillars": [

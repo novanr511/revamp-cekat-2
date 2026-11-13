@@ -43,26 +43,26 @@
     {
       "title": "Pertanyaan Tagihan dan Pembayaran Dijawab Instan",
       "body": "\"Tagihan bulan ini berapa?\" \"Bayar lewat mana?\" \"Udah transfer kok belum aktif?\" Pertanyaan yang sama datang tiap hari dan menyita waktu admin. Cekat.AI menjawabnya dari knowledge base dengan bahasa natural, mengirim detail cara bayar, dan mengoper kasus pembayaran yang janggal ke timmu lengkap dengan riwayat chat-nya.",
-      "image": "/images/home/knowledge-source.png",
-      "imageAlt": "Knowledge base Cekat.AI menjawab pertanyaan tagihan pelanggan"
+      "visual": "industryTicketQueue",
+      "visualAlt": "Knowledge base Cekat.AI menjawab pertanyaan tagihan pelanggan"
     },
     {
       "title": "Jadwal Pasang Baru dan Kunjungan Teknisi Langsung Ke-Book",
       "body": "Calon pelanggan nanya coverage, langsung dijawab. Mau pasang, AI mengumpulkan alamat dan data yang dibutuhkan, lalu menjadwalkan slot pemasangan atau kunjungan teknisi langsung di percakapan. Semua permintaan tercatat rapi dengan konteksnya, jadi tim lapangan berangkat dengan info lengkap, bukan nebak-nebak dari chat yang kepotong.",
-      "image": "/images/order/end-to-end-operational-efficiency.png",
-      "imageAlt": "Penjadwalan pemasangan dan kunjungan teknisi dari percakapan di Cekat.AI"
+      "visual": "industryDispatch",
+      "visualAlt": "Penjadwalan pemasangan dan kunjungan teknisi dari percakapan di Cekat.AI"
     },
     {
       "title": "Notifikasi Otomatis ke Pelanggan Lewat WhatsApp",
       "body": "Reminder jatuh tempo, konfirmasi pembayaran, info maintenance terjadwal, sampai update saat gangguan area sudah pulih, semua terkirim otomatis lewat WhatsApp Business API resmi. Pelanggan tahu duluan sebelum sempat komplain, dan tim billing berhenti nagih satu-satu secara manual.",
-      "image": "/images/order/automatic-notifications-to-the-right-team.png",
-      "imageAlt": "Notifikasi otomatis Cekat.AI terkirim ke pelanggan lewat WhatsApp"
+      "visual": "industryBroadcast",
+      "visualAlt": "Notifikasi otomatis Cekat.AI terkirim ke pelanggan lewat WhatsApp"
     },
     {
       "title": "Komplain Jadi Tiket Rapi untuk Tim Area yang Tepat",
       "body": "Setiap laporan gangguan yang masuk diubah jadi tiket otomatis, lengkap dengan data pelanggan dan lokasinya, lalu diteruskan ke tim teknis area terkait. Kamu bisa lihat semua tiket yang masih terbuka dalam satu tampilan, jadi nggak ada komplain yang tenggelam di inbox dan pelanggan nggak perlu chat tiga kali buat masalah yang sama.",
-      "image": "/images/order/auto-create-ticket.png",
-      "imageAlt": "Komplain pelanggan otomatis menjadi tiket di Cekat.AI"
+      "visual": "industryHandoff",
+      "visualAlt": "Komplain pelanggan otomatis menjadi tiket di Cekat.AI"
     }
   ],
   "pillars": [

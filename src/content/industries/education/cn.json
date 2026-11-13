@@ -7,12 +7,7 @@
     "badge": "教育",
     "title": "在每位未来的学生申请其他地方之前回答他们",
     "subtitle": "从项目问题到费用再到日程安排，Cekat.AI 在整个招生季 24/7 内即时在 WhatsApp 和 Instagram 上回复，无需增加招生人员即可捕获每一个线索",
-    "useCases": [
-      "入学季节",
-      "24/7 答复",
-      "申请人线索捕获",
-      "潜在客户培育"
-    ]
+    "useCases": ["入学季节", "24/7 答复", "申请人线索捕获", "潜在客户培育"]
   },
   "definition": "Cekat.AI for education 是一个面向印度尼西亚学校、校园和课程提供商的人工智能客户服务平台，24/7 全天候回答潜在学生和家长的问题，捕捉每一个询问作为线索，并通过一个平台的自动跟进来培养申请者。",
   "stats": [
@@ -43,26 +38,26 @@
     {
       "title": "家长和学生晚上 10 点询问。您在晚上 10 点回复。",
       "body": "下班后和晚饭后，已经过了上班时间，很多家庭都会研究学校。 Cekat.AI 随时回复有关课程、费用、奖学金和日程安排的准确答案，因此今晚做出决定的家长可以获得确定性，而不是语音邮件，并且您的辅导员会到达处理对话，而不是积压。",
-      "image": "/images/home/ai-working-hours.png",
-      "imageAlt": "Cekat.AI 中顾问和 AI 代理之间的 AI 工作时间路由"
+      "visual": "industryInbox",
+      "visualAlt": "Cekat.AI 中顾问和 AI 代理之间的 AI 工作时间路由"
     },
     {
       "title": "每一次询问都成为捕获的线索",
       "body": "提出要求并消失的准学生就失去了入学资格。 Cekat.AI 将每个查询自动记录到 CRM 卡中，无需手动输入，并包含完整的对话、感兴趣的项目和联系方式，因此您的团队醒来时会看到一份真实的申请人列表，而不是零散的未读聊天记录。",
-      "image": "/images/crm/capture-and-organize-customers.png",
-      "imageAlt": "未来的学生在 Cekat.AI CRM 中被视为潜在客户"
+      "visual": "industryPipeline",
+      "visualAlt": "未来的学生在 Cekat.AI CRM 中被视为潜在客户"
     },
     {
       "title": "从咨询到入学培养申请人",
       "body": "大多数申请者都会安静下来，而不是离开。 Cekat.AI 会发送与每个申请人的阶段相匹配的后续提示、注册截止日期之前的提醒、校园参观问题后的签到、由日程安排、聊天关键字或数据更改触发。没有一个候选人会因为招生繁忙而被遗忘。",
-      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
-      "imageAlt": "Cekat.AI 中的自动化申请人跟进工作流程"
+      "visual": "industryDocuments",
+      "visualAlt": "Cekat.AI 中的自动化申请人跟进工作流程"
     },
     {
       "title": "每个学院和项目都有一个人工智能",
       "body": "为每个学院、项目或校园设置专门的人工智能代理，每个代理都从自己的知识库中进行回答，并自动将对话路由到正确的团队。当一个问题需要真正的顾问时，它会随着完整的历史记录而升级，申请人永远不会重复自己的问题。",
-      "image": "/images/home/multiple-specialized-agents.png",
-      "imageAlt": "Cekat.AI 中每个程序有多个专门的 AI 代理"
+      "visual": "industryBroadcast",
+      "visualAlt": "Cekat.AI 中每个程序有多个专门的 AI 代理"
     }
   ],
   "pillars": [

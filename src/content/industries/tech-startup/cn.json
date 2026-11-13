@@ -43,26 +43,26 @@
     {
       "title": "一个收件箱中的每个频道，每个客户一个历史记录",
       "body": "WhatsApp、Instagram DM、Facebook Messenger 和网络聊天流入单个收件箱，每个客户只有一份历史记录。不再需要打开五个选项卡并询问某人是否已经回复，您的小团队可以在一个地方看到每一次对话，并且切换频道的客户永远不会重复他们的故事。",
-      "image": "/images/chat/connect-channels.png",
-      "imageAlt": "所有聊天频道均连接到一个 Cekat.AI 收件箱"
+      "visual": "industryInbox",
+      "visualAlt": "所有聊天频道均连接到一个 Cekat.AI 收件箱"
     },
     {
       "title": "重复流程自行运行，不会占用工程时间",
       "body": "状态检查、潜在客户资格、跟进、内部更新以及您的团队每天重复的流程可以通过拖放构建器实现自动化，无需任何代码。您的团队不再是复制粘贴机器，工程路线图也不再被分割以构建内部支持工具。",
-      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
-      "imageAlt": "Cekat.AI 中的无代码自动化构建器"
+      "visual": "industryAutomation",
+      "visualAlt": "Cekat.AI 中的无代码自动化构建器"
     },
     {
       "title": "创始人摆脱午夜支持转变",
       "body": "早期，创始人亲自回答每一次聊天，问题是习惯无法扩展。在人工智能工作时间下，人工智能完全接管工作时间之外的工作，并在高峰时段分担负载，重要的案件仍然会升级给具有完整背景的人类，并且您早上打开笔记本电脑会看到已经处理过的收件箱。",
-      "image": "/images/home/ai-working-hours.png",
-      "imageAlt": "在 Cekat.AI 中配置的 AI 和团队工作时间"
+      "visual": "industryHandoff",
+      "visualAlt": "在 Cekat.AI 中配置的 AI 和团队工作时间"
     },
     {
       "title": "为投资者问题准备的支持号码",
       "body": "每月的对话、在没有人工参与的情况下解决了多少次、出现最多的主题，所有这些都记录在分析仪表板中。用数据回答有关运营效率的问题，并从真实的客户对话中读取产品信号，而不是直觉。",
-      "image": "/images/marketing/understand-customer-behavior.png",
-      "imageAlt": "Cekat.AI 中的客户对话分析仪表板"
+      "visual": "industryAnalytics",
+      "visualAlt": "Cekat.AI 中的客户对话分析仪表板"
     }
   ],
   "pillars": [

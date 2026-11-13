@@ -43,26 +43,26 @@
     {
       "title": "Update Status Terkirim Duluan, Sebelum Pelanggan Nanya",
       "body": "Paket dijemput, transit di hub, kurir menuju alamat, Cekat.AI mengirim update otomatis via WhatsApp di tiap tahap yang kamu tentukan. Pelanggan nggak perlu nanya karena udah dikabari duluan, volume chat masuk turun, dan gagal antar COD berkurang karena penerima tahu kapan harus siap di rumah.",
-      "image": "/images/order/automatic-notifications-to-the-right-team.png",
-      "imageAlt": "Notifikasi status pengiriman terkirim otomatis dari Cekat.AI"
+      "visual": "industryDispatch",
+      "visualAlt": "Notifikasi status pengiriman terkirim otomatis dari Cekat.AI"
     },
     {
       "title": "Paket Bermasalah Langsung Naik, Bukan Tenggelam di Inbox",
       "body": "Gagal COD, alamat susah ketemu, paket rusak atau hilang, kasus sensitif begini nggak boleh antre. Cekat.AI membuat tiket otomatis dari percakapan, meneruskannya ke tim lapangan atau tim claim yang tepat lengkap dengan riwayat chat, dan pelanggan tetap dapat kabar sementara kasusnya dikerjakan.",
-      "image": "/images/order/auto-create-ticket.png",
-      "imageAlt": "Komplain paket hilang otomatis jadi tiket di Cekat.AI"
+      "visual": "industryTicketQueue",
+      "visualAlt": "Komplain paket hilang otomatis jadi tiket di Cekat.AI"
     },
     {
       "title": "Jadwal Pickup Beres Langsung di Chat",
       "body": "Seller dan pengirim rutin bisa request pickup langsung di chat, tanpa telepon bolak-balik. AI menanyakan alamat, jumlah paket, dan jam jemput, lalu mencatatnya jadi order yang rapi untuk tim operasional. Alurnya mengikuti business logic yang kamu atur sendiri, tanpa coding, jadi proses pickup konsisten di semua cabang.",
-      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
-      "imageAlt": "Alur request pickup otomatis dengan business logic di Cekat.AI"
+      "visual": "industryBooking",
+      "visualAlt": "Alur request pickup otomatis dengan business logic di Cekat.AI"
     },
     {
       "title": "Leads Klien Korporat Terkualifikasi Otomatis",
       "body": "Di antara ratusan chat cek resi, ada perusahaan yang nanyain tarif kontrak dan kiriman rutin. Cekat.AI mengenali inquiry bernilai tinggi ini, menanyakan volume, rute, dan frekuensinya, lalu menangkapnya ke kartu CRM lengkap dengan percakapan, jadi tim sales follow-up ke leads yang serius, bukan scroll inbox penuh.",
-      "image": "/images/crm/capture-and-organize-customers.png",
-      "imageAlt": "Leads klien korporat tertangkap di CRM Cekat.AI"
+      "visual": "industryPipeline",
+      "visualAlt": "Leads klien korporat tertangkap di CRM Cekat.AI"
     }
   ],
   "pillars": [

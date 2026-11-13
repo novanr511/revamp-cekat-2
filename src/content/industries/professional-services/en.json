@@ -51,26 +51,26 @@
     {
       "title": "Repetitive Intake Questions Handled by AI",
       "body": "\"Do you handle cases like mine?\" \"Which documents do I need?\" \"How long does the process take?\" The same intake questions arrive every day. Cekat.AI answers them in natural language from your firm's knowledge base, then asks about the need, urgency, and basic details, so what reaches a partner is a well-formed inquiry, not an empty chat.",
-      "image": "/images/chat/ai-handles-conversations.png",
-      "imageAlt": "AI agent handling prospective client intake questions in the Cekat.AI inbox"
+      "visual": "industryInbox",
+      "visualAlt": "AI agent handling prospective client intake questions in the Cekat.AI inbox"
     },
     {
       "title": "Consultations Scheduled Straight from the Chat",
       "body": "No more rounds of \"when are you free?\" over the phone. Cekat.AI offers slots and captures the consultation schedule inside the conversation, and through API integration it can connect to the calendar or booking system your office already uses, the client simply shows up at a confirmed time.",
-      "image": "/images/home/api-integration.png",
-      "imageAlt": "Cekat.AI API integration with office calendars and booking systems"
+      "visual": "industryBooking",
+      "visualAlt": "Cekat.AI API integration with office calendars and booking systems"
     },
     {
       "title": "Automated Reminders That Cut No-Shows",
       "body": "A quietly missed meeting is billable time gone. Cekat.AI sends a reminder before each consultation on WhatsApp, including the documents to bring, and when a client needs to move the time, rescheduling happens in the same chat, so the freed slot gets filled instead of wasted.",
-      "image": "/images/order/automatic-notifications-to-the-right-team.png",
-      "imageAlt": "Automated consultation reminders and schedule notifications in Cekat.AI"
+      "visual": "industryAutomation",
+      "visualAlt": "Automated consultation reminders and schedule notifications in Cekat.AI"
     },
     {
       "title": "Every Inquiry Tracked in a Pipeline per Partner or Service Line",
       "body": "Leads sitting in one partner's phone are revenue leaking out of the firm. Cekat.AI captures every inquiry into a CRM card automatically, with the chat history and stated need attached, organized in a pipeline per partner or service line, so the managing partner sees every prospect on one board instead of asking around.",
-      "image": "/images/crm/track-customer-journey.png",
-      "imageAlt": "Client inquiry pipeline per partner in the Cekat.AI CRM"
+      "visual": "industryPipeline",
+      "visualAlt": "Client inquiry pipeline per partner in the Cekat.AI CRM"
     }
   ],
   "pillars": [

@@ -43,20 +43,20 @@
     {
       "title": "Sell and Confirm Tickets Inside the Chat",
       "body": "Cekat.AI takes the ticket order inside the conversation, quantity, buyer details, and a payment QR, without sending guests to another app or an admin retyping orders into a spreadsheet. A guest goes from question to confirmed ticket in one chat, and every order lands complete and consistent.",
-      "image": "/images/order/end-to-end-operational-efficiency.png",
-      "imageAlt": "Ticket order created and paid inside a chat conversation in Cekat.AI"
+      "visual": "industryOrder",
+      "visualAlt": "Ticket order created and paid inside a chat conversation in Cekat.AI"
     },
     {
       "title": "Guest Lists and Table Bookings Handled, No Night Shift Required",
       "body": "Guest list and table DMs peak after midnight, exactly when your admins log off. Cekat.AI answers and records every request the moment it arrives, into a CRM card with the full chat history, so no name slips through and your door team opens a clean list instead of scrolling last night's DMs.",
-      "image": "/images/home/ai-working-hours.png",
-      "imageAlt": "AI covering guest list and booking chats outside working hours in Cekat.AI"
+      "visual": "industryBooking",
+      "visualAlt": "AI covering guest list and booking chats outside working hours in Cekat.AI"
     },
     {
       "title": "Event Changed? Tell Every Ticket Holder at Once",
       "body": "A pushed schedule, a lineup change, a cancellation, and the inbox floods. Broadcast the announcement to the affected ticket holders through the official WhatsApp Business API first, then let the AI answer the refund questions that follow with one consistent answer based on your policy, instead of five panicked admins giving five different ones.",
-      "image": "/images/marketing/understand-customer-behavior.png",
-      "imageAlt": "Audience segments for event announcement broadcasts in Cekat.AI"
+      "visual": "industryDispatch",
+      "visualAlt": "Audience segments for event announcement broadcasts in Cekat.AI"
     }
   ],
   "caseStudy": {

@@ -47,26 +47,26 @@
     {
       "title": "Dari Chat Harga Langsung Jadi Jadwal Konsultasi",
       "body": "Begitu pasien tertarik, AI menawarkan slot dan booking konsultasi langsung di percakapan, terhubung ke jadwal klinik lewat integrasi API, lengkap dengan reminder sebelum harinya. \"Nanti saya kabari ya\" berubah jadi janji temu yang beneran masuk kalender.",
-      "image": "/images/home/api-integration.png",
-      "imageAlt": "Integrasi API untuk booking konsultasi klinik gigi di Cekat.AI"
+      "visual": "industryBooking",
+      "visualAlt": "Integrasi API untuk booking konsultasi klinik gigi di Cekat.AI"
     },
     {
       "title": "Kontrol 6 Bulan dan Kontrol Behel Diingatkan Otomatis",
       "body": "Recall yang diandalkan ke ingatan admin pasti ada yang kelewat. Cekat.AI mengirim reminder otomatis lewat WhatsApp Business API resmi berdasarkan riwayat tiap pasien, scaling rutin enam bulan, kontrol behel bulanan, sampai jadwal lepas behel, jadi kursi perawatan terisi dari pasien lama, bukan cuma pasien baru.",
-      "image": "/images/crm/track-customer-journey.png",
-      "imageAlt": "Reminder kontrol berjalan dari riwayat pasien di Cekat.AI"
+      "visual": "industryAutomation",
+      "visualAlt": "Reminder kontrol berjalan dari riwayat pasien di Cekat.AI"
     },
     {
       "title": "Pasien Cemas Jam 11 Malam Tetap Dapat Jawaban",
       "body": "Nyeri setelah cabut gigi, gusi bengkak, bracket behel lepas, kecemasan nggak menunggu jam praktik. AI menjawab dengan panduan aftercare dari knowledge base klinikmu, termasuk kapan kondisi perlu segera ditangani, lalu meneruskan kasusnya ke tim medis lengkap dengan konteks begitu klinik buka.",
-      "image": "/images/home/ai-working-hours.png",
-      "imageAlt": "AI menjawab pertanyaan pasien di luar jam praktik di Cekat.AI"
+      "visual": "industryInbox",
+      "visualAlt": "AI menjawab pertanyaan pasien di luar jam praktik di Cekat.AI"
     },
     {
       "title": "Edukasi Aftercare yang Konsisten di Setiap Chat",
       "body": "Pantangan setelah pasang behel, perawatan pasca bleaching, cara pakai retainer, semua jawaban diambil dari materi edukasi yang ditulis klinikmu sendiri. Setiap pasien menerima instruksi yang sama persis dengan standar dokternya, kapan pun mereka bertanya, siapa pun yang sedang jaga.",
-      "image": "/images/home/knowledge-source.png",
-      "imageAlt": "Knowledge base sumber jawaban edukasi pasien di Cekat.AI"
+      "visual": "industryKnowledge",
+      "visualAlt": "Knowledge base sumber jawaban edukasi pasien di Cekat.AI"
     }
   ],
   "pillars": [

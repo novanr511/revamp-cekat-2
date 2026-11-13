@@ -43,26 +43,26 @@
     {
       "title": "사무실이 문을 닫은 후에도 연중무휴 24시간 연락 가능",
       "body": "지원과 관대함은 9시부터 5시까지의 일정으로 실행되지 않습니다. AI 근무 시간을 통해 상담원은 팀이 로그오프한 후 채팅을 처리하고 업무 시간 동안 전체 상황을 파악하여 회신할 수 있으므로 자정에 기부자나 주말에 도움이 필요한 수혜자가 빈 받은 편지함이 아닌 항상 대응하는 조직에 연락할 수 있습니다.",
-      "image": "/images/home/ai-working-hours.png",
-      "imageAlt": "Cekat.AI에서 근무 시간 이후에도 조직에 접근할 수 있도록 하는 AI 근무 시간"
+      "visual": "industryInbox",
+      "visualAlt": "Cekat.AI에서 근무 시간 이후에도 조직에 접근할 수 있도록 하는 AI 근무 시간"
     },
     {
       "title": "방송을 통한 기부 캠페인 진행",
       "body": "방송 캠페인은 공식 WhatsApp Business API를 통해 실제 데이터, 반복 기부자, 일회 기부자, 이벤트 참석자로부터 구축된 세그먼트로 CRM에서 가져온 이름과 기록을 통해 전달됩니다. 모금 호소 또는 프로그램 업데이트는 행동할 가능성이 가장 높은 후원자에게 전달되며 후속 조치는 각 개인의 활동에 따라 자동으로 진행됩니다.",
-      "image": "/images/marketing/understand-customer-behavior.png",
-      "imageAlt": "Cekat.AI 캠페인을 위한 기부자 세분화"
+      "visual": "industryBroadcast",
+      "visualAlt": "Cekat.AI 캠페인을 위한 기부자 세분화"
     },
     {
       "title": "모든 서포터와 대화를 한자리에서",
       "body": "WhatsApp, 인스타그램 DM, Facebook 메신저, 웹사이트 채팅은 후원자별 전체 내역, 질문, 받은 캠페인, 논의된 선물 등이 포함된 하나의 받은 편지함으로 흘러갑니다. 귀하의 팀은 전체 관계를 즉시 확인하고 민감한 사항은 대화가 첨부된 사람에게 에스컬레이션되므로 지원자가 반복하지 않습니다.",
-      "image": "/images/crm/capture-and-organize-customers.png",
-      "imageAlt": "Cekat.AI CRM에서 구성된 서포터 대화"
+      "visual": "industryAnalytics",
+      "visualAlt": "Cekat.AI CRM에서 구성된 서포터 대화"
     },
     {
       "title": "추측이 아닌 프로그램에 근거한 답변",
       "body": "신뢰는 정확성에 달려 있습니다. 기부자는 자신의 돈이 어디로 가는지 정확히 알고 싶어합니다. 프로그램 세부 정보, 자금 할당 및 FAQ를 지식 베이스에 붙여 넣으면 상담원이 추측이 아닌 답변을 제공합니다. 설정에는 약 5분이 소요되며 코딩이 필요하지 않으므로 모든 응답에서 정보가 정확하고 일관되게 유지됩니다.",
-      "image": "/images/home/knowledge-source.png",
-      "imageAlt": "Cekat.AI의 지식 기반 기반 정확한 답변"
+      "visual": "industryKnowledge",
+      "visualAlt": "Cekat.AI의 지식 기반 기반 정확한 답변"
     }
   ],
   "pillars": [

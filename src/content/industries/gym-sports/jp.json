@@ -43,26 +43,26 @@
     {
       "title": "スケジュール、価格、空室状況を即座に回答",
       "body": "「土曜日の7時に出発する裁判所はあるでしょうか？」 「午前中のクラスはどれですか?」 「ラケットを借りてもいいですか？」 Cekat.AI は、スケジュール、料金、ハウスルールに基づいて構築された知識ベースから、意図を理解する自然言語で回答するため、質問者は数秒で確信を得て、隣の会場を試す代わりにスロットを獲得します。",
-      "image": "/images/chat/ai-handles-conversations.png",
-      "imageAlt": "Cekat.AI の受信箱でスケジュールと価格の質問に答える AI エージェント"
+      "visual": "industryBooking",
+      "visualAlt": "Cekat.AI の受信箱でスケジュールと価格の質問に答える AI エージェント"
     },
     {
       "title": "セッション前にメンバーにリマインドし、ノーショーを削減する",
       "body": "誰も来ない予約済みのスロットは、再販できない収益となります。 Cekat.AI は、試合やクラスの開始前に自動リマインダーを送信し、同じチャットで確認と再スケジュールのオプションを提供するため、キャンセルが早期に表面化し、枠が別のメンバーに割り当てられる可能性があります。",
-      "image": "/images/order/automatic-notifications-to-the-right-team.png",
-      "imageAlt": "Cekat.AI でセッション スケジュールの前に自動リマインダーが送信される"
+      "visual": "industryEnrollment",
+      "visualAlt": "Cekat.AI でセッション スケジュールの前に自動リマインダーが送信される"
     },
     {
       "title": "更新は期限が切れた後ではなく、自動的に行われます",
       "body": "静かに期限切れになるメンバーシップとは、静かに退会するメンバーのことです。 Cekat.AI は、CRM 内の各メンバーのサイクルを追跡し、有効期限前に更新のフォローアップを送信し、さらにしばらく現れなかったメンバーに関連するナッジを送信します。そのため、更新は、誰かが遅すぎて覚えているのではなく、時間通りにリマインドされたために行われます。",
-      "image": "/images/crm/track-customer-journey.png",
-      "imageAlt": "Cekat.AI CRM で追跡されるアクティブから更新までのメンバー ジャーニー"
+      "visual": "industryAutomation",
+      "visualAlt": "Cekat.AI CRM で追跡されるアクティブから更新までのメンバー ジャーニー"
     },
     {
       "title": "適切な会員層に届くプロモーション",
       "body": "すべての連絡先に同じプロモーションを送信するのが、ミュートを解除する最も早い方法です。 Cekat.AI は、行動、朝のクラスの常連、週末のパデル選手、有効期限が近づいているメンバーなどによってメンバーをセグメント化し、公式 WhatsApp Business API を介して気になるセグメントにブロードキャストを送信するため、公開法廷のプロモーションや新しいクラスが実際に読まれます。",
-      "image": "/images/marketing/understand-customer-behavior.png",
-      "imageAlt": "Cekat.AI でのプロモーション ブロードキャストの行動別のメンバー セグメント"
+      "visual": "industryBroadcast",
+      "visualAlt": "Cekat.AI でのプロモーション ブロードキャストの行動別のメンバー セグメント"
     }
   ],
   "pillars": [

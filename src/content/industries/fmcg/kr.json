@@ -43,26 +43,26 @@
     {
       "title": "소매업체 재입고 요청은 언제든지 응답됩니다.",
       "body": "상점 주인은 폐점 시간 이후에 진열대를 확인하고 다음 판매 방문을 위해 일주일을 기다리지 않습니다. Cekat.AI는 언제든지 제품 가용성, 가격 및 최소 주문 수량에 응답하고, 재입고 요청을 주문으로 기록하고, 근무일이 시작되는 순간 지역 영업팀에 전달합니다.",
-      "image": "/images/home/ai-working-hours.png",
-      "imageAlt": "Cekat.AI에서 업무 시간 외 재입고 요청에 응답하는 AI"
+      "visual": "industryCatalog",
+      "visualAlt": "Cekat.AI에서 업무 시간 외 재입고 요청에 응답하는 AI"
     },
     {
       "title": "프로모션은 적합한 소매업체 세그먼트에 도달합니다.",
       "body": "거래 프로모션, 충성도 포인트, 새로운 변형 출시는 더 이상 숨겨진 WhatsApp 그룹에서 사라지지 않습니다. Cekat.AI는 공식 WhatsApp Business API를 통해 지역, 매장 유형 또는 주문 내역별로 선택한 매장 세그먼트에 방송하고 응답하지 않은 매장을 자동으로 추적합니다.",
-      "image": "/images/marketing/understand-customer-behavior.png",
-      "imageAlt": "Cekat.AI의 프로모션 방송을 위한 콘센트 세분화"
+      "visual": "industryBroadcast",
+      "visualAlt": "Cekat.AI의 프로모션 방송을 위한 콘센트 세분화"
     },
     {
       "title": "불만 사항이 올바른 지역으로 바로 전달됩니다.",
       "body": "손상된 포장, 잘못된 변형 배송, 도착하지 않은 프로모션 상품, 소비자 및 매장 불만 사항은 자동으로 티켓이 되어 해당 지역을 담당하는 지역 팀이나 유통업체로 전달되며 전체 채팅 기록이 첨부됩니다. 자동 알림을 통해 불만사항이 소셜 미디어에 도달하기 전에 먼저 해당 팀에 알릴 수 있습니다.",
-      "image": "/images/order/automatic-notifications-to-the-right-team.png",
-      "imageAlt": "불만 사항은 Cekat.AI의 지역 팀으로 자동 전달됩니다."
+      "visual": "industryTicketQueue",
+      "visualAlt": "불만 사항은 Cekat.AI의 지역 팀으로 자동 전달됩니다."
     },
     {
       "title": "모든 매장에 대한 하나의 완전한 보기",
       "body": "모든 채팅은 주문 내역, 프로모션 참여, 불만 제기 등 매장의 프로필을 풍부하게 하며, 모두 고객 데이터 플랫폼에 자동으로 기록됩니다. 주문이 중단된 매장과 프로모션에 가장 잘 반응하는 세그먼트를 확인할 수 있으므로 영업팀은 추측 대신 데이터를 사용하여 모든 방문에 참여합니다.",
-      "image": "/images/crm/track-customer-journey.png",
-      "imageAlt": "Cekat.AI에서 추적되는 각 매장의 여정"
+      "visual": "industryAnalytics",
+      "visualAlt": "Cekat.AI에서 추적되는 각 매장의 여정"
     }
   ],
   "pillars": [

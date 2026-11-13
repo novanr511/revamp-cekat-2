@@ -41,7 +41,8 @@ export function ArticleReadingBar({
       <Container className="flex h-12 items-center gap-4">
         <Link
           href="/blog"
-          className="inline-flex shrink-0 items-center gap-1 font-numeric text-sm font-semibold text-primary hover:text-primary-dark"
+          aria-label={backLabel}
+          className="inline-flex min-h-11 min-w-11 shrink-0 items-center gap-1 font-numeric text-sm font-semibold text-primary hover:text-primary-dark"
         >
           <span aria-hidden>←</span>
           <span className="hidden sm:inline">{backLabel}</span>

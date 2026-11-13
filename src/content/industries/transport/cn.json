@@ -7,12 +7,7 @@
     "badge": "运输服务",
     "title": "回答每个时间表问题，即使在柜台关闭后",
     "subtitle": "从出发时间到票价，再到座位预订和改期，Cekat.AI 在 WhatsApp 上即时回复，24/7，以自然语言，无需增加柜台工作人员",
-    "useCases": [
-      "时刻表和票价",
-      "座位预订",
-      "重新安排和退款",
-      "日程变更提醒"
-    ]
+    "useCases": ["时刻表和票价", "座位预订", "重新安排和退款", "日程变更提醒"]
   },
   "definition": "用于交通服务的 Cekat.AI 是一个面向印度尼西亚班车、巴士、旅行、租赁和渡轮运营商的人工智能客户服务平台，可 24/7 即时回答时间表和票价问题，直接通过聊天预订座位并处理重新安排，这是一个平台上的自动化交通预订系统。",
   "stats": [
@@ -43,26 +38,26 @@
     {
       "title": "在一次对话中预订的座位",
       "body": "从第一个问题到锁定座位，一切都在一次聊天中完成。 Cekat.AI 记录路线、日期、座位数和乘客详细信息，然后发送付款二维码并在付款后确认。不再需要电话预订时听错名字或日期，每份订单都完整且一致。",
-      "image": "/images/order/end-to-end-operational-efficiency.png",
-      "imageAlt": "在 Cekat.AI 的聊天中创建并支付座位预订"
+      "visual": "industryBooking",
+      "visualAlt": "在 Cekat.AI 的聊天中创建并支付座位预订"
     },
     {
       "title": "改期和退款不再混乱",
       "body": "迟到的乘客、更改的时刻表、取消的计划、重新安排航班的请求每天都会出现。 Cekat.AI 按照您的规则处理这些问题，检查替换出发航班的座位并记录更改，然后通过完整的聊天记录将退款请求上报给您的团队，以便乘客获得确定性，而不是被拒绝。",
-      "image": "/images/chat/escalate-and-sync.png",
-      "imageAlt": "退款请求已上报给团队，并在 Cekat.AI 中提供完整背景信息"
+      "visual": "industryDocuments",
+      "visualAlt": "退款请求已上报给团队，并在 Cekat.AI 中提供完整背景信息"
     },
     {
       "title": "乘客在出发前就已收到路线变更通知",
       "body": "车辆问题、航班延误、路线改道，诸如此类的新闻必须快速传播。通过官方WhatsApp Business API，Cekat.AI仅向乘客广播受影响航线和出发班次的公告，并自动发出出发提醒，因此，因乘客不知情而造成的空座已成为老故事。",
-      "image": "/images/order/automatic-notifications-to-the-right-team.png",
-      "imageAlt": "从 Cekat.AI 自动发送的时间表更改广播"
+      "visual": "industryBroadcast",
+      "visualAlt": "从 Cekat.AI 自动发送的时间表更改广播"
     },
     {
       "title": "每个预订渠道都集中在一个收件箱中",
       "body": "WhatsApp、Instagram DM 和网站实时聊天流入一个收件箱，每位乘客只有一条历史记录，因此在 Instagram 上提问和在 WhatsApp 上读书的人永远不会重复他们的故事。 CRM 中会记录常客的喜爱路线，以便在促销或新时刻表推出时进行跟进。",
-      "image": "/images/chat/connect-channels.png",
-      "imageAlt": "每个聊天频道都连接到一个 Cekat.AI 收件箱"
+      "visual": "industryInbox",
+      "visualAlt": "每个聊天频道都连接到一个 Cekat.AI 收件箱"
     }
   ],
   "pillars": [

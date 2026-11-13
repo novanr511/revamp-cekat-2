@@ -43,20 +43,20 @@
     {
       "title": "채팅 내에서 이벤트 및 장소 예약 닫기",
       "body": "이벤트 및 그룹 문의는 오랫동안 수동 질문을 주고받는 것을 의미했습니다. Cekat.AI는 세부 정보, 날짜, 인원수, 패키지, 예산 등을 대화에서 바로 캡처하고 API를 통해 시스템에 연결하며 이미 수집된 모든 것을 포함하여 따뜻하고 적격한 문의를 팀에 전달하므로 응답을 기다리는 데 지체되는 일이 없습니다.",
-      "image": "/images/home/api-integration.png",
-      "imageAlt": "Cekat.AI의 API 통합을 통해 처리되는 이벤트 예약"
+      "visual": "industryBooking",
+      "visualAlt": "Cekat.AI의 API 통합을 통해 처리되는 이벤트 예약"
     },
     {
       "title": "모든 채널에 걸쳐 모든 게스트를 위한 하나의 받은 편지함",
       "body": "WhatsApp, Instagram DM, Facebook Messenger 및 웹사이트 채팅은 손님당 전체 기록과 함께 하나의 받은 편지함으로 흘러갑니다. 귀하의 팀은 지난 숙박, 요청 및 질문을 즉시 확인하고 사람이 필요한 모든 것, 특별 요청, 불만 사항이 전체 대화와 함께 에스컬레이션되므로 게스트가 반복하지 않습니다.",
-      "image": "/images/crm/capture-and-organize-customers.png",
-      "imageAlt": "Cekat.AI CRM에서 구성된 게스트 대화"
+      "visual": "industryDispatch",
+      "visualAlt": "Cekat.AI CRM에서 구성된 게스트 대화"
     },
     {
       "title": "실제로 공개된 프로모션 손님으로 조용한 날짜를 채워보세요",
       "body": "방송 캠페인은 공식 WhatsApp Business API를 통해 CRM에서 가져온 이름과 컨텍스트를 사용하여 실제 데이터, 과거 손님, 이벤트 고객, 지연된 예약으로 구축된 세그먼트로 전달됩니다. 모두가 무시하는 일반적인 폭발 대신에 주중 요금 제안이나 계절별 패키지가 손님에게 가장 쉽게 동의할 것입니다.",
-      "image": "/images/marketing/understand-customer-behavior.png",
-      "imageAlt": "Cekat.AI의 환대 프로모션을 위한 게스트 세분화"
+      "visual": "industryInbox",
+      "visualAlt": "Cekat.AI의 환대 프로모션을 위한 게스트 세분화"
     }
   ],
   "caseStudy": {

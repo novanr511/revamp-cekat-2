@@ -43,26 +43,26 @@
     {
       "title": "Orang Tua dan Siswa Nanya Jam 10 Malam? Kamu Jawab Jam 10 Malam.",
       "body": "Keluarga sering cari info sekolah setelah kerja dan setelah makan malam, jauh di luar jam kantor. Cekat.AI menjawab kapan pun dengan info akurat soal program, biaya, beasiswa, dan jadwal, jadi orang tua yang lagi mutusin malam ini dapat kepastian, bukan voicemail, dan konselor datang pagi ke percakapan yang udah beres.",
-      "image": "/images/home/ai-working-hours.png",
-      "imageAlt": "Pengaturan jam kerja AI dan konselor di Cekat.AI"
+      "visual": "industryInbox",
+      "visualAlt": "Pengaturan jam kerja AI dan konselor di Cekat.AI"
     },
     {
       "title": "Setiap Inquiry Jadi Leads yang Tertangkap",
       "body": "Calon siswa yang nanya lalu hilang artinya pendaftaran yang lepas. Cekat.AI mencatat tiap inquiry ke kartu CRM otomatis, tanpa input manual, lengkap dengan percakapan, program yang diminati, dan kontaknya, jadi timmu bangun pagi dengan daftar calon pendaftar beneran, bukan chat berserakan yang belum kebaca.",
-      "image": "/images/crm/capture-and-organize-customers.png",
-      "imageAlt": "Calon siswa tertangkap sebagai leads di CRM Cekat.AI"
+      "visual": "industryPipeline",
+      "visualAlt": "Calon siswa tertangkap sebagai leads di CRM Cekat.AI"
     },
     {
       "title": "Nurture Calon Pendaftar dari Inquiry sampai Daftar",
       "body": "Kebanyakan calon pendaftar cuma diam, bukan mundur. Cekat.AI mengirim follow-up sesuai tahap masing-masing, reminder sebelum deadline pendaftaran, sapaan setelah nanya campus tour, dipicu jadwal, keyword chat, atau perubahan datanya. Nggak ada kandidat yang terlupakan cuma karena tim admisi lagi sibuk.",
-      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
-      "imageAlt": "Alur follow-up otomatis calon pendaftar di Cekat.AI"
+      "visual": "industryDocuments",
+      "visualAlt": "Alur follow-up otomatis calon pendaftar di Cekat.AI"
     },
     {
       "title": "Satu AI untuk Tiap Fakultas dan Program",
       "body": "Bikin AI agent spesialis per fakultas, program, atau kampus, masing-masing menjawab dari knowledge base-nya sendiri, dan arahkan percakapan ke tim yang tepat otomatis. Saat pertanyaan butuh konselor beneran, dialihkan lengkap dengan riwayatnya, calon siswa nggak perlu mengulang cerita.",
-      "image": "/images/home/multiple-specialized-agents.png",
-      "imageAlt": "Beberapa AI agent spesialis per program di Cekat.AI"
+      "visual": "industryBroadcast",
+      "visualAlt": "Beberapa AI agent spesialis per program di Cekat.AI"
     }
   ],
   "pillars": [

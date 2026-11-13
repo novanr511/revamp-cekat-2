@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import type { TocItem } from "@/lib/toc";
-import { cn } from "@/lib/utils";
 
 export function TableOfContents({
   items,
@@ -19,42 +18,42 @@ export function TableOfContents({
       .filter((el): el is HTMLElement => Boolean(el));
     if (!headings.length) return;
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const visible = entries
-          .filter((e) => e.isIntersecting)
-          .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
-        if (visible[0]) setActiveId(visible[0].target.id);
-      },
-      { rootMargin: "-96px 0px -70% 0px", threshold: 0 },
-    );
-    headings.forEach((h) => observer.observe(h));
-    return () => observer.disconnect();
+    let frame = 0;
+    const update = () => {
+      // Match the heading nearest the reading line below the site header.
+      const current =
+        headings.findLast(
+          (heading) => heading.getBoundingClientRect().top <= 140,
+        ) ?? headings[0];
+      setActiveId(current.id);
+    };
+    const scheduleUpdate = () => {
+      cancelAnimationFrame(frame);
+      frame = requestAnimationFrame(update);
+    };
+
+    update();
+    window.addEventListener("scroll", scheduleUpdate, { passive: true });
+    window.addEventListener("resize", scheduleUpdate);
+    return () => {
+      window.removeEventListener("scroll", scheduleUpdate);
+      window.removeEventListener("resize", scheduleUpdate);
+      cancelAnimationFrame(frame);
+    };
   }, [items]);
 
   if (items.length < 2) return null;
 
   return (
-    <nav aria-label={label}>
-      <p className="eyebrow-rule mb-1 inline-flex font-numeric text-[0.68rem] font-semibold tracking-[0.16em] text-primary uppercase">
-        {label}
-      </p>
-      <ul className="mt-4 space-y-1 border-l border-border">
+    <nav aria-label={label} className="r-article-toc">
+      <p>{label}</p>
+      <ul>
         {items.map((item) => (
           <li key={item.id}>
             <a
               href={`#${item.id}`}
-              className={cn(
-                "-ml-px block border-l-2 py-1.5 font-numeric text-sm leading-snug transition-colors",
-                item.level === 4
-                  ? "pl-8 text-[0.9rem]"
-                  : item.level === 3
-                    ? "pl-6"
-                    : "pl-4",
-                activeId === item.id
-                  ? "border-primary font-medium text-primary"
-                  : "border-transparent text-muted-foreground hover:text-foreground",
-              )}
+              data-level={item.level}
+              aria-current={activeId === item.id ? "location" : undefined}
             >
               {item.text}
             </a>

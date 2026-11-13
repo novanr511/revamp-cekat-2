@@ -43,20 +43,20 @@
     {
       "title": "在聊天中出售并确认门票",
       "body": "Cekat.AI 在对话中获取门票订单、数量、买家详细信息和付款二维码，无需将客人发送到另一个应用程序或管理员将订单重新输入到电子表格中。客人只需一次聊天即可从提出问题到确认门票，并且每份订单都完整且一致。",
-      "image": "/images/order/end-to-end-operational-efficiency.png",
-      "imageAlt": "在 Cekat.AI 的聊天对话中创建并支付的门票订单"
+      "visual": "industryOrder",
+      "visualAlt": "在 Cekat.AI 的聊天对话中创建并支付的门票订单"
     },
     {
       "title": "处理宾客名单和餐桌预订，无需夜班",
       "body": "宾客名单和餐桌私信在午夜后达到高峰，恰好是您的管理员下线的时间。 Cekat.AI 在每个请求到达时立即答复并记录到包含完整聊天历史记录的 CRM 卡中，因此不会漏掉任何姓名，您的门禁团队会打开一个干净的列表，而不是滚动昨晚的 DM。",
-      "image": "/images/home/ai-working-hours.png",
-      "imageAlt": "AI 在 Cekat.AI 中覆盖工作时间之外的宾客名单和预订聊天"
+      "visual": "industryBooking",
+      "visualAlt": "AI 在 Cekat.AI 中覆盖工作时间之外的宾客名单和预订聊天"
     },
     {
       "title": "活动有变吗？立即告诉每位持票人",
       "body": "日程被推迟、阵容变更、取消以及收件箱泛滥。首先通过官方 WhatsApp Business API 向受影响的门票持有者广播公告，然后让人工智能根据您的政策以一致的答案回答随后的退款问题，而不是五个惊慌失措的管理员给出五个不同的答案。",
-      "image": "/images/marketing/understand-customer-behavior.png",
-      "imageAlt": "Cekat.AI 中事件公告广播的受众群体"
+      "visual": "industryDispatch",
+      "visualAlt": "Cekat.AI 中事件公告广播的受众群体"
     }
   ],
   "caseStudy": {

@@ -18,8 +18,8 @@ import { SiteChrome } from "@/components/layout/site-chrome";
  * `i18n/request.ts`, so this list only bounds what is serialized into the RSC
  * payload for the client.
  *
- * Product pages (chat/crm/marketing/order) compose shared sections server-side,
- * so only comparison still needs its own namespace here (Faq + FinalCTA).
+ * Product and industry pages compose sections server-side, but their
+ * interactive previews/directories and the blog feed use `secondary`.
  */
 const CLIENT_MESSAGE_KEYS = [
   "nav",
@@ -31,6 +31,7 @@ const CLIENT_MESSAGE_KEYS = [
   "contactSales",
   "comparison",
   "events",
+  "secondary",
 ] as const;
 
 function pickClientMessages(messages: Record<string, unknown>) {
@@ -84,7 +85,7 @@ export default async function SiteLayout({
       <MetaPixel />
       <CekatAnalytics />
       <Hyros />
-       <SiteChrome whatsappLabel={tn("ctaWhatsapp")}>{children}</SiteChrome>
+      <SiteChrome whatsappLabel={tn("ctaWhatsapp")}>{children}</SiteChrome>
     </NextIntlClientProvider>
   );
 }

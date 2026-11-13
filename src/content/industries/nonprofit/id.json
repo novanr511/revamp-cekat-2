@@ -43,26 +43,26 @@
     {
       "title": "Bisa Dihubungi 24/7, Bahkan Setelah Kantor Tutup",
       "body": "Dukungan dan kebaikan nggak jalan di jadwal 9-ke-5. AI working hours bikin AI meng-cover chat setelah tim pulang dan balik ke tim lengkap dengan konteks pas jam kerja, jadi donatur tengah malam atau penerima manfaat yang butuh bantuan di akhir pekan selalu ketemu organisasi yang responsif, bukan inbox kosong.",
-      "image": "/images/home/ai-working-hours.png",
-      "imageAlt": "AI working hours menjaga organisasi tetap bisa dihubungi di luar jam kerja di Cekat.AI"
+      "visual": "industryInbox",
+      "visualAlt": "AI working hours menjaga organisasi tetap bisa dihubungi di luar jam kerja di Cekat.AI"
     },
     {
       "title": "Jalankan Campaign Donasi lewat Broadcast",
       "body": "Broadcast dikirim lewat WhatsApp Business API resmi ke segmen dari data nyata, donatur rutin, donatur sekali, peserta event, dengan nama dan riwayat dari CRM. Ajakan penggalangan dana atau update program nyampe ke supporter yang paling mungkin bergerak, dan follow-up otomatis ngingetin berdasarkan aktivitas masing-masing.",
-      "image": "/images/marketing/understand-customer-behavior.png",
-      "imageAlt": "Segmentasi donatur untuk campaign di Cekat.AI"
+      "visual": "industryBroadcast",
+      "visualAlt": "Segmentasi donatur untuk campaign di Cekat.AI"
     },
     {
       "title": "Semua Supporter dan Percakapan di Satu Tempat",
       "body": "WhatsApp, Instagram DM, Facebook Messenger, dan chat website masuk ke satu inbox dengan riwayat lengkap per supporter, pertanyaan yang diajukan, campaign yang diterima, donasi yang dibahas. Tim langsung lihat seluruh relasinya, dan yang sensitif dialihkan ke orang beserta percakapannya. Supporter nggak perlu ngulang cerita.",
-      "image": "/images/crm/capture-and-organize-customers.png",
-      "imageAlt": "Percakapan supporter terorganisir di CRM Cekat.AI"
+      "visual": "industryAnalytics",
+      "visualAlt": "Percakapan supporter terorganisir di CRM Cekat.AI"
     },
     {
       "title": "Jawaban Berdasar Programmu, Bukan Ngarang",
       "body": "Kepercayaan bergantung pada akurasi, donatur pengin tahu persis ke mana uang mereka pergi. Kamu paste detail program, alokasi dana, dan FAQ ke knowledge base, dan AI menjawab dari situ, bukan ngarang. Setup-nya sekitar lima menit dan tanpa coding, jadi informasimu tetap benar dan konsisten di tiap balasan.",
-      "image": "/images/home/knowledge-source.png",
-      "imageAlt": "Knowledge base menjaga jawaban tetap akurat di Cekat.AI"
+      "visual": "industryKnowledge",
+      "visualAlt": "Knowledge base menjaga jawaban tetap akurat di Cekat.AI"
     }
   ],
   "pillars": [

@@ -257,7 +257,7 @@ function RelatedCard({
   return (
     <Link
       href={{ pathname: "/case-studies/[slug]", params: { slug: study.slug } }}
-      className="group overflow-hidden rounded-2xl border border-[#e5e9ef] bg-white transition-all hover:-translate-y-0.5 hover:border-[#9eb8e5] hover:shadow-[0_18px_40px_-22px_rgba(9,33,76,0.27)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary motion-reduce:transform-none"
+      className="case-study__related-card group overflow-hidden rounded-2xl border border-[#e5e9ef] bg-white transition-all hover:-translate-y-0.5 hover:border-[#9eb8e5] hover:shadow-[0_18px_40px_-22px_rgba(9,33,76,0.27)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary motion-reduce:transform-none"
     >
       <div className="relative aspect-[16/9] overflow-hidden bg-[#eaf0fa]">
         <Image
@@ -337,7 +337,7 @@ export default async function CaseStudyPage({
   ];
 
   return (
-    <>
+    <div className="case-study-soft">
       <JsonLd data={schema} />
       <PageHero
         tone="case-study"
@@ -348,7 +348,7 @@ export default async function CaseStudyPage({
         align="left"
         split
         visual={
-          <div className="relative aspect-[4/3] overflow-hidden rounded-[28px] border border-[#ccdaf1] bg-[#eaf0fa] shadow-[0_24px_60px_-36px_rgba(9,33,76,0.4)]">
+          <div className="case-study__hero-photo relative aspect-[4/3] overflow-hidden rounded-[28px] border border-[#ccdaf1] bg-[#eaf0fa] shadow-[0_24px_60px_-36px_rgba(9,33,76,0.4)]">
             <Image
               src={study.image}
               alt={imageAlt(locale, study.company, study.industry)}
@@ -388,13 +388,13 @@ export default async function CaseStudyPage({
         </Link>
       </PageHero>
 
-      <section className="border-b border-[#e5e9ef] bg-white py-8 md:py-10">
+      <section className="case-study__outcomes border-b border-[#e5e9ef] bg-white py-8 md:py-10">
         <Container>
           <div className="grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-4">
             {study.outcomes.map((outcome) => (
               <div
                 key={`${outcome.value}-${outcome.label}`}
-                className="rounded-2xl border border-[#e5e9ef] bg-[#f9fafb] p-4 sm:p-5"
+                className="case-study__outcome rounded-2xl border border-[#e5e9ef] bg-[#f9fafb] p-4 sm:p-5"
               >
                 <p className="font-numeric text-[clamp(1.5rem,3vw,2.25rem)] leading-tight font-semibold tracking-[-0.05em] text-primary">
                   {outcome.value}
@@ -408,7 +408,7 @@ export default async function CaseStudyPage({
         </Container>
       </section>
 
-      <section className="relative overflow-hidden bg-[#f9fafb] py-14 md:py-20">
+      <section className="case-study__body relative overflow-hidden bg-[#f9fafb] py-14 md:py-20">
         <Container className="relative">
           <div className="grid gap-10 lg:grid-cols-12 lg:gap-12">
             <article className="min-w-0 lg:col-span-8">
@@ -447,7 +447,7 @@ export default async function CaseStudyPage({
                       <p key={paragraph}>{paragraph}</p>
                     ))}
                   </div>
-                  <blockquote className="mt-7 rounded-r-2xl border-l-4 border-[#00b4c8] bg-white px-6 py-5 text-lg leading-relaxed font-medium text-[#09214c] shadow-[0_1px_2px_rgba(9,33,76,0.04)]">
+                  <blockquote className="case-study__challenge-quote mt-7 rounded-r-2xl border-l-4 border-[#00b4c8] bg-white px-6 py-5 text-lg leading-relaxed font-medium text-[#09214c] shadow-[0_1px_2px_rgba(9,33,76,0.04)]">
                     “{study.challenge.quote}”
                   </blockquote>
                 </section>
@@ -477,12 +477,12 @@ export default async function CaseStudyPage({
                     {study.solutions.steps.map((step, index) => (
                       <li
                         key={step.title}
-                        className="rounded-2xl border border-[#e5e9ef] bg-white p-5 sm:p-6"
+                        className="case-study__solution-step rounded-2xl border border-[#e5e9ef] bg-white p-5 sm:p-6"
                       >
                         <div className="flex items-start gap-4">
                           <span
                             aria-hidden
-                            className="flex size-9 shrink-0 items-center justify-center rounded-full bg-[#eaf0fa] font-numeric text-sm font-semibold text-primary"
+                            className="case-study__step-number flex size-9 shrink-0 items-center justify-center rounded-full bg-[#eaf0fa] font-numeric text-sm font-semibold text-primary"
                           >
                             {String(index + 1).padStart(2, "0")}
                           </span>
@@ -518,14 +518,14 @@ export default async function CaseStudyPage({
                   <p className="mt-5 text-sm leading-relaxed text-[#505f73]">
                     {study.results.intro}
                   </p>
-                  <blockquote className="mt-5 border-l-4 border-[#00b4c8] pl-5 text-lg leading-relaxed font-medium text-[#09214c]">
+                  <blockquote className="case-study__results-quote mt-5 border-l-4 border-[#00b4c8] pl-5 text-lg leading-relaxed font-medium text-[#09214c]">
                     “{study.results.quote}”
                   </blockquote>
                   <div className="mt-7 space-y-4">
                     {study.outcomes.map((outcome) => (
                       <div
                         key={`result-${outcome.label}`}
-                        className="grid gap-2 rounded-2xl border border-[#e5e9ef] bg-white p-5 sm:grid-cols-[minmax(9rem,0.34fr)_1fr] sm:gap-6 sm:p-6"
+                        className="case-study__result grid gap-2 rounded-2xl border border-[#e5e9ef] bg-white p-5 sm:grid-cols-[minmax(9rem,0.34fr)_1fr] sm:gap-6 sm:p-6"
                       >
                         <div>
                           <p className="font-numeric text-2xl font-semibold tracking-[-0.04em] text-primary">
@@ -586,7 +586,7 @@ export default async function CaseStudyPage({
                 </div>
               </Reveal>
               <Reveal delay={120}>
-                <div className="rounded-[20px] border border-[#ccdaf1] bg-[#f3f6fd] p-6 sm:p-7">
+                <div className="case-study__cta rounded-[20px] border border-[#ccdaf1] bg-[#f3f6fd] p-6 sm:p-7">
                   <p className="text-lg leading-snug font-semibold tracking-[-0.025em] text-[#09214c]">
                     {copy.ctaTitle}
                   </p>
@@ -638,6 +638,6 @@ export default async function CaseStudyPage({
           </Reveal>
         </Container>
       </section>
-    </>
+    </div>
   );
 }

@@ -18,7 +18,7 @@ export function PlanThreeSixty() {
   const t = useTranslations("pricing.threeSixty");
 
   return (
-    <div className="grid gap-10 overflow-hidden rounded-[1.5rem] border border-primary/25 bg-linear-to-b from-primary/[0.07] to-white p-6 shadow-[0_28px_56px_-40px_rgba(19,82,191,0.45)] lg:grid-cols-2 lg:gap-12 lg:p-10">
+    <div className="pricing-three-sixty grid gap-10 overflow-hidden rounded-[1.5rem] border border-primary/25 bg-white p-6 lg:grid-cols-2 lg:gap-12 lg:p-10">
       <div>
         <p className="eyebrow-rule mb-4 inline-flex font-numeric text-[0.68rem] font-semibold tracking-[0.2em] text-primary uppercase">
           {t("eyebrow")}

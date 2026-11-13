@@ -43,26 +43,26 @@
     {
       "title": "Reachable 24/7, Even After the Office Closes",
       "body": "Support and generosity don't run on a 9-to-5 schedule. AI working hours let the agent cover chats after your team logs off and hand back during office hours with full context, so a donor at midnight or a beneficiary in need on the weekend always reaches a responsive organization, not an empty inbox.",
-      "image": "/images/home/ai-working-hours.png",
-      "imageAlt": "AI working hours keeping the organization reachable after hours in Cekat.AI"
+      "visual": "industryInbox",
+      "visualAlt": "AI working hours keeping the organization reachable after hours in Cekat.AI"
     },
     {
       "title": "Run Donation Campaigns Through Broadcast",
       "body": "Broadcast campaigns go out through the official WhatsApp Business API to segments built from real data, recurring donors, one-time givers, event attendees, with names and history pulled from the CRM. A fundraising appeal or program update reaches the supporters most likely to act, and follow-ups nudge automatically based on each person's activity.",
-      "image": "/images/marketing/understand-customer-behavior.png",
-      "imageAlt": "Donor segmentation for campaigns in Cekat.AI"
+      "visual": "industryBroadcast",
+      "visualAlt": "Donor segmentation for campaigns in Cekat.AI"
     },
     {
       "title": "Every Supporter and Conversation in One Place",
       "body": "WhatsApp, Instagram DM, Facebook Messenger, and website chat flow into one inbox with a full history per supporter, questions asked, campaigns received, gifts discussed. Your team sees the whole relationship instantly, and anything sensitive escalates to a person with the conversation attached, so no supporter repeats themselves.",
-      "image": "/images/crm/capture-and-organize-customers.png",
-      "imageAlt": "Supporter conversations organized in the Cekat.AI CRM"
+      "visual": "industryAnalytics",
+      "visualAlt": "Supporter conversations organized in the Cekat.AI CRM"
     },
     {
       "title": "Answers Grounded in Your Programs, Not Guesses",
       "body": "Trust depends on accuracy, donors want to know exactly where their money goes. You paste your program details, fund allocation, and FAQs into the knowledge base, and the agent answers from that, not guesses. Setup takes around five minutes and needs no coding, so your information stays correct and consistent in every reply.",
-      "image": "/images/home/knowledge-source.png",
-      "imageAlt": "Knowledge base grounding accurate answers in Cekat.AI"
+      "visual": "industryKnowledge",
+      "visualAlt": "Knowledge base grounding accurate answers in Cekat.AI"
     }
   ],
   "pillars": [

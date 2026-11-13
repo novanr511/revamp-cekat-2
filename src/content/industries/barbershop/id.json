@@ -43,26 +43,26 @@
     {
       "title": "Slot Kursi dan Capster Jelas, Walk-in Tetap Terkendali",
       "body": "Tanpa sistem yang rapi, admin nebak kursi mana yang kosong dan walk-in sering tabrakan sama yang udah booking. Lewat integrasi API dengan kalender atau sistem booking-mu, Cekat.AI bisa konfirmasi jadwal dan reschedule langsung di chat, tiap booking tercatat dengan nama, jam, dan capster pilihan, jadi tim di depan tahu persis kursi mana yang masih bebas untuk walk-in.",
-      "image": "/images/home/api-integration.png",
-      "imageAlt": "Integrasi API sistem booking barbershop dengan Cekat.AI"
+      "visual": "industryBooking",
+      "visualAlt": "Integrasi API sistem booking barbershop dengan Cekat.AI"
     },
     {
       "title": "Reminder Otomatis Sebelum Jadwal, No-Show Turun",
       "body": "Satu no-show artinya satu kursi nganggur setengah jam, padahal ada pelanggan lain yang mau slot itu. Cekat.AI mengirim reminder otomatis sebelum jadwal cukur, lengkap dengan opsi konfirmasi atau reschedule kalau memang berhalangan, jadi pembatalan ketahuan lebih awal dan slotnya bisa dilepas ke pelanggan lain, bukan kosong tanpa kabar.",
-      "image": "/images/home/automate-your-business-logic-no-coding-needed.png",
-      "imageAlt": "Alur reminder booking otomatis tanpa coding di Cekat.AI"
+      "visual": "industryAutomation",
+      "visualAlt": "Alur reminder booking otomatis tanpa coding di Cekat.AI"
     },
     {
       "title": "Ajak Pelanggan Balik Sebelum Rambutnya Berantakan Lagi",
       "body": "Pelanggan puas biasanya bukan pindah, cuma lupa. Cekat.AI menyimpan riwayat kunjungan tiap pelanggan di CRM dan mengirim ajakan re-booking otomatis beberapa minggu setelah cukur terakhir, jedanya kamu yang atur, jadi jadwal rapi berikutnya udah ke-booking sebelum dia sempat mikir cari tempat lain.",
-      "image": "/images/crm/track-customer-journey.png",
-      "imageAlt": "Riwayat kunjungan pelanggan barbershop di CRM Cekat.AI"
+      "visual": "industryContactRecord",
+      "visualAlt": "Riwayat kunjungan pelanggan barbershop di CRM Cekat.AI"
     },
     {
       "title": "Blast Promo ke Pelanggan yang Udah Lama Nggak Mampir",
       "body": "Daftar kontak pelanggan itu aset, bukan arsip. Cekat.AI mensegmentasi pelanggan dari aktivitas dan kunjungan terakhirnya, lalu mengirim broadcast lewat WhatsApp Business API resmi, promo weekday, paket grooming, atau penawaran comeback khusus yang tiga bulan nggak kelihatan, tanpa copy-paste nomor satu per satu.",
-      "image": "/images/marketing/understand-customer-behavior.png",
-      "imageAlt": "Segmentasi pelanggan barbershop untuk campaign di Cekat.AI"
+      "visual": "industryBroadcast",
+      "visualAlt": "Segmentasi pelanggan barbershop untuk campaign di Cekat.AI"
     }
   ],
   "pillars": [
