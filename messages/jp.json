@@ -1123,7 +1123,9 @@
     "caseStudyEyebrow": "導入事例",
     "caseStudyAttribution": "数値はCekat.AIのお客様から直接ご提供いただきました。",
     "relatedCrossEyebrow": "サイト内を探索",
-    "relatedCross": "関連する業界・職種を見る"
+    "relatedCross": "関連する業界・職種を見る",
+    "useCasesEyebrow": "活用シーン",
+    "useCasesHeading": "{title}を日々の業務に活用する方法"
   },
   "featuresHub": {
     "metaTitle": "機能: AI エージェント、オムニチャネル CRM、自動化 |Cekat.AI",

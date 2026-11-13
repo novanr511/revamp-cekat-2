@@ -1,0 +1,268 @@
+/*
+ * Soft secondary-page palette, matched to the refreshed product pages.
+ * ENERGY 2 / RHYTHM 3 / MOTION 2 stay unchanged: color softens the surfaces,
+ * while Cekat blue keeps links and actions easy to find.
+ */
+.cekat-page .secondary-hub-soft {
+  --hub-soft-blue: var(--soft-surface-blue);
+  --hub-soft-blue-deep: var(--soft-surface-blue-deep);
+  --hub-soft-warm: var(--soft-surface-warm);
+  --hub-soft-sand: var(--soft-surface-sand);
+  --hub-soft-neutral: var(--soft-surface-neutral);
+  --hub-soft-line: var(--soft-surface-line);
+  --hub-soft-ink: #09214c;
+  --hub-soft-body: #3a4960;
+  --hub-soft-accent: #1352bf;
+  --hub-soft-accent-hover: #0d439f;
+}
+
+.cekat-page .secondary-hub-soft[data-hub="stories"] .secondary-hero {
+  --hero-field: var(--hub-soft-warm);
+  --hero-highlight: var(--hub-soft-blue-deep);
+}
+
+.cekat-page .secondary-hub-soft[data-hub="integrations"] .secondary-hero {
+  --hero-field: var(--hub-soft-blue);
+  --hero-highlight: var(--hub-soft-sand);
+}
+
+.cekat-page .secondary-hub-soft[data-hub="features"] .secondary-hero {
+  --hero-field: var(--hub-soft-blue);
+  --hero-highlight: var(--hub-soft-sand);
+}
+
+.cekat-page .secondary-hub-soft .secondary-hero::after {
+  background: linear-gradient(
+    90deg,
+    var(--hub-soft-blue-deep) 0 52%,
+    var(--hub-soft-sand) 52%
+  );
+}
+
+/* Customer stories keep their photography; only the supporting surfaces soften. */
+.cekat-page .secondary-hub-soft[data-hub="stories"] .story-feature {
+  border-color: var(--hub-soft-line);
+}
+
+.cekat-page
+  .secondary-hub-soft[data-hub="stories"]
+  .story-feature
+  > div:last-child {
+  background: var(--hub-soft-blue);
+}
+
+.cekat-page .secondary-hub-soft[data-hub="stories"] .story-index-grid {
+  background: var(--hub-soft-neutral);
+}
+
+.cekat-page .secondary-hub-soft[data-hub="stories"] .story-index-card {
+  border-color: var(--hub-soft-line);
+  box-shadow: 0 1px 2px #09214c0a;
+}
+
+.cekat-page
+  .secondary-hub-soft[data-hub="stories"]
+  .story-index-card[data-story-tone="0"] {
+  background: var(--hub-soft-blue);
+}
+
+.cekat-page
+  .secondary-hub-soft[data-hub="stories"]
+  .story-index-card[data-story-tone="1"] {
+  background: var(--hub-soft-warm);
+}
+
+.cekat-page .secondary-hub-soft[data-hub="stories"] .story-index-card:hover {
+  border-color: #b9c9dd;
+  box-shadow: 0 18px 40px -24px #09214c26;
+}
+
+/* Soft chapter fields keep the integration cards white and legible. */
+.cekat-page .secondary-hub-soft[data-hub="integrations"] .product-stage {
+  --stage-soft: var(--hub-soft-blue);
+  border-color: var(--hub-soft-line);
+  background: linear-gradient(
+    135deg,
+    var(--hub-soft-warm) -25%,
+    var(--hub-soft-blue) 38%,
+    var(--hub-soft-blue-deep) 115%
+  );
+}
+
+.cekat-page .secondary-hub-soft[data-hub="integrations"] .workflow-scene {
+  --scene-surface: var(--hub-soft-blue);
+  border-color: var(--hub-soft-line);
+  box-shadow: 0 24px 48px -32px #09214c26;
+}
+
+.cekat-page
+  .secondary-hub-soft[data-hub="integrations"]
+  .workflow-scene__footer {
+  background: var(--hub-soft-neutral);
+  color: var(--hub-soft-ink);
+}
+
+.cekat-page .secondary-hub-soft[data-hub="integrations"] .workflow-scene__step,
+.cekat-page
+  .secondary-hub-soft[data-hub="integrations"]
+  .workflow-scene__step
+  > span {
+  color: var(--hub-soft-accent);
+}
+
+.cekat-page
+  .secondary-hub-soft[data-hub="integrations"]
+  .workflow-scene__product-token {
+  background: #fff;
+  color: var(--hub-soft-ink);
+  box-shadow: 0 8px 20px -10px #09214c1a;
+}
+
+.cekat-page
+  .secondary-hub-soft[data-hub="integrations"]
+  .workflow-scene__product-token
+  svg {
+  color: var(--hub-soft-accent);
+}
+
+.cekat-page
+  .secondary-hub-soft[data-hub="integrations"]
+  .workflow-scene__status
+  i {
+  background: var(--hub-soft-blue-deep);
+}
+
+.cekat-page
+  .secondary-hub-soft[data-hub="integrations"]
+  .workflow-scene__status
+  i:nth-child(2) {
+  background: var(--hub-soft-sand);
+}
+
+.cekat-page .secondary-hub-soft[data-hub="integrations"] .integration-chapter {
+  background: var(--hub-soft-blue);
+}
+
+.cekat-page
+  .secondary-hub-soft[data-hub="integrations"]
+  .integration-chapter[data-chapter="1"] {
+  background: var(--hub-soft-warm);
+}
+
+.cekat-page
+  .secondary-hub-soft[data-hub="integrations"]
+  .integration-chapter[data-chapter="2"] {
+  background: var(--hub-soft-blue-deep);
+}
+
+.cekat-page
+  .secondary-hub-soft[data-hub="integrations"]
+  .integration-chapter
+  li {
+  border-color: var(--hub-soft-line);
+}
+
+.cekat-page
+  .secondary-hub-soft[data-hub="integrations"]
+  .integration-chapter
+  li:hover {
+  box-shadow: 0 12px 28px -22px #09214c26;
+}
+
+/* Features use a quiet neutral field with one soft tint per category chapter. */
+.cekat-page .secondary-hub-soft[data-hub="features"] .hub-index--features {
+  background: var(--hub-soft-neutral);
+}
+
+.cekat-page .secondary-hub-soft[data-hub="features"] .hub-chapter {
+  background: var(--hub-soft-blue);
+}
+
+.cekat-page
+  .secondary-hub-soft[data-hub="features"]
+  .hub-chapter[data-chapter="1"] {
+  background: var(--hub-soft-warm);
+}
+
+.cekat-page
+  .secondary-hub-soft[data-hub="features"]
+  .hub-chapter[data-chapter="2"] {
+  background: var(--hub-soft-blue-deep);
+}
+
+.cekat-page
+  .secondary-hub-soft[data-hub="features"]
+  .secondary-entry-grid
+  .secondary-entry-card:not(:has(img)) {
+  border-color: var(--hub-soft-line);
+  background: #fff;
+  box-shadow: 0 1px 2px #09214c0a;
+}
+
+/* Keep the closing CTA calm, with a clear Cekat-blue primary action. */
+.cekat-page .secondary-hub-soft .secondary-final-cta {
+  border-block: 1px solid var(--hub-soft-line);
+  background: var(--hub-soft-neutral);
+  color: var(--hub-soft-ink);
+}
+
+.cekat-page .secondary-hub-soft .secondary-final-cta > [aria-hidden],
+.cekat-page .secondary-hub-soft .secondary-final-cta::before,
+.cekat-page .secondary-hub-soft .secondary-final-cta::after {
+  display: none;
+  content: none;
+}
+
+.cekat-page .secondary-hub-soft .secondary-final-cta h2 {
+  color: var(--hub-soft-ink);
+}
+
+.cekat-page .secondary-hub-soft .secondary-final-cta h2 span {
+  color: #5276ad;
+}
+
+.cekat-page .secondary-hub-soft .secondary-final-cta :is(p, li) {
+  color: var(--hub-soft-body);
+}
+
+.cekat-page .secondary-hub-soft .secondary-final-cta li > span {
+  background: var(--hub-soft-blue);
+  color: var(--hub-soft-accent);
+  box-shadow: inset 0 0 0 1px #c7d4e7;
+}
+
+.cekat-page .secondary-hub-soft .secondary-final-cta .eyebrow-rule-light {
+  color: var(--hub-soft-accent);
+}
+
+.cekat-page
+  .secondary-hub-soft
+  .secondary-final-cta
+  .eyebrow-rule-light::before {
+  background: var(--hub-soft-accent);
+}
+
+.cekat-page .secondary-hub-soft .secondary-final-cta__register {
+  border-color: var(--hub-soft-accent);
+  background: var(--hub-soft-accent);
+  color: #fff;
+  box-shadow: none;
+}
+
+.cekat-page .secondary-hub-soft .secondary-final-cta__register:hover {
+  border-color: var(--hub-soft-accent-hover);
+  background: var(--hub-soft-accent-hover);
+}
+
+.cekat-page .secondary-hub-soft .secondary-final-cta__sales {
+  border-color: #c7d4e7;
+  background: #fff;
+  color: var(--hub-soft-ink);
+  box-shadow: none;
+  backdrop-filter: none;
+}
+
+.cekat-page .secondary-hub-soft .secondary-final-cta__sales:hover {
+  border-color: var(--hub-soft-accent);
+  background: var(--hub-soft-blue);
+}

@@ -63,7 +63,7 @@ export function EntryCard({
         )}
       >
         {!image && (
-          <span className="flex size-12 items-center justify-center rounded-xl bg-[#e4ebf9] text-[#1352bf] transition-colors duration-300 group-hover:bg-[#ccdaf1]">
+          <span className="flex size-12 items-center justify-center rounded-xl bg-[var(--soft-surface-blue-deep)] text-[#1352bf] transition-colors duration-300 group-hover:bg-[var(--soft-surface-blue)]">
             <RegistryIcon name={icon} className="size-5" />
           </span>
         )}

@@ -1123,7 +1123,9 @@
     "caseStudyEyebrow": "Cerita Pelanggan",
     "caseStudyAttribution": "Angka disampaikan langsung oleh pelanggan Cekat.AI.",
     "relatedCrossEyebrow": "Lintas topik",
-    "relatedCross": "Jelajahi industri & peran terkait"
+    "relatedCross": "Jelajahi industri & peran terkait",
+    "useCasesEyebrow": "Contoh penggunaan",
+    "useCasesHeading": "{title} dalam alur kerja bisnis"
   },
   "featuresHub": {
     "metaTitle": "Fitur: AI Agent, Omnichannel CRM & Otomatisasi | CekatAI",

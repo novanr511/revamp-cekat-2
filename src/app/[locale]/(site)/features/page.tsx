@@ -3,6 +3,7 @@ import {
   LandingHub,
   hubMetadata,
 } from "@/components/sections/landing/landing-hub";
+import { SecondaryHubSurface } from "@/components/sections/shared/secondary-hub-surface";
 
 export function generateMetadata({
   params,
@@ -17,5 +18,9 @@ export default function FeaturesHubPage({
 }: {
   params: Promise<{ locale: string }>;
 }) {
-  return <LandingHub kind="features" params={params} />;
+  return (
+    <SecondaryHubSurface hub="features">
+      <LandingHub kind="features" params={params} />
+    </SecondaryHubSurface>
+  );
 }

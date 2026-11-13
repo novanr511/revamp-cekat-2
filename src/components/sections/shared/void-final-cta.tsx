@@ -65,7 +65,7 @@ export async function VoidFinalCta({
           <div className="grid gap-12 lg:grid-cols-12 lg:items-end">
             <div className="lg:col-span-8">
               {eyebrowText && (
-                <p className="eyebrow-rule-light mb-5 inline-flex text-sm font-semibold text-[#a5e1e8]">
+                <p className="eyebrow-rule-light mb-5 inline-flex text-sm font-semibold text-[var(--soft-surface-sand)]">
                   {eyebrowText}
                 </p>
               )}
@@ -74,7 +74,9 @@ export async function VoidFinalCta({
                 {accent ? (
                   <>
                     {" "}
-                    <span className="text-[#a5e1e8]">{accent}</span>
+                    <span className="text-[var(--soft-surface-sand)]">
+                      {accent}
+                    </span>
                   </>
                 ) : null}
               </h2>
@@ -108,14 +110,14 @@ export async function VoidFinalCta({
                 <Button
                   nativeButton={false}
                   render={<AppAnchor href={REGISTER_URL} />}
-                  className="h-13 rounded-full bg-white px-8 text-sm text-ink-void shadow-[0_18px_40px_-18px_rgba(255,255,255,0.35)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-sky-50"
+                  className="secondary-final-cta__register h-13 rounded-full bg-white px-8 text-sm text-ink-void shadow-[0_18px_40px_-18px_rgba(255,255,255,0.35)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-sky-50"
                 >
                   {th("ctaSecondary")}
                 </Button>
                 <Button
                   variant="outline"
                   nativeButton={false}
-                  className="h-13 rounded-full border-white/35 bg-white/10 px-8 text-sm text-white backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:border-white/70 hover:bg-white/15"
+                  className="secondary-final-cta__sales h-13 rounded-full border-white/35 bg-white/10 px-8 text-sm text-white backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:border-white/70 hover:bg-white/15"
                   render={
                     <WhatsAppAnchor target="_blank" rel="noopener noreferrer" />
                   }

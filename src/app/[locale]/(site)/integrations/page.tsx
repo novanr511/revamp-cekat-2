@@ -8,6 +8,7 @@ import { localeValue } from "@/lib/locale-value";
 import { Container } from "@/components/layout/container";
 import { LandingHero } from "@/components/sections/landing/landing-hero";
 import { LandingCta } from "@/components/sections/landing/landing-cta";
+import { SecondaryHubSurface } from "@/components/sections/shared/secondary-hub-surface";
 
 export async function generateMetadata({
   params,
@@ -55,7 +56,7 @@ export default async function IntegrationsPage({
   const t = await getTranslations({ locale, namespace: "integrations" });
 
   return (
-    <>
+    <SecondaryHubSurface hub="integrations">
       <LandingHero
         badge={t("badge")}
         title={t("heading")}
@@ -122,6 +123,6 @@ export default async function IntegrationsPage({
       </section>
 
       <LandingCta heading={t("ctaHeading")} body={t("ctaBody")} />
-    </>
+    </SecondaryHubSurface>
   );
 }

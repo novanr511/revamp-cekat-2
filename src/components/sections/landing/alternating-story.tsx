@@ -64,7 +64,7 @@ export function AlternatingStory({
                   className={cn(
                     "alternating-story__visual relative aspect-[4/3] min-w-0 overflow-hidden rounded-2xl bg-[#f3f6fd]",
                     index % 2 === 1 &&
-                      "bg-[#e6f7fa] md:col-start-1 md:row-start-1",
+                      "bg-[var(--soft-surface-blue)] md:col-start-1 md:row-start-1",
                   )}
                 >
                   <Image

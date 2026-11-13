@@ -1,0 +1,94 @@
+/* Soft palette for every /stories/[slug] customer story detail page. */
+.cekat-page .story-detail-soft {
+  --story-detail-blue: var(--soft-surface-blue);
+  --story-detail-blue-deep: var(--soft-surface-blue-deep);
+  --story-detail-warm: var(--soft-surface-warm);
+  --story-detail-sand: var(--soft-surface-sand);
+  --story-detail-neutral: var(--soft-surface-neutral);
+  --story-detail-line: var(--soft-surface-line);
+  --story-detail-ink: #09214c;
+  --story-detail-body: #3a4960;
+  --story-detail-quote-line: #c2a66c;
+}
+
+.cekat-page .story-detail-soft .secondary-hero {
+  --hero-field: var(--story-detail-blue);
+  --hero-highlight: var(--story-detail-sand);
+}
+
+.cekat-page .story-detail-soft .secondary-hero::after {
+  background: linear-gradient(
+    90deg,
+    var(--story-detail-blue-deep) 0 52%,
+    var(--story-detail-sand) 52%
+  );
+}
+
+/* Stories without a cover use a pale proof surface instead of a navy block. */
+.cekat-page .story-detail-soft .story-proof:not(:has(img)) {
+  border: 1px solid var(--story-detail-line);
+  background: linear-gradient(
+    135deg,
+    var(--story-detail-blue),
+    var(--story-detail-warm)
+  );
+  color: var(--story-detail-ink);
+  box-shadow: 0 24px 48px -32px #09214c26;
+}
+
+.cekat-page .story-detail-soft .story-proof:not(:has(img))::after {
+  content: none;
+}
+
+.cekat-page
+  .story-detail-soft
+  .story-proof:not(:has(img))
+  .story-proof__number {
+  color: #5276ad;
+}
+
+.cekat-page .story-detail-soft .story-proof:not(:has(img)) p {
+  color: var(--story-detail-body);
+}
+
+/* Keep real customer photography and the contrast overlay intact. */
+.cekat-page .story-detail-soft .story-proof:has(img) {
+  background: var(--story-detail-neutral);
+}
+
+.cekat-page .story-detail-soft .story-proof:has(img) img {
+  opacity: 1;
+}
+
+.cekat-page .story-detail-soft .story-proof:has(img)::after {
+  background: linear-gradient(
+    180deg,
+    transparent 25%,
+    rgba(58, 73, 96, 0.92) 100%
+  );
+}
+
+.cekat-page .story-detail-soft .story-proof:has(img) .story-proof__number {
+  color: var(--story-detail-sand);
+}
+
+.cekat-page .story-detail-soft blockquote {
+  border-color: var(--story-detail-quote-line);
+}
+
+.cekat-page .story-detail-soft .story-detail-cta {
+  border-color: var(--story-detail-line);
+  background: var(--story-detail-neutral);
+}
+
+.cekat-page .story-detail-soft .story-related-card {
+  border-color: var(--story-detail-line);
+}
+
+.cekat-page .story-detail-soft .story-related-card[data-story-tone="0"] {
+  background: var(--story-detail-blue);
+}
+
+.cekat-page .story-detail-soft .story-related-card[data-story-tone="1"] {
+  background: var(--story-detail-warm);
+}

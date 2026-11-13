@@ -207,7 +207,7 @@ export default async function AboutPage({
               <Reveal key={key} delay={index * 60} as="li" className="h-full">
                 <article className="about-growth__card h-full rounded-[1.25rem] border border-[#dbe6f1] bg-white p-5 sm:p-6">
                   <div className="flex items-center justify-between">
-                    <span className="grid size-11 place-items-center rounded-2xl bg-[#e4ebf9] text-primary">
+                    <span className="grid size-11 place-items-center rounded-2xl bg-[var(--soft-surface-blue-deep)] text-primary">
                       <Icon
                         aria-hidden="true"
                         className="size-5"

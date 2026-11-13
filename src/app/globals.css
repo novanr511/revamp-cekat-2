@@ -4,6 +4,8 @@
 @import "../components/sections/shared/case-study-soft.css";
 @import "../components/sections/blog/blog-motion.css";
 @import "../components/sections/revamp/revamp.css";
+@import "../components/sections/shared/secondary-hubs-soft.css";
+@import "../components/sections/shared/story-detail-soft.css";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -20,6 +22,14 @@
   --brand-navy: #09214c;
   --primary-foreground: #ffffff;
   --primary-foreground-muted: #dae3f6;
+
+  /* Shared non-homepage surface pair: cool Cekat blue with warm sand. */
+  --soft-surface-blue: #f0f4fa;
+  --soft-surface-blue-deep: #e2eaf5;
+  --soft-surface-warm: #faf6ed;
+  --soft-surface-sand: #f3ead7;
+  --soft-surface-neutral: #f7f8fa;
+  --soft-surface-line: #dde3e9;
 
   /* Deep ink used by dark homepage chapters — near-black navy, not pure black */
   --ink-void: #050b18;
@@ -853,31 +863,31 @@ body {
   padding-bottom: clamp(56px, 6vw, 88px);
 }
 .cekat-page .product-stage {
-  --stage-soft: #e6f7fa;
+  --stage-soft: var(--soft-surface-blue);
   --stage-accent: var(--brand-cyan);
   position: relative;
   isolation: isolate;
   min-height: 510px;
   padding: 44px 28px 68px;
-  border: 1px solid #c8e3ed;
+  border: 1px solid var(--soft-surface-line);
   border-radius: 32px;
   background: linear-gradient(
     135deg,
-    #fdf0cb -25%,
+    var(--soft-surface-warm) -25%,
     var(--stage-soft) 38%,
-    #ccdaf1 115%
+    var(--soft-surface-blue-deep) 115%
   );
 }
 .cekat-page .product-stage[data-tone="crm"] {
-  --stage-soft: #e4ebf9;
+  --stage-soft: var(--soft-surface-blue-deep);
   --stage-accent: var(--brand-blue);
 }
 .cekat-page .product-stage[data-tone="marketing"] {
-  --stage-soft: #fff3d9;
+  --stage-soft: var(--soft-surface-warm);
   --stage-accent: var(--brand-orange);
 }
 .cekat-page .product-stage[data-tone="order"] {
-  --stage-soft: #e6f7fa;
+  --stage-soft: var(--soft-surface-blue);
   --stage-accent: var(--brand-cyan);
 }
 .cekat-page .product-stage__orbit {
@@ -1107,7 +1117,12 @@ body {
   gap: 20px;
   padding: 28px;
   border-radius: 28px;
-  background: linear-gradient(110deg, #fff3d9, #e6f7fa 45%, #ccdaf1);
+  background: linear-gradient(
+    110deg,
+    var(--soft-surface-warm),
+    var(--soft-surface-blue) 45%,
+    var(--soft-surface-blue-deep)
+  );
 }
 .cekat-page .hub-panorama__tile {
   position: relative;

@@ -1123,7 +1123,9 @@
     "caseStudyEyebrow": "고객 사례",
     "caseStudyAttribution": "수치는 Cekat.AI 고객이 직접 제공했습니다.",
     "relatedCrossEyebrow": "사이트 더 둘러보기",
-    "relatedCross": "관련 산업 및 역할 살펴보기"
+    "relatedCross": "관련 산업 및 역할 살펴보기",
+    "useCasesEyebrow": "활용 사례",
+    "useCasesHeading": "{title}를 실제 업무에 활용하는 방법"
   },
   "featuresHub": {
     "metaTitle": "기능: AI 에이전트, 옴니채널 CRM 및 자동화 | CekatAI",

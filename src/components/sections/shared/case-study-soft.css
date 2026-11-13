@@ -1,25 +1,24 @@
-/* Detail stories only; the case-study directory and product palette are isolated.
- * Reuse the soft blue/mint/cream direction approved for the six product pages.
+/* Case-study detail pages share the blue/warm-sand surfaces used by stories.
  * All changes are cosmetic: preserve layout, photos, evidence and interactions.
  */
 .cekat-page .case-study-soft {
-  --case-blue: #f0f4fa;
-  --case-mint: #f0f7f5;
-  --case-cream: #faf6ed;
-  --case-neutral: #f7f8fa;
-  --case-line: #dde3e9;
-  --case-quote-line: #a9c9c1;
+  --case-blue: var(--soft-surface-blue);
+  --case-blue-deep: var(--soft-surface-blue-deep);
+  --case-warm: var(--soft-surface-warm);
+  --case-sand: var(--soft-surface-sand);
+  --case-neutral: var(--soft-surface-neutral);
+  --case-line: var(--soft-surface-line);
+  --case-quote-line: #c2a66c;
 }
 .cekat-page .case-study-soft .secondary-hero {
-  --hero-field: var(--case-mint);
-  --hero-highlight: #e1efeb;
+  --hero-field: var(--case-blue);
+  --hero-highlight: var(--case-sand);
 }
 .cekat-page .case-study-soft .secondary-hero::after {
   background: linear-gradient(
     90deg,
-    #d9e4f2 0 42%,
-    #dceee8 42% 76%,
-    #eee5d2 76%
+    var(--case-blue-deep) 0 52%,
+    var(--case-sand) 52%
   );
 }
 .cekat-page .case-study-soft .case-study__hero-photo {
@@ -32,13 +31,13 @@
   border-color: var(--case-line);
 }
 .cekat-page .case-study-soft .case-study__outcome:nth-child(even) {
-  background: var(--case-mint);
+  background: var(--case-warm);
 }
 .cekat-page .case-study-soft .case-study__body {
   background: var(--case-neutral);
 }
 .cekat-page .case-study-soft .case-study__challenge-quote {
-  background: var(--case-mint);
+  background: var(--case-warm);
   border-color: var(--case-quote-line);
 }
 .cekat-page .case-study-soft .case-study__results-quote {
@@ -56,13 +55,13 @@
   background: var(--case-blue);
 }
 .cekat-page .case-study-soft .case-study__result:nth-child(even) {
-  background: var(--case-mint);
+  background: var(--case-warm);
 }
 .cekat-page .case-study-soft aside dt {
   color: #505f73;
 }
 .cekat-page .case-study-soft .case-study__cta {
-  background: var(--case-cream);
+  background: var(--case-warm);
   border-color: #e7e0d3;
 }
 .cekat-page .case-study-soft .case-study__related-card:hover {

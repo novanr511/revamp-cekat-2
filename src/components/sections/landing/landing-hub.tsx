@@ -231,7 +231,9 @@ export async function LandingHub({
         <DefinitionBlock definition={definition} />
       </div>
 
-      <section className="relative overflow-hidden bg-[#f9fafb] py-20 md:py-24 lg:py-28">
+      <section
+        className={`relative overflow-hidden bg-[#f9fafb] py-20 md:py-24 lg:py-28 ${kind === "features" ? "hub-index--features" : ""}`}
+      >
         <div
           aria-hidden
           className="pointer-events-none absolute inset-0 opacity-0"

@@ -1123,7 +1123,9 @@
     "caseStudyEyebrow": "Customer Story",
     "caseStudyAttribution": "Figures reported directly by Cekat.AI customers.",
     "relatedCrossEyebrow": "Across the site",
-    "relatedCross": "Explore related industries & roles"
+    "relatedCross": "Explore related industries & roles",
+    "useCasesEyebrow": "Use cases",
+    "useCasesHeading": "Where {title} fits into your workflow"
   },
   "featuresHub": {
     "metaTitle": "Features: AI Agent, Omnichannel CRM & Automation | CekatAI",

@@ -1,33 +1,29 @@
 /* Six product pages only. Apple Business informs surface restraint, not layout.
- * Pale blue, mint and cream retain Cekat's product hues without saturated fields.
+ * Pale Cekat blue pairs with warm cream/sand, avoiding a blue-green mix.
  * Existing typography, spacing, shapes, artwork and motion remain unchanged.
  */
 .cekat-page .product-soft {
-  --product-blue: #f0f4fa;
-  --product-mint: #f0f7f5;
-  --product-cream: #faf6ed;
-  --product-neutral: #f7f8fa;
-  --product-line: #dde3e9;
+  --product-blue: var(--soft-surface-blue);
+  --product-blue-deep: var(--soft-surface-blue-deep);
+  --product-warm: var(--soft-surface-warm);
+  --product-sand: var(--soft-surface-sand);
+  --product-neutral: var(--soft-surface-neutral);
+  --product-line: var(--soft-surface-line);
   --product-ink: #09214c;
   --product-body: #3a4960;
   --product-accent: #1352bf;
   --product-accent-hover: #0d439f;
-  --product-wash: var(--product-mint);
-  --product-highlight: #e1efeb;
+  --product-wash: var(--product-blue);
+  --product-highlight: var(--product-sand);
   --surface-muted: var(--product-neutral);
 }
 .cekat-page .product-soft[data-product="marketing"],
 .cekat-page .product-soft[data-product="broadcast"],
 .cekat-page .product-soft[data-product="analitik"] {
-  --product-wash: var(--product-cream);
-  --product-highlight: #f3ead7;
+  --product-wash: var(--product-warm);
+  --product-highlight: var(--product-blue-deep);
 }
-.cekat-page .product-soft[data-product="crm"] {
-  --product-wash: var(--product-blue);
-  --product-highlight: #e2eaf5;
-}
-
-/* Keep the split field and revenue-stage stripe, lower their color intensity. */
+/* Keep the split field and revenue-stage stripe within the shared blue/sand pair. */
 .cekat-page .product-soft .secondary-hero {
   --hero-field: var(--product-wash);
   --hero-highlight: var(--product-highlight);
@@ -35,13 +31,23 @@
 .cekat-page .product-soft .secondary-hero::after {
   background: linear-gradient(
     90deg,
-    #d9e4f2 0 42%,
-    #dceee8 42% 76%,
-    #eee5d2 76%
+    var(--soft-surface-blue-deep) 0 52%,
+    var(--soft-surface-sand) 52%
   );
 }
 .cekat-page .product-soft .secondary-hero a {
   box-shadow: none;
+}
+
+.cekat-page .product-soft .product-stage {
+  --stage-soft: var(--product-wash);
+  border-color: var(--product-line);
+  background: linear-gradient(
+    135deg,
+    var(--product-warm) -25%,
+    var(--product-wash) 38%,
+    var(--product-blue-deep) 115%
+  );
 }
 
 /* White product UI on a pale field; dark ink remains legible on every tint. */
@@ -67,10 +73,10 @@
   color: var(--product-accent);
 }
 .cekat-page .product-soft .workflow-scene__status i {
-  background: #aac6c0;
+  background: var(--product-blue-deep);
 }
 .cekat-page .product-soft .workflow-scene__status i:nth-child(2) {
-  background: #d6c5a2;
+  background: var(--product-sand);
 }
 
 /* The lead card keeps its position and size, not a full saturated-blue fill. */
@@ -82,9 +88,9 @@
   .product-soft
   .capability-chapter
   .capability-grid
-  > :nth-child(2)
+  > :nth-child(even)
   .capability-card {
-  background: var(--product-mint);
+  background: var(--product-warm);
 }
 .cekat-page
   .product-soft
@@ -92,7 +98,7 @@
   .capability-grid
   > :nth-child(3n)
   .capability-card {
-  background: var(--product-cream);
+  background: var(--product-blue);
 }
 .cekat-page .product-soft .capability-chapter .capability-card p {
   color: var(--product-body);
@@ -106,7 +112,7 @@
   background: var(--product-blue);
 }
 .cekat-page .product-soft article:nth-child(even) .alternating-story__visual {
-  background: var(--product-mint);
+  background: var(--product-warm);
 }
 
 /* Keep the closing composition and curves; use pale fills with a clear blue CTA. */
@@ -115,10 +121,10 @@
   color: var(--product-ink);
 }
 .cekat-page .product-soft .secondary-final-cta::before {
-  background: #e7f1ed;
+  background: var(--product-blue-deep);
 }
 .cekat-page .product-soft .secondary-final-cta::after {
-  background: #f1e9d9;
+  background: var(--product-sand);
 }
 .cekat-page .product-soft .secondary-final-cta h2 {
   color: var(--product-ink);

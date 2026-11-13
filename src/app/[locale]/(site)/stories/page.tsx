@@ -8,6 +8,7 @@ import { JsonLd } from "@/components/seo/json-ld";
 import { Container } from "@/components/layout/container";
 import { Reveal } from "@/components/sections/new-home/reveal";
 import { PageHero } from "@/components/sections/shared/page-hero";
+import { SecondaryHubSurface } from "@/components/sections/shared/secondary-hub-surface";
 import { STORIES, storyCopyFor } from "@/lib/stories";
 import Image from "next/image";
 
@@ -69,7 +70,7 @@ export default async function StoriesIndexPage({
   const featured = STORIES[0];
 
   return (
-    <>
+    <SecondaryHubSurface hub="stories">
       <JsonLd
         data={[
           collectionPageJsonLd({
@@ -144,7 +145,7 @@ export default async function StoriesIndexPage({
         </Link>
       </PageHero>
 
-      <section className="relative overflow-hidden bg-[#f9fafb] py-20 md:py-28">
+      <section className="story-index-grid relative overflow-hidden bg-[#f9fafb] py-20 md:py-28">
         <div
           aria-hidden
           className="pointer-events-none absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-primary/20 to-transparent"
@@ -162,7 +163,8 @@ export default async function StoriesIndexPage({
                       pathname: "/stories/[slug]",
                       params: { slug: story.slug },
                     }}
-                    className="group flex h-full flex-col rounded-[20px] border border-[#e5e9ef] bg-white p-7 shadow-[0_1px_2px_rgba(9,33,76,0.04)] transition-all duration-300 hover:-translate-y-1 hover:border-[#9eb8e5] hover:shadow-[0_18px_40px_-22px_rgba(9,33,76,0.27)] motion-reduce:transform-none"
+                    className="story-index-card group flex h-full flex-col rounded-[20px] border border-[#e5e9ef] bg-white p-7 shadow-[0_1px_2px_rgba(9,33,76,0.04)] transition-all duration-300 hover:-translate-y-1 hover:border-[#9eb8e5] hover:shadow-[0_18px_40px_-22px_rgba(9,33,76,0.27)] motion-reduce:transform-none"
+                    data-story-tone={index % 2}
                   >
                     {story.image && (
                       <div className="relative -mx-7 -mt-7 mb-7 aspect-[16/9] overflow-hidden">
@@ -197,6 +199,6 @@ export default async function StoriesIndexPage({
           </div>
         </Container>
       </section>
-    </>
+    </SecondaryHubSurface>
   );
 }

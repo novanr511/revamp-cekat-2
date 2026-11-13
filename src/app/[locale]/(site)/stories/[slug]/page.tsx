@@ -152,7 +152,7 @@ export default async function StoryPage({
   }
 
   return (
-    <>
+    <div className="story-detail-soft">
       <JsonLd data={schema} />
 
       <PageHero
@@ -254,7 +254,7 @@ export default async function StoryPage({
                 </Reveal>
               )}
               <Reveal delay={180} className="mt-8">
-                <div className="rounded-[1.35rem] border border-foreground/10 bg-slate-50 p-6">
+                <div className="story-detail-cta rounded-[1.35rem] border border-foreground/10 bg-slate-50 p-6">
                   <p className="font-numeric text-sm font-semibold text-foreground">
                     {copy.cta}
                   </p>
@@ -282,14 +282,15 @@ export default async function StoryPage({
               {copy.moreHeading}
             </h2>
             <div className="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
-              {others.map((other) => (
+              {others.map((other, index) => (
                 <Link
                   key={other.slug}
                   href={{
                     pathname: "/stories/[slug]",
                     params: { slug: other.slug },
                   }}
-                  className="group rounded-2xl border border-foreground/10 bg-white p-5 transition-all hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-md"
+                  className="story-related-card group rounded-2xl border border-foreground/10 bg-white p-5 transition-all hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-md"
+                  data-story-tone={index % 2}
                 >
                   <span className="font-numeric text-lg font-semibold tracking-[-0.03em] text-primary">
                     {t(`${other.key}.metricValue`)}
@@ -314,6 +315,6 @@ export default async function StoryPage({
           </Reveal>
         </Container>
       </section>
-    </>
+    </div>
   );
 }

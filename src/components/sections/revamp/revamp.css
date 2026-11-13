@@ -149,7 +149,7 @@ html:has(.r-page) {
   color: #09214c;
 }
 .r-page .r-button--white:hover {
-  background: #e4ebf9;
+  background: var(--soft-surface-blue-deep);
   transform: translateY(-2px);
 }
 .r-page .r-reassurance {
@@ -1065,7 +1065,7 @@ html:has(.r-page) {
 .r-page .r-canvas__nav-active {
   display: grid;
   place-items: center;
-  background: #e4ebf9;
+  background: var(--soft-surface-blue-deep);
   color: #1352bf;
   width: 34px;
   height: 34px;
@@ -1236,7 +1236,7 @@ html:has(.r-page) {
   border-bottom-right-radius: 3px;
 }
 .r-page .r-bubble--agent {
-  background: #e4ebf9;
+  background: var(--soft-surface-blue-deep);
   color: #09214c;
   border-bottom-left-radius: 3px;
 }
@@ -1711,10 +1711,10 @@ html:has(.r-page) {
   letter-spacing: -0.04em;
 }
 .r-page .r-hub-featured__card:nth-child(3) .r-hub-featured__product {
-  background: #fff3d9;
+  background: var(--soft-surface-warm);
 }
 .r-page .r-hub-featured__card:nth-child(4) .r-hub-featured__product {
-  background: #e6f7fa;
+  background: var(--soft-surface-blue);
 }
 .r-page .r-hub-hero__foot {
   display: flex;
@@ -1967,7 +1967,7 @@ html:has(.r-page) {
   border-radius: 0;
   order: 2;
   overflow: hidden;
-  background: #e4ebf9;
+  background: var(--soft-surface-blue-deep);
 }
 .r-page .r-editorial-feature__copy {
   padding: 36px;
@@ -2040,7 +2040,7 @@ html:has(.r-page) {
   position: relative;
   aspect-ratio: 1.6;
   border-radius: 8px;
-  background: #e4ebf9;
+  background: var(--soft-surface-blue-deep);
   overflow: hidden;
 }
 .cekat-page .r-post-card__image img {
@@ -2111,7 +2111,7 @@ html:has(.r-page) {
   justify-content: end;
   height: 100%;
   padding: 30px;
-  background: #e4ebf9;
+  background: var(--soft-surface-blue-deep);
   color: #1352bf;
 }
 .cekat-page .r-editorial-fallback span {

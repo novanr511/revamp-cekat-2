@@ -29,6 +29,7 @@ import { Breadcrumbs } from "./breadcrumbs";
 import { LandingHero } from "./landing-hero";
 import { DefinitionBlock } from "./definition-block";
 import { BenefitAccordion } from "./benefit-accordion";
+import { AlternatingStory } from "./alternating-story";
 import { StatCards } from "./stat-cards";
 import { CaseStudy } from "./case-study";
 import { IndustryRoles } from "./industry-roles";
@@ -268,6 +269,84 @@ export async function LandingPage({
           faqHeading={t("faqHeading", { title: pageTitle })}
         />
       </>
+    );
+  }
+
+  if (kind === "features") {
+    return (
+      <div className="feature-detail" data-layout="long-with-use-cases">
+        <JsonLd data={jsonLd} />
+        <div className="cv-auto">
+          <LandingHero
+            badge={content.hero.badge}
+            title={content.hero.title}
+            subtitle={content.hero.subtitle}
+            useCases={content.hero.useCases}
+            image={heroImage}
+            imageAlt={pageTitle}
+            productImage={heroProduct}
+            tone={entry.category}
+            visualLabel={content.benefits[0]?.title}
+          />
+        </div>
+        <Breadcrumbs items={crumbs} />
+        <div className="cv-auto">
+          <LogoMarquee heading={tt("heading")} logos={TRUSTED_LOGOS} />
+        </div>
+        <div className="cv-auto">
+          <DefinitionBlock
+            definition={content.definition}
+            stats={content.stats}
+          />
+        </div>
+        <div className="cv-auto">
+          <AlternatingStory
+            eyebrow={t("benefitsEyebrow")}
+            heading={content.benefitsHeading ?? t("benefitsHeading")}
+            benefits={content.benefits}
+          />
+        </div>
+        {content.tabs && content.tabs.length > 0 && (
+          <FeatureTabs
+            eyebrow={t("tabsEyebrow")}
+            heading={t("tabsHeading")}
+            tabs={content.tabs}
+          />
+        )}
+        <div className="cv-auto">
+          <Pillars
+            eyebrow={t("useCasesEyebrow")}
+            heading={t("useCasesHeading", { title: pageTitle })}
+            pillars={content.pillars}
+          />
+        </div>
+        {content.caseStudy && (
+          <CaseStudy
+            eyebrow={t("caseStudyEyebrow")}
+            attribution={t("caseStudyAttribution")}
+            story={content.caseStudy}
+          />
+        )}
+        {content.testimonial && (
+          <LandingTestimonial
+            eyebrow={t("testimonialEyebrow")}
+            heading={content.testimonial.heading ?? t("testimonialHeading")}
+            testimonial={content.testimonial}
+          />
+        )}
+        <RichFaq
+          label={t("faqLabel")}
+          heading={t("faqHeading", { title: pageTitle })}
+          items={content.faq}
+        />
+        <RelatedLinks
+          eyebrow={t("relatedEyebrow")}
+          heading={t("related.features")}
+          links={related}
+          readMore={t("readMore")}
+        />
+        <LandingCta heading={content.cta.heading} body={content.cta.body} />
+      </div>
     );
   }
 

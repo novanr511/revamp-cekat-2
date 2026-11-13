@@ -1123,7 +1123,9 @@
     "caseStudyEyebrow": "客户故事",
     "caseStudyAttribution": "数据由 Cekat.AI 客户直接提供。",
     "relatedCrossEyebrow": "探索更多内容",
-    "relatedCross": "探索相关行业与岗位"
+    "relatedCross": "探索相关行业与岗位",
+    "useCasesEyebrow": "使用场景",
+    "useCasesHeading": "将{title}融入实际工作流程"
   },
   "featuresHub": {
     "metaTitle": "特点：人工智能代理、全渠道 CRM 和自动化 |Cekat.AI",
