@@ -58,9 +58,7 @@ export async function generateMetadata({
       locale: "id",
     })}`,
   };
-  const images = story.image
-    ? [{ url: story.image, alt: company }]
-    : [{ url: "/graph-image.jpg", width: 1200, height: 630, alt: title }];
+  const images = [{ url: story.image, alt: `${company} customer story` }];
 
   return {
     title,
@@ -77,7 +75,7 @@ export async function generateMetadata({
       images,
     },
     twitter: {
-      card: story.image ? "summary" : "summary_large_image",
+      card: "summary_large_image",
       title,
       description,
       images: images.map((image) => image.url),
@@ -163,16 +161,14 @@ export default async function StoryPage({
         split
         visual={
           <div className="story-proof">
-            {story.image && (
-              <Image
-                src={story.image}
-                alt={company}
-                fill
-                preload
-                sizes="(max-width: 1024px) 100vw, 600px"
-                className="object-cover"
-              />
-            )}
+            <Image
+              src={story.image}
+              alt=""
+              fill
+              preload
+              sizes="(max-width: 1024px) 100vw, 600px"
+              className="object-cover"
+            />
             <div className="story-proof__copy">
               <span className="story-proof__number">{metricValue}</span>
               <p>{metricLabel}</p>
@@ -211,10 +207,10 @@ export default async function StoryPage({
                   &ldquo;{quote}&rdquo;
                 </blockquote>
                 <div className="mt-6 flex items-center gap-4">
-                  {story.image && (
+                  {story.portrait && (
                     // eslint-disable-next-line @next/next/no-img-element -- customer photo asset served as-is, same as testimonial avatars
                     <img
-                      src={story.image}
+                      src={story.portrait}
                       alt={name}
                       width={56}
                       height={56}
@@ -292,15 +288,26 @@ export default async function StoryPage({
                   className="story-related-card group rounded-2xl border border-foreground/10 bg-white p-5 transition-all hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-md"
                   data-story-tone={index % 2}
                 >
-                  <span className="font-numeric text-lg font-semibold tracking-[-0.03em] text-primary">
-                    {t(`${other.key}.metricValue`)}
-                  </span>
-                  <p className="mt-1 text-sm font-semibold text-foreground">
-                    {t(`${other.key}.company`)}
-                  </p>
-                  <p className="mt-0.5 text-xs text-muted-foreground">
-                    {t(`${other.key}.metricLabel`)}
-                  </p>
+                  <div className="relative -mx-5 -mt-5 mb-4 aspect-video overflow-hidden">
+                    <Image
+                      src={other.image}
+                      alt=""
+                      fill
+                      sizes="(max-width: 768px) 100vw, 300px"
+                      className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                    />
+                  </div>
+                  <div>
+                    <span className="font-numeric text-lg font-semibold tracking-[-0.03em] text-primary">
+                      {t(`${other.key}.metricValue`)}
+                    </span>
+                    <p className="mt-1 text-sm font-semibold text-foreground">
+                      {t(`${other.key}.company`)}
+                    </p>
+                    <p className="mt-0.5 text-xs text-muted-foreground">
+                      {t(`${other.key}.metricLabel`)}
+                    </p>
+                  </div>
                 </Link>
               ))}
             </div>

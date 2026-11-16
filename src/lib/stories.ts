@@ -14,8 +14,10 @@ export interface StoryDef {
   key: "natureCraft" | "wallStreet" | "putiih" | "threeland" | "rumahZakat";
   /** Recorded interview on YouTube, when one exists for this customer. */
   videoId?: string;
-  /** Known photo asset; stories without one fall back to an initials avatar. */
-  image?: string;
+  /** Story cover image; use contextual imagery when no customer photo exists. */
+  image: string;
+  /** Actual customer portrait, omitted when the cover is contextual imagery. */
+  portrait?: string;
 }
 
 export const STORIES: StoryDef[] = [
@@ -24,21 +26,65 @@ export const STORIES: StoryDef[] = [
     key: "natureCraft",
     image: "/images/home/case-study-naturecraft.jpg",
   },
-  { slug: "wall-street", key: "wallStreet" },
-  { slug: "putiih", key: "putiih" },
+  {
+    slug: "wall-street",
+    key: "wallStreet",
+    image: "/images/industries/education-hero.webp",
+  },
+  {
+    slug: "putiih",
+    key: "putiih",
+    image: "/images/industries/beauty-wellness-hero.webp",
+  },
   {
     slug: "threeland",
     key: "threeland",
     videoId: "IezNIgsGH5I",
     image: "/images/crm/adam-sulaiman.png",
+    portrait: "/images/crm/adam-sulaiman.png",
   },
   {
     slug: "rumah-zakat",
     key: "rumahZakat",
     videoId: "wvOip0Gkx30",
     image: "/images/home/testimonial-wiji-astuti.jpg",
+    portrait: "/images/home/testimonial-wiji-astuti.jpg",
   },
 ];
+
+/** Recorded customer video testimonials and their matching portrait photos. */
+export const VIDEO_TESTIMONIALS = [
+  {
+    key: "moir",
+    videoId: "ePdVgW7X01s",
+    image: "/images/home/testimonial-silica-brenda.jpg",
+  },
+  {
+    key: "rumahZakat",
+    videoId: "wvOip0Gkx30",
+    image: "/images/chat/tantan-supriatna.png",
+  },
+  {
+    key: "mnp",
+    videoId: "O_xSafLehMQ",
+    image: "/images/home/testimonial-hargyo.jpg",
+  },
+  {
+    key: "vio",
+    videoId: "681luT0Aa68",
+    image: "/images/home/rianti-yahya.png",
+  },
+  {
+    key: "dokterhub",
+    videoId: "vmXUCHVo6k8",
+    image: "/images/home/gerry-wilianto.png",
+  },
+  {
+    key: "threeland",
+    videoId: "IezNIgsGH5I",
+    image: "/images/crm/adam-sulaiman.png",
+  },
+] as const;
 
 export function getStory(slug: string): StoryDef | undefined {
   return STORIES.find((s) => s.slug === slug);
