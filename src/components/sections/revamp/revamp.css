@@ -5728,10 +5728,10 @@ html:has(.r-page) {
   width: fit-content;
   max-width: 100%;
   padding: 3px 7px;
-  border: 1px solid #d5e9e3;
+  border: 1px solid #cbd8e9;
   border-radius: 999px;
-  background: #eef8f4;
-  color: #268267 !important;
+  background: #f0f4fa;
+  color: #4a6892 !important;
   font-size: 8px;
   white-space: nowrap;
 }
@@ -7232,6 +7232,14 @@ html:has(.r-page) {
   --r-accent: #82aaa6;
   --r-accent-text: #4f7673;
 }
+.r-page.r-industry[data-r-tone="industry"] {
+  --r-ink: #293f50;
+  --r-text: #536474;
+  --r-line: var(--soft-surface-line);
+  --r-soft: var(--soft-surface-blue);
+  --r-accent: #4a6892;
+  --r-accent-text: #4a6892;
+}
 
 .r-page.r-hub--industry .r-hub-hero {
   --r-accent: #8da7c9;
@@ -7275,33 +7283,44 @@ html:has(.r-page) {
 }
 
 .r-page.r-hub--industry .r-directory__filters button[aria-pressed="true"] {
-  border-color: #ccddda;
-  background: #e2eeeb;
-  color: #31595a;
+  border-color: #cbd8e9;
+  background: var(--soft-surface-blue-deep);
+  color: #294a76;
 }
 .r-page.r-hub--industry
   .r-directory__filters
   button:hover:not([aria-pressed="true"]),
 .r-page.r-hub--industry .r-directory-card:hover {
-  border-color: #c4d8d4;
+  border-color: #bfd0e5;
 }
 .r-page.r-hub--industry .r-directory__grid--industries .r-directory-card:hover {
-  background: #f0f5f2;
+  background: var(--soft-surface-blue);
 }
 .r-page.r-hub--industry .r-directory-card__arrow {
-  color: var(--r-accent-text);
+  color: #4a6892;
 }
 
 .r-page.r-industry .r-detail-hero--industry {
-  background: #f5f7f3;
+  background: var(--soft-surface-blue);
+}
+.r-page.r-industry .r-industry-visual__photo {
+  background: var(--soft-surface-blue);
+}
+.r-page.r-industry .r-ai-status {
+  border-color: #cbd8e9;
+  background: var(--soft-surface-blue-deep);
+  color: #4a6892;
+}
+.r-page.r-industry .r-industry-visual__card-bottom svg {
+  color: #4a6892;
 }
 .r-page.r-industry .r-button--primary {
-  border-color: #d0dfdc;
-  background: #e0ece9;
-  color: #31595a;
+  border-color: #cbd8e9;
+  background: var(--soft-surface-blue-deep);
+  color: #294a76;
 }
 .r-page.r-industry .r-button--primary:hover {
-  background: #d5e5e1;
+  background: #d8e3f1;
 }
 .r-page.r-industry .r-text-link,
 .r-page.r-industry .r-solution-nav a {
@@ -7309,57 +7328,99 @@ html:has(.r-page) {
 }
 .r-page.r-industry .r-text-link:hover,
 .r-page.r-industry .r-solution-nav a:hover {
-  color: #3f6866;
+  color: #294a76;
 }
 .r-page.r-industry .r-industry-story__flow {
-  background: #f0f6f3;
+  background: var(--soft-surface-blue);
 }
 .r-page.r-industry .r-solution-flow__thread > li:not(:last-child)::before {
-  background: #b6cfca;
+  background: #bfd0e5;
 }
 .r-page.r-industry .r-industry-story__steps li {
-  border-color: #b6cfca;
+  border-color: #bfd0e5;
 }
 .r-page.r-industry .r-industry-story__index {
   color: var(--r-accent-text);
 }
 
-.r-page[data-r-tone="industry"] .r-proof {
-  background: #eff5f2;
+.r-page.r-industry[data-r-tone="industry"] .r-proof {
+  background: var(--soft-surface-blue);
   color: var(--r-text);
 }
-.r-page[data-r-tone="industry"] .r-proof h2 {
+.r-page.r-industry[data-r-tone="industry"] .r-proof h2 {
   color: var(--r-ink);
 }
-.r-page[data-r-tone="industry"] .r-proof .r-kicker,
-.r-page[data-r-tone="industry"] .r-proof .r-text-link,
-.r-page[data-r-tone="industry"] .r-proof__metrics strong {
+.r-page.r-industry[data-r-tone="industry"] .r-proof .r-kicker,
+.r-page.r-industry[data-r-tone="industry"] .r-proof .r-text-link,
+.r-page.r-industry[data-r-tone="industry"] .r-proof__metrics strong {
   color: var(--r-accent-text);
 }
-.r-page[data-r-tone="industry"] .r-proof__metrics p {
+.r-page.r-industry[data-r-tone="industry"] .r-proof__metrics p {
   color: var(--r-ink);
 }
-.r-page[data-r-tone="industry"] .r-closer {
-  background: #e7f0ed;
+.r-page.r-industry[data-r-tone="industry"] .r-closer {
+  background: var(--soft-surface-blue-deep);
   color: var(--r-ink);
 }
-.r-page[data-r-tone="industry"] .r-closer .r-kicker,
-.r-page[data-r-tone="industry"] .r-closer__sales {
+.r-page.r-industry[data-r-tone="industry"] .r-closer .r-kicker,
+.r-page.r-industry[data-r-tone="industry"] .r-closer__sales {
   color: var(--r-accent-text);
 }
-.r-page[data-r-tone="industry"] .r-closer h2 {
+.r-page.r-industry[data-r-tone="industry"] .r-closer h2 {
   color: var(--r-ink);
 }
-.r-page[data-r-tone="industry"] .r-closer .r-lede,
-.r-page[data-r-tone="industry"] .r-closer__action p {
-  color: #536b6b;
+.r-page.r-industry[data-r-tone="industry"] .r-closer .r-lede,
+.r-page.r-industry[data-r-tone="industry"] .r-closer__action p {
+  color: #536b7f;
 }
 
-.r-page[data-r-tone="industry"] .r-industry-ui {
+.r-page.r-industry[data-r-tone="industry"] .r-industry-ui {
   --industry-ink: #30485a;
   --industry-muted: #687b89;
-  --industry-line: #e1e9e7;
-  --industry-blue: #527d80;
-  --industry-green: #557a68;
+  --industry-line: #e1e7f0;
+  --industry-blue: #4a6892;
+  --industry-green: var(--industry-blue);
   --industry-amber: #806946;
+}
+
+.r-page.r-industry .r-auto-qualify__lead-status,
+.r-page.r-industry .r-auto-qualify__qualified,
+.r-page.r-industry .r-auto-qualify__field-icon--budget,
+.r-page.r-industry .r-auto-qualify__handoff,
+.r-page.r-industry .r-auto-booking__confirmed,
+.r-page.r-industry .r-auto-reminder__channel,
+.r-page.r-industry .r-auto-reminder__message-label,
+.r-page.r-industry .r-auto-reminder__message-cta,
+.r-page.r-industry .r-auto-reminder__sent,
+.r-page.r-industry .r-auto-reminder__sent strong,
+.r-page.r-industry .r-auto-crm__deal-note,
+.r-page.r-industry .r-auto-crm__deal-copy strong {
+  color: #4a6892;
+}
+.r-page.r-industry .r-auto-qualify__lead-status,
+.r-page.r-industry .r-auto-qualify__qualified,
+.r-page.r-industry .r-auto-qualify__field-icon--budget,
+.r-page.r-industry .r-auto-qualify__handoff,
+.r-page.r-industry .r-auto-booking__confirmed,
+.r-page.r-industry .r-auto-reminder__channel,
+.r-page.r-industry .r-auto-reminder__message-cta,
+.r-page.r-industry .r-auto-reminder__sent {
+  border-color: #cbd8e9;
+  background-color: var(--soft-surface-blue);
+}
+.r-page.r-industry .r-auto-qualify__handoff small,
+.r-page.r-industry .r-auto-booking__confirmed small,
+.r-page.r-industry .r-auto-reminder__message time,
+.r-page.r-industry .r-auto-reminder__sent small,
+.r-page.r-industry .r-auto-crm__deal-copy small,
+.r-page.r-industry .r-auto-crm__deal-copy em {
+  color: #687b89;
+}
+.r-page.r-industry .r-auto-reminder__message {
+  color: #425a72;
+}
+.r-page.r-industry .r-auto-reminder__message-wrap {
+  border-color: #dce5f1;
+  background-color: #f7f9fc;
+  background-image: radial-gradient(#dce5f1 0.65px, transparent 0.65px);
 }
