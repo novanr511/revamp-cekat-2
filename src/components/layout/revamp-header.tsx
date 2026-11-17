@@ -694,7 +694,7 @@ export function RevampHeader() {
     <div ref={rootRef} className="revamp-site-header" data-locale={locale}>
       {/* The stylesheet is the canonical visual system supplied with the approved revamp. */}
       {/* eslint-disable-next-line @next/next/no-css-tags */}
-      <link rel="stylesheet" href="/revamp-web-cekat/styles.css?v=63" />
+      <link rel="stylesheet" href="/revamp-web-cekat/styles.css?v=67" />
       <style>{`.nav{position:sticky!important;top:0!important;z-index:1000!important}.nav__language-menu{position:absolute!important;top:calc(100% + 6px)!important;right:0!important;width:170px!important;z-index:2147483000!important}.nav__languages:hover>.nav__language-menu,.nav__languages:focus-within>.nav__language-menu,.nav__languages[open]>.nav__language-menu{display:grid!important}`}</style>
       <a className="skip" href="#main">
         {skipLabel}

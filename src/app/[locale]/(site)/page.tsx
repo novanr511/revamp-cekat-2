@@ -22,7 +22,7 @@ export default async function HomePage({
         }}
       />
       <Script
-        src="/revamp-web-cekat/main.js?v=34"
+        src="/revamp-web-cekat/main.js?v=40"
         strategy="afterInteractive"
       />
     </>

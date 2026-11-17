@@ -4,6 +4,7 @@ import {
   localizeRevampHomeRoutes,
 } from "./revamp-home-i18n";
 import { revampHomeMarkup } from "./revamp-home-markup";
+import { revampHomePageMarkupForLocale } from "./revamp-home-page-markup";
 
 describe("revamp homepage localization", () => {
   it("reserves space for homepage images and defers below-the-fold assets", () => {
@@ -35,17 +36,83 @@ describe("revamp homepage localization", () => {
     expect(revampHomeMarkup).toContain("/assets/stories/lumina.webp");
   });
 
-  it("localizes split hero nodes, including the animated word", () => {
+  it("localizes the hero as a natural phrase, including its accessible label", () => {
     const markup =
       '<h1><span class="sr-only">#1 AI-powered revenue technology</span><span aria-hidden="true">#1 AI-powered <span class="rot"><span class="rot__word">revenue</span></span> technology</span></h1>';
 
     const localized = localizeRevampHomeMarkup(markup, "cn");
 
-    expect(localized).toContain("领先的 AI 收入增长技术");
-    expect(localized).toContain("领先的 AI 驱动 ");
-    expect(localized).toContain("收入</span></span> 技术");
+    expect(localized).toContain(
+      '<span class="sr-only">领先的 AI 技术，助力营收增长</span>',
+    );
+    expect(localized).toContain('领先的 AI 技术，<span class="rot"');
+    expect(localized).toContain('<span class="rot__word">助力营收增长</span>');
+    expect(localized).toContain("data-words=");
     expect(localized).not.toContain("revenue");
     expect(localized).not.toContain("technology");
+    expect(localized).not.toContain("AI-powered");
+  });
+
+  it.each([
+    [
+      "cn",
+      "领先的 AI 技术，助力营收增长",
+      "领先的 AI 技术，",
+      ["助力营收增长", "助力获取潜客", "助力提升网站流量"],
+    ],
+    [
+      "jp",
+      "No.1のAIテクノロジーで収益を伸ばす",
+      "No.1のAIテクノロジーで",
+      ["収益を伸ばす", "見込み顧客を増やす", "サイトへの流入を増やす"],
+    ],
+    [
+      "kr",
+      "업계를 선도하는 AI 기술로 매출 성장을 이끕니다",
+      "업계를 선도하는 AI 기술로",
+      [
+        "매출 성장을 이끕니다",
+        "잠재 고객을 확보합니다",
+        "웹사이트 방문을 늘립니다",
+      ],
+    ],
+  ] as const)(
+    "renders contextual %s hero copy and rotating phrases",
+    (locale, accessibleHeadline, visualPrefix, rotatingWords) => {
+      const markup = revampHomePageMarkupForLocale(locale);
+      const hero = markup.match(/<h1 class="display">[\s\S]*?<\/h1>/)?.[0];
+      const encodedWords = hero?.match(/data-words="([^"]+)"/)?.[1];
+
+      expect(hero).toContain(
+        `<span class="sr-only">${accessibleHeadline}</span>`,
+      );
+      expect(hero).toContain(`>${visualPrefix}</span>`);
+      expect(encodedWords).toBeDefined();
+      expect(JSON.parse(encodedWords!.replaceAll("&quot;", '"'))).toEqual(
+        rotatingWords,
+      );
+      expect(hero).not.toContain("AI-powered");
+      expect(hero).not.toContain("technology");
+      expect(hero).not.toContain(">revenue<");
+    },
+  );
+
+  it("keeps the original English hero tagline in both English and Indonesian", () => {
+    const englishMarkup = revampHomePageMarkupForLocale("en");
+    const indonesianMarkup = revampHomePageMarkupForLocale("id");
+    const englishHero = englishMarkup.match(
+      /<h1 class="display">[\s\S]*?<\/h1>/,
+    )?.[0];
+    const indonesianHero = indonesianMarkup.match(
+      /<h1 class="display">[\s\S]*?<\/h1>/,
+    )?.[0];
+
+    expect(englishHero).toContain(
+      '<span class="sr-only">#1 AI-powered revenue technology</span>',
+    );
+    expect(englishHero).toContain('<span class="rot__word">revenue</span>');
+    expect(englishHero).not.toContain("data-words=");
+    expect(indonesianHero).toBe(englishHero);
   });
 
   it("keeps static homepage links in the active locale", () => {

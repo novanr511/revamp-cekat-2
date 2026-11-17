@@ -3,6 +3,76 @@ import { industryHrefFor } from "@/lib/localize-industry-nav";
 
 type Copy = Record<string, string>;
 
+type HomeHeroCopy = {
+  accessible: string;
+  prefix: string;
+  rotatingWords: readonly [string, string, string];
+};
+
+const HOME_HERO_COPY: Record<Exclude<Locale, "en" | "id">, HomeHeroCopy> = {
+  cn: {
+    accessible: "领先的 AI 技术，助力营收增长",
+    prefix: "领先的 AI 技术，",
+    rotatingWords: ["助力营收增长", "助力获取潜客", "助力提升网站流量"],
+  },
+  jp: {
+    accessible: "No.1のAIテクノロジーで収益を伸ばす",
+    prefix: "No.1のAIテクノロジーで",
+    rotatingWords: [
+      "収益を伸ばす",
+      "見込み顧客を増やす",
+      "サイトへの流入を増やす",
+    ],
+  },
+  kr: {
+    accessible: "업계를 선도하는 AI 기술로 매출 성장을 이끕니다",
+    prefix: "업계를 선도하는 AI 기술로",
+    rotatingWords: [
+      "매출 성장을 이끕니다",
+      "잠재 고객을 확보합니다",
+      "웹사이트 방문을 늘립니다",
+    ],
+  },
+};
+
+function localizeHomeHero(
+  markup: string,
+  locale: Exclude<Locale, "en" | "id">,
+  copy: HomeHeroCopy,
+) {
+  const separator = locale === "cn" || locale === "jp" ? "" : " ";
+  const rotatingWords = JSON.stringify(copy.rotatingWords)
+    .replaceAll("&", "&amp;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;");
+
+  return markup
+    .replace(
+      '<span class="sr-only">#1 AI-powered revenue technology</span>',
+      `<span class="sr-only">${copy.accessible}</span>`,
+    )
+    .replace(
+      '<span class="tr" style="--i:0">#1</span> <span class="tr" style="--i:1">AI-powered</span> <span class="tr" style="--i:2">',
+      `<span class="tr" style="--i:0">${copy.prefix}</span>${separator}<span class="tr" style="--i:1">`,
+    )
+    .replace(
+      '<span aria-hidden="true">#1 AI-powered ',
+      `<span aria-hidden="true">${copy.prefix}${separator}`,
+    )
+    .replace(
+      '<span class="rot__word">revenue</span>',
+      `<span class="rot__word">${copy.rotatingWords[0]}</span>`,
+    )
+    .replace(/<span class="tr" style="--i:3">technology<\/span>/, "")
+    .replace(" technology</span></h1>", "</span></h1>")
+    .replace(
+      /<span class="rot([^"]*)"/,
+      (_match, classes: string) =>
+        `<span class="rot${classes}" data-words="${rotatingWords}"`,
+    );
+}
+
 /**
  * The approved homepage is delivered as one static HTML artifact so its
  * interaction script and visual composition stay byte-for-byte stable. This
@@ -3437,6 +3507,17 @@ export function localizeRevampHomeMarkup(markup: string, locale: Locale) {
     ...JOURNEY_COPY[locale],
   };
   let result = markup;
+  const heroMatch =
+    locale === "en"
+      ? undefined
+      : result.match(
+          /<h1\b[^>]*>[\s\S]*?<span class="sr-only">#1 AI-powered revenue technology<\/span>[\s\S]*?<\/h1>/,
+        );
+  const heroMarkup = heroMatch?.[0];
+  const heroCopy =
+    locale === "en" || locale === "id" ? undefined : HOME_HERO_COPY[locale];
+  const protectedHeroToken = "\uE000cekat-home-hero\uE001";
+  if (heroMarkup) result = result.replace(heroMarkup, protectedHeroToken);
   const localizedPath = (path: string) =>
     locale === "id" ? path : `/${locale}${path}`;
   const blogNavLink = `<li class="mnav__item"><a class="mnav__link" href="${localizedPath("/blog")}">Blog</a></li>`;
@@ -3456,13 +3537,6 @@ export function localizeRevampHomeMarkup(markup: string, locale: Locale) {
       '<button class="btn btn--soft" type="button" data-demo>Talk to sales</button>',
       `<a class="btn btn--soft" href="${contactHref}">Talk to sales</a>`,
     );
-  const animatedHeroPrefix = copy["#1 AI-powered"];
-  if (animatedHeroPrefix) {
-    result = result.replace(
-      '<span class="tr" style="--i:0">#1</span> <span class="tr" style="--i:1">AI-powered</span>',
-      `<span class="tr" style="--i:0">${animatedHeroPrefix}</span>`,
-    );
-  }
   const productNames = [
     "Cekat Marketing",
     "Cekat Chat",
@@ -3471,9 +3545,8 @@ export function localizeRevampHomeMarkup(markup: string, locale: Locale) {
     "Cekat Automation",
     "Cekat Analytics",
   ];
-  // Replace complete phrases before shorter fragments. The hero's sr-only
-  // label contains the full headline, while its visual version splits the
-  // same words across nested spans.
+  // Replace complete phrases before shorter fragments. The hero is shielded
+  // separately because its locale-specific rotating copy is sentence-level.
   const entries = Object.entries(copy).sort(
     ([left], [right]) => right.length - left.length,
   );
@@ -3541,6 +3614,19 @@ export function localizeRevampHomeMarkup(markup: string, locale: Locale) {
       return `<a${linkAttributes} href="${href}">${content}</a>`;
     },
   );
+
+  if (heroMarkup) {
+    result = result.replace(
+      protectedHeroToken,
+      heroCopy
+        ? localizeHomeHero(
+            heroMarkup,
+            locale as Exclude<Locale, "en" | "id">,
+            heroCopy,
+          )
+        : heroMarkup,
+    );
+  }
 
   return result;
 }

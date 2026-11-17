@@ -8,15 +8,9 @@
   if (rot && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
     const word = $(".rot__word", rot);
     const measure = $(".rot__measure", rot);
-    const locale = $(".reference-home")?.dataset.locale || "en";
-    const WORDS_BY_LOCALE = {
-      en: ["revenue", "leads", "traffic"],
-      id: ["pendapatan", "prospek", "lalu lintas"],
-      cn: ["收入", "线索", "流量"],
-      jp: ["収益", "リード", "トラフィック"],
-      kr: ["매출", "리드", "트래픽"],
-    };
-    const WORDS = WORDS_BY_LOCALE[locale] || WORDS_BY_LOCALE.en;
+    const WORDS = rot.dataset.words
+      ? JSON.parse(rot.dataset.words)
+      : ["revenue", "leads", "traffic"];
     const ROTATION_KEYS = ["revenue", "leads", "traffic"];
     const fit = () => {
       measure.textContent = word.textContent;
@@ -412,11 +406,79 @@
     });
   });
 
-  // Journey tabs (WAI-ARIA tabs pattern, manual activation by click, arrows move focus and select)
-  const tabs = $$(".rail__tab");
-  const railEl = $(".rail");
+  // Keep the five stages in reach, with explicit selection feedback. Selecting
+  // the current stage is a no-op so it never interrupts someone's reading.
+  const journey = $("#journey");
+  const tabs = $$(".rail__tab", journey);
+  const railEl = $(".rail", journey);
   const railNarrow = window.matchMedia("(max-width: 900px)");
+  const journeyReducedMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)",
+  );
+  // One floating product dock stays attached to the active illustration at
+  // every breakpoint; the feature layout moves the illustration on mobile.
+  const journeyProducts = $(".products", journey);
+  $$(".product", journeyProducts).forEach((product) => {
+    product.title = $(".product__name", product).textContent;
+  });
+  const productExitTimers = new WeakMap();
+  const highlightJourneyProducts = (stageKey) => {
+    let slot = 0;
+    $$(".product", journeyProducts).forEach((product) => {
+      const active = product.dataset.stages.split(" ").includes(stageKey);
+      const wasActive = product.classList.contains("is-on");
+      const exitTimer = productExitTimers.get(product);
+      if (exitTimer) {
+        clearTimeout(exitTimer);
+        productExitTimers.delete(product);
+      }
+
+      if (active) {
+        if (!wasActive && !product.classList.contains("is-leaving")) {
+          // Let the hidden-but-mounted state paint before transitioning in.
+          product.classList.add("is-leaving");
+          void product.offsetWidth;
+        }
+        product.classList.remove("is-leaving");
+        product.classList.add("is-on");
+        product.dataset.floatingSlot = String(++slot);
+      } else if (wasActive) {
+        product.classList.remove("is-on");
+        product.classList.add("is-leaving");
+        productExitTimers.set(
+          product,
+          setTimeout(
+            () => {
+              product.classList.remove("is-leaving");
+              delete product.dataset.floatingSlot;
+              productExitTimers.delete(product);
+            },
+            journeyReducedMotion.matches ? 0 : 240,
+          ),
+        );
+      }
+    });
+    journeyProducts.dataset.activeCount = String(slot);
+  };
+  const placeJourneyProducts = () => {
+    $(".panel:not([hidden]) .feat__stage", journey).prepend(journeyProducts);
+  };
+  placeJourneyProducts();
+  railNarrow.addEventListener("change", placeJourneyProducts);
+  let panelTransition;
   const select = (tab, focus) => {
+    if (focus) tab.focus({ preventScroll: true });
+    if (tab.getAttribute("aria-selected") === "true") return;
+
+    const panelTop = $(".panel:not([hidden])", journey).getBoundingClientRect()
+      .top;
+    const nav = $(".journey__nav", journey) || railEl;
+    const stickyTop = parseFloat(getComputedStyle(nav).top) || 96;
+    const contentOffset = railNarrow.matches
+      ? stickyTop + nav.getBoundingClientRect().height + 24
+      : stickyTop;
+    const panel = document.getElementById(tab.getAttribute("aria-controls"));
+    panelTransition?.cancel();
     tabs.forEach((t) => {
       const on = t === tab;
       t.setAttribute("aria-selected", String(on));
@@ -424,21 +486,27 @@
       const panel = document.getElementById(t.getAttribute("aria-controls"));
       panel.hidden = !on;
     });
+    placeJourneyProducts();
     // Lift the products this stage uses in the lineup above
     const stageKey = tab.getAttribute("aria-controls").replace("panel-", "");
-    $$(".product").forEach((p) =>
-      p.classList.toggle(
-        "is-on",
-        p.dataset.stages.split(" ").includes(stageKey),
-      ),
-    );
-    if (focus) tab.focus();
-    // Switching stage from deep in a long list starts the new stage at its top
-    const bodyTop = $(".journey__body").getBoundingClientRect().top;
-    if (bodyTop < 0)
+    highlightJourneyProducts(stageKey);
+    panel.dispatchEvent(new Event("journey:select"));
+    // Only return to the heading when it has scrolled behind the sticky nav.
+    // Near the top, preserve the visitor's position and the product context.
+    if (panelTop < contentOffset - 8)
       window.scrollTo({
-        top: window.scrollY + bodyTop - (railNarrow.matches ? 72 : 96),
+        top: Math.max(0, window.scrollY + panelTop - contentOffset),
+        behavior: journeyReducedMotion.matches ? "instant" : "smooth",
       });
+    if (!journeyReducedMotion.matches && panel.animate) {
+      panelTransition = panel.animate(
+        [
+          { opacity: 0, transform: "translateY(8px)" },
+          { opacity: 1, transform: "translateY(0)" },
+        ],
+        { duration: 220, easing: "cubic-bezier(.23, 1, .32, 1)" },
+      );
+    }
   };
   // The rail is vertical beside the panels and horizontal on small screens
   const syncRail = () =>
@@ -448,20 +516,14 @@
     );
   syncRail();
   railNarrow.addEventListener("change", syncRail);
-  $$(".product").forEach((p) =>
-    p.classList.toggle(
-      "is-on",
-      p.dataset.stages.split(" ").includes("acquire"),
-    ),
-  );
+  highlightJourneyProducts("acquire");
   tabs.forEach((tab, i) => {
     tab.addEventListener("click", () => select(tab));
     tab.addEventListener("keydown", (e) => {
       const map = {
-        ArrowRight: i + 1,
-        ArrowDown: i + 1,
-        ArrowLeft: i - 1,
-        ArrowUp: i - 1,
+        ...(railNarrow.matches
+          ? { ArrowRight: i + 1, ArrowLeft: i - 1 }
+          : { ArrowDown: i + 1, ArrowUp: i - 1 }),
         Home: 0,
         End: tabs.length - 1,
       };
@@ -501,12 +563,15 @@
       views[i].classList.add("is-on");
       place();
     };
+    feat
+      .closest('[role="tabpanel"]')
+      .addEventListener("journey:select", () => activate(0));
     items.forEach((it, n) =>
       $(".feat__btn", it).addEventListener("click", () => activate(n)),
     );
     const featIO = new IntersectionObserver(
       (entries) => {
-        if (narrow.matches) return;
+        if (narrow.matches || feat.closest('[role="tabpanel"]').hidden) return;
         entries.forEach((en) => {
           if (en.isIntersecting) activate(items.indexOf(en.target));
         });

@@ -3794,6 +3794,434 @@ select {
   }
 }
 
+/* Homepage journey: numbered controls retain the connected-stage motif while
+   the border, intent label and selected arrow make switching discoverable. */
+.journey__nav {
+  position: sticky;
+  top: 112px;
+  min-width: 0;
+}
+.journey__nav-title {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--navy);
+}
+.journey__nav-hint {
+  margin-top: 6px;
+  margin-bottom: 20px;
+  color: var(--muted);
+  font-size: 0.8125rem;
+  line-height: 1.5;
+}
+.journey__nav .rail {
+  position: relative;
+  top: auto;
+  gap: 10px;
+  padding-bottom: 0;
+}
+.journey__nav .rail::before {
+  left: 28px;
+  top: 28px;
+  bottom: 28px;
+  width: 2px;
+}
+.journey__nav .rail::after {
+  display: none;
+}
+.journey__nav .rail__tab {
+  gap: 12px;
+  padding: 14px 12px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #fff;
+  transition:
+    background-color 180ms ease,
+    border-color 180ms ease,
+    color 180ms ease;
+}
+.journey__nav .rail__dot {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 600;
+  background: var(--hs);
+  transform: none;
+  box-shadow: none;
+}
+.rail__copy {
+  flex: 1;
+  min-width: 0;
+}
+.rail__label {
+  display: block;
+  font-size: 0.9375rem;
+  line-height: 1.4;
+}
+.rail__description {
+  display: block;
+  margin-top: 3px;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--muted);
+}
+.rail__indicator {
+  flex: none;
+  width: 6px;
+  height: 6px;
+  border-top: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+  transform: rotate(45deg);
+  opacity: 0.35;
+}
+.journey__nav .rail__tab:hover {
+  border-color: var(--h2);
+  background: var(--hs);
+}
+.journey__nav .rail__tab[aria-selected="true"] {
+  border-color: var(--h2);
+  background: var(--hs);
+  color: var(--ht);
+}
+.journey__nav .rail__tab[aria-selected="true"] .rail__dot {
+  background: var(--ht);
+  border-color: var(--ht);
+  color: #fff;
+}
+.rail__tab[aria-selected="true"] .rail__indicator {
+  opacity: 1;
+}
+.journey__nav .rail__tab:focus-visible {
+  outline: 3px solid var(--blue);
+  outline-offset: 3px;
+}
+.journey__nav .rail__tab:active {
+  background: var(--hs);
+  border-color: var(--ht);
+}
+.journey__nav .rail__tab:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+@media (min-width: 901px) {
+  .journey__body:has(.journey__nav) {
+    grid-template-columns: 232px minmax(0, 1fr);
+    gap: clamp(24px, 3vw, 40px);
+  }
+  .journey__nav ~ .panel .feat {
+    gap: clamp(24px, 3vw, 40px);
+  }
+  /* Art-directed, asymmetric product badges: fixed slots feel scattered
+     without changing position unpredictably on each stage selection. */
+  #journey .feat__stage:has(> .products) {
+    top: 112px;
+    padding-top: 28px;
+  }
+  #journey .feat__stage > .products {
+    position: absolute;
+    z-index: 3;
+    inset: 0;
+    margin: 0;
+    padding: 0;
+    pointer-events: none;
+  }
+  #journey .feat__stage .products__label,
+  #journey .feat__stage .product__stages {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+  #journey .feat__stage .products__list {
+    position: absolute;
+    inset: 0;
+    display: block;
+  }
+  #journey .feat__stage .product {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 32px minmax(0, 1fr);
+    align-items: center;
+    gap: 8px;
+    width: 150px;
+    min-height: 62px;
+    padding: 9px 11px;
+    border: 1px solid var(--h2);
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 12px 28px rgb(16 40 74 / 14%);
+    pointer-events: auto;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(8px) scale(0.96) rotate(var(--product-tilt));
+    transition:
+      opacity 220ms ease,
+      transform 320ms cubic-bezier(0.22, 1, 0.36, 1),
+      background-color 220ms ease,
+      box-shadow 220ms ease,
+      visibility 0s linear 240ms;
+  }
+  #journey .feat__stage .product img {
+    grid-column: 1;
+    grid-row: 1;
+    width: 32px;
+    height: 32px;
+    margin: 0;
+  }
+  #journey .feat__stage .product__name {
+    grid-column: 2;
+    grid-row: 1;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip-path: none;
+    color: var(--navy);
+    font-size: 0.6875rem;
+    font-weight: 600;
+    line-height: 1.3;
+    white-space: normal;
+  }
+  #journey .feat__stage .product.is-on {
+    z-index: 2;
+    background: linear-gradient(145deg, #fff 50%, var(--hs));
+    box-shadow: 0 14px 30px rgb(16 40 74 / 17%);
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) scale(1) rotate(var(--product-tilt));
+    transition-delay: 0s;
+  }
+  #journey .feat__stage .product.is-leaving {
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-5px) scale(0.96) rotate(var(--product-tilt));
+    pointer-events: none;
+    transition-delay: 0s, 0s, 0s, 0s, 180ms;
+  }
+  #journey .feat__stage .product:not(.is-on):not(.is-leaving) {
+    display: none;
+  }
+  #journey .feat__stage .product[data-floating-slot="1"] {
+    --product-tilt: -9deg;
+    top: 0;
+    left: 8px;
+  }
+  #journey .feat__stage .product[data-floating-slot="2"] {
+    --product-tilt: 8deg;
+    top: 48px;
+    right: -8px;
+  }
+  #journey .feat__stage .product[data-floating-slot="3"] {
+    --product-tilt: -6deg;
+    bottom: 30px;
+    left: 28px;
+  }
+  #journey .feat__stage .products[data-active-count="1"] .product.is-on {
+    --product-tilt: 7deg;
+    top: 12px;
+    left: auto;
+    right: 12px;
+  }
+  #journey .feat__stage:has(> .products) .feat__frame {
+    height: clamp(360px, 55vh, 500px);
+  }
+}
+@media (min-width: 901px) and (max-height: 650px) {
+  #journey .feat__stage:has(> .products) {
+    position: static;
+  }
+}
+@media (max-width: 900px) {
+  .journey__nav {
+    top: 72px;
+    z-index: 20;
+    margin-inline: calc(-1 * var(--gutter));
+    padding: 12px 12px;
+    background: var(--blue-50);
+    border-bottom: 1px solid var(--line);
+  }
+  .journey__nav-title,
+  .journey__nav-hint,
+  .rail__description,
+  .rail__indicator {
+    display: none;
+  }
+  .journey__nav .rail {
+    margin: 0;
+    padding: 0;
+    gap: 6px;
+    border: 0;
+    background: none;
+  }
+  .journey__nav .rail::before {
+    display: none;
+  }
+  .journey__nav .rail__tab {
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 2px;
+    min-width: 0;
+    min-height: 64px;
+    gap: 4px;
+    text-align: center;
+    border-radius: 8px;
+  }
+  .journey__nav .rail__dot {
+    width: 24px;
+    height: 24px;
+    font-size: 0.6875rem;
+  }
+  .rail__label {
+    font-size: clamp(0.625rem, 2.6vw, 0.8125rem);
+    white-space: nowrap;
+  }
+  /* Keep the product badges floating over the illustration on phones too. */
+  #journey .feat__stage:has(> .products) {
+    position: relative;
+    padding-top: 28px;
+  }
+  #journey .feat__stage > .products {
+    position: absolute;
+    z-index: 3;
+    inset: 0;
+    margin: 0;
+    padding: 0;
+    pointer-events: none;
+  }
+  #journey .feat__stage .products__label,
+  #journey .feat__stage .product__stages {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+  #journey .feat__stage .products__list {
+    position: absolute;
+    inset: 0;
+    display: block;
+  }
+  #journey .feat__stage .product {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 32px minmax(0, 1fr);
+    align-items: center;
+    gap: 8px;
+    width: 150px;
+    min-height: 62px;
+    padding: 9px 11px;
+    border: 1px solid var(--h2);
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 12px 28px rgb(16 40 74 / 14%);
+    pointer-events: auto;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(8px) scale(0.96) rotate(var(--product-tilt));
+    transition:
+      opacity 220ms ease,
+      transform 320ms cubic-bezier(0.22, 1, 0.36, 1),
+      background-color 220ms ease,
+      box-shadow 220ms ease,
+      visibility 0s linear 240ms;
+  }
+  #journey .feat__stage .product img {
+    grid-column: 1;
+    grid-row: 1;
+    width: 32px;
+    height: 32px;
+    margin: 0;
+  }
+  #journey .feat__stage .product__name {
+    grid-column: 2;
+    grid-row: 1;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip-path: none;
+    color: var(--navy);
+    font-size: 0.6875rem;
+    font-weight: 600;
+    line-height: 1.3;
+    white-space: normal;
+  }
+  #journey .feat__stage .product.is-on {
+    z-index: 2;
+    background: linear-gradient(145deg, #fff 50%, var(--hs));
+    box-shadow: 0 14px 30px rgb(16 40 74 / 17%);
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) scale(1) rotate(var(--product-tilt));
+    transition-delay: 0s;
+  }
+  #journey .feat__stage .product.is-leaving {
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-5px) scale(0.96) rotate(var(--product-tilt));
+    pointer-events: none;
+    transition-delay: 0s, 0s, 0s, 0s, 180ms;
+  }
+  #journey .feat__stage .product:not(.is-on):not(.is-leaving) {
+    display: none;
+  }
+  #journey .feat__stage .product[data-floating-slot="1"] {
+    --product-tilt: -9deg;
+    top: 0;
+    left: 8px;
+  }
+  #journey .feat__stage .product[data-floating-slot="2"] {
+    --product-tilt: 8deg;
+    top: 48px;
+    right: -8px;
+  }
+  #journey .feat__stage .product[data-floating-slot="3"] {
+    --product-tilt: -6deg;
+    bottom: 30px;
+    left: 28px;
+  }
+  #journey .feat__stage .products[data-active-count="1"] .product.is-on {
+    --product-tilt: 7deg;
+    top: 12px;
+    left: auto;
+    right: 12px;
+  }
+}
+@media (max-width: 360px) {
+  .journey__nav {
+    padding-inline: 8px;
+  }
+  .journey__nav .rail {
+    gap: 4px;
+  }
+  .rail__label {
+    font-size: 0.59375rem;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .journey__nav .rail__tab {
+    transition: none;
+  }
+  #journey .feat__stage .product.is-on,
+  #journey .feat__stage .product.is-leaving {
+    transition: none;
+  }
+}
+
 /* ---------- 4b. Trial onboarding, led by Clara, Cekat's AI setup agent ---------- */
 .trial {
   padding: clamp(64px, 8vw, 104px) 0 0;

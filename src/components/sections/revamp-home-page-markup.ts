@@ -1,5 +1,6 @@
 import type { Locale } from "@/i18n/routing";
 import { revampHomeMarkup } from "./revamp-home-markup";
+import { enhanceRevampHomeJourney } from "./revamp-home-journey-markup";
 import {
   localizeRevampHomeMarkup,
   localizeRevampHomeRoutes,
@@ -21,8 +22,11 @@ export function revampHomePageMarkupForLocale(locale: Locale) {
       '</span></span> <span class="tr" style="--i:3">technology</span></span></h1>',
     );
 
-  return localizeRevampHomeMarkup(
-    localizeRevampHomeRoutes(heroRevealMarkup, locale),
+  return enhanceRevampHomeJourney(
+    localizeRevampHomeMarkup(
+      localizeRevampHomeRoutes(heroRevealMarkup, locale),
+      locale,
+    ),
     locale,
   )
     .replace(/<a class="skip" href="#main">[\s\S]*?<\/a>\s*/, "")
