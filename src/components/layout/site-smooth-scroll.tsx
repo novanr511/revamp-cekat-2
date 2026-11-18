@@ -1,6 +1,13 @@
 "use client";
 
 import { useEffect } from "react";
+import type Lenis from "lenis";
+
+declare global {
+  interface Window {
+    __cekatLenis?: Lenis;
+  }
+}
 
 /**
  * A single Lenis instance for production pages. It deliberately runs only for
@@ -13,7 +20,7 @@ export function SiteSmoothScroll() {
     if (!window.matchMedia("(pointer: fine)").matches) return;
 
     let cancelled = false;
-    let lenis: { destroy(): void } | undefined;
+    let lenis: Lenis | undefined;
     const schedule =
       typeof window.requestIdleCallback === "function"
         ? window.requestIdleCallback.bind(window)
@@ -36,6 +43,7 @@ export function SiteSmoothScroll() {
           syncTouch: false,
           anchors: true,
         });
+        window.__cekatLenis = lenis;
       });
     });
 
@@ -43,6 +51,7 @@ export function SiteSmoothScroll() {
       cancelled = true;
       cancel(handle as number);
       lenis?.destroy();
+      if (window.__cekatLenis === lenis) delete window.__cekatLenis;
     };
   }, []);
 

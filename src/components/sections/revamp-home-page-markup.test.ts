@@ -49,6 +49,7 @@ describe("homepage markup for the shared site chrome", () => {
       tabs.forEach((tab, index) => {
         expect(tab.tagName).toBe("BUTTON");
         expect(tab.getAttribute("type")).toBe("button");
+        expect(tab.hasAttribute("disabled")).toBe(false);
         expect(tab.querySelector(".rail__dot")?.textContent).toBe(
           String(index + 1).padStart(2, "0"),
         );

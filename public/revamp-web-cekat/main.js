@@ -411,72 +411,85 @@
   const journey = $("#journey");
   const tabs = $$(".rail__tab", journey);
   const railEl = $(".rail", journey);
+  const journeyNextSection = journey.nextElementSibling;
   const railNarrow = window.matchMedia("(max-width: 900px)");
   const journeyReducedMotion = window.matchMedia(
     "(prefers-reduced-motion: reduce)",
   );
-  // One floating product dock stays attached to the active illustration at
-  // every breakpoint; the feature layout moves the illustration on mobile.
+  const journeyNav = $(".journey__nav", journey) || railEl;
+  // Reset the page's smooth-scroll target as well as the native position.
+  // Native scrollTo alone leaves Lenis easing toward the previous stage's end.
+  const scrollJourneyTo = (top, instant = true) => {
+    if (window.__cekatLenis) {
+      window.__cekatLenis.scrollTo(top, {
+        immediate: instant,
+        force: true,
+        duration: 0.48,
+        easing: (t) => 1 - Math.pow(1 - t, 3),
+      });
+    } else {
+      window.scrollTo({ top, behavior: instant ? "instant" : "smooth" });
+    }
+  };
+  const journeyContentOffset = () => {
+    const stickyTop = parseFloat(getComputedStyle(journeyNav).top) || 96;
+    return railNarrow.matches
+      ? stickyTop + journeyNav.getBoundingClientRect().height + 24
+      : stickyTop;
+  };
+  const minimumStageProgress = Math.min(
+    440,
+    Math.max(260, window.innerHeight * 0.35),
+  );
+  const initialPanel = $(".panel:not([hidden])", journey);
+  let journeyStageStartY = Math.max(
+    0,
+    window.scrollY +
+      initialPanel.getBoundingClientRect().top -
+      journeyContentOffset(),
+  );
+  let journeyStageReady = true;
+  // One stage-aware product dock stays directly below the active illustration
+  // at every breakpoint; the feature layout moves the stage on mobile.
   const journeyProducts = $(".products", journey);
   $$(".product", journeyProducts).forEach((product) => {
     product.title = $(".product__name", product).textContent;
   });
-  const productExitTimers = new WeakMap();
   const highlightJourneyProducts = (stageKey) => {
     let slot = 0;
     $$(".product", journeyProducts).forEach((product) => {
       const active = product.dataset.stages.split(" ").includes(stageKey);
-      const wasActive = product.classList.contains("is-on");
-      const exitTimer = productExitTimers.get(product);
-      if (exitTimer) {
-        clearTimeout(exitTimer);
-        productExitTimers.delete(product);
-      }
-
-      if (active) {
-        if (!wasActive && !product.classList.contains("is-leaving")) {
-          // Let the hidden-but-mounted state paint before transitioning in.
-          product.classList.add("is-leaving");
-          void product.offsetWidth;
-        }
-        product.classList.remove("is-leaving");
-        product.classList.add("is-on");
-        product.dataset.floatingSlot = String(++slot);
-      } else if (wasActive) {
-        product.classList.remove("is-on");
-        product.classList.add("is-leaving");
-        productExitTimers.set(
-          product,
-          setTimeout(
-            () => {
-              product.classList.remove("is-leaving");
-              delete product.dataset.floatingSlot;
-              productExitTimers.delete(product);
-            },
-            journeyReducedMotion.matches ? 0 : 240,
-          ),
-        );
-      }
+      product.classList.toggle("is-on", active);
+      if (active) product.dataset.floatingSlot = String(++slot);
+      else delete product.dataset.floatingSlot;
     });
     journeyProducts.dataset.activeCount = String(slot);
   };
   const placeJourneyProducts = () => {
-    $(".panel:not([hidden]) .feat__stage", journey).prepend(journeyProducts);
+    const stage = $(".panel:not([hidden]) .feat__stage", journey);
+    $(".feat__frame", stage).after(journeyProducts);
   };
   placeJourneyProducts();
   railNarrow.addEventListener("change", placeJourneyProducts);
   let panelTransition;
-  const select = (tab, focus) => {
+  const select = (
+    tab,
+    focus,
+    { forceAlignment = false, instantScroll = false } = {},
+  ) => {
     if (focus) tab.focus({ preventScroll: true });
     if (tab.getAttribute("aria-selected") === "true") return;
 
     const panelTop = $(".panel:not([hidden])", journey).getBoundingClientRect()
       .top;
-    const nav = $(".journey__nav", journey) || railEl;
-    const stickyTop = parseFloat(getComputedStyle(nav).top) || 96;
-    const contentOffset = railNarrow.matches
-      ? stickyTop + nav.getBoundingClientRect().height + 24
-      : stickyTop;
+    const contentOffset = journeyContentOffset();
+    const stageStartY = Math.max(0, window.scrollY + panelTop - contentOffset);
+    const needsStageAlignment = forceAlignment || panelTop < contentOffset - 8;
+    journeyStageStartY = stageStartY;
+    // Auto-scroll back to the stage heading after a switch. Don't count the
+    // previous stage's still-current scroll position as progress in this one.
+    journeyStageReady =
+      !needsStageAlignment || Math.abs(window.scrollY - stageStartY) <= 16;
     const panel = document.getElementById(tab.getAttribute("aria-controls"));
     panelTransition?.cancel();
     tabs.forEach((t) => {
@@ -491,23 +504,165 @@
     const stageKey = tab.getAttribute("aria-controls").replace("panel-", "");
     highlightJourneyProducts(stageKey);
     panel.dispatchEvent(new Event("journey:select"));
+    // A shorter incoming panel can move Clara above the current viewport edge.
+    // Correct only that edge before starting the heading animation, so the
+    // scroll guard never cancels the animation and strands us at the boundary.
+    if (
+      needsStageAlignment &&
+      tab !== tabs[tabs.length - 1] &&
+      journeyNextSection
+    ) {
+      const safeY =
+        journeyNextSection.getBoundingClientRect().top +
+        window.scrollY -
+        window.innerHeight -
+        2;
+      if (window.scrollY > safeY) scrollJourneyTo(safeY);
+    }
     // Only return to the heading when it has scrolled behind the sticky nav.
     // Near the top, preserve the visitor's position and the product context.
-    if (panelTop < contentOffset - 8)
-      window.scrollTo({
-        top: Math.max(0, window.scrollY + panelTop - contentOffset),
-        behavior: journeyReducedMotion.matches ? "instant" : "smooth",
-      });
+    if (needsStageAlignment)
+      scrollJourneyTo(
+        stageStartY,
+        instantScroll || journeyReducedMotion.matches,
+      );
     if (!journeyReducedMotion.matches && panel.animate) {
       panelTransition = panel.animate(
         [
           { opacity: 0, transform: "translateY(8px)" },
           { opacity: 1, transform: "translateY(0)" },
         ],
-        { duration: 220, easing: "cubic-bezier(.23, 1, .32, 1)" },
+        { duration: 360, easing: "cubic-bezier(.23, 1, .32, 1)" },
       );
     }
   };
+  // When a visitor reaches the end of the selected stage, continue to the
+  // next one. Ignore upward scrolling and hidden stages; manual tab clicks
+  // remain available at all times.
+  const journeyEndMarkers = tabs.map((tab) => {
+    const panel = document.getElementById(tab.getAttribute("aria-controls"));
+    const marker = document.createElement("span");
+    marker.className = "journey__end";
+    marker.setAttribute("aria-hidden", "true");
+    $(".feat__copy", panel).append(marker);
+    return marker;
+  });
+  let previousJourneyScrollY = window.scrollY;
+  // Throttle stage changes, not scrolling. Renewing this timer on every wheel
+  // event traps continuous trackpad input until the visitor stops or moves away.
+  let journeyAutoAdvanceLocked = false;
+  let journeyGestureIdleTimer;
+  const advanceJourney = (tab) => {
+    journeyAutoAdvanceLocked = true;
+    clearTimeout(journeyGestureIdleTimer);
+    journeyGestureIdleTimer = setTimeout(() => {
+      journeyAutoAdvanceLocked = false;
+    }, 240);
+    select(tab, false, {
+      forceAlignment: true,
+      instantScroll: journeyReducedMotion.matches,
+    });
+  };
+  // Keep the next section out of view until the final stage. The wheel guard
+  // prevents the browser from painting past the boundary; the scroll guard
+  // covers scrollbar, keyboard, touch, and programmatic scrolls.
+  window.addEventListener(
+    "wheel",
+    (event) => {
+      if (!journeyStageReady) {
+        if (event.deltaY > 0) {
+          event.preventDefault();
+          event.stopImmediatePropagation();
+        }
+        return;
+      }
+
+      const activeIndex = tabs.findIndex(
+        (tab) => tab.getAttribute("aria-selected") === "true",
+      );
+      const nextTab = tabs[activeIndex + 1];
+      if (event.deltaY <= 0 || !nextTab || !journeyNextSection) return;
+
+      const deltaY =
+        event.deltaY *
+        (event.deltaMode === 1
+          ? 16
+          : event.deltaMode === 2
+            ? window.innerHeight
+            : 1);
+      const nextSectionTop =
+        journeyNextSection.getBoundingClientRect().top + window.scrollY;
+      const lastSafeScrollY = nextSectionTop - window.innerHeight;
+      if (window.scrollY + deltaY <= lastSafeScrollY) return;
+
+      event.preventDefault();
+      event.stopImmediatePropagation();
+      if (!journeyAutoAdvanceLocked) advanceJourney(nextTab);
+    },
+    { passive: false, capture: true },
+  );
+  window.addEventListener(
+    "scroll",
+    () => {
+      const currentScrollY = window.scrollY;
+      const journeyScrollingDown = currentScrollY > previousJourneyScrollY;
+      previousJourneyScrollY = currentScrollY;
+
+      // Re-arm only once the transition's scroll-to-start has completed. This
+      // prevents the old stage's scroll position from cascading into new tabs.
+      if (
+        !journeyStageReady &&
+        Math.abs(currentScrollY - journeyStageStartY) <= 24
+      ) {
+        journeyStageReady = true;
+        journeyStageStartY = currentScrollY;
+      }
+
+      const activeIndex = tabs.findIndex(
+        (tab) => tab.getAttribute("aria-selected") === "true",
+      );
+      const nextTab = tabs[activeIndex + 1];
+      const nextSectionTop = journeyNextSection
+        ? journeyNextSection.getBoundingClientRect().top + currentScrollY
+        : Infinity;
+      if (journeyAutoAdvanceLocked || !journeyStageReady) {
+        // The new panel remains scrollable. Only its exit to Clara is gated.
+        if (
+          journeyScrollingDown &&
+          nextTab &&
+          currentScrollY > nextSectionTop - window.innerHeight
+        ) {
+          scrollJourneyTo(nextSectionTop - window.innerHeight - 2);
+          if (!journeyStageReady)
+            scrollJourneyTo(journeyStageStartY, journeyReducedMotion.matches);
+        }
+        return;
+      }
+      if (
+        journeyScrollingDown &&
+        nextTab &&
+        journeyNextSection &&
+        currentScrollY > nextSectionTop - window.innerHeight
+      ) {
+        advanceJourney(nextTab);
+        return;
+      }
+      if (!journeyScrollingDown || !journeyStageReady) return;
+
+      if (
+        !nextTab ||
+        currentScrollY - journeyStageStartY < minimumStageProgress
+      )
+        return;
+
+      // Check the active stage on every downward scroll event so a large
+      // trackpad/wheel step cannot jump over the one-pixel end marker.
+      const markerTop =
+        journeyEndMarkers[activeIndex].getBoundingClientRect().top;
+      if (markerTop <= window.innerHeight * 0.85) advanceJourney(nextTab);
+    },
+    { passive: true },
+  );
   // The rail is vertical beside the panels and horizontal on small screens
   const syncRail = () =>
     railEl.setAttribute(

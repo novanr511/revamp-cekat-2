@@ -94,8 +94,8 @@ export function enhanceRevampHomeJourney(markup: string, locale: Locale) {
       );
   }
 
-  // Render the dock in its final desktop position to avoid showing the
-  // original product strip while the client script initializes.
+  // Render the dock alongside the stage from the first paint; CSS orders it
+  // below the illustration before the client script initializes.
   return enhancedMarkup
     .replaceAll(
       /(<div class="panel[^"]*" role="tabpanel"[^>]*)(>)/g,

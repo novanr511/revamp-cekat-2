@@ -2974,6 +2974,12 @@ select {
 .panel[hidden] {
   display: none;
 }
+.journey__end {
+  display: block;
+  width: 100%;
+  height: 1px;
+  pointer-events: none;
+}
 .powered {
   margin-top: 28px;
   font-size: 0.875rem;
@@ -4219,6 +4225,135 @@ select {
   #journey .feat__stage .product.is-on,
   #journey .feat__stage .product.is-leaving {
     transition: none;
+  }
+}
+
+/* Stage-aware product badges sit in a compact strip below the illustration. */
+#journey .feat__stage:has(> .products) {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 12px;
+  padding-top: 0;
+}
+#journey .feat__stage > .feat__frame {
+  order: 1;
+  width: 100%;
+}
+#journey .feat__stage > .products {
+  position: relative;
+  z-index: 3;
+  order: 2;
+  inset: auto;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  pointer-events: none;
+}
+#journey .feat__stage .products__list {
+  position: relative;
+  inset: auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-auto-rows: minmax(44px, auto);
+  gap: 6px;
+  width: 100%;
+  min-height: 94px;
+}
+#journey .feat__stage .product {
+  position: relative;
+  display: grid;
+  grid-template-columns: 22px minmax(0, 1fr);
+  align-items: center;
+  gap: 4px;
+  width: 100%;
+  min-width: 0;
+  min-height: 44px;
+  padding: 6px 7px;
+  border-style: dashed;
+  border-radius: 12px;
+  background: transparent;
+  border-color: var(--line-2);
+  box-shadow: none;
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+  pointer-events: auto;
+}
+#journey .feat__stage .product[data-floating-slot] {
+  --product-tilt: 0deg;
+  inset: auto;
+}
+#journey .feat__stage .product img {
+  flex: none;
+  width: 22px;
+  height: 22px;
+  margin: 0;
+}
+#journey .feat__stage .product__name {
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip-path: none;
+  font-size: 0.59375rem;
+  font-weight: 600;
+  line-height: 1.1;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  color: var(--muted);
+  opacity: 0.62;
+  transition:
+    color 220ms ease,
+    opacity 220ms ease;
+}
+#journey .feat__stage .product.is-on {
+  background: linear-gradient(145deg, #fff 50%, var(--hs));
+  border-color: var(--h2);
+  border-style: solid;
+  box-shadow: 0 8px 20px rgb(16 40 74 / 12%);
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-1px);
+}
+#journey .feat__stage .product.is-leaving {
+  transform: translateY(-5px) scale(0.96);
+}
+#journey .feat__stage .product:not(.is-on):not(.is-leaving) {
+  display: grid;
+  opacity: 1;
+  visibility: visible;
+}
+#journey .feat__stage .product:not(.is-on):not(.is-leaving) img {
+  filter: grayscale(1);
+  opacity: 0.35;
+}
+#journey .feat__stage .product.is-on img {
+  filter: none;
+  opacity: 1;
+}
+#journey .feat__stage .product.is-on .product__name {
+  color: var(--navy);
+  opacity: 1;
+}
+#journey .feat__stage .products[data-active-count="1"] .product.is-on {
+  --product-tilt: 0deg;
+  inset: auto;
+}
+@media (max-width: 900px) {
+  #journey .feat__stage:has(> .products) {
+    position: static;
+    gap: 10px;
+    padding-top: 0;
+  }
+  #journey .feat__stage .product {
+    grid-template-columns: 20px minmax(0, 1fr);
+    min-height: 44px;
+    padding: 6px 5px;
+  }
+  #journey .feat__stage .product img {
+    width: 20px;
+    height: 20px;
   }
 }
 
