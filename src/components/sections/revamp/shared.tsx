@@ -47,10 +47,12 @@ export function RevampCloser({
   heading,
   body,
   industry = false,
+  salesLabel,
 }: {
   heading: string;
   body: string;
   industry?: boolean;
+  salesLabel?: string;
 }) {
   const t = useTranslations("secondary");
   const homeHero = useTranslations("home.hero");
@@ -83,7 +85,7 @@ export function RevampCloser({
             </WhatsAppAnchor>
           ) : (
             <Link href="/contact-sales" className="r-closer__sales">
-              {t("sales")}
+              {salesLabel ?? t("sales")}
               <RevampIcon name="diagonal" />
             </Link>
           )}

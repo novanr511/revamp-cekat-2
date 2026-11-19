@@ -14,6 +14,7 @@ import {
   getCaseStudyIndustry,
   localizeCaseStudy,
 } from "@/lib/case-studies";
+import { localizeCaseStudyListing } from "@/lib/case-study-listing-copy";
 import { metaSnippet, metaTitle, alternates, SITE_URL } from "@/lib/seo";
 
 const COPY = {
@@ -34,20 +35,20 @@ const COPY = {
       "Tell us how your team works. We can explore where connected conversations would help.",
   },
   id: {
-    eyebrow: "Studi kasus pelanggan",
-    title: "Bisnis nyata, hasil nyata bersama Cekat.AI",
-    lead: "Lihat bagaimana tim lintas industri menggunakan Cekat.AI untuk merespons lebih cepat, meningkatkan konversi, dan menjalankan operasional dengan lebih efisien.",
-    featured: "Cerita unggulan",
-    browse: "Jelajahi cerita pelanggan",
-    filterLabel: "Filter berdasarkan industri",
+    eyebrow: "Kisah pelanggan",
+    title: "Cara bisnis melayani pelanggan dengan Cekat.AI",
+    lead: "Setiap tim punya tantangannya sendiri. Simak cara mereka memakai Cekat.AI untuk menanggapi pelanggan dan mengelola pekerjaan sehari-hari.",
+    featured: "Kisah pilihan",
+    browse: "Cerita dari pelanggan kami",
+    filterLabel: "Pilih industri",
     allIndustries: "Semua industri",
     caseStudies: "studi kasus",
-    readCase: "Baca studi kasus",
-    noResults: "Belum ada studi kasus untuk industri ini.",
+    readCase: "Baca kisahnya",
+    noResults: "Belum ada studi kasus di industri ini.",
     breadcrumb: "Studi Kasus",
-    ctaTitle: "Seperti apa alurnya untuk tim Anda?",
+    ctaTitle: "Ingin membahas kebutuhan tim Anda?",
     ctaBody:
-      "Ceritakan cara kerja tim Anda. Kita bisa melihat bagian mana yang perlu lebih terhubung.",
+      "Ceritakan cara tim Anda melayani pelanggan. Kami bisa membantu melihat bagian mana yang dapat dibuat lebih mudah dengan Cekat.AI.",
   },
   jp: {
     eyebrow: "導入事例",
@@ -217,7 +218,7 @@ export default async function CaseStudiesIndexPage({
     typeof query.category === "string" ? query.category : undefined;
   const activeCategory = getCaseStudyIndustry(queryCategory);
   const studies = filterCaseStudies(queryCategory).map((study) =>
-    localizeCaseStudy(study, locale),
+    localizeCaseStudyListing(localizeCaseStudy(study, locale), locale),
   );
   // Keep the hero editorial on the unfiltered directory. A selected industry
   // shows every matching story in the results grid, including the hero story.
@@ -413,7 +414,11 @@ export default async function CaseStudiesIndexPage({
             )}
           </div>
         </section>
-        <RevampCloser heading={copy.ctaTitle} body={copy.ctaBody} />
+        <RevampCloser
+          heading={copy.ctaTitle}
+          body={copy.ctaBody}
+          salesLabel={locale === "id" ? "Bicarakan kebutuhan Anda" : undefined}
+        />
       </RevampMotion>
     </>
   );

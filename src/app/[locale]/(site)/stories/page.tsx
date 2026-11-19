@@ -6,11 +6,9 @@ import { alternates, metaSnippet, metaTitle, SITE_URL } from "@/lib/seo";
 import { breadcrumbJsonLd, collectionPageJsonLd } from "@/lib/jsonld";
 import { JsonLd } from "@/components/seo/json-ld";
 import { Container } from "@/components/layout/container";
-import { Reveal } from "@/components/sections/new-home/reveal";
-import { PageHero } from "@/components/sections/shared/page-hero";
-import { SecondaryHubSurface } from "@/components/sections/shared/secondary-hub-surface";
-import { TestimonialVideoCard } from "@/components/sections/shared/testimonial-video-card";
+import { StoryInterviewCard } from "@/components/sections/shared/story-interview-card";
 import { STORIES, VIDEO_TESTIMONIALS, storyCopyFor } from "@/lib/stories";
+import { storyIndexCopyFor } from "@/lib/story-index-copy";
 
 export async function generateMetadata({
   params,
@@ -67,9 +65,37 @@ export default async function StoriesIndexPage({
   const copy = storyCopyFor(locale);
   const url = `${SITE_URL}${getPathname({ href: "/stories", locale })}`;
   const homeUrl = `${SITE_URL}${getPathname({ href: "/", locale })}`;
+  const trusted = await getTranslations({
+    locale,
+    namespace: "home.trustedBy",
+  });
+  const indexCopy = storyIndexCopyFor(locale);
+  const companies = {
+    moir: "Moir Salon",
+    rumahZakat: "Rumah Zakat",
+    mnp: "Multimedia Nusantara Polytechnic",
+    vio: "VIO Optical Clinic",
+    dokterhub: "DokterHub",
+    threeland: "Threeland Property",
+  };
+  const [featured, ...interviews] = VIDEO_TESTIMONIALS;
+  const interviewProps = (
+    testimonial: (typeof VIDEO_TESTIMONIALS)[number],
+  ) => ({
+    videoId: testimonial.videoId,
+    image: testimonial.image,
+    company: companies[testimonial.key],
+    name: t(`videos.${testimonial.key}.name`),
+    role: t(`videos.${testimonial.key}.role`),
+    watchLabel: copy.videoLabel,
+    closeLabel: indexCopy.close,
+    fallbackLabel: indexCopy.fallback,
+    loadingLabel: indexCopy.loading,
+    headline: indexCopy.headlines[testimonial.key],
+  });
 
   return (
-    <SecondaryHubSurface hub="stories">
+    <div className="story-editorial">
       <JsonLd
         data={[
           collectionPageJsonLd({
@@ -94,39 +120,38 @@ export default async function StoriesIndexPage({
         ]}
       />
 
-      <PageHero
-        tone="stories"
-        eyebrow={copy.eyebrow}
-        title={copy.indexHeading}
-        subtitle={copy.indexLead}
-        align="left"
-        className="editorial-index"
-      />
-
-      <section className="story-index-grid relative overflow-hidden bg-[#f9fafb] py-20 md:py-28">
-        <div
-          aria-hidden
-          className="pointer-events-none absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-primary/20 to-transparent"
-        />
-        <Container className="relative">
-          <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
-            {VIDEO_TESTIMONIALS.map((testimonial, index) => (
-              <Reveal
-                key={testimonial.videoId}
-                delay={index * 60}
-                className="h-full"
-              >
-                <TestimonialVideoCard
-                  videoId={testimonial.videoId}
-                  name={t(`videos.${testimonial.key}.name`)}
-                  role={t(`videos.${testimonial.key}.role`)}
-                  imageSrc={testimonial.image}
+      <section className="story-editorial__intro">
+        <Container>
+          <h1>
+            {indexCopy.heading} <span>Cekat.AI.</span>
+          </h1>
+          <p>{indexCopy.lead}</p>
+        </Container>
+      </section>
+      <section
+        className="story-editorial__collection"
+        aria-labelledby="featured-interview"
+      >
+        <Container>
+          <h2 id="featured-interview">{indexCopy.featured}</h2>
+          <StoryInterviewCard
+            {...interviewProps(featured)}
+            featured
+            headline={trusted("quote")}
+          />
+          <div className="story-editorial__more">
+            <h2>{indexCopy.all}</h2>
+            <div className="story-editorial__grid">
+              {interviews.map((testimonial) => (
+                <StoryInterviewCard
+                  key={testimonial.videoId}
+                  {...interviewProps(testimonial)}
                 />
-              </Reveal>
-            ))}
+              ))}
+            </div>
           </div>
         </Container>
       </section>
-    </SecondaryHubSurface>
+    </div>
   );
 }

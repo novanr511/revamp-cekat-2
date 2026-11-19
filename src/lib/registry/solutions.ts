@@ -10,7 +10,7 @@ export const SOLUTIONS: readonly SolutionEntry[] = [
     id: "sales",
     category: "role",
     slugs: { en: "sales", id: "sales" },
-    title: { en: "Sales", id: "Sales" },
+    title: { en: "Sales", id: "Penjualan" },
     tagline: {
       en: "Reply first, qualify, and close more deals",
       id: "Balas duluan, kualifikasi, closing lebih banyak",
@@ -22,7 +22,7 @@ export const SOLUTIONS: readonly SolutionEntry[] = [
     id: "customer-service",
     category: "role",
     slugs: { en: "customer-service", id: "customer-service" },
-    title: { en: "Customer Service", id: "Customer Service" },
+    title: { en: "Customer Service", id: "Layanan Pelanggan" },
     tagline: {
       en: "Every channel answered 24/7, humans on the hard ones",
       id: "Semua channel terjawab 24/7, manusia pegang yang sulit",
@@ -34,7 +34,7 @@ export const SOLUTIONS: readonly SolutionEntry[] = [
     id: "marketing",
     category: "role",
     slugs: { en: "marketing", id: "marketing" },
-    title: { en: "Marketing", id: "Marketing" },
+    title: { en: "Marketing", id: "Pemasaran" },
     tagline: {
       en: "Campaigns you can trace to actual sales",
       id: "Campaign yang kelacak sampai penjualan",

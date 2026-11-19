@@ -1,6 +1,7 @@
 import { CASE_STUDIES_JA } from "./case-studies.ja";
 import { CASE_STUDIES_KO } from "./case-studies.ko";
 import { CASE_STUDIES_ZH } from "./case-studies.zh";
+import { CASE_STUDIES_ID } from "./case-studies.id";
 import type { CaseStudyLocalizedCopy } from "./case-studies.ja";
 
 export type CaseStudyIndustry =
@@ -672,6 +673,7 @@ export function localizeCaseStudy(study: CaseStudy, locale: string): CaseStudy {
     Record<string, CaseStudyLocalizedCopy>
   > = {
     cn: CASE_STUDIES_ZH,
+    id: CASE_STUDIES_ID,
     jp: CASE_STUDIES_JA,
     kr: CASE_STUDIES_KO,
   };

@@ -395,7 +395,8 @@ export function Footer({
         <div className="border-t border-border py-6">
           <Container>
             <p className="text-left text-xs font-medium text-muted-foreground">
-              Copyright &copy; {new Date().getFullYear()} CekatAI. {t("rights")}
+              {locale === "id" ? "" : "Copyright "}&copy;{" "}
+              {new Date().getFullYear()} CekatAI. {t("rights")}
             </p>
           </Container>
         </div>

@@ -48,10 +48,10 @@ const COPY = {
     industry: "Industri",
     companySize: "Ukuran perusahaan",
     services: "Layanan yang digunakan",
-    ctaTitle: "Ingin mendapatkan hasil seperti ini untuk bisnis Anda?",
+    ctaTitle: "Ingin hasil serupa untuk bisnis Anda?",
     ctaBody:
-      "Bicarakan kebutuhan Anda dengan tim kami dan lihat bagaimana Cekat.AI cocok dengan alur kerja bisnis Anda.",
-    ctaAction: "Hubungi tim sales",
+      "Ceritakan kebutuhan tim Anda. Kami akan membantu melihat bagaimana Cekat.AI dapat mendukung cara kerja bisnis Anda.",
+    ctaAction: "Hubungi tim kami",
     more: "Studi kasus lainnya",
     read: "Baca studi kasus",
   },

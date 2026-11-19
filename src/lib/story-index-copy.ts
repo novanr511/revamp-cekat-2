@@ -1,0 +1,92 @@
+/** Listing-only copy: detail-page wording and recorded customer quotes stay unchanged. */
+const COPY = {
+  id: {
+    heading: "Cerita bisnis yang tumbuh bersama",
+    lead: "Dari salon hingga layanan kesehatan, dengarkan bagaimana pelanggan memakai Cekat.AI untuk melayani pelanggan dan mengelola bisnis mereka.",
+    featured: "Cerita unggulan",
+    all: "Wawancara pelanggan",
+    close: "Tutup",
+    fallback: "Video tidak terbuka? Tonton di YouTube",
+    loading: "Memuat wawancara…",
+    headlines: {
+      moir: "Respons pelanggan menjadi lebih cepat.",
+      rumahZakat: "Transformasi layanan donatur bersama CRM AI.",
+      mnp: "Transformasi digital kampus dengan chatbot AI.",
+      vio: "Mengembangkan bisnis menjadi jaringan klinik optik.",
+      dokterhub: "Teknologi yang mendukung layanan kesehatan.",
+      threeland: "Banting setir ke properti, menjadi pilihan pelanggan.",
+    },
+  },
+  en: {
+    heading: "Businesses growing with",
+    lead: "From salons to healthcare, hear how customers use Cekat.AI to serve their customers and manage their businesses.",
+    featured: "Featured story",
+    all: "Customer interviews",
+    close: "Close",
+    fallback: "Video unavailable? Watch on YouTube",
+    loading: "Loading interview…",
+    headlines: {
+      moir: "Faster responses to customers.",
+      rumahZakat: "Transforming donor services with AI CRM.",
+      mnp: "Campus digital transformation with an AI chatbot.",
+      vio: "Growing a business into a network of optical clinics.",
+      dokterhub: "Technology that supports healthcare services.",
+      threeland: "Moving into property and becoming a customer choice.",
+    },
+  },
+  cn: {
+    heading: "与我们共同成长的企业，",
+    lead: "从沙龙到医疗服务，听听客户如何使用 Cekat.AI 服务客户并管理业务。",
+    featured: "精选故事",
+    all: "客户访谈",
+    close: "关闭",
+    fallback: "无法播放视频？在 YouTube 上观看",
+    loading: "正在加载访谈…",
+    headlines: {
+      moir: "更快地回应客户。",
+      rumahZakat: "通过 AI CRM 转型捐赠者服务。",
+      mnp: "借助 AI 聊天机器人推动校园数字化转型。",
+      vio: "从一家企业发展为视光诊所网络。",
+      dokterhub: "支持医疗服务的技术。",
+      threeland: "转向房地产，成为客户的选择。",
+    },
+  },
+  jp: {
+    heading: "ともに成長する企業と",
+    lead: "サロンから医療サービスまで、お客様が Cekat.AI を活用して顧客に対応し、事業を管理する様子をご紹介します。",
+    featured: "注目の導入事例",
+    all: "お客様インタビュー",
+    close: "閉じる",
+    fallback: "動画が再生されない場合は YouTube で視聴",
+    loading: "インタビューを読み込み中…",
+    headlines: {
+      moir: "お客様への対応をより迅速に。",
+      rumahZakat: "AI CRMで寄付者向けサービスを変革。",
+      mnp: "AIチャットボットによるキャンパスのデジタル化。",
+      vio: "事業を育て、視力ケアのクリニックネットワークへ。",
+      dokterhub: "医療サービスを支えるテクノロジー。",
+      threeland: "不動産業への転身から、お客様に選ばれる企業へ。",
+    },
+  },
+  kr: {
+    heading: "함께 성장하는 기업과",
+    lead: "미용실부터 의료 서비스까지, 고객들이 Cekat.AI로 고객을 응대하고 비즈니스를 관리하는 이야기를 들어보세요.",
+    featured: "추천 고객 사례",
+    all: "고객 인터뷰",
+    close: "닫기",
+    fallback: "동영상이 재생되지 않나요? YouTube에서 시청하세요",
+    loading: "인터뷰 로딩 중…",
+    headlines: {
+      moir: "더 빠른 고객 응대.",
+      rumahZakat: "AI CRM으로 후원자 서비스를 혁신하다.",
+      mnp: "AI 챗봇으로 캠퍼스의 디지털 전환을 이끌다.",
+      vio: "사업을 성장시켜 안과 클리닉 네트워크로 확장하다.",
+      dokterhub: "의료 서비스를 지원하는 기술.",
+      threeland: "부동산으로 전환해 고객의 선택이 되다.",
+    },
+  },
+} as const;
+
+export function storyIndexCopyFor(locale: string) {
+  return COPY[locale as keyof typeof COPY] ?? COPY.en;
+}

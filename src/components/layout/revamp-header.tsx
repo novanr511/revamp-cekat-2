@@ -26,7 +26,7 @@ const HEADER_COPY: Record<string, Record<string, string>> = {
     "Log in": "Masuk",
     "Talk to sales": "Hubungi tim sales",
     "Start free trial": "Mulai uji coba gratis",
-    "Free trial": "Gratis",
+    "Free trial": "Coba Gratis",
     "Know which ads and creators bring revenue.":
       "Ketahui iklan dan kreator yang menghasilkan pendapatan.",
     "Every channel in one inbox, answered by AI.":
@@ -481,14 +481,14 @@ export function RevampHeader() {
       indonesiaHref === "/" ? "/id" : `/id${indonesiaHref}`;
 
     let next = localizeRevampHeaderMarkup(revampHeaderMarkup, currentLocale);
-    // The homepage uses the shared header but retains its desktop sizing. The
-    // stories archive also keeps its existing mobile treatment.
+    // The homepage uses the shared header but retains its desktop sizing. Every
+    // secondary page, including the stories archive, shares compact mobile chrome.
     if (pathname === "/") {
       next = next.replace(
         '<header class="nav"',
         '<header class="nav nav--homepage"',
       );
-    } else if (pathname !== "/stories") {
+    } else {
       next = next.replace(
         '<header class="nav"',
         '<header class="nav nav--mobile-compact"',
@@ -694,7 +694,7 @@ export function RevampHeader() {
     <div ref={rootRef} className="revamp-site-header" data-locale={locale}>
       {/* The stylesheet is the canonical visual system supplied with the approved revamp. */}
       {/* eslint-disable-next-line @next/next/no-css-tags */}
-      <link rel="stylesheet" href="/revamp-web-cekat/styles.css?v=70" />
+      <link rel="stylesheet" href="/revamp-web-cekat/styles.css?v=72" />
       <style>{`.nav{position:sticky!important;top:0!important;z-index:1000!important}.nav__language-menu{position:absolute!important;top:calc(100% + 6px)!important;right:0!important;width:170px!important;z-index:2147483000!important}.nav__languages:hover>.nav__language-menu,.nav__languages:focus-within>.nav__language-menu,.nav__languages[open]>.nav__language-menu{display:grid!important}`}</style>
       <a className="skip" href="#main">
         {skipLabel}

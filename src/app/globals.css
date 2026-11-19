@@ -6,6 +6,7 @@
 @import "../components/sections/revamp/revamp.css";
 @import "../components/sections/shared/secondary-hubs-soft.css";
 @import "../components/sections/shared/story-detail-soft.css";
+@import "../components/sections/shared/story-index-editorial.css";
 
 @custom-variant dark (&:is(.dark *));
 

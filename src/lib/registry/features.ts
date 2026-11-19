@@ -17,7 +17,10 @@ export const FEATURES: readonly FeatureEntry[] = [
     id: "ai-agent",
     category: "chat",
     slugs: { en: "ai-chatbot", id: "chatbot" },
-    title: { en: "AI Chatbot", id: "Chatbot AI" },
+    title: {
+      en: "AI Chatbot",
+      id: "Bot percakapan berbasis kecerdasan buatan",
+    },
     tagline: {
       en: "Human-like AI that closes sales",
       id: "AI humanis yang closing, bukan cuma bales",
@@ -29,7 +32,10 @@ export const FEATURES: readonly FeatureEntry[] = [
     id: "whatsapp-chatbot",
     category: "chat",
     slugs: { en: "whatsapp-chatbot", id: "chatbot-ai-whatsapp" },
-    title: { en: "WhatsApp Chatbot", id: "Chatbot AI WhatsApp" },
+    title: {
+      en: "WhatsApp Chatbot",
+      id: "Bot percakapan WhatsApp berbasis kecerdasan buatan",
+    },
     tagline: {
       en: "AI that sells on WhatsApp 24/7",
       id: "AI yang jualan di WhatsApp 24/7",
@@ -200,7 +206,10 @@ export const FEATURES: readonly FeatureEntry[] = [
     id: "ai-agent-builder",
     category: "ai",
     slugs: { en: "no-code-ai-agent-builder", id: "buat-ai-agent" },
-    title: { en: "No-Code AI Builder", id: "Buat AI Agent" },
+    title: {
+      en: "No-Code AI Builder",
+      id: "Pembuat agen kecerdasan buatan tanpa kode",
+    },
     tagline: {
       en: "Build an AI agent in 5 minutes",
       id: "Buat AI agent dalam 5 menit",
@@ -348,7 +357,7 @@ export const FEATURES: readonly FeatureEntry[] = [
     id: "whatsapp-blast",
     category: "marketing",
     slugs: { en: "whatsapp-blast", id: "wa-blast" },
-    title: { en: "WhatsApp Blast", id: "WA Blast" },
+    title: { en: "WhatsApp Blast", id: "Kirim pesan WhatsApp massal" },
     tagline: {
       en: "Reach thousands in one send",
       id: "Jangkau ribuan sekali kirim",
@@ -434,7 +443,7 @@ export const FEATURES: readonly FeatureEntry[] = [
     id: "order-automation",
     category: "order",
     slugs: { en: "order-automation", id: "otomatisasi-order" },
-    title: { en: "Order Automation", id: "Otomatisasi Order" },
+    title: { en: "Order Automation", id: "Otomatisasi pesanan" },
     tagline: {
       en: "AI creates orders from chat",
       id: "AI bikin order dari chat",

@@ -18,6 +18,51 @@ describe("published case studies", () => {
     }
   });
 
+  it("provides complete Indonesian copy for every case without changing source facts", () => {
+    const englishText =
+      /\b(?:How|with|the|and|from|across|customer|team|service|more|faster|higher|lower|fewer|every|before|after|case|study|employees|business units|Marketing|Sales|Order|Chat|AI Agent|Omnichannel|Inbox|Automation|Workflow|Lead|Contact Center|Onboarding|Standardized)\b|(?<!Cekat\.)\bAI\b/i;
+
+    for (const source of CASE_STUDIES) {
+      const indonesian = localizeCaseStudy(source, "id");
+      const renderedCopy = [
+        indonesian.industry,
+        ...indonesian.useCases,
+        indonesian.title,
+        indonesian.summary,
+        indonesian.interview.role,
+        ...indonesian.about,
+        ...indonesian.challenge.paragraphs,
+        indonesian.challenge.quote,
+        indonesian.solutions.intro,
+        indonesian.solutions.quote,
+        ...indonesian.solutions.steps.flatMap((step) => [
+          step.title,
+          step.body,
+        ]),
+        indonesian.results.intro,
+        indonesian.results.quote,
+        indonesian.profile.location,
+        indonesian.profile.companySize,
+        ...indonesian.profile.services,
+        ...indonesian.outcomes.flatMap((outcome) => [
+          outcome.value,
+          outcome.label,
+          outcome.detail,
+        ]),
+      ];
+
+      expect(indonesian.title).not.toBe(source.title);
+      const numberTokens = (value: string) => value.match(/\d+/g) ?? [];
+      expect(
+        indonesian.outcomes.map((outcome) => numberTokens(outcome.value)),
+      ).toEqual(source.outcomes.map((outcome) => numberTokens(outcome.value)));
+      expect(renderedCopy.filter((text) => englishText.test(text))).toEqual([]);
+      expect(indonesian.company).toBe(source.company);
+      expect(indonesian.interview.name).toBe(source.interview.name);
+      expect(indonesian.featuredOutcome).toBe(source.featuredOutcome);
+    }
+  });
+
   it("filters the healthcare category to Euromedica", () => {
     expect(getCaseStudyIndustry("healthcare")).toBe("healthcare");
     expect(filterCaseStudies("healthcare").map((study) => study.slug)).toEqual([

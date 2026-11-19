@@ -1180,6 +1180,11 @@ select {
     padding: 8px 12px;
     white-space: nowrap;
     font-size: 0.875rem;
+    max-width: 160px;
+    overflow: hidden;
+    transition:
+      max-width 280ms cubic-bezier(0.2, 0.8, 0.2, 1),
+      padding 280ms cubic-bezier(0.2, 0.8, 0.2, 1);
   }
   .nav--homepage .nav__cta-label {
     font-size: 0;
@@ -1192,6 +1197,16 @@ select {
   }
   .nav--homepage .nav__languages > summary {
     padding-inline: 7px;
+  }
+  .sticky-on .nav--homepage .nav__actions .btn--primary {
+    max-width: 0;
+    min-width: 0;
+    padding-inline: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .nav--homepage .nav__actions .btn--primary {
+    transition: none;
   }
 }
 @media (max-width: 420px) {
@@ -1784,6 +1799,9 @@ select {
     padding: 24px 16px 40px 40px;
     border-radius: 24px;
     align-items: stretch;
+  }
+  .loop__card {
+    min-width: 0;
   }
   .loop::before {
     content: "";
@@ -6436,7 +6454,7 @@ select {
   .sticky-cta.is-shown {
     transform: none;
   }
-  /* One trial button on screen at a time: the thumb-reach bar replaces the nav copy while it shows */
+  /* The thumb-reach bar replaces the nav CTA while it keeps space for the language control. */
   .sticky-on .nav__actions .btn {
     visibility: hidden;
   }

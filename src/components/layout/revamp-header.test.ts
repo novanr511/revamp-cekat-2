@@ -61,7 +61,7 @@ describe("revamp header links", () => {
 
   it.each([
     ["en", "Free trial", "Start free trial"],
-    ["id", "Gratis", "Mulai uji coba gratis"],
+    ["id", "Coba Gratis", "Mulai uji coba gratis"],
     ["cn", "免费试用", "开始免费试用"],
     ["jp", "無料体験", "無料トライアルを始める"],
     ["kr", "무료 체험", "무료 체험 시작"],

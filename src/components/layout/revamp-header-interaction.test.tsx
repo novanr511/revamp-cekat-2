@@ -76,7 +76,7 @@ describe("secondary page product previews", () => {
     unmount();
   });
 
-  it("opts secondary headers into compact mobile styles, but not the stories archive", () => {
+  it("uses the same compact mobile header on secondary pages, including stories", () => {
     pathnameMock.mockReturnValue("/industries/healthcare");
     const secondary = render(<RevampHeader />);
     expect(secondary.container.querySelector(".nav")).toHaveClass(
@@ -106,8 +106,12 @@ describe("secondary page product previews", () => {
 
     pathnameMock.mockReturnValue("/stories");
     const stories = render(<RevampHeader />);
-    expect(stories.container.querySelector(".nav")).not.toHaveClass(
+    expect(stories.container.querySelector(".nav")).toHaveClass(
       "nav--mobile-compact",
+    );
+    expect(stories.container.querySelector(".nav__cta-label")).toHaveAttribute(
+      "data-mobile-label",
+      "Free trial",
     );
     stories.unmount();
 

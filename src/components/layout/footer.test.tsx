@@ -4,6 +4,7 @@ import { fireEvent, render, screen } from "@testing-library/react";
 import { NextIntlClientProvider } from "next-intl";
 import { Footer } from "./footer";
 import enMessages from "../../../messages/en.json";
+import idMessages from "../../../messages/id.json";
 
 vi.mock("@/i18n/navigation", () => ({
   usePathname: () => "/",
@@ -72,6 +73,42 @@ describe("Footer", () => {
     expect(screen.getByText("Jakarta Office")).toBeInTheDocument();
     expect(screen.getByText("Tangerang Office")).toBeInTheDocument();
     expect(screen.getByText("Download Cekat Mobile App")).toBeInTheDocument();
+  });
+
+  it("uses Indonesian labels throughout the Indonesian footer", () => {
+    render(
+      <NextIntlClientProvider locale="id" messages={idMessages}>
+        <Footer />
+      </NextIntlClientProvider>,
+    );
+
+    for (const label of [
+      "Percakapan",
+      "Pemasaran",
+      "Pesanan",
+      "Acara",
+      "Kirim pesan WhatsApp massal",
+      "Otomatisasi pesanan",
+      "Penjualan",
+      "Layanan Pelanggan",
+      "Kebijakan & Ketentuan",
+    ]) {
+      expect(screen.getAllByText(label).length).toBeGreaterThan(0);
+    }
+
+    for (const untranslatedLabel of [
+      "Marketing",
+      "Order",
+      "Sales",
+      "Customer Service",
+      "WA Blast",
+    ]) {
+      expect(screen.queryByText(untranslatedLabel)).not.toBeInTheDocument();
+    }
+    expect(screen.queryByText(/Copyright/)).not.toBeInTheDocument();
+    expect(
+      screen.getByText(/CekatAI\. Seluruh hak cipta dilindungi\./),
+    ).toBeInTheDocument();
   });
 
   it("uses the shared light footer treatment", () => {
