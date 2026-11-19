@@ -33,6 +33,15 @@ const PRODUCT_LINKS = [
   { key: "about", href: "/about" },
 ] as const;
 
+const ENGLISH_FEATURE_TITLE_IDS_IN_INDONESIAN_FOOTER = new Set([
+  "ai-agent",
+  "ai-agent-builder",
+  "whatsapp-blast",
+  "whatsapp-chatbot",
+]);
+const ENGLISH_INDUSTRY_TITLE_IDS_IN_INDONESIAN_FOOTER = new Set(["retail"]);
+const ENGLISH_REFUND_POLICY_LABEL = "Return, Refund & Delivery Policy";
+
 // Legal pages are served on this site (localized), mirroring the cekat.ai copy.
 const LEGAL_LINKS = [
   { key: "terms", href: "/terms-and-conditions" },
@@ -234,7 +243,10 @@ export function Footer({
                     params: { slug: entry.slugs[locale]! },
                   }}
                 >
-                  {localeValue(entry.title, locale)}
+                  {locale === "id" &&
+                  ENGLISH_FEATURE_TITLE_IDS_IN_INDONESIAN_FOOTER.has(entry.id)
+                    ? (entry.title.en ?? localeValue(entry.title, locale))
+                    : localeValue(entry.title, locale)}
                 </FooterLink>
               ))}
               <FooterLink
@@ -253,7 +265,10 @@ export function Footer({
                     params: { slug: entry.slugs[locale]! },
                   }}
                 >
-                  {localeValue(entry.title, locale)}
+                  {locale === "id" &&
+                  ENGLISH_INDUSTRY_TITLE_IDS_IN_INDONESIAN_FOOTER.has(entry.id)
+                    ? (entry.title.en ?? localeValue(entry.title, locale))
+                    : localeValue(entry.title, locale)}
                 </FooterLink>
               ))}
               <FooterLink
@@ -285,7 +300,9 @@ export function Footer({
             <LinkColumn title={t("legalHeading")}>
               {LEGAL_LINKS.map((l) => (
                 <FooterLink key={l.key} href={l.href}>
-                  {t(l.key)}
+                  {locale === "id" && l.key === "refund"
+                    ? ENGLISH_REFUND_POLICY_LABEL
+                    : t(l.key)}
                 </FooterLink>
               ))}
             </LinkColumn>

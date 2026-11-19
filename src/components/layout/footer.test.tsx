@@ -75,7 +75,7 @@ describe("Footer", () => {
     expect(screen.getByText("Download Cekat Mobile App")).toBeInTheDocument();
   });
 
-  it("uses Indonesian labels throughout the Indonesian footer", () => {
+  it("uses approved English labels for selected Indonesian footer links", () => {
     render(
       <NextIntlClientProvider locale="id" messages={idMessages}>
         <Footer />
@@ -87,7 +87,6 @@ describe("Footer", () => {
       "Pemasaran",
       "Pesanan",
       "Acara",
-      "Kirim pesan WhatsApp massal",
       "Otomatisasi pesanan",
       "Penjualan",
       "Layanan Pelanggan",
@@ -102,8 +101,26 @@ describe("Footer", () => {
       "Sales",
       "Customer Service",
       "WA Blast",
+      "Kirim pesan WhatsApp massal",
+      "Ritel & Perdagangan Daring",
+      "Kebijakan Retur, Pengembalian Dana & Pengiriman",
+      "Bot percakapan berbasis kecerdasan buatan",
+      "Pembuat agen kecerdasan buatan tanpa kode",
+      "Bot percakapan WhatsApp berbasis kecerdasan buatan",
     ]) {
       expect(screen.queryByText(untranslatedLabel)).not.toBeInTheDocument();
+    }
+    for (const featureTitle of [
+      "AI Chatbot",
+      "No-Code AI Builder",
+      "WhatsApp Blast",
+      "WhatsApp Chatbot",
+      "Retail & E-Commerce",
+      "Return, Refund & Delivery Policy",
+    ]) {
+      expect(
+        screen.getByRole("link", { name: featureTitle }),
+      ).toBeInTheDocument();
     }
     expect(screen.queryByText(/Copyright/)).not.toBeInTheDocument();
     expect(

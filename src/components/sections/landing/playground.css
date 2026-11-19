@@ -819,6 +819,55 @@
   z-index: 1;
 }
 
+/* Feature-page CTA: soften the closing field while the saturated button keeps action priority. */
+.cekat-page .feature-detail .secondary-final-cta {
+  background: linear-gradient(
+    120deg,
+    var(--soft-surface-blue),
+    var(--soft-surface-neutral) 58%,
+    var(--soft-surface-warm)
+  );
+  color: #09214c;
+}
+.cekat-page .feature-detail .secondary-final-cta::before {
+  background: var(--soft-surface-blue-deep);
+  opacity: 0.72;
+}
+.cekat-page .feature-detail .secondary-final-cta::after {
+  background: var(--soft-surface-sand);
+  opacity: 0.9;
+}
+.cekat-page .feature-detail .secondary-final-cta h2 {
+  color: #09214c;
+}
+.cekat-page .feature-detail .secondary-final-cta p:not(.eyebrow-rule-light) {
+  color: #3a4960;
+}
+.cekat-page .feature-detail .secondary-final-cta .eyebrow-rule-light {
+  color: #1352bf;
+}
+.cekat-page .feature-detail .secondary-final-cta .eyebrow-rule-light::before {
+  background: #1352bf;
+}
+.cekat-page .feature-detail .secondary-final-cta__register {
+  background: #1352bf;
+  color: #fff;
+  box-shadow: none;
+}
+.cekat-page .feature-detail .secondary-final-cta__register:hover {
+  background: #0d439f;
+}
+.cekat-page .feature-detail .secondary-final-cta__sales {
+  border-color: #c7d4e7;
+  background: #fff;
+  color: #09214c;
+  backdrop-filter: none;
+}
+.cekat-page .feature-detail .secondary-final-cta__sales:hover {
+  border-color: #1352bf;
+  background: #f0f4fa;
+}
+
 /* Editorial, contact and commercial pages keep distinct visual chapters. */
 .cekat-page .editorial-feature > div:first-child {
   background: var(--soft-surface-warm);
