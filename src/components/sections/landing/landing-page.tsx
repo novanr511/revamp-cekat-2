@@ -255,6 +255,24 @@ export async function LandingPage({
   }
 
   if (kind === "industries") {
+    if (entry.id === "healthcare" && locale === "id") {
+      const { ClinicPage } = await import("./clinic/clinic-page");
+      return (
+        <>
+          <JsonLd data={jsonLd} />
+          <ClinicPage faq={content.faq} />
+        </>
+      );
+    }
+    if (locale === "id") {
+      const { IndustryPage } = await import("./clinic/industry-page");
+      return (
+        <>
+          <JsonLd data={jsonLd} />
+          <IndustryPage content={content} title={pageTitle} photo={heroImage} />
+        </>
+      );
+    }
     return (
       <>
         <JsonLd data={jsonLd} />
