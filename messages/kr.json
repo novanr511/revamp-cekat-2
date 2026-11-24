@@ -1161,6 +1161,8 @@
     "definition": "역할별 Cekat.AI 솔루션은 영업, 고객 서비스, 마케팅, HR 및 운영 팀이 하나의 플랫폼에서 AI 에이전트, CRM 및 자동화를 사용하여 수동적인 분주한 작업 없이 더 빠르고 마감적인 작업에 응답하는 방법을 설명합니다."
   },
   "integrations": {
+    "catalog": "연동 카테고리",
+    "browse": "연동 목록 보기",
     "metaTitle": "Cekat.AI 연동: 채널, 광고 및 API | CekatAI",
     "metaDescription": "WhatsApp Business API, Instagram, TikTok, Telegram, 이메일을 하나의 받은 편지함에 연결하고 전환 데이터를 Meta와 TikTok에 전송한 뒤 API로 내부 시스템을 연동하세요.",
     "badge": "연동",

@@ -1161,6 +1161,8 @@
     "definition": "Cekat.AI solutions by role explain how sales, customer service, marketing, HR, and operations teams use AI agents, CRM, and automation in one platform to reply faster and close work without manual busywork."
   },
   "integrations": {
+    "catalog": "Integration categories",
+    "browse": "Explore integrations",
     "metaTitle": "Cekat.AI Integrations: Channels, Ads & APIs | CekatAI",
     "metaDescription": "Connect WhatsApp Business API, Instagram, TikTok, Telegram, and email to one inbox, send conversions to Meta and TikTok, then wire in your systems via API.",
     "badge": "Integrations",

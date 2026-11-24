@@ -1161,6 +1161,8 @@
     "definition": "Cekat.AI 解决方案按角色解释了销售、客户服务、营销、人力资源和运营团队如何在一个平台中使用 AI 代理、CRM 和自动化来更快、更密切地回复工作，而无需手动忙碌。"
   },
   "integrations": {
+    "catalog": "集成类别",
+    "browse": "浏览集成",
     "metaTitle": "Cekat.AI 集成：渠道、广告与 API | CekatAI",
     "metaDescription": "将 WhatsApp Business API、Instagram、TikTok、Telegram 和电子邮件接入统一收件箱，将转化数据发送至 Meta 和 TikTok，并通过 API 连接内部系统。",
     "badge": "集成",

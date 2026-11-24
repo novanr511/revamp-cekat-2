@@ -1161,6 +1161,8 @@
     "definition": "役割別の Cekat.AI ソリューションでは、営業、カスタマー サービス、マーケティング、人事、運用チームが 1 つのプラットフォームで AI エージェント、CRM、自動化を使用して、手作業で多忙な作業を行わずに迅速に返信し、仕事を終了する方法を説明します。"
   },
   "integrations": {
+    "catalog": "連携カテゴリー",
+    "browse": "連携一覧を見る",
     "metaTitle": "Cekat.AI連携：チャネル、広告、API | CekatAI",
     "metaDescription": "WhatsApp Business API、Instagram、TikTok、Telegram、メールを1つの受信トレイに接続。コンバージョンをMetaやTikTokへ送り、APIで社内システムとも連携できます。",
     "badge": "連携",

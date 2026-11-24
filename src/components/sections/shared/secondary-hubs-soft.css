@@ -77,7 +77,14 @@
   box-shadow: 0 18px 40px -24px #09214c26;
 }
 
-/* Soft chapter fields keep the integration cards white and legible. */
+/* On stacked layouts, lead straight from the introduction into the catalog. */
+@media (max-width: 1023px) {
+  .cekat-page .secondary-hub-soft[data-hub="integrations"] .secondary-hero__visual {
+    display: none;
+  }
+}
+
+/* Desktop integration workflow illustration. */
 .cekat-page .secondary-hub-soft[data-hub="integrations"] .product-stage {
   --stage-soft: var(--hub-soft-blue);
   border-color: var(--hub-soft-line);

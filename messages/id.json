@@ -1161,6 +1161,8 @@
     "definition": "Solusi Cekat.AI per peran menjelaskan bagaimana tim sales, customer service, marketing, HRD, dan operasional memakai AI agent, CRM, dan automasi dalam satu platform untuk membalas lebih cepat dan menutup kerja tanpa proses manual."
   },
   "integrations": {
+    "catalog": "Kategori integrasi",
+    "browse": "Jelajahi integrasi",
     "metaTitle": "Integrasi Cekat.AI: Channel, Iklan & API | CekatAI",
     "metaDescription": "Hubungkan WhatsApp Business API, Instagram, TikTok, Telegram, dan email ke satu inbox, kirim konversi ke Meta dan TikTok, lalu sambungkan sistemmu lewat API.",
     "badge": "Integrasi",
