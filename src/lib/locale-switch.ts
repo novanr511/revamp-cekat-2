@@ -53,6 +53,13 @@ export function switchLocaleHref(
   from: Locale,
   to: Locale,
 ): SwitchLocaleHref {
+  // During static rendering next-intl may expose the concrete internal path
+  // rather than the localized dynamic template (e.g. /industries/ritel).
+  const industry = /^\/(?:industries|industri)\/([^/]+)$/.exec(template);
+  if (industry) {
+    template = "/industries/[slug]";
+    slug ??= industry[1];
+  }
   const hub = HUB_FOR_TEMPLATE[template as AppPathname];
   if (hub) {
     const counterpart = slug

@@ -44,7 +44,6 @@ import { RelatedLinks } from "./related-links";
 import { LandingCta } from "./landing-cta";
 import { PRODUCT_ART } from "./product-stage";
 import { localeValue } from "@/lib/locale-value";
-import { RevampDetail } from "@/components/sections/revamp/detail";
 
 const HUB_TEMPLATE = {
   features: "/features",
@@ -264,27 +263,15 @@ export async function LandingPage({
         </>
       );
     }
-    if (locale === "id" || locale === "en") {
-      const { IndustryPage } = await import("./clinic/industry-page");
-      return (
-        <>
-          <JsonLd data={jsonLd} />
-          <IndustryPage locale={locale} content={content} title={pageTitle} photo={heroImage} />
-        </>
-      );
-    }
+    const { IndustryPage } = await import("./clinic/industry-page");
     return (
       <>
         <JsonLd data={jsonLd} />
-        <RevampDetail
+        <IndustryPage
+          locale={locale}
           content={content}
           title={pageTitle}
-          industry={isIndustry}
-          industryId={isIndustry ? entry.id : undefined}
           photo={heroImage}
-          product={entry.category}
-          related={related}
-          faqHeading={t("faqHeading", { title: pageTitle })}
         />
       </>
     );

@@ -2,6 +2,7 @@ import createMiddleware from "next-intl/middleware";
 import { type NextRequest, NextResponse } from "next/server";
 import { routing, LOCALE_COOKIE } from "./i18n/routing";
 import { toEnglishPath } from "./lib/geo-route";
+import { INDUSTRIES } from "./lib/registry/industries";
 import { AD_COOKIE, AD_COOKIE_MAX_AGE, extractAdParams } from "./lib/ad-params";
 
 // Next 16 renamed Middleware → Proxy; next-intl's handler is the default export.
@@ -80,6 +81,20 @@ export default function proxy(request: NextRequest) {
   ).toUpperCase();
   const waCookie = request.cookies.get("wa_country")?.value;
   const adCookie = request.cookies.get(AD_COOKIE)?.value;
+
+  // Old shared links can contain an Indonesian slug under an international prefix.
+  const industry = /^\/(en|kr|jp|cn)\/industries\/([^/]+)\/?$/.exec(pathname);
+  if (industry) {
+    const [, locale, slug] = industry;
+    const entry = INDUSTRIES.find(({ slugs }) => slugs.id === slug);
+    const canonical =
+      entry?.slugs[locale as "en" | "kr" | "jp" | "cn"] ?? entry?.slugs.en;
+    if (canonical && slug !== canonical) {
+      const url = request.nextUrl.clone();
+      url.pathname = `/${locale}/industries/${canonical}`;
+      return NextResponse.redirect(url, 308);
+    }
+  }
 
   const isPrefixed =
     pathname === "/en" ||
