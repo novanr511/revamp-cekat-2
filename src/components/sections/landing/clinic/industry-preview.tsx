@@ -8,40 +8,44 @@ import {
   RotateCcw,
 } from "lucide-react";
 import type { LandingContent } from "@/lib/registry/types";
+import { industryLabels, type IndustryLocale } from "./industry-labels";
 
 export function IndustryPreview({
   children,
   cases,
+  locale = "id",
 }: {
   children: ReactNode;
   cases: string[];
+  locale?: IndustryLocale;
 }) {
+  const labels = industryLabels[locale];
   const [index, setIndex] = useState(0);
   return (
     <figure className="cl-figure">
       <div className="cl-photo">
         {children}
         <span className="cl-online">
-          <i /> Asisten aktif
+          <i /> {labels.online}
         </span>
         <div className="cl-ticket industry-ticket" aria-live="polite">
           <div className="cl-ticketHead">
             <span>
-              <MessageCircle size={16} /> Contoh penggunaan
+              <MessageCircle size={16} /> {labels.example}
             </span>
           </div>
           <strong>{cases[index]}</strong>
-          <p>Ditangani dalam percakapan bersama Cekat.AI</p>
+          <p>{labels.handled}</p>
         </div>
       </div>
       <figcaption>
         <span>
-          <i /> Contoh alur layanan
+          <i /> {labels.workflow}
         </span>
         <span>
           <button
             type="button"
-            aria-label="Contoh sebelumnya"
+            aria-label={labels.previous}
             onClick={() =>
               setIndex((i) => (i + cases.length - 1) % cases.length)
             }
@@ -51,7 +55,7 @@ export function IndustryPreview({
           {index + 1} / {cases.length}
           <button
             type="button"
-            aria-label="Contoh berikutnya"
+            aria-label={labels.next}
             onClick={() => setIndex((i) => (i + 1) % cases.length)}
           >
             <ArrowRight size={14} />
@@ -66,19 +70,22 @@ export function IndustryDemo({
   benefits,
   faq,
   heading,
+  locale = "id",
 }: {
   benefits: LandingContent["benefits"];
   faq: LandingContent["faq"];
   heading?: string;
+  locale?: IndustryLocale;
 }) {
+  const labels = industryLabels[locale];
   const [index, setIndex] = useState(0),
     [question, setQuestion] = useState(0);
   const benefit = benefits[index];
   const questions = faq.slice(0, 3);
   return (
     <section id="simulasi" className="cl-demo industry-demo">
-      <p className="cl-label">Lihat cara kerja Cekat.AI</p>
-      <h2>{heading || "Dari percakapan ke langkah berikutnya."}</h2>
+      <p className="cl-label">{labels.demo}</p>
+      <h2>{heading || labels.demoHeading}</h2>
       <div className="cl-demoGrid">
         <div className="cl-options">
           {benefits.map((item, i) => (
@@ -104,13 +111,13 @@ export function IndustryDemo({
                 <MessageCircle size={20} />
               </span>
               <div>
-                <strong>Asisten Cekat.AI</strong>
-                <small>Contoh tampilan layanan</small>
+                <strong>{labels.assistant}</strong>
+                <small>{labels.preview}</small>
               </div>
               <button
                 type="button"
                 className="cl-reset"
-                aria-label="Mulai ulang contoh"
+                aria-label={labels.reset}
                 onClick={() => {
                   setIndex(0);
                   setQuestion(0);
@@ -120,16 +127,16 @@ export function IndustryDemo({
               </button>
             </div>
             <div className="industry-feature" aria-live="polite">
-              <span>Fitur yang dipilih</span>
+              <span>{labels.selected}</span>
               <strong>{benefit.title}</strong>
               <p>{benefit.body}</p>
             </div>
             {questions.length > 0 && (
               <div className="industry-questions">
-                <span>Contoh tanya jawab</span>
+                <span>{labels.sampleFaq}</span>
                 <div
                   className="industry-questionButtons"
-                  aria-label="Pilih contoh pertanyaan"
+                  aria-label={labels.choose}
                 >
                   {questions.map((q, i) => (
                     <button
@@ -138,7 +145,7 @@ export function IndustryDemo({
                       aria-pressed={question === i}
                       onClick={() => setQuestion(i)}
                     >
-                      Pertanyaan {i + 1}
+                      {labels.question} {i + 1}
                     </button>
                   ))}
                 </div>

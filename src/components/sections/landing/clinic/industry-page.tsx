@@ -11,6 +11,7 @@ import { Link } from "@/i18n/navigation";
 import type { LandingContent } from "@/lib/registry/types";
 import { ClinicMotion } from "./clinic-demo";
 import { IndustryDemo, IndustryPreview } from "./industry-preview";
+import { industryLabels, type IndustryLocale } from "./industry-labels";
 import "./clinic.css";
 
 /** Uses the healthcare visual language, while all industry claims and copy
@@ -19,11 +20,14 @@ export function IndustryPage({
   content,
   title,
   photo,
+  locale,
 }: {
   content: LandingContent;
   title: string;
   photo?: string;
+  locale: IndustryLocale;
 }) {
+  const labels = industryLabels[locale];
   const useCases = content.hero.useCases?.length
     ? content.hero.useCases
     : content.benefits.map((benefit) => benefit.title);
@@ -32,28 +36,28 @@ export function IndustryPage({
       <ClinicMotion />
       <div className="cl-wrap">
         <nav className="cl-crumb" aria-label="Breadcrumb">
-          <Link href="/industries">Industri</Link>
+          <Link href="/industries">{labels.industries}</Link>
           <ChevronRight size={12} />
           {title}
         </nav>
         <section className="cl-hero">
           <div className="cl-copy">
             <p className="cl-tag">
-              <MessageCircle size={17} /> Cekat.AI untuk{" "}
+              <MessageCircle size={17} /> {labels.forIndustry}{" "}
               {content.hero.badge || title}
             </p>
             <h1>{content.hero.title}</h1>
             <p className="cl-intro">{content.hero.subtitle}</p>
             <div className="cl-actions">
               <a className="cl-btn" href="https://chat.cekat.ai/register">
-                Mulai uji coba gratis <ArrowUpRight size={17} />
+                {labels.trial} <ArrowUpRight size={17} />
               </a>
               <a className="cl-textlink" href="#simulasi">
-                Lihat cara kerja <ArrowDownRight size={16} />
+                {labels.how} <ArrowDownRight size={16} />
               </a>
             </div>
           </div>
-          <IndustryPreview key={title} cases={useCases}>
+          <IndustryPreview key={title} locale={locale} cases={useCases}>
             {photo && (
               <Image
                 src={photo}
@@ -68,12 +72,12 @@ export function IndustryPage({
         {content.stats && content.stats.length > 0 && (
           <section
             className="cl-results industry-results"
-            aria-label="Sekilas tentang Cekat.AI"
+            aria-label={labels.glance}
           >
             <div>
-              <p className="cl-label">Sekilas Cekat.AI</p>
+              <p className="cl-label">{labels.glance}</p>
               <h2>
-                Angka yang <em>bercerita.</em>
+                {labels.numbers} <em>{labels.numbersAccent}</em>
               </h2>
             </div>
             {content.stats.map((stat) => (
@@ -86,12 +90,13 @@ export function IndustryPage({
         )}
         <section
           className="industry-definition"
-          aria-label={`Cekat.AI untuk ${title}`}
+          aria-label={`${labels.forIndustry} ${title}`}
         >
-          <p className="cl-label">Tentang solusi ini</p>
+          <p className="cl-label">{labels.about}</p>
           <p>{content.definition}</p>
         </section>
         <IndustryDemo
+          locale={locale}
           key={title}
           benefits={content.benefits}
           faq={content.faq}
@@ -100,7 +105,7 @@ export function IndustryPage({
         {content.caseStudy && (
           <section className="industry-story">
             <p className="cl-label">
-              Cerita pelanggan · {content.caseStudy.client}
+              {labels.story} · {content.caseStudy.client}
             </p>
             <div>
               <h2>{content.caseStudy.title || content.caseStudy.client}</h2>
@@ -119,9 +124,9 @@ export function IndustryPage({
         {content.pillars.length > 0 && (
           <section className="industry-pillars">
             <div>
-              <p className="cl-label">Untuk tim Anda</p>
+              <p className="cl-label">{labels.team}</p>
               <h2>
-                Satu tempat untuk <em>lebih banyak hal.</em>
+                {labels.tools} <em>{labels.toolsAccent}</em>
               </h2>
             </div>
             <div>
@@ -136,7 +141,7 @@ export function IndustryPage({
         )}
         {content.testimonial && (
           <section className="industry-quote">
-            <p className="cl-label">Cerita pelanggan</p>
+            <p className="cl-label">{labels.story}</p>
             <blockquote>“{content.testimonial.quote}”</blockquote>
             <p>
               <strong>{content.testimonial.name}</strong>
@@ -147,9 +152,9 @@ export function IndustryPage({
         )}
         <section className="cl-faq">
           <div>
-            <p className="cl-label">Tanya jawab</p>
+            <p className="cl-label">{labels.faq}</p>
             <h2>
-              Sebelum <em>memulai.</em>
+              {labels.before} <em>{labels.beforeAccent}</em>
             </h2>
           </div>
           <div>
@@ -169,7 +174,7 @@ export function IndustryPage({
           <h2>{content.cta.heading}</h2>
           <p>{content.cta.body}</p>
           <Link className="cl-btn" href="/contact-sales">
-            Jadwalkan demo <ArrowUpRight size={17} />
+            {labels.book} <ArrowUpRight size={17} />
           </Link>
         </section>
       </div>

@@ -264,12 +264,12 @@ export async function LandingPage({
         </>
       );
     }
-    if (locale === "id") {
+    if (locale === "id" || locale === "en") {
       const { IndustryPage } = await import("./clinic/industry-page");
       return (
         <>
           <JsonLd data={jsonLd} />
-          <IndustryPage content={content} title={pageTitle} photo={heroImage} />
+          <IndustryPage locale={locale} content={content} title={pageTitle} photo={heroImage} />
         </>
       );
     }
