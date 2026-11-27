@@ -80,6 +80,20 @@
       "body": "AI menangani pertanyaan rutin; kasus yang butuh pertimbangan diarahkan ke petugas yang bertanggung jawab lengkap dengan konteks, jadi warga tidak perlu mengulang."
     }
   ],
+  "conversations": [
+    {
+      "q": "Mau perpanjang izin usaha. Berkas apa saja?",
+      "a": "Jenis izin dan wilayah usahanya apa? Saya carikan daftar dokumen dari panduan layanan setempat."
+    },
+    {
+      "q": "Bisa ambil nomor antrean sebelum datang?",
+      "a": "Layanan dan kantor mana yang dituju? Saya cek apakah antrean online tersedia dan jam loketnya."
+    },
+    {
+      "q": "Lampu jalan dekat pasar mati. Lapor ke mana?",
+      "a": "Sebutkan nama jalan dan patokan terdekat. Saya bantu arahkan laporan ke petugas penerangan jalan."
+    }
+  ],
   "faq": [
     {
       "q": "Bagaimana Cekat.AI membantu instansi dan lembaga layanan publik?",

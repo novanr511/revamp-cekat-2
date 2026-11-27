@@ -84,6 +84,20 @@
       "body": "Klinik seperti Vio Optical menjalankan customer service sepenuhnya di Cekat.AI, hasil nyata, dari percakapan pasien sungguhan."
     }
   ],
+  "conversations": [
+    {
+      "q": "Minggu ini ada jadwal dokter spesialis?",
+      "a": "Spesialis apa dan di lokasi mana? Saya cek jadwal konsultasi yang tersedia minggu ini."
+    },
+    {
+      "q": "Bisa pakai asuransi untuk konsultasi?",
+      "a": "Nama asuransi dan fasilitas tujuan apa? Saya cek daftar rekanan; manfaat polis perlu dikonfirmasi ke penanggung."
+    },
+    {
+      "q": "Saya pakai kursi roda. Lewat pintu mana?",
+      "a": "Fasilitas mana yang akan dikunjungi? Saya cek akses kursi roda dan lokasi meja bantuan."
+    }
+  ],
   "faq": [
     {
       "q": "Bagaimana Cekat.AI membantu klinik dan bisnis kesehatan?",

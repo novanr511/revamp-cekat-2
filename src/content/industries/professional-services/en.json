@@ -87,6 +87,20 @@
       "body": "More than 3,000 businesses in Indonesia run customer service on Cekat.AI."
     }
   ],
+  "conversations": [
+    {
+      "q": "I’ve just started a business. Can someone advise me on bookkeeping?",
+      "a": "Are you setting up your books or reviewing existing records? I’ll direct you to the right consultant."
+    },
+    {
+      "q": "Can the initial consultation be a video call?",
+      "a": "What topic and time suit you? I’ll check online appointments with the relevant team."
+    },
+    {
+      "q": "Can I get an estimate for a contract review?",
+      "a": "About how many pages and what’s the deadline? A summary is enough; no need to upload the contract here."
+    }
+  ],
   "faq": [
     {
       "q": "How does Cekat.AI help law firms and professional practices?",

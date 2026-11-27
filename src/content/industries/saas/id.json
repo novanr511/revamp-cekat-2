@@ -79,6 +79,20 @@
       "body": "Dari startup sampai grup besar di Indonesia, Cekat.AI menangani percakapan pelanggan setiap hari, teruji di volume chat yang nyata."
     }
   ],
+  "conversations": [
+    {
+      "q": "Paket mana yang cukup buat 12 anggota tim?",
+      "a": "Semua perlu akses edit atau ada yang hanya melihat? Saya bandingkan batas pengguna dan biaya per kursi."
+    },
+    {
+      "q": "Bisa impor data pelanggan saat trial?",
+      "a": "Format filenya CSV atau Excel? Saya cek format impor yang didukung dan panduan pemetaan kolom."
+    },
+    {
+      "q": "Kami butuh login SSO. Ada di paket mana?",
+      "a": "Penyedia identitas apa yang dipakai tim? Saya cek kompatibilitas SSO dan paket yang mencakupnya."
+    }
+  ],
   "faq": [
     {
       "q": "Bagaimana Cekat.AI membantu perusahaan SaaS?",

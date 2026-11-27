@@ -79,6 +79,20 @@
       "body": "Dari restoran sampai lembaga pendidikan, 3.000+ bisnis di Indonesia menjalankan chat, booking, dan campaign mereka di Cekat.AI setiap hari."
     }
   ],
+  "conversations": [
+    {
+      "q": "Malam ini masih bisa potong rambut?",
+      "a": "Di cabang Melati ada kursi kosong pukul 19.00 dan 20.30. Mau saya pesankan yang jam tujuh?"
+    },
+    {
+      "q": "Bisa pilih barber yang biasa bikin skin fade?",
+      "a": "Bisa saya cek dari daftar layanan barber. Di cabang mana kamu ingin potong?"
+    },
+    {
+      "q": "Potong rambut sekalian rapihin jenggot berapa?",
+      "a": "Saya cek harga paket dan durasinya. Cabangnya di mana, dan mau trim saja atau cukur bersih?"
+    }
+  ],
   "faq": [
     {
       "q": "Bagaimana Cekat.AI membantu barbershop?",

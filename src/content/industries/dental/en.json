@@ -83,6 +83,20 @@
       "body": "The AI handles information and education. Complaints, diagnoses, and treatment decisions always escalate to your dentists with the full conversation attached."
     }
   ],
+  "conversations": [
+    {
+      "q": "How much is a first-time cleaning?",
+      "a": "At the Melati clinic, cleaning starts at Rp300,000. The dentist will confirm the total after examining your teeth, before treatment. Would you like to see consultation times?"
+    },
+    {
+      "q": "Can I get a braces consultation on Saturday?",
+      "a": "Which Saturday and which clinic? I’ll check the orthodontist’s consultation slots."
+    },
+    {
+      "q": "My child is nervous. Is there a pediatric dentist?",
+      "a": "I can look up pediatric appointments and let the team know about the nerves. Which clinic is easiest for your family?"
+    }
+  ],
   "faq": [
     {
       "q": "How does Cekat.AI help dental clinics?",

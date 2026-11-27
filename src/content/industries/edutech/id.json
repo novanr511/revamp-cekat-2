@@ -79,6 +79,20 @@
       "body": "User bertambah ribuan, waktu respons tetap stabil. Kasus rumit dialihkan ke tim support lengkap dengan riwayat chat dan data user-nya."
     }
   ],
+  "conversations": [
+    {
+      "q": "Kelas trial matematika bisa dicoba dari HP?",
+      "a": "Pakai Android atau iPhone? Saya cek perangkat yang didukung dan cara masuk ke kelas percobaan."
+    },
+    {
+      "q": "Kalau kelewat kelas live, ada rekamannya?",
+      "a": "Kelas mana yang ingin diambil? Saya cek apakah ada tayangan ulang dan berapa lama aksesnya."
+    },
+    {
+      "q": "Mau latihan buat ujian bulan depan. Pilih modul mana?",
+      "a": "Ujian dan mata pelajarannya apa? Saya carikan modul latihan yang sesuai dari katalog."
+    }
+  ],
   "faq": [
     {
       "q": "Bagaimana Cekat.AI membantu platform edutech dan kursus online?",

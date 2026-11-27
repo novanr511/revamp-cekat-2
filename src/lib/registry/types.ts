@@ -128,6 +128,8 @@ export interface LandingContent {
     image?: string;
     videoId?: string;
   };
+  /** Sample conversations between a prospect and the business's assistant. */
+  conversations?: Array<{ q: string; a: string }>;
   faq: Array<{ q: string; a: string }>;
   cta: { heading: string; body: string };
 }

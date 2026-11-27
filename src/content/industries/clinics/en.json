@@ -83,6 +83,20 @@
       "body": "Cekat.AI complies with Indonesia's Personal Data Protection Law (UU PDP), with role-based access so patient data is only visible to the people who should see it."
     }
   ],
+  "conversations": [
+    {
+      "q": "Is there a GP available after work?",
+      "a": "Which branch and day? I’ll check the GP schedule after 5 pm."
+    },
+    {
+      "q": "Do first-time patients need to register at reception?",
+      "a": "Which clinic will you visit? I’ll check its first-visit registration steps and what to bring."
+    },
+    {
+      "q": "Can two of us come in on the same day?",
+      "a": "Which department and date? I’ll look for two appointments close together."
+    }
+  ],
   "faq": [
     {
       "q": "How does Cekat.AI help a clinic's front desk?",

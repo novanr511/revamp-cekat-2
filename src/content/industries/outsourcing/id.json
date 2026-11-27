@@ -79,6 +79,20 @@
       "body": "Lebih dari 3.000 bisnis di Indonesia menjalankan customer service di Cekat.AI."
     }
   ],
+  "conversations": [
+    {
+      "q": "Kami butuh tim CS untuk shift malam. Bisa minta penawaran?",
+      "a": "Berapa jam cakupan, kanal yang dilayani, dan perkiraan chat per malam? Saya rangkum untuk tim penyusun penawaran."
+    },
+    {
+      "q": "Dua brand kami pakai panduan retur berbeda. Bagaimana agen membedakannya?",
+      "a": "Saya bisa jadwalkan demo pemisahan antrean dan panduan per brand. Kanal mana yang dipakai bersama?"
+    },
+    {
+      "q": "Bisa minta contoh laporan SLA bulanan?",
+      "a": "Metrik yang dibutuhkan waktu respons, waktu penyelesaian, atau keduanya? Saya minta contoh laporan tanpa data klien ke tim."
+    }
+  ],
   "faq": [
     {
       "q": "Bagaimana Cekat.AI membantu BPO dan penyedia contact center?",

@@ -88,6 +88,20 @@
       "body": "Puffy Cotton Candy took event and party bookings from manual replies to instant AI handling: booking revenue doubled, and 2–4× in peak season."
     }
   ],
+  "conversations": [
+    {
+      "q": "Are there two seats together for Friday’s concert?",
+      "a": "Which show and ticket category? I’ll check the seating map for an adjacent pair."
+    },
+    {
+      "q": "What comes with VIP that regular tickets don’t include?",
+      "a": "Which event? I’ll compare access areas, perks and prices from the organizer’s listing."
+    },
+    {
+      "q": "Can my eight-year-old attend?",
+      "a": "What’s the show called? I’ll check the age restriction and whether children need their own ticket."
+    }
+  ],
   "faq": [
     {
       "q": "How does Cekat.AI help entertainment and event businesses?",

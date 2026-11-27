@@ -79,6 +79,20 @@
       "body": "More than 3,000 businesses in Indonesia run their CS and bookings on Cekat.AI, from the first chat to the member coming back next week."
     }
   ],
+  "conversations": [
+    {
+      "q": "Is a badminton court free tomorrow at seven?",
+      "a": "Which branch and for how long? I’ll check court slots starting at 7 pm."
+    },
+    {
+      "q": "I’ve never done yoga. Is there a beginner class?",
+      "a": "Would mornings or evenings suit you? I’ll find beginner sessions and their duration."
+    },
+    {
+      "q": "Do I need a membership for one visit?",
+      "a": "Which branch and facility? I’ll check day-pass pricing and conditions."
+    }
+  ],
   "faq": [
     {
       "q": "How does Cekat.AI help gyms and sports businesses?",

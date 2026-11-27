@@ -79,6 +79,20 @@
       "body": "AI menangani pertanyaan rutin. Dosis, interaksi obat, dan keluhan kesehatan selalu dialihkan ke apotekermu lengkap dengan konteks percakapannya."
     }
   ],
+  "conversations": [
+    {
+      "q": "Ada termometer digital di cabang Melati?",
+      "a": "Ada. Di cabang Melati, termometer digital untuk ketiak Rp45.000. Mau saya sisihkan satu untuk diambil hari ini?"
+    },
+    {
+      "q": "Kalau pesan plester sekarang, bisa diantar?",
+      "a": "Boleh sebutkan kelurahan tujuan dan berapa kotak yang dibutuhkan? Saya cek stok, jangkauan kurir, dan ongkir sebelum kamu pesan."
+    },
+    {
+      "q": "Obat flu ini boleh diminum bareng obat rutin saya?",
+      "a": "Untuk kombinasi obat, saya hubungkan ke apoteker ya. Siapkan nama kedua obat atau kemasannya supaya apoteker bisa mengeceknya."
+    }
+  ],
   "faq": [
     {
       "q": "Bagaimana Cekat.AI membantu apotek?",

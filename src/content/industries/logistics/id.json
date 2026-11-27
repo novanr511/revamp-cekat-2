@@ -79,6 +79,20 @@
       "body": "Lebih dari 3.000 bisnis di Indonesia menjalankan customer service di Cekat.AI."
     }
   ],
+  "conversations": [
+    {
+      "q": "Kirim paket dua kilo ke Bandung berapa?",
+      "a": "Dari kota mana, dan berapa ukuran kardusnya? Saya bandingkan tarif reguler dan ekspres untuk rute itu."
+    },
+    {
+      "q": "Bisa jemput tiga kardus dari toko sore ini?",
+      "a": "Sebutkan area toko dan jam tutupnya. Saya cek cakupan pickup dan batas penjemputan hari ini."
+    },
+    {
+      "q": "Mau kirim gelas keramik. Perlu packing kayu?",
+      "a": "Berapa jumlah gelas dan rute pengirimannya? Saya cek syarat kemasan barang pecah belah untuk layanan yang dipilih."
+    }
+  ],
   "faq": [
     {
       "q": "Bagaimana Cekat.AI membantu bisnis logistik dan ekspedisi?",

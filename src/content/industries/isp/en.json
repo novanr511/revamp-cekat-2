@@ -79,6 +79,20 @@
       "body": "From local operators to large groups across Indonesia, Cekat.AI handles real customer conversations every day, proven at real chat volume."
     }
   ],
+  "conversations": [
+    {
+      "q": "Is fiber available in my housing complex?",
+      "a": "What’s the complex and neighborhood? No full address needed yet. I’ll check the coverage map."
+    },
+    {
+      "q": "Is the 50 Mbps plan capped?",
+      "a": "What’s the plan name? I’ll check its fair-use limit and speed after that point."
+    },
+    {
+      "q": "Can a technician install on Saturday?",
+      "a": "What area is the installation in? I’ll check Saturday slots and installation charges before signup."
+    }
+  ],
   "faq": [
     {
       "q": "How does Cekat.AI help ISPs and local internet providers?",

@@ -101,7 +101,7 @@ export function IndustryPage({
           locale={locale}
           key={title}
           benefits={content.benefits}
-          faq={content.faq}
+          conversations={content.conversations ?? []}
           heading={content.benefitsHeading}
         />
         {content.caseStudy && (

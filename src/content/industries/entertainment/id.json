@@ -88,6 +88,20 @@
       "body": "Puffy Cotton Candy memindahkan booking event dan pesta dari balasan manual ke AI instan: omzet booking naik dua kali, dan 2–4× di high season."
     }
   ],
+  "conversations": [
+    {
+      "q": "Konser Jumat masih ada dua tiket sebelahan?",
+      "a": "Konser dan kategori kursinya apa? Saya cek peta kursi untuk dua tempat berdampingan."
+    },
+    {
+      "q": "Tiket VIP bedanya apa dari reguler?",
+      "a": "Acara yang mana? Saya bandingkan area masuk, fasilitas, dan harga kedua kategori dari informasi penyelenggara."
+    },
+    {
+      "q": "Anak umur delapan tahun boleh ikut nonton?",
+      "a": "Apa nama pertunjukannya? Saya cek batas usia dan apakah anak perlu tiket sendiri."
+    }
+  ],
   "faq": [
     {
       "q": "Bagaimana Cekat.AI membantu bisnis hiburan dan event?",

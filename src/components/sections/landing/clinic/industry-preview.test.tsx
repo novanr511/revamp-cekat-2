@@ -25,11 +25,11 @@ describe("industry previews", () => {
     expect(screen.getByText(retail.hero.useCases[0])).toBeVisible();
   });
 
-  it("switches benefits and sourced FAQ examples, then resets", () => {
+  it("switches benefits and customer conversations, then resets", () => {
     render(
       <IndustryDemo
         benefits={retail.benefits.map(({ title, body }) => ({ title, body }))}
-        faq={retail.faq}
+        conversations={retail.conversations}
       />,
     );
     const feature = document.querySelector(".industry-feature") as HTMLElement;
@@ -42,10 +42,10 @@ describe("industry previews", () => {
     );
     expect(within(feature).getByText(retail.benefits[1].title)).toBeVisible();
     fireEvent.click(screen.getByRole("button", { name: "Pertanyaan 2" }));
-    expect(screen.getByText(retail.faq[1].q)).toBeVisible();
-    expect(screen.getByText(retail.faq[1].a)).toBeVisible();
+    expect(screen.getByText(retail.conversations[1].q)).toBeVisible();
+    expect(screen.getByText(retail.conversations[1].a)).toBeVisible();
     fireEvent.click(screen.getByRole("button", { name: "Mulai ulang contoh" }));
     expect(within(feature).getByText(retail.benefits[0].title)).toBeVisible();
-    expect(screen.getByText(retail.faq[0].q)).toBeVisible();
+    expect(screen.getByText(retail.conversations[0].q)).toBeVisible();
   });
 });

@@ -112,6 +112,20 @@
     "role": "Direktur Utama, Threeland Property",
     "image": "/images/crm/adam-sulaiman.png"
   },
+  "conversations": [
+    {
+      "q": "Ada unit dua kamar di bawah satu miliar?",
+      "a": "Kamu mencari di area mana? Saya saring unit dua kamar sesuai anggaran dan cek status ketersediaannya."
+    },
+    {
+      "q": "Mau lihat rumah contoh hari Minggu.",
+      "a": "Proyek yang mana dan lebih nyaman pagi atau sore? Saya cek jadwal kunjungan serta titik temu dengan agen."
+    },
+    {
+      "q": "Harga apartemen ini sudah termasuk parkir?",
+      "a": "Apa nama proyek dan tipe unitnya? Saya cek rincian harga, biaya parkir, dan iuran pengelolaan yang tercantum."
+    }
+  ],
   "faq": [
     {
       "q": "Bagaimana CS otomatis bekerja untuk bisnis properti?",

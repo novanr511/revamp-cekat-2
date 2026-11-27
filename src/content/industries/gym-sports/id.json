@@ -79,6 +79,20 @@
       "body": "Lebih dari 3.000 bisnis di Indonesia menjalankan CS dan booking di Cekat.AI, dari chat pertama sampai member yang balik lagi minggu depannya."
     }
   ],
+  "conversations": [
+    {
+      "q": "Lapangan badminton besok jam tujuh malam kosong?",
+      "a": "Mau main di cabang mana dan berapa jam? Saya cek slot mulai pukul 19.00."
+    },
+    {
+      "q": "Belum pernah yoga. Ada kelas pemula?",
+      "a": "Kamu lebih nyaman pagi atau sore? Saya carikan kelas berlabel pemula beserta durasinya."
+    },
+    {
+      "q": "Kalau cuma datang sekali perlu membership?",
+      "a": "Cabang dan fasilitas apa yang ingin dicoba? Saya cek harga kunjungan satu kali dan syaratnya."
+    }
+  ],
   "faq": [
     {
       "q": "Bagaimana Cekat.AI membantu gym dan bisnis olahraga?",

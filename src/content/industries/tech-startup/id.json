@@ -79,6 +79,20 @@
       "body": "Dari startup tahap awal sampai grup besar di Indonesia, Cekat.AI menangani percakapan pelanggan setiap hari, teruji di volume chat yang nyata."
     }
   ],
+  "conversations": [
+    {
+      "q": "Aplikasi ini bisa dipakai tim yang semuanya pakai Android?",
+      "a": "Versi Android yang dipakai berapa? Saya cek perangkat yang didukung dan tautan instalasi resmi."
+    },
+    {
+      "q": "Mau coba versi beta. Gimana dapat undangannya?",
+      "a": "Fitur beta apa yang ingin dicoba? Saya cek apakah pendaftarannya terbuka atau masih lewat daftar tunggu."
+    },
+    {
+      "q": "Bisa lihat demo alur aplikasi sebelum daftar?",
+      "a": "Bagian mana yang mau dilihat, dari daftar akun atau dari transaksi pertama? Saya carikan demo yang sesuai."
+    }
+  ],
   "faq": [
     {
       "q": "Bagaimana Cekat.AI membantu startup yang lagi tumbuh cepat?",

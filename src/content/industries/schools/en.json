@@ -79,6 +79,20 @@
       "body": "The AI handles routine questions; anything needing a person, interviews, special cases, escalates to your team with full context, so parents never repeat their story."
     }
   ],
+  "conversations": [
+    {
+      "q": "Is first-grade enrollment open?",
+      "a": "Which school year and campus? I’ll check enrollment dates and entry-age requirements."
+    },
+    {
+      "q": "Can parents attend the open house?",
+      "a": "Which campus and grade level? I’ll check family visit sessions and how to reserve places."
+    },
+    {
+      "q": "For a midyear transfer, do we need the latest report card?",
+      "a": "Which grade? I’ll check transfer documents and ask admissions to confirm seat availability."
+    }
+  ],
   "faq": [
     {
       "q": "How does Cekat.AI help with school admissions?",

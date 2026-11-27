@@ -91,6 +91,20 @@
       "body": "Holywings Group went from manual inquiries to 100% chat coverage and up to +70% conversion, real results, from real guest conversations."
     }
   ],
+  "conversations": [
+    {
+      "q": "Do you have a table for six on Saturday night?",
+      "a": "Which branch and time? I’ll check for a table where all six can sit together."
+    },
+    {
+      "q": "Does this noodle sauce contain peanuts? I have an allergy.",
+      "a": "I’ll ask the kitchen to check ingredients and cross-contact. What’s the exact dish name?"
+    },
+    {
+      "q": "Can you deliver 30 lunch boxes on Friday?",
+      "a": "What area and arrival time? I’ll check kitchen capacity, menus and delivery for 30 boxes."
+    }
+  ],
   "faq": [
     {
       "q": "How does Cekat.AI help restaurants and F&B businesses?",

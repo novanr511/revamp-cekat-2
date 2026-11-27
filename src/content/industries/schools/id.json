@@ -79,6 +79,20 @@
       "body": "AI menangani pertanyaan rutin; yang butuh manusia, wawancara, kasus khusus, dialihkan ke panitia lengkap dengan konteks, orang tua nggak mengulang cerita."
     }
   ],
+  "conversations": [
+    {
+      "q": "Pendaftaran kelas satu sudah buka?",
+      "a": "Untuk tahun ajaran dan kampus mana? Saya cek tanggal penerimaan dan persyaratan usia masuk."
+    },
+    {
+      "q": "Orang tua boleh ikut open house?",
+      "a": "Kampus dan jenjang apa yang diminati? Saya cek jadwal kunjungan keluarga serta cara memesan tempat."
+    },
+    {
+      "q": "Kalau pindah sekolah di tengah semester, perlu rapor terakhir?",
+      "a": "Untuk kelas berapa? Saya cek daftar berkas siswa pindahan dan arahkan ke bagian penerimaan untuk konfirmasi kursi."
+    }
+  ],
   "faq": [
     {
       "q": "Bagaimana Cekat.AI membantu PSB sekolah?",

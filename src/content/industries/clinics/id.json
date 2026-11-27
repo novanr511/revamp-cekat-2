@@ -83,6 +83,20 @@
       "body": "Cekat.AI mematuhi UU Perlindungan Data Pribadi (UU PDP) dengan akses berbasis peran, jadi data pasien hanya terlihat oleh staf yang memang berwenang."
     }
   ],
+  "conversations": [
+    {
+      "q": "Dokter umum praktik setelah jam kerja?",
+      "a": "Mau ke cabang mana dan hari apa? Saya cek jadwal dokter umum setelah pukul lima."
+    },
+    {
+      "q": "Pasien baru harus daftar di loket dulu?",
+      "a": "Saya cek alur pasien baru dan berkas yang perlu dibawa. Kamu mau daftar di cabang mana?"
+    },
+    {
+      "q": "Bisa daftar dua orang di hari yang sama?",
+      "a": "Saya cek dua slot berdekatan. Poli dan tanggal berapa yang diinginkan?"
+    }
+  ],
   "faq": [
     {
       "q": "Bagaimana Cekat.AI membantu operasional front desk klinik?",

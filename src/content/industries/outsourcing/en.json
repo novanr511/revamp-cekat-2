@@ -79,6 +79,20 @@
       "body": "More than 3,000 businesses in Indonesia run customer service on Cekat.AI."
     }
   ],
+  "conversations": [
+    {
+      "q": "Can we get a quote for overnight customer support?",
+      "a": "What hours, channels and approximate chats per night? I’ll pass that scope to the quoting team."
+    },
+    {
+      "q": "Our two brands have different return policies. How would agents tell them apart?",
+      "a": "I can arrange a walkthrough of brand-specific queues and guides. Which channels do the brands share?"
+    },
+    {
+      "q": "Could we see a sample monthly SLA report?",
+      "a": "Do you need response times, resolution times, or both? I’ll request a sample without client data."
+    }
+  ],
   "faq": [
     {
       "q": "How does Cekat.AI help BPOs and contact center providers?",

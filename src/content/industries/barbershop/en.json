@@ -79,6 +79,20 @@
       "body": "From restaurants to education institutions, more than 3,000 businesses in Indonesia run their chats, bookings, and campaigns on Cekat.AI every day."
     }
   ],
+  "conversations": [
+    {
+      "q": "Any openings for a haircut tonight?",
+      "a": "The Melati shop has chairs open at 7 pm and 8:30 pm. Shall I book the seven o’clock slot for you?"
+    },
+    {
+      "q": "Can I book a barber who does skin fades?",
+      "a": "I’ll check which barbers offer that cut. Which shop would you like to visit?"
+    },
+    {
+      "q": "How much for a haircut and beard tidy-up?",
+      "a": "Which shop, and would you like a trim or a clean shave? I’ll check the price and appointment length."
+    }
+  ],
   "faq": [
     {
       "q": "How does Cekat.AI help barbershops?",

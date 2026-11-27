@@ -85,6 +85,20 @@
     "role": "Kepala Pemasaran, Penerimaan & Penjualan, Matana University",
     "image": "/images/home/hansen-iskandar.png"
   },
+  "conversations": [
+    {
+      "q": "Bisa daftar kelas bahasa meski belum pernah belajar?",
+      "a": "Bahasa apa yang ingin dipelajari? Saya cek kelas pemula dan apakah ada tes penempatan."
+    },
+    {
+      "q": "Ada kelas malam buat yang sudah kerja?",
+      "a": "Program apa yang kamu incar, dan malam apa yang kosong? Saya cocokkan dengan jadwal angkatan berikutnya."
+    },
+    {
+      "q": "Biaya kursus sudah termasuk buku?",
+      "a": "Kursus dan level mana yang dipilih? Saya cek rincian biaya belajar, buku, dan pendaftaran."
+    }
+  ],
   "faq": [
     {
       "q": "Bagaimana Cekat.AI membantu kampus, sekolah, dan lembaga kursus?",

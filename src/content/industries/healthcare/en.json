@@ -84,6 +84,20 @@
       "body": "Clinics like Vio Optical run their customer service fully on Cekat.AI, real results, from real patient conversations, at clinic scale."
     }
   ],
+  "conversations": [
+    {
+      "q": "Can I see a specialist this week?",
+      "a": "Which specialty and location? I’ll check this week’s consultation slots."
+    },
+    {
+      "q": "Can I use insurance for a consultation?",
+      "a": "Which insurer and facility? I’ll check the partner list; your insurer can confirm your policy benefits."
+    },
+    {
+      "q": "Which entrance is wheelchair accessible?",
+      "a": "Which facility will you visit? I’ll check the accessible entrance and help desk location."
+    }
+  ],
   "faq": [
     {
       "q": "How does Cekat.AI help clinics and healthcare businesses?",

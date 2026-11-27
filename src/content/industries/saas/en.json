@@ -79,6 +79,20 @@
       "body": "From startups to large groups across Indonesia, Cekat.AI handles real customer conversations every day, proven at real chat volume."
     }
   ],
+  "conversations": [
+    {
+      "q": "Which plan fits a team of twelve?",
+      "a": "Does everyone need editing access, or are some viewers? I’ll compare seat limits and pricing."
+    },
+    {
+      "q": "Can I import customer data during the trial?",
+      "a": "Is your file CSV or Excel? I’ll check supported import formats and the column-mapping guide."
+    },
+    {
+      "q": "Which plan includes SSO?",
+      "a": "Which identity provider does your team use? I’ll check SSO compatibility and the plans that include it."
+    }
+  ],
   "faq": [
     {
       "q": "How does Cekat.AI help SaaS companies?",

@@ -79,6 +79,20 @@
       "body": "Lebih dari 3.000 bisnis di Indonesia menjalankan customer service di Cekat.AI."
     }
   ],
+  "conversations": [
+    {
+      "q": "Toko saya mau ambil teh botol dua dus. Bisa grosir?",
+      "a": "Ukuran botol dan kota pengirimannya apa? Saya cek isi per dus, minimum order, dan harga grosir."
+    },
+    {
+      "q": "Bisa campur dua rasa dalam satu karton?",
+      "a": "Produk dan rasa apa yang ingin dicampur? Saya cek aturan karton campur untuk SKU tersebut."
+    },
+    {
+      "q": "Kalau toko saya ikut promo display, syaratnya apa?",
+      "a": "Promo dan wilayah toko yang mana? Saya cek periode, produk peserta, dan cara daftarnya."
+    }
+  ],
   "faq": [
     {
       "q": "Bagaimana Cekat.AI membantu brand FMCG dan distributor?",

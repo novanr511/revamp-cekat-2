@@ -79,6 +79,20 @@
       "body": "Komplain dan permintaan jadi tiket, diarahkan ke tim yang tepat dan dilacak dari pesan pertama sampai tuntas, nggak ada isu yang diam-diam lolos."
     }
   ],
+  "conversations": [
+    {
+      "q": "Mau buka tabungan, ada biaya bulanan?",
+      "a": "Produk tabungan mana yang dilihat? Saya cek biaya admin dan saldo minimumnya di daftar tarif."
+    },
+    {
+      "q": "Buka rekening harus ke cabang?",
+      "a": "Saya cek apakah produk yang dipilih mendukung pendaftaran online. Nama produknya apa? Tidak perlu kirim identitas di chat."
+    },
+    {
+      "q": "Saya mau tanya simulasi pinjaman ke petugas.",
+      "a": "Saya bisa hubungkan ke petugas kredit. Mau bahas tenor atau rincian biaya dulu? Jangan kirim PIN atau OTP."
+    }
+  ],
   "faq": [
     {
       "q": "Bagaimana Cekat.AI membantu bisnis layanan keuangan?",

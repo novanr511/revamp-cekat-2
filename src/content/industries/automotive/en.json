@@ -79,6 +79,20 @@
       "body": "More than 3,000 businesses in Indonesia run customer service on Cekat.AI."
     }
   ],
+  "conversations": [
+    {
+      "q": "Does the advertised SUV come with seven seats?",
+      "a": "What model is in the ad? I’ll check seven-seat trims and available colors at your nearest dealer."
+    },
+    {
+      "q": "Can I test-drive one on Saturday afternoon?",
+      "a": "Which model and showroom would you prefer? I’ll check Saturday afternoon slots before booking."
+    },
+    {
+      "q": "What would payments look like with Rp50 million down?",
+      "a": "I can prepare an estimate. Which model and loan term should I use? The lender confirms the final terms."
+    }
+  ],
   "faq": [
     {
       "q": "How does Cekat.AI help dealerships and workshops?",

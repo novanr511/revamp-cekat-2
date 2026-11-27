@@ -79,6 +79,20 @@
       "body": "The AI handles routine questions. Dosage, drug interactions, and health complaints always escalate to your pharmacist with the full conversation context."
     }
   ],
+  "conversations": [
+    {
+      "q": "Do you have digital thermometers at the Melati branch?",
+      "a": "Yes. The Melati branch has an underarm digital thermometer for Rp45,000. Would you like me to set one aside for pickup today?"
+    },
+    {
+      "q": "Can I get a box of bandages delivered?",
+      "a": "What neighborhood should we deliver to? I’ll check stock, courier coverage and the delivery fee before you order."
+    },
+    {
+      "q": "Can I take this cold medicine with my regular medication?",
+      "a": "Let me connect you with the pharmacist. Have both medicine names or packages handy so they can check the combination."
+    }
+  ],
   "faq": [
     {
       "q": "How does Cekat.AI help pharmacies?",

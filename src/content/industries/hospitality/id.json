@@ -87,6 +87,20 @@
       "body": "Pertanyaan rutin ditangani instan; permintaan VIP, komplain, dan booking rumit dialihkan ke tim lengkap dengan konteks."
     }
   ],
+  "conversations": [
+    {
+      "q": "Ada kamar buat dua dewasa dan satu anak?",
+      "a": "Tanggal check-in, check-out, dan usia anaknya berapa? Saya cek kapasitas kamar dan opsi tempat tidur tambahan."
+    },
+    {
+      "q": "Harga kamar ini sudah termasuk sarapan?",
+      "a": "Apa nama paket kamarnya? Saya cek apakah sarapan termasuk dan untuk berapa orang."
+    },
+    {
+      "q": "Ada ruangan untuk rapat 25 orang?",
+      "a": "Tanggal dan susunan kursinya seperti apa? Saya cek ruang untuk 25 orang beserta paket proyektor dan konsumsi."
+    }
+  ],
   "faq": [
     {
       "q": "Gimana Cekat.AI bantu hotel dan bisnis perhotelan?",

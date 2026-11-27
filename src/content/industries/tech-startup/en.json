@@ -79,6 +79,20 @@
       "body": "From early-stage startups to large groups across Indonesia, Cekat.AI handles real customer conversations every day, proven at real chat volume."
     }
   ],
+  "conversations": [
+    {
+      "q": "Our team uses Android. Can we run your app?",
+      "a": "Which Android version? I’ll check supported devices and the official installation link."
+    },
+    {
+      "q": "How do I get a beta invite?",
+      "a": "Which beta feature interests you? I’ll check whether enrollment is open or there’s a waitlist."
+    },
+    {
+      "q": "Can I see how the app works before signing up?",
+      "a": "Would you like to see account setup or the first transaction? I’ll find the matching demo."
+    }
+  ],
   "faq": [
     {
       "q": "How does Cekat.AI help fast-growing startups?",

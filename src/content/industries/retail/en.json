@@ -79,6 +79,20 @@
       "body": "The agent checks shipping costs, creates orders, and sends payment QRs in conversation, and escalates to your team with full context when needed."
     }
   ],
+  "conversations": [
+    {
+      "q": "Are the white sneakers in size 39 still available?",
+      "a": "For the style in the photo, there are two pairs left in white, size 39. Would you like a delivery quote for your postal code?"
+    },
+    {
+      "q": "What’s shipping for two T-shirts?",
+      "a": "What’s the destination postal code and shirt style? I’ll check delivery for both before checkout."
+    },
+    {
+      "q": "Can I exchange the trousers if they don’t fit?",
+      "a": "Which pair? I’ll check its size-exchange window and tag requirements."
+    }
+  ],
   "faq": [
     {
       "q": "What is AI customer service for retail and e-commerce?",

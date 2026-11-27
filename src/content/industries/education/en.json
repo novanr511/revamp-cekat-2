@@ -85,6 +85,20 @@
     "role": "Head of Marketing, Admission & Sales of Matana University",
     "image": "/images/home/hansen-iskandar.png"
   },
+  "conversations": [
+    {
+      "q": "Can I join a language course as a complete beginner?",
+      "a": "Which language? I’ll check beginner courses and whether a placement test is needed."
+    },
+    {
+      "q": "Are there evening classes for working adults?",
+      "a": "Which program and evenings work for you? I’ll compare them with the next intake’s timetable."
+    },
+    {
+      "q": "Are books included in the course fee?",
+      "a": "Which course and level? I’ll check tuition, materials and registration fees separately."
+    }
+  ],
   "faq": [
     {
       "q": "How does Cekat.AI help schools, campuses, and course providers?",

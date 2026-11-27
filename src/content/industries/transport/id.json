@@ -79,6 +79,20 @@
       "body": "Lebih dari 3.000 bisnis di Indonesia menjalankan customer service di Cekat.AI."
     }
   ],
+  "conversations": [
+    {
+      "q": "Shuttle pertama ke bandara berangkat jam berapa?",
+      "a": "Dari titik jemput mana dan tanggal berapa? Saya cek jadwal keberangkatan paling pagi."
+    },
+    {
+      "q": "Bus malam ini masih ada kursi dekat jendela?",
+      "a": "Rute dan jam keberangkatan yang mana? Saya cek kursi jendela yang belum dipesan."
+    },
+    {
+      "q": "Bisa bawa sepeda lipat di bagasi bus?",
+      "a": "Rute dan ukuran sepeda saat dilipat berapa? Saya cek batas ukuran bagasi dan apakah ada biaya tambahan."
+    }
+  ],
   "faq": [
     {
       "q": "Bagaimana Cekat.AI membantu operator transportasi?",

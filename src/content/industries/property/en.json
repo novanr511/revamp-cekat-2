@@ -112,6 +112,20 @@
     "role": "President Director, Threeland Property",
     "image": "/images/crm/adam-sulaiman.png"
   },
+  "conversations": [
+    {
+      "q": "Any two-bedroom units under one billion rupiah?",
+      "a": "Which area? I’ll filter two-bedroom listings by budget and check availability."
+    },
+    {
+      "q": "Can I see the show home on Sunday?",
+      "a": "Which development, and morning or afternoon? I’ll check viewing times and the agent’s meeting point."
+    },
+    {
+      "q": "Does this apartment price include parking?",
+      "a": "Which project and unit type? I’ll check the listed price breakdown, parking charges and service fees."
+    }
+  ],
   "faq": [
     {
       "q": "How does AI customer service work for property and real estate businesses?",

@@ -91,6 +91,20 @@
       "body": "Holywings Group naik dari inquiry manual jadi 100% chat coverage dan konversi sampai +70%, hasil nyata, dari percakapan tamu sungguhan."
     }
   ],
+  "conversations": [
+    {
+      "q": "Ada meja buat enam orang Sabtu malam?",
+      "a": "Mau di cabang mana dan jam berapa? Saya cek meja yang bisa menampung enam orang bersama."
+    },
+    {
+      "q": "Saus mi ini pakai kacang? Saya alergi.",
+      "a": "Saya minta dapur memastikan bahan dan risiko kontak silang dulu. Apa nama menu persisnya?"
+    },
+    {
+      "q": "Butuh 30 nasi kotak Jumat siang. Bisa kirim?",
+      "a": "Ke area mana dan harus tiba jam berapa? Saya cek kapasitas dapur, pilihan paket, dan ongkir untuk 30 kotak."
+    }
+  ],
   "faq": [
     {
       "q": "Bagaimana Cekat.AI membantu restoran dan bisnis F&B?",

@@ -79,6 +79,20 @@
       "body": "Lewat integrasi API, Cekat.AI terhubung ke sistem booking dan operasional maskapaimu, jadi AI menjawab dengan data terkini tanpa mengubah stack yang sudah jalan."
     }
   ],
+  "conversations": [
+    {
+      "q": "Tiket yang paling murah sudah termasuk bagasi?",
+      "a": "Bagasi kabin dan bagasi tercatat bisa berbeda. Rute dan nama tarif yang sedang dilihat apa? Saya cek jatahnya."
+    },
+    {
+      "q": "Mau terbang Jumat pagi ke Bali, ada jadwal?",
+      "a": "Berangkat dari kota mana dan Jumat tanggal berapa? Saya carikan penerbangan pagi ke Denpasar."
+    },
+    {
+      "q": "Kalau rencana berubah, tiket ini bisa diganti tanggal?",
+      "a": "Saya cek aturan perubahan dan biayanya sebelum kamu beli. Apa nama kelas tarif yang muncul di layar?"
+    }
+  ],
   "faq": [
     {
       "q": "Bagaimana Cekat.AI membantu customer service maskapai?",

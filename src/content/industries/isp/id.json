@@ -79,6 +79,20 @@
       "body": "Dari bisnis lokal sampai grup besar di Indonesia, Cekat.AI menangani percakapan pelanggan setiap hari, teruji di volume chat yang nyata."
     }
   ],
+  "conversations": [
+    {
+      "q": "Fiber sudah masuk ke komplek saya?",
+      "a": "Sebutkan nama komplek dan kelurahan dulu, tidak perlu alamat lengkap. Saya cek peta jangkauan pemasangan."
+    },
+    {
+      "q": "Paket 50 Mbps ada batas pemakaian?",
+      "a": "Saya cek kebijakan pemakaian wajar dan kecepatan setelah batasnya. Apa nama paket yang ditawarkan?"
+    },
+    {
+      "q": "Teknisi bisa pasang Sabtu?",
+      "a": "Wilayah pemasangannya di mana? Saya cek jadwal teknisi Sabtu dan biaya instalasi sebelum kamu daftar."
+    }
+  ],
   "faq": [
     {
       "q": "Bagaimana Cekat.AI membantu ISP dan penyedia internet lokal?",

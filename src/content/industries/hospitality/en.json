@@ -87,6 +87,20 @@
       "body": "Routine questions are handled instantly; VIP requests, complaints, and complex bookings route to your team with full context attached."
     }
   ],
+  "conversations": [
+    {
+      "q": "Any rooms for two adults and one child?",
+      "a": "What are your dates and the child’s age? I’ll check occupancy limits and extra-bed options."
+    },
+    {
+      "q": "Does this rate include breakfast?",
+      "a": "What is the rate plan called? I’ll check whether breakfast is included and for how many guests."
+    },
+    {
+      "q": "Do you have a meeting room for 25?",
+      "a": "What date and seating layout? I’ll check rooms for 25 and options for a projector and refreshments."
+    }
+  ],
   "faq": [
     {
       "q": "How does Cekat.AI help hotels and hospitality businesses?",

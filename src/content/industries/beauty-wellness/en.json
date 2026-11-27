@@ -85,6 +85,20 @@
     "role": "Founder, Moir Salon",
     "image": "/images/home/testimonial-silica-brenda.jpg"
   },
+  "conversations": [
+    {
+      "q": "It’s my first facial. How do the packages differ?",
+      "a": "I can compare the steps, duration and price from the salon menu. Which packages caught your eye?"
+    },
+    {
+      "q": "Can two of us get massages at the same time?",
+      "a": "I’ll check for two therapists at the same time. Which branch, date and time work for you?"
+    },
+    {
+      "q": "Does the weekday offer cover manicures?",
+      "a": "What’s the offer called? I’ll check the included services and valid hours before you book."
+    }
+  ],
   "faq": [
     {
       "q": "How does Cekat.AI help salons and beauty clinics?",

@@ -79,6 +79,20 @@
       "body": "More than 3,000 businesses in Indonesia run customer service on Cekat.AI."
     }
   ],
+  "conversations": [
+    {
+      "q": "Can my shop buy two cases of bottled tea wholesale?",
+      "a": "What bottle size and delivery city? I’ll check case size, minimum order and wholesale price."
+    },
+    {
+      "q": "Can I mix two flavors in one carton?",
+      "a": "Which product and flavors? I’ll check whether that item can ship in mixed cartons."
+    },
+    {
+      "q": "How can my store join the display promotion?",
+      "a": "Which promotion and sales region? I’ll check eligible products, dates and enrollment steps."
+    }
+  ],
   "faq": [
     {
       "q": "How does Cekat.AI help FMCG brands and distributors?",

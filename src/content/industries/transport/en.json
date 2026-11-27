@@ -79,6 +79,20 @@
       "body": "More than 3,000 businesses in Indonesia run customer service on Cekat.AI."
     }
   ],
+  "conversations": [
+    {
+      "q": "When is the first airport shuttle?",
+      "a": "Which pickup point and date? I’ll check the earliest departure."
+    },
+    {
+      "q": "Any window seats on tonight’s bus?",
+      "a": "Which route and departure time? I’ll check the available window seats."
+    },
+    {
+      "q": "Can I put a folding bike in the bus luggage hold?",
+      "a": "What’s the route and the bike’s folded size? I’ll check baggage limits and extra fees."
+    }
+  ],
   "faq": [
     {
       "q": "How does Cekat.AI help transport operators?",

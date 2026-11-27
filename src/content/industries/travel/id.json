@@ -87,6 +87,20 @@
       "body": "Satu AI agent menangani chat serentak tanpa batas, jadi volume peak season nggak berarti gaji peak season atau balasan yang melambat."
     }
   ],
+  "conversations": [
+    {
+      "q": "Ada paket ke Labuan Bajo buat empat orang bulan Juni?",
+      "a": "Mau berapa hari dan berangkat dari kota mana? Saya carikan itinerary Juni untuk empat orang."
+    },
+    {
+      "q": "Open trip ini sudah termasuk tiket pesawat?",
+      "a": "Boleh kirim nama paketnya? Saya cek rincian penerbangan, penginapan, dan biaya yang dibayar terpisah."
+    },
+    {
+      "q": "Saya ajak orang tua. Bisa pilih tur yang jalannya tidak jauh?",
+      "a": "Destinasi dan tanggalnya kapan? Saya cek durasi jalan kaki, tangga, dan opsi kendaraan pada tiap itinerary."
+    }
+  ],
   "faq": [
     {
       "q": "Gimana Cekat.AI bantu bisnis travel dan tour?",

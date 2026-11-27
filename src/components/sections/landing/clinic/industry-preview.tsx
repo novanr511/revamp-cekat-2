@@ -68,12 +68,12 @@ export function IndustryPreview({
 
 export function IndustryDemo({
   benefits,
-  faq,
+  conversations,
   heading,
   locale = "id",
 }: {
   benefits: LandingContent["benefits"];
-  faq: LandingContent["faq"];
+  conversations: NonNullable<LandingContent["conversations"]>;
   heading?: string;
   locale?: IndustryLocale;
 }) {
@@ -81,7 +81,6 @@ export function IndustryDemo({
   const [index, setIndex] = useState(0),
     [question, setQuestion] = useState(0);
   const benefit = benefits[index];
-  const questions = faq.slice(0, 3);
   return (
     <section id="simulasi" className="cl-demo industry-demo">
       <p className="cl-label">{labels.demo}</p>
@@ -131,14 +130,15 @@ export function IndustryDemo({
               <strong>{benefit.title}</strong>
               <p>{benefit.body}</p>
             </div>
-            {questions.length > 0 && (
+            {conversations.length > 0 && (
               <div className="industry-questions">
                 <span>{labels.sampleFaq}</span>
                 <div
                   className="industry-questionButtons"
+                  role="group"
                   aria-label={labels.choose}
                 >
-                  {questions.map((q, i) => (
+                  {conversations.map((q, i) => (
                     <button
                       key={q.q}
                       type="button"
@@ -151,10 +151,10 @@ export function IndustryDemo({
                 </div>
                 <div className="cl-chat" aria-live="polite">
                   <p className="cl-patient">
-                    {questions[question].q}
+                    {conversations[question].q}
                     <CheckCheck size={13} />
                   </p>
-                  <p className="cl-answer">{questions[question].a}</p>
+                  <p className="cl-answer">{conversations[question].a}</p>
                 </div>
               </div>
             )}

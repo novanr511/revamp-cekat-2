@@ -79,6 +79,20 @@
       "body": "AI agent cek ongkir, bikin order, dan kirim QR pembayaran di percakapan, dan dialihkan ke timmu lengkap dengan konteks kalau memang perlu."
     }
   ],
+  "conversations": [
+    {
+      "q": "Sneakers putih ukuran 39 masih ada?",
+      "a": "Untuk model yang di foto, putih ukuran 39 masih ada dua pasang. Mau saya bantu cek ongkir ke kode pos kamu?"
+    },
+    {
+      "q": "Kalau beli dua kaus, ongkirnya berapa?",
+      "a": "Kode pos tujuan dan model kausnya apa? Saya cek ongkir untuk dua potong sebelum kamu checkout."
+    },
+    {
+      "q": "Kalau ukuran celananya tidak pas, bisa tukar?",
+      "a": "Celana yang mana? Saya cek batas waktu tukar ukuran dan ketentuan label untuk produk itu."
+    }
+  ],
   "faq": [
     {
       "q": "Apa itu CS otomatis untuk toko online?",

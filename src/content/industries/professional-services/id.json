@@ -87,6 +87,20 @@
       "body": "Lebih dari 3.000 bisnis di Indonesia menjalankan customer service di Cekat.AI."
     }
   ],
+  "conversations": [
+    {
+      "q": "Saya baru mulai usaha, butuh konsultasi pembukuan. Harus mulai dari mana?",
+      "a": "Pembukuannya baru mau disusun atau sudah ada yang perlu ditinjau? Saya arahkan ke konsultan yang sesuai."
+    },
+    {
+      "q": "Pertemuan awal bisa lewat video?",
+      "a": "Boleh sebutkan topik konsultasi dan waktu yang cocok? Saya cek jadwal konsultasi daring dengan tim terkait."
+    },
+    {
+      "q": "Bisa minta estimasi biaya review kontrak?",
+      "a": "Kira-kira berapa halaman dan kapan perlu selesai? Cukup gambaran dulu, tidak perlu unggah kontrak di chat ini."
+    }
+  ],
   "faq": [
     {
       "q": "Bagaimana Cekat.AI membantu firma dan kantor jasa profesional?",

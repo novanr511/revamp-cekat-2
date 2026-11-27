@@ -79,6 +79,20 @@
       "body": "Lebih dari 3.000 bisnis di Indonesia menjalankan customer service di Cekat.AI."
     }
   ],
+  "conversations": [
+    {
+      "q": "SUV yang di iklan ada versi tujuh kursi?",
+      "a": "Boleh kirim nama model di iklannya? Saya cek varian tujuh kursi dan stok warna di dealer terdekat."
+    },
+    {
+      "q": "Bisa test drive Sabtu siang?",
+      "a": "Mau coba model apa dan di showroom mana? Saya cek slot Sabtu siang sebelum membuat janji."
+    },
+    {
+      "q": "Kalau uang muka 50 juta, cicilannya berapa?",
+      "a": "Saya bisa siapkan simulasi, bukan persetujuan kredit. Model dan tenor berapa tahun yang ingin dibandingkan?"
+    }
+  ],
   "faq": [
     {
       "q": "Bagaimana Cekat.AI membantu dealer dan bengkel?",

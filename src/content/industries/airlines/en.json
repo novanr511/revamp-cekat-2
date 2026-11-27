@@ -79,6 +79,20 @@
       "body": "Through API integration, Cekat.AI plugs into your booking and operational systems, so the AI answers with live data and nothing in your stack has to change."
     }
   ],
+  "conversations": [
+    {
+      "q": "Does the lowest fare include luggage?",
+      "a": "Cabin and checked baggage have separate allowances. Which route and fare name are you looking at?"
+    },
+    {
+      "q": "Any Friday morning flights to Bali?",
+      "a": "Which Friday and which departure city? I’ll look for morning flights into Denpasar."
+    },
+    {
+      "q": "Could I change the date after buying this ticket?",
+      "a": "I can check the change rules and fees before you buy. What fare name is on your screen?"
+    }
+  ],
   "faq": [
     {
       "q": "How does Cekat.AI help airline customer service?",

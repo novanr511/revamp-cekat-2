@@ -79,6 +79,20 @@
       "body": "More than 3,000 businesses in Indonesia run customer service on Cekat.AI."
     }
   ],
+  "conversations": [
+    {
+      "q": "How much to send 2 kg to Bandung?",
+      "a": "What’s the origin city and box size? I’ll compare standard and express rates for that route."
+    },
+    {
+      "q": "Can you collect three boxes from my shop this afternoon?",
+      "a": "Which area and when do you close? I’ll check pickup coverage and today’s cutoff."
+    },
+    {
+      "q": "Do ceramic glasses need a wooden crate?",
+      "a": "How many glasses and what route? I’ll check fragile-item packaging rules for the service."
+    }
+  ],
   "faq": [
     {
       "q": "How does Cekat.AI help logistics and courier businesses?",

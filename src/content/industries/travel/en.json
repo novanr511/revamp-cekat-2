@@ -87,6 +87,20 @@
       "body": "One agent handles unlimited simultaneous chats, so peak-season volume never means peak-season payroll or slower replies."
     }
   ],
+  "conversations": [
+    {
+      "q": "Any June trips to Labuan Bajo for four?",
+      "a": "How many days and which departure city? I’ll check June itineraries for four travelers."
+    },
+    {
+      "q": "Does this group tour include flights?",
+      "a": "Could you share the package name? I’ll check flights, lodging and what’s charged separately."
+    },
+    {
+      "q": "I’m traveling with my parents. Any tours with less walking?",
+      "a": "Where and when? I’ll check walking times, stairs and transport options on each itinerary."
+    }
+  ],
   "faq": [
     {
       "q": "How does Cekat.AI help tour and travel businesses?",

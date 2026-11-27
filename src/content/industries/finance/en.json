@@ -79,6 +79,20 @@
       "body": "Complaints and requests become tickets, routed to the right team and tracked from first message to close, no issue quietly slips through."
     }
   ],
+  "conversations": [
+    {
+      "q": "Is there a monthly account fee?",
+      "a": "Which savings account? I’ll check its published fees and minimum balance."
+    },
+    {
+      "q": "Do I need to visit a branch to open an account?",
+      "a": "Which account? I’ll check its online application options. No need to send ID here."
+    },
+    {
+      "q": "Could I speak to someone about a loan estimate?",
+      "a": "I can connect you to a loan specialist. Is your question about the term or the fees? Please don’t share a PIN or one-time code."
+    }
+  ],
   "faq": [
     {
       "q": "How does Cekat.AI help financial services businesses?",

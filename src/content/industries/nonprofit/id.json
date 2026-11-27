@@ -85,6 +85,20 @@
     "role": "Kepala Departemen Relasi Pelanggan, Rumah Zakat",
     "image": "/images/chat/tantan-supriatna.png"
   },
+  "conversations": [
+    {
+      "q": "Donasi saya bisa khusus untuk program air bersih?",
+      "a": "Saya cek kampanye air bersih yang masih aktif dan tautan donasi resminya. Ada wilayah yang ingin dibantu?"
+    },
+    {
+      "q": "Bisa jadi relawan akhir pekan?",
+      "a": "Kamu berada di kota mana dan tersedia hari apa? Saya carikan kegiatan dengan jadwal dan syarat relawan yang cocok."
+    },
+    {
+      "q": "Sebelum donasi, boleh lihat laporan program?",
+      "a": "Tentu. Program yang mana? Saya carikan laporan kegiatan dan penggunaan dana terakhir yang dipublikasikan."
+    }
+  ],
   "faq": [
     {
       "q": "Gimana Cekat.AI bantu lembaga sosial dan yayasan?",

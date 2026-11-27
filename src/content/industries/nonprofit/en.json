@@ -85,6 +85,20 @@
     "role": "Customer Relation Department Head, Rumah Zakat",
     "image": "/images/chat/tantan-supriatna.png"
   },
+  "conversations": [
+    {
+      "q": "Can my donation go specifically to clean water?",
+      "a": "I’ll check active water projects and their official donation links. Is there a region you want to support?"
+    },
+    {
+      "q": "Can I volunteer on weekends?",
+      "a": "What city and which days? I’ll look for activities with matching schedules and volunteer requirements."
+    },
+    {
+      "q": "Can I see a report before donating?",
+      "a": "Of course. Which program? I’ll look up its latest published activity and spending report."
+    }
+  ],
   "faq": [
     {
       "q": "How does Cekat.AI help nonprofits and social organizations?",

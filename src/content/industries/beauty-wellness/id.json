@@ -85,6 +85,20 @@
     "role": "Pendiri, Moir Salon",
     "image": "/images/home/testimonial-silica-brenda.jpg"
   },
+  "conversations": [
+    {
+      "q": "Baru pertama facial, paketnya beda apa saja?",
+      "a": "Saya bisa bandingkan langkah perawatan, durasi, dan harga dari menu salon. Ada dua paket yang sedang kamu pertimbangkan?"
+    },
+    {
+      "q": "Bisa pijat berdua di jam yang sama?",
+      "a": "Saya cek dua terapis pada waktu yang sama. Tanggal, jam, dan cabang mana yang kamu pilih?"
+    },
+    {
+      "q": "Promo weekday berlaku untuk manicure juga?",
+      "a": "Boleh kirim nama promonya? Saya cek layanan yang termasuk dan jam berlakunya sebelum kamu booking."
+    }
+  ],
   "faq": [
     {
       "q": "Gimana Cekat.AI bantu salon dan klinik kecantikan?",

@@ -79,6 +79,20 @@
       "body": "Add thousands of users and response time stays flat. Complex cases escalate to your support team with the full chat history and user data attached."
     }
   ],
+  "conversations": [
+    {
+      "q": "Can I try the math lesson on my phone?",
+      "a": "Android or iPhone? I’ll check device support and how to enter the trial lesson."
+    },
+    {
+      "q": "Can I replay a live lesson I miss?",
+      "a": "Which course are you considering? I’ll check replay availability and the access period."
+    },
+    {
+      "q": "Which practice module should I use for next month’s exam?",
+      "a": "Which exam and subject? I’ll look for matching practice modules in the catalog."
+    }
+  ],
   "faq": [
     {
       "q": "How does Cekat.AI help EdTech and online course platforms?",

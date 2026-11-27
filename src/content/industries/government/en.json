@@ -80,6 +80,20 @@
       "body": "The AI handles routine questions; cases that require judgment route to the responsible officer with full context, so citizens never repeat themselves."
     }
   ],
+  "conversations": [
+    {
+      "q": "What documents do I need to renew a business permit?",
+      "a": "Which permit and district? I’ll look up the document checklist in the local service guide."
+    },
+    {
+      "q": "Can I get a queue ticket before visiting?",
+      "a": "Which service and office? I’ll check online queuing and counter hours."
+    },
+    {
+      "q": "Where do I report a broken streetlight near the market?",
+      "a": "Please share the street name and nearest landmark. I’ll direct the report to the streetlighting team."
+    }
+  ],
   "faq": [
     {
       "q": "How does Cekat.AI help government and public-service organizations?",

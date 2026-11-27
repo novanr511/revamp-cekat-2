@@ -83,6 +83,20 @@
       "body": "AI menangani info dan edukasi. Keluhan, diagnosis, dan keputusan perawatan selalu dialihkan ke dokter gigimu lengkap dengan riwayat percakapan."
     }
   ],
+  "conversations": [
+    {
+      "q": "Berapa biaya scaling untuk pasien baru?",
+      "a": "Di cabang Melati, scaling mulai Rp300.000. Dokter akan memastikan totalnya setelah pemeriksaan, sebelum tindakan. Mau lihat jadwal konsultasi?"
+    },
+    {
+      "q": "Mau konsultasi behel, bisa Sabtu?",
+      "a": "Saya cek jadwal dokter ortodonti. Sabtu tanggal berapa dan cabang mana yang paling dekat?"
+    },
+    {
+      "q": "Anak saya takut ke dokter gigi. Ada dokter gigi anak?",
+      "a": "Saya bisa carikan jadwal dokter gigi anak dan sampaikan kekhawatiran itu ke tim klinik. Cabang mana yang nyaman untuk keluarga?"
+    }
+  ],
   "faq": [
     {
       "q": "Bagaimana Cekat.AI membantu klinik gigi?",
