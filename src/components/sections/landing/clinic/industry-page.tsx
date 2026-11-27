@@ -82,7 +82,9 @@ export function IndustryPage({
             </div>
             {content.stats.map((stat) => (
               <div key={`${stat.value}-${stat.label}`}>
-                <strong>{stat.value}</strong>
+                <strong className={stat.value.length > 7 || !/\d/.test(stat.value) ? "industry-stat-text" : undefined}>
+                  {stat.value}
+                </strong>
                 <p>{stat.label}</p>
               </div>
             ))}

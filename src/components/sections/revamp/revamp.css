@@ -7249,6 +7249,17 @@ html:has(.r-page) {
 }
 .r-page.r-hub--industry .r-hub-hero h1 {
   color: var(--r-ink);
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1.13;
+  letter-spacing: -0.035em;
+}
+.r-page.r-hub--industry :is(.r-hub-intro, .r-directory, .r-hub-consult) h2 {
+  font-size: clamp(1.625rem, 3vw, 2.375rem);
+  line-height: 1.18;
+  letter-spacing: -0.025em;
+}
+.r-page.r-hub--industry .r-lede {
+  font-size: clamp(1rem, 1.25vw, 1.125rem);
 }
 .r-page.r-hub--industry .r-hub-hero h1 span {
   color: #4a6892;
